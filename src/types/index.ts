@@ -1,5 +1,4 @@
-export type * from './product';
-export type * from './stock';
+export type * from './odoo/_unknown';
 type Operator =
   | '='
   | '!='
