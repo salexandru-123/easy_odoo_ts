@@ -1,0 +1,38 @@
+export interface HelpdeskTicketReportAnalysis {
+  active?: boolean;
+  assign_date?: string;
+  avg_response_hours?: number;
+  close_date?: string;
+  company_id?: number | false;
+  create_date?: string;
+  description?: string;
+  display_name?: string;
+  first_response_hours?: number;
+  id?: number;
+  kanban_state?: string;
+  message_is_follower?: boolean;
+  name?: string;
+  partner_email?: string;
+  partner_id?: number | false;
+  partner_name?: string;
+  partner_phone?: string;
+  priority?: string;
+  rating_avg?: number;
+  rating_last_value?: number;
+  sale_order_id?: number | false;
+  sla_deadline?: string;
+  sla_fail?: boolean;
+  sla_ids?: number[];
+  sla_status_ids?: number[];
+  sla_success?: boolean;
+  stage_id?: number | false;
+  tag_ids?: number[];
+  team_id?: number | false;
+  ticket_assignation_hours?: number;
+  ticket_close_hours?: number;
+  ticket_deadline_hours?: number;
+  ticket_id?: number | false;
+  ticket_open_hours?: number;
+  ticket_ref?: string;
+  user_id?: number | false;
+}

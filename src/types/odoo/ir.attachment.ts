@@ -1,0 +1,33 @@
+export interface IrAttachment {
+  access_token?: string;
+  checksum?: string;
+  company_id?: number | false;
+  create_date?: string;
+  create_uid?: number | false;
+  datas?: string | false;
+  db_datas?: string | false;
+  description?: string;
+  display_name?: string;
+  file_size?: number;
+  id?: number;
+  image_height?: number;
+  image_src?: string;
+  image_width?: number;
+  index_content?: string;
+  local_url?: string;
+  mimetype?: string;
+  name: string;
+  original_id?: number | false;
+  public?: boolean;
+  raw?: string | false;
+  res_field?: string;
+  res_id?: unknown;
+  res_model?: string;
+  res_name?: string;
+  store_fname?: string;
+  type: string;
+  url?: string;
+  voice_ids?: number[];
+  write_date?: string;
+  write_uid?: number | false;
+}

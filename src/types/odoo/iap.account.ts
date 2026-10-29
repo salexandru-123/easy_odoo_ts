@@ -1,0 +1,33 @@
+export interface IapAccount {
+  account_token?: string;
+  balance?: string;
+  company_ids?: number[];
+  create_date?: string;
+  create_uid?: number | false;
+  description?: string;
+  display_name?: string;
+  has_message?: boolean;
+  id?: number;
+  message_attachment_count?: number;
+  message_follower_ids?: number[];
+  message_has_error?: boolean;
+  message_has_error_counter?: number;
+  message_has_sms_error?: boolean;
+  message_ids?: number[];
+  message_is_follower?: boolean;
+  message_needaction?: boolean;
+  message_needaction_counter?: number;
+  message_partner_ids?: number[];
+  name?: string;
+  rating_ids?: number[];
+  sender_name?: string;
+  service_id: number | false;
+  service_locked?: boolean;
+  service_name?: string;
+  state?: string;
+  warning_threshold?: number;
+  warning_user_ids?: number[];
+  website_message_ids?: number[];
+  write_date?: string;
+  write_uid?: number | false;
+}

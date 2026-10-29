@@ -1,0 +1,34 @@
+export interface BaseAutomation {
+  action_server_ids?: number[];
+  active?: boolean;
+  create_date?: string;
+  create_uid?: number | false;
+  description?: string;
+  display_name?: string;
+  filter_domain?: string;
+  filter_pre_domain?: string;
+  id?: number;
+  last_run?: string;
+  least_delay_msg?: string;
+  log_webhook_calls?: boolean;
+  model_id: number | false;
+  model_is_mail_thread?: boolean;
+  model_name?: string;
+  name: string;
+  on_change_field_ids?: number[];
+  record_getter?: string;
+  trg_date_calendar_id?: number | false;
+  trg_date_id?: number | false;
+  trg_date_range?: number;
+  trg_date_range_type?: string;
+  trg_date_resource_field_id?: number | false;
+  trg_field_ref?: unknown;
+  trg_field_ref_model_name?: string;
+  trg_selection_field_id?: number | false;
+  trigger: string;
+  trigger_field_ids?: number[];
+  url?: string;
+  webhook_uuid?: string;
+  write_date?: string;
+  write_uid?: number | false;
+}

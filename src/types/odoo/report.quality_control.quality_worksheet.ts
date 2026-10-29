@@ -1,0 +1,2 @@
+export interface ReportQuality_controlQuality_worksheet {
+}

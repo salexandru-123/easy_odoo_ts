@@ -1,0 +1,48 @@
+export type StockQuantFields = RequiredStockQuantFields & UnrequiredStockQuantFields;
+
+type RequiredStockQuantFields = {
+  in_date: string;
+  location_id: number;
+  product_id: number;
+  reserved_quantity: number;
+};
+type UnrequiredStockQuantFields = Partial<{
+  accounting_date: string;
+  available_quantity: number;
+  company_id: number | false;
+  cost_method: string;
+  create_date: string;
+  create_uid: number | false;
+  currency_id: number | false;
+  cyclic_inventory_frequency: number;
+  display_name: string;
+  dummy_id: string;
+  id: number;
+  image_1920: string | false;
+  inventory_date: string;
+  inventory_diff_quantity: number;
+  inventory_quantity: number;
+  inventory_quantity_auto_apply: number;
+  inventory_quantity_set: boolean;
+  is_favorite: boolean;
+  is_outdated: boolean;
+  last_count_date: string;
+  lot_id: number | false;
+  lot_properties: Record<string, unknown> | false;
+  on_hand: boolean;
+  owner_id: number | false;
+  package_id: number | false;
+  product_categ_id: number | false;
+  product_reference_code: string;
+  product_tmpl_id: number | false;
+  product_uom_id: number | false;
+  quantity: number;
+  sn_duplicated: boolean;
+  storage_category_id: number | false;
+  tracking: string;
+  user_id: number | false;
+  value: number;
+  warehouse_id: number | false;
+  write_date: string;
+  write_uid: number | false;
+}>;

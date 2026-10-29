@@ -1,0 +1,38 @@
+export interface AccountReconcileWizard {
+  account_id?: number | false;
+  allow_partials?: boolean;
+  amount?: number;
+  amount_currency?: number;
+  company_currency_id?: number | false;
+  company_id: number | false;
+  create_date?: string;
+  create_uid?: number | false;
+  date?: string;
+  display_allow_partials?: boolean;
+  display_name?: string;
+  edit_mode?: boolean;
+  edit_mode_amount?: number;
+  edit_mode_amount_currency?: number;
+  edit_mode_reco_currency_id?: number | false;
+  force_partials?: boolean;
+  id?: number;
+  is_rec_pay_account?: boolean;
+  is_transfer_required?: boolean;
+  is_write_off_required?: boolean;
+  journal_id: number | false;
+  label?: string;
+  lock_date_violated_warning_message?: string;
+  move_line_ids: number[];
+  reco_account_id?: number | false;
+  reco_currency_id?: number | false;
+  reco_model_autocomplete_ids?: number[];
+  reco_model_id?: number | false;
+  single_currency_mode?: boolean;
+  tax_id?: number | false;
+  to_check?: boolean;
+  to_partner_id?: number | false;
+  transfer_from_account_id?: number | false;
+  transfer_warning_message?: string;
+  write_date?: string;
+  write_uid?: number | false;
+}

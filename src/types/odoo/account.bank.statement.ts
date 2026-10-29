@@ -1,0 +1,37 @@
+export interface AccountBankStatement {
+  attachment_ids?: number[];
+  balance_end?: number;
+  balance_end_real?: number;
+  balance_start?: number;
+  company_id?: number | false;
+  create_date?: string;
+  create_uid?: number | false;
+  currency_id?: number | false;
+  date?: string;
+  display_name?: string;
+  first_line_index?: string;
+  has_message?: boolean;
+  id?: number;
+  is_complete?: boolean;
+  is_valid?: boolean;
+  journal_id?: number | false;
+  line_ids?: number[];
+  message_attachment_count?: number;
+  message_follower_ids?: number[];
+  message_has_error?: boolean;
+  message_has_error_counter?: number;
+  message_has_sms_error?: boolean;
+  message_ids?: number[];
+  message_is_follower?: boolean;
+  message_main_attachment_id?: number | false;
+  message_needaction?: boolean;
+  message_needaction_counter?: number;
+  message_partner_ids?: number[];
+  name?: string;
+  problem_description?: string;
+  rating_ids?: number[];
+  reference?: string;
+  website_message_ids?: number[];
+  write_date?: string;
+  write_uid?: number | false;
+}

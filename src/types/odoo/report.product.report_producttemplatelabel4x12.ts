@@ -1,0 +1,2 @@
+export interface ReportProductReport_producttemplatelabel4x12 {
+}

@@ -1,0 +1,2 @@
+export interface ReportProductReport_producttemplatelabel_dymo {
+}

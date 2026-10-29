@@ -1,0 +1,2 @@
+export interface ReportAccount_batch_paymentPrint_batch_payment {
+}

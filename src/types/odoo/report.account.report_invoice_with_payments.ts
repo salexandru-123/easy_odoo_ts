@@ -1,0 +1,2 @@
+export interface ReportAccountReport_invoice_with_payments {
+}

@@ -1,0 +1,34 @@
+export interface MailActivity {
+  active?: boolean;
+  activity_category?: string;
+  activity_decoration?: string;
+  activity_type_id?: number | false;
+  attachment_ids?: number[];
+  automated?: boolean;
+  calendar_event_id?: number | false;
+  can_write?: boolean;
+  chaining_type?: string;
+  create_date?: string;
+  create_uid?: number | false;
+  date_deadline: string;
+  date_done?: string;
+  display_name?: string;
+  has_recommended_activities?: boolean;
+  icon?: string;
+  id?: number;
+  mail_template_ids?: number[];
+  note?: string;
+  previous_activity_type_id?: number | false;
+  recommended_activity_type_id?: number | false;
+  request_partner_id?: number | false;
+  res_id?: unknown;
+  res_model?: string;
+  res_model_id: number | false;
+  res_name?: string;
+  state?: string;
+  summary?: string;
+  user_id: number | false;
+  user_tz?: string;
+  write_date?: string;
+  write_uid?: number | false;
+}

@@ -1,0 +1,9 @@
+export interface ConfirmStockSms {
+  create_date?: string;
+  create_uid?: number | false;
+  display_name?: string;
+  id?: number;
+  pick_ids?: number[];
+  write_date?: string;
+  write_uid?: number | false;
+}

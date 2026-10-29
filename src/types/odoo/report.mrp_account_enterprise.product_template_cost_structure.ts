@@ -1,0 +1,2 @@
+export interface ReportMrp_account_enterpriseProduct_template_cost_structure {
+}

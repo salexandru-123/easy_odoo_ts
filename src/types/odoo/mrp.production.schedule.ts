@@ -1,0 +1,32 @@
+export interface MrpProductionSchedule {
+  allowed_route_ids?: number[];
+  batch_size?: number;
+  bom_id?: number | false;
+  company_id?: number | false;
+  create_date?: string;
+  create_uid?: number | false;
+  display_name?: string;
+  enable_batch_size?: boolean;
+  enable_max_replenish?: boolean;
+  forecast_ids?: number[];
+  forecast_target_qty?: number;
+  id?: number;
+  is_indirect?: boolean;
+  is_manufacture_route?: boolean;
+  max_to_replenish_qty?: number;
+  min_to_replenish_qty?: number;
+  mps_sequence?: number;
+  product_category_id?: number | false;
+  product_id: number | false;
+  product_tmpl_id?: number | false;
+  product_uom_id?: number | false;
+  replenish_state?: string;
+  replenish_trigger: string;
+  route_id?: number | false;
+  show_bom?: boolean;
+  show_vendor?: boolean;
+  supplier_id?: number | false;
+  warehouse_id: number | false;
+  write_date?: string;
+  write_uid?: number | false;
+}

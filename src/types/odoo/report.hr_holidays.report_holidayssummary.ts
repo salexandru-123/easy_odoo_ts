@@ -1,0 +1,2 @@
+export interface ReportHr_holidaysReport_holidayssummary {
+}
