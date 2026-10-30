@@ -2,7 +2,6 @@ export interface TPurchaseOrder {
   access_token?: string;
   access_url?: string;
   access_warning?: string;
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -16,7 +15,6 @@ export interface TPurchaseOrder {
   amount_total?: number;
   amount_total_cc?: number;
   amount_untaxed?: number;
-  approvals_rdm_id?: number | false;
   company_currency_id?: number | false;
   company_id: number | false;
   company_price_include?: string;
@@ -29,7 +27,6 @@ export interface TPurchaseOrder {
   date_calendar_start?: string;
   date_order: string;
   date_planned?: string;
-  date_planned_mps?: string;
   default_location_dest_id_usage?: string;
   dest_address_id?: number | false;
   display_name?: string;
@@ -42,9 +39,7 @@ export interface TPurchaseOrder {
   incoterm_id?: number | false;
   incoterm_location?: string;
   invoice_count?: number;
-  invoice_date?: string;
   invoice_ids?: number[];
-  invoice_number?: string;
   invoice_status?: string;
   is_shipped?: boolean;
   mail_reception_confirmed?: boolean;
@@ -66,7 +61,6 @@ export interface TPurchaseOrder {
   notes?: string;
   on_time_rate?: number;
   order_line?: number[];
-  order_priority?: string;
   origin?: string;
   partner_bill_count?: number;
   partner_id: number | false;
@@ -76,19 +70,11 @@ export interface TPurchaseOrder {
   picking_type_id: number | false;
   priority?: string;
   product_id?: number | false;
-  project_id?: number | false;
-  rating_ids?: number[];
   receipt_reminder_email?: boolean;
   receipt_status?: string;
-  recipient?: number | false;
   reminder_date_before_receipt?: number;
-  repair_count?: number;
-  request_purpose?: string;
-  requester?: number | false;
   sale_order_count?: number;
   state?: string;
-  supplier_order_date?: string;
-  supplier_order_number?: string;
   tax_calculation_rounding_method?: string;
   tax_country_id?: number | false;
   tax_totals?: string | false;

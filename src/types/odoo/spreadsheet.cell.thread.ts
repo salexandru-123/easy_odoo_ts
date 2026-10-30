@@ -15,7 +15,6 @@ export interface TSpreadsheetCellThread {
   message_needaction?: boolean;
   message_needaction_counter?: number;
   message_partner_ids?: number[];
-  rating_ids?: number[];
   sale_order_spreadsheet_id?: number | false;
   website_message_ids?: number[];
   write_date?: string;

@@ -1,6 +1,5 @@
 export interface TApprovalCategory {
   active?: boolean;
-  allowed_group_ids?: number[];
   approval_minimum: number;
   approval_type?: string;
   approver_ids?: number[];
@@ -34,6 +33,4 @@ export interface TApprovalCategory {
   user_ids?: number[];
   write_date?: string;
   write_uid?: number | false;
-  x_studio_luogo_di_destinazione?: string;
-  x_studio_motivazione?: string;
 }

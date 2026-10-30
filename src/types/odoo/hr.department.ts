@@ -1,7 +1,5 @@
 export interface THrDepartment {
-  absence_of_today?: number;
   active?: boolean;
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -11,24 +9,17 @@ export interface THrDepartment {
   activity_type_icon?: string;
   activity_type_id?: number | false;
   activity_user_id?: number | false;
-  allocation_to_approve_count?: number;
-  appraisal_properties_definition?: unknown;
-  appraisals_to_process_count?: number;
   child_ids?: number[];
   color?: number;
   company_id?: number | false;
   complete_name?: string;
   create_date?: string;
   create_uid?: number | false;
-  custom_appraisal_template_id?: number | false;
   display_name?: string;
-  expected_employee?: number;
-  expense_sheets_to_approve_count?: number;
   has_message?: boolean;
   has_read_access?: boolean;
   id?: number;
   jobs_ids?: number[];
-  leave_to_approve_count?: number;
   manager_id?: number | false;
   master_department_id?: number | false;
   member_ids?: number[];
@@ -44,14 +35,11 @@ export interface THrDepartment {
   message_partner_ids?: number[];
   my_activity_date_deadline?: string;
   name: string;
-  new_applicant_count?: number;
-  new_hired_employee?: number;
   note?: string;
   parent_id?: number | false;
   parent_path?: string;
   plan_ids?: number[];
   plans_count?: number;
-  rating_ids?: number[];
   total_employee?: number;
   website_message_ids?: number[];
   write_date?: string;

@@ -33,7 +33,6 @@ export interface TCrmTeam {
   name: string;
   quotations_amount?: number;
   quotations_count?: number;
-  rating_ids?: number[];
   sale_order_count?: number;
   sales_to_invoice_count?: number;
   sequence?: number;

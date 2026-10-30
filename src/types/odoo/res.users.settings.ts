@@ -1,5 +1,4 @@
 export interface TResUsersSettings {
-  calendar_default_privacy: string;
   channel_notifications?: string;
   create_date?: string;
   create_uid?: number | false;

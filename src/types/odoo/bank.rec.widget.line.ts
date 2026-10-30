@@ -52,7 +52,5 @@ export interface TBankRecWidgetLine {
   tax_repartition_line_id?: number | false;
   tax_tag_ids?: number[];
   transaction_currency_id?: number | false;
-  vehicle_id?: number | false;
-  vehicle_required?: boolean;
   wizard_id?: number | false;
 }

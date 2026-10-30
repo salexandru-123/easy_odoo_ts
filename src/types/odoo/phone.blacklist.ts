@@ -16,7 +16,6 @@ export interface TPhoneBlacklist {
   message_needaction_counter?: number;
   message_partner_ids?: number[];
   number: string;
-  rating_ids?: number[];
   website_message_ids?: number[];
   write_date?: string;
   write_uid?: number | false;

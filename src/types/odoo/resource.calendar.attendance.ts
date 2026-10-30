@@ -18,7 +18,6 @@ export interface TResourceCalendarAttendance {
   sequence?: number;
   two_weeks_calendar?: boolean;
   week_type?: string;
-  work_entry_type_id?: number | false;
   write_date?: string;
   write_uid?: number | false;
 }

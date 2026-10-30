@@ -22,9 +22,6 @@ export interface TProductDocument {
   local_url?: string;
   mimetype?: string;
   name: string;
-  origin_attachment_id?: number | false;
-  origin_res_model?: string;
-  origin_res_name?: string;
   original_id?: number | false;
   public?: boolean;
   raw?: string | false;

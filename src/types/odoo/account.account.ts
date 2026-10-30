@@ -36,7 +36,6 @@ export interface TAccountAccount {
   opening_credit?: number;
   opening_debit?: number;
   placeholder_code?: string;
-  rating_ids?: number[];
   reconcile?: boolean;
   related_taxes_amount?: number;
   root_id?: number | false;

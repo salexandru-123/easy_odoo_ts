@@ -1,5 +1,4 @@
 export interface TMailActivityMixin {
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;

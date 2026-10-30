@@ -1,7 +1,6 @@
 export interface TResPartner {
   active?: boolean;
   active_lang_count?: number;
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -14,22 +13,23 @@ export interface TResPartner {
   additional_info?: string;
   autopost_bills: string;
   available_peppol_eas?: unknown;
-  available_peppol_edi_formats?: unknown;
-  available_peppol_sending_methods?: unknown;
+  avalara_exemption_id?: number | false;
+  avalara_partner_code?: string;
+  avalara_show_address_validation?: boolean;
   avatar_1024?: string | false;
   avatar_128?: string | false;
   avatar_1920?: string | false;
   avatar_256?: string | false;
   avatar_512?: string | false;
+  avatax_unique_code?: string;
   bank_account_count?: number;
   bank_ids?: number[];
   barcode?: string;
+  box_1099_id?: number | false;
   buyer_id?: number | false;
-  calendar_last_notif_ack?: string;
   category_id?: number[];
   channel_ids?: number[];
   child_ids?: number[];
-  circuita_internal_id?: string;
   city?: string;
   color?: number;
   comment?: string;
@@ -57,10 +57,6 @@ export interface TResPartner {
   days_sales_outstanding?: number;
   debit?: number;
   debit_limit?: number;
-  default_goods_appearance_id?: number | false;
-  default_transport_condition_id?: number | false;
-  default_transport_method_id?: number | false;
-  default_transport_reason_id?: number | false;
   display_invoice_edi_format?: boolean;
   display_invoice_template_pdf_report_id?: boolean;
   display_name?: string;
@@ -99,14 +95,8 @@ export interface TResPartner {
   is_peppol_edi_format?: boolean;
   is_public?: boolean;
   is_ubl_format?: boolean;
-  iso20022_lei?: string;
   journal_item_count?: number;
-  l10n_it_codice_fiscale?: string;
-  l10n_it_pa_index?: string;
-  l10n_it_pec_email?: string;
   lang?: string;
-  meeting_count?: number;
-  meeting_ids?: number[];
   message_attachment_count?: number;
   message_bounce?: number;
   message_follower_ids?: number[];
@@ -137,8 +127,6 @@ export interface TResPartner {
   payment_token_ids?: number[];
   peppol_eas?: string;
   peppol_endpoint?: string;
-  peppol_verification_state?: string;
-  perform_vies_validation?: boolean;
   phone?: string;
   phone_blacklisted?: boolean;
   phone_mobile_search?: string;
@@ -146,9 +134,6 @@ export interface TResPartner {
   phone_sanitized_blacklisted?: boolean;
   picking_warn?: string;
   picking_warn_msg?: string;
-  plan_to_change_bike?: boolean;
-  plan_to_change_car?: boolean;
-  project_ids?: number[];
   property_account_payable_id?: number | false;
   property_account_position_id?: number | false;
   property_account_receivable_id?: number | false;
@@ -165,7 +150,6 @@ export interface TResPartner {
   purchase_order_count?: number;
   purchase_warn?: string;
   purchase_warn_msg?: string;
-  rating_ids?: number[];
   receipt_reminder_email?: boolean;
   ref?: string;
   ref_company_ids?: number[];
@@ -178,9 +162,7 @@ export interface TResPartner {
   same_vat_partner_id?: number | false;
   self?: number | false;
   show_credit_limit?: boolean;
-  signature_count?: number;
   signup_type?: string;
-  sla_ids?: number[];
   specific_property_product_pricelist?: number | false;
   starred_message_ids?: number[];
   state_id?: number | false;
@@ -188,9 +170,6 @@ export interface TResPartner {
   street2?: string;
   supplier_invoice_count?: number;
   supplier_rank?: number;
-  task_count?: number;
-  task_ids?: number[];
-  ticket_count?: number;
   title?: number | false;
   total_invoiced?: number;
   trust?: string;
@@ -202,8 +181,6 @@ export interface TResPartner {
   user_ids?: number[];
   vat?: string;
   vat_label?: string;
-  vies_valid?: boolean;
-  vies_vat_to_check?: string;
   website?: string;
   website_message_ids?: number[];
   write_date?: string;

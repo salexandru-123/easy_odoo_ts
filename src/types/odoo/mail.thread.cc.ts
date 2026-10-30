@@ -11,6 +11,5 @@ export interface TMailThreadCc {
   message_needaction?: boolean;
   message_needaction_counter?: number;
   message_partner_ids?: number[];
-  rating_ids?: number[];
   website_message_ids?: number[];
 }

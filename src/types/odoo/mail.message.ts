@@ -39,9 +39,6 @@ export interface TMailMessage {
   partner_ids?: number[];
   pinned_at?: string;
   preview?: string;
-  rating_id?: number | false;
-  rating_ids?: number[];
-  rating_value?: number;
   reaction_ids?: number[];
   record_alias_domain_id?: number | false;
   record_company_id?: number | false;

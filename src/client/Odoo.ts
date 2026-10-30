@@ -1,7 +1,7 @@
 import { OdooClient, OdooConfig } from 'odoo-xmlrpc-ts';
 import * as Models from '../models';
 
-export default class Odoo {
+export class Odoo {
   private readonly client: OdooClient;
   readonly _unknown: Models._unknownModel;
   readonly accountAccountTag: Models.AccountAccountTagModel;
@@ -450,9 +450,6 @@ export default class Odoo {
   readonly maintenanceRequest: Models.MaintenanceRequestModel;
   readonly maintenanceStage: Models.MaintenanceStageModel;
   readonly maintenanceTeam: Models.MaintenanceTeamModel;
-  readonly moviaDevice: Models.MoviaDeviceModel;
-  readonly moviaUpdateAttendances: Models.MoviaUpdateAttendancesModel;
-  readonly moviaZone: Models.MoviaZoneModel;
   readonly mrpAccountWipAccountingLine: Models.MrpAccountWipAccountingLineModel;
   readonly mrpAccountWipAccounting: Models.MrpAccountWipAccountingModel;
   readonly mrpBatchProduce: Models.MrpBatchProduceModel;
@@ -1276,9 +1273,6 @@ export default class Odoo {
     this.maintenanceRequest = new Models.MaintenanceRequestModel(this.client);
     this.maintenanceStage = new Models.MaintenanceStageModel(this.client);
     this.maintenanceTeam = new Models.MaintenanceTeamModel(this.client);
-    this.moviaDevice = new Models.MoviaDeviceModel(this.client);
-    this.moviaUpdateAttendances = new Models.MoviaUpdateAttendancesModel(this.client);
-    this.moviaZone = new Models.MoviaZoneModel(this.client);
     this.mrpAccountWipAccountingLine = new Models.MrpAccountWipAccountingLineModel(this.client);
     this.mrpAccountWipAccounting = new Models.MrpAccountWipAccountingModel(this.client);
     this.mrpBatchProduce = new Models.MrpBatchProduceModel(this.client);

@@ -12,8 +12,6 @@ export interface TSaleOrderLine {
   create_uid?: number | false;
   currency_id?: number | false;
   customer_lead: number;
-  delivery_note_line_ids?: number[];
-  delivery_picking_id?: number | false;
   discount?: number;
   display_name?: string;
   display_qty_widget?: boolean;
@@ -21,7 +19,6 @@ export interface TSaleOrderLine {
   distribution_analytic_account_ids?: number[];
   forecast_expected_date?: string;
   free_qty_today?: number;
-  has_displayed_warning_upsell?: boolean;
   id?: number;
   invoice_lines?: number[];
   invoice_status?: string;
@@ -31,7 +28,6 @@ export interface TSaleOrderLine {
   is_expense?: boolean;
   is_mto?: boolean;
   is_product_archived?: boolean;
-  is_service?: boolean;
   is_storable?: boolean;
   linked_line_id?: number | false;
   linked_line_ids?: number[];
@@ -40,9 +36,6 @@ export interface TSaleOrderLine {
   name: string;
   order_id: number | false;
   order_partner_id?: number | false;
-  planning_hours_planned?: number;
-  planning_hours_to_plan?: number;
-  planning_slot_ids?: number[];
   price_reduce_taxexcl?: number;
   price_reduce_taxinc?: number;
   price_subtotal?: number;
@@ -65,7 +58,6 @@ export interface TSaleOrderLine {
   product_uom_qty: number;
   product_uom_readonly?: boolean;
   product_updatable?: boolean;
-  project_id?: number | false;
   purchase_line_count?: number;
   purchase_line_ids?: number[];
   qty_available_today?: number;
@@ -75,10 +67,7 @@ export interface TSaleOrderLine {
   qty_invoiced_posted?: number;
   qty_to_deliver?: number;
   qty_to_invoice?: number;
-  reached_milestones_ids?: number[];
   recompute_delivery_price?: boolean;
-  remaining_hours?: number;
-  remaining_hours_available?: boolean;
   route_id?: number | false;
   sale_order_option_ids?: number[];
   salesman_id?: number | false;
@@ -87,12 +76,10 @@ export interface TSaleOrderLine {
   sequence?: number;
   service_tracking?: string;
   state?: string;
-  task_id?: number | false;
   tax_calculation_rounding_method?: string;
   tax_country_id?: number | false;
   tax_id?: number[];
   technical_price_unit?: number;
-  timesheet_ids?: number[];
   translated_product_name?: string;
   untaxed_amount_invoiced?: number;
   untaxed_amount_to_invoice?: number;

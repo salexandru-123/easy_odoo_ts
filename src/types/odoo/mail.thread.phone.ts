@@ -15,6 +15,5 @@ export interface TMailThreadPhone {
   phone_mobile_search?: string;
   phone_sanitized?: string;
   phone_sanitized_blacklisted?: boolean;
-  rating_ids?: number[];
   website_message_ids?: number[];
 }

@@ -1,5 +1,4 @@
 export interface THrDepartureWizard {
-  cancel_appraisal?: boolean;
   create_date?: string;
   create_uid?: number | false;
   departure_date: string;
@@ -8,9 +7,6 @@ export interface THrDepartureWizard {
   display_name?: string;
   employee_id: number | false;
   id?: number;
-  release_campany_car?: boolean;
-  set_date_end?: boolean;
-  unassign_equipment?: boolean;
   write_date?: string;
   write_uid?: number | false;
 }

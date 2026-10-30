@@ -1,5 +1,5 @@
 import { OdooClient } from 'odoo-xmlrpc-ts';
-import { OdooDomain, OdooOptions, OdooValues } from '../types';
+import { OdooDomain, OdooOptions, OdooValues } from '../types/base';
 
 export abstract class BaseOdooModel<T extends object> {
   protected abstract readonly model: string;
@@ -24,6 +24,7 @@ export abstract class BaseOdooModel<T extends object> {
   async searchRead(domain?: OdooDomain, opts?: OdooOptions): Promise<T[]> {
     return this.client.searchRead<T>(this.model, domain || [], opts);
   }
+
   async searchCount(domain?: OdooDomain): Promise<number> {
     return this.client.searchCount(this.model, domain || []);
   }

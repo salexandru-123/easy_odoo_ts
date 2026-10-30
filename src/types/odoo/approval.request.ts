@@ -1,5 +1,4 @@
 export interface TApprovalRequest {
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -27,8 +26,6 @@ export interface TApprovalRequest {
   date_confirmed?: string;
   date_end?: string;
   date_start?: string;
-  description?: string;
-  destination_location_id?: number | false;
   display_name?: string;
   has_access_to_request?: boolean;
   has_amount?: string;
@@ -61,12 +58,10 @@ export interface TApprovalRequest {
   product_line_ids?: number[];
   purchase_order_count?: number;
   quantity?: number;
-  rating_ids?: number[];
   reason?: string;
   reference?: string;
   request_owner_id?: number | false;
   request_status?: string;
-  requester: number | false;
   requirer_document?: string;
   user_ids?: number[];
   user_status?: string;

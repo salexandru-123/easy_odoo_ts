@@ -34,7 +34,6 @@ export interface TQualityAlertTeam {
   message_needaction_counter?: number;
   message_partner_ids?: number[];
   name: string;
-  rating_ids?: number[];
   sequence?: number;
   website_message_ids?: number[];
   write_date?: string;

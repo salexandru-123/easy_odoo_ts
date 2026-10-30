@@ -1,6 +1,6 @@
 import { OdooClient } from 'odoo-xmlrpc-ts';
 import { ProductProductModel } from '../src/models/';
-import Odoo from '../src/client/Odoo';
+import { Odoo } from '../src/client/Odoo';
 
 describe('ProductProduct', () => {
   let odoo: Odoo;

@@ -1,4 +1,5 @@
 export interface TProductCategory {
+  avatax_category_id?: number | false;
   child_id?: number[];
   complete_name?: string;
   create_date?: string;
@@ -7,7 +8,6 @@ export interface TProductCategory {
   filter_for_stock_putaway_rule?: boolean;
   has_message?: boolean;
   id?: number;
-  mark: string;
   message_attachment_count?: number;
   message_follower_ids?: number[];
   message_has_error?: boolean;
@@ -37,7 +37,6 @@ export interface TProductCategory {
   property_stock_valuation_account_id?: number | false;
   property_valuation?: string;
   putaway_rule_ids?: number[];
-  rating_ids?: number[];
   removal_strategy_id?: number | false;
   route_ids?: number[];
   total_route_ids?: number[];

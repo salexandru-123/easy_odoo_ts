@@ -1,9 +1,9 @@
 export interface TResPartnerBank {
+  aba_routing?: string;
   acc_holder_name?: string;
   acc_number: string;
   acc_type?: string;
   active?: boolean;
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -24,7 +24,6 @@ export interface TResPartnerBank {
   currency_id?: number | false;
   display_name?: string;
   duplicate_bank_partner_ids?: number[];
-  has_alt_bank_account?: boolean;
   has_iban_warning?: boolean;
   has_message?: boolean;
   has_money_transfer_warning?: boolean;
@@ -47,7 +46,6 @@ export interface TResPartnerBank {
   partner_customer_rank?: number;
   partner_id: number | false;
   partner_supplier_rank?: number;
-  rating_ids?: number[];
   related_moves?: number[];
   sanitized_acc_number?: string;
   sequence?: number;

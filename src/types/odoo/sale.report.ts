@@ -27,7 +27,6 @@ export interface TSaleReport {
   product_tmpl_id?: number | false;
   product_uom?: number | false;
   product_uom_qty?: number;
-  project_id?: number | false;
   qty_delivered?: number;
   qty_invoiced?: number;
   qty_to_deliver?: number;

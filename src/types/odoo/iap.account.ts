@@ -19,7 +19,6 @@ export interface TIapAccount {
   message_needaction_counter?: number;
   message_partner_ids?: number[];
   name?: string;
-  rating_ids?: number[];
   sender_name?: string;
   service_id: number | false;
   service_locked?: boolean;

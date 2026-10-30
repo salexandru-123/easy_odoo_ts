@@ -8,7 +8,6 @@ export interface TAccountPaymentMethodLine {
   display_name?: string;
   id?: number;
   journal_id?: number | false;
-  l10n_it_payment_method?: string;
   name?: string;
   payment_account_id?: number | false;
   payment_method_id: number | false;

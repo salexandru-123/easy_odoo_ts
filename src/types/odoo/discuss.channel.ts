@@ -35,7 +35,6 @@ export interface TDiscussChannel {
   name: string;
   parent_channel_id?: number | false;
   pinned_message_ids?: number[];
-  rating_ids?: number[];
   rtc_session_ids?: number[];
   sfu_channel_uuid?: string;
   sfu_server_url?: string;

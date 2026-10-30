@@ -79,8 +79,6 @@ export interface TStockMove {
   quantity?: number;
   raw_material_production_id?: number | false;
   reference?: string;
-  repair_id?: number | false;
-  repair_line_type?: string;
   reservation_date?: string;
   restrict_partner_id?: number | false;
   returned_move_ids?: number[];

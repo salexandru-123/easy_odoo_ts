@@ -1,7 +1,5 @@
 export interface TStockMoveLine {
   carrier_id?: number | false;
-  check_ids?: number[];
-  check_state?: string;
   company_id: number | false;
   consume_line_ids?: number[];
   create_date?: string;

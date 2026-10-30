@@ -25,7 +25,6 @@ export interface TCrmTeamMember {
   mobile?: string;
   name?: string;
   phone?: string;
-  rating_ids?: number[];
   user_company_ids?: number[];
   user_id: number | false;
   user_in_teams_ids?: number[];

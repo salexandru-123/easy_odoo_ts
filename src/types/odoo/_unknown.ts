@@ -1,2 +1,1 @@
-export interface T_unknown {
-}
+export type T_unknown = any;

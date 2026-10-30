@@ -33,7 +33,6 @@ export interface TStudioApprovalRule {
   model_name?: string;
   name?: string;
   notification_order?: string;
-  rating_ids?: number[];
   users_to_notify?: number[];
   website_message_ids?: number[];
   write_date?: string;

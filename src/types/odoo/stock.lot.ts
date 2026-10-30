@@ -1,5 +1,4 @@
 export interface TStockLot {
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -20,7 +19,6 @@ export interface TStockLot {
   display_name?: string;
   has_message?: boolean;
   id?: number;
-  in_repair_count?: number;
   last_delivery_partner_id?: number | false;
   location_id?: number | false;
   lot_properties?: Record<string, unknown> | false;
@@ -42,15 +40,9 @@ export interface TStockLot {
   product_uom_id?: number | false;
   purchase_order_count?: number;
   purchase_order_ids?: number[];
-  quality_alert_qty?: number;
-  quality_check_qty?: number;
   quant_ids?: number[];
   quantity_svl?: number;
-  rating_ids?: number[];
   ref?: string;
-  repair_line_ids?: number[];
-  repair_part_count?: number;
-  repaired_count?: number;
   sale_order_count?: number;
   sale_order_ids?: number[];
   standard_price?: number;

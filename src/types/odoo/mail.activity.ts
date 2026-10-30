@@ -5,7 +5,6 @@ export interface TMailActivity {
   activity_type_id?: number | false;
   attachment_ids?: number[];
   automated?: boolean;
-  calendar_event_id?: number | false;
   can_write?: boolean;
   chaining_type?: string;
   create_date?: string;

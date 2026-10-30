@@ -12,7 +12,6 @@ export interface TUomUom {
   name: string;
   ratio?: number;
   rounding: number;
-  timesheet_widget?: string;
   uom_type: string;
   write_date?: string;
   write_uid?: number | false;

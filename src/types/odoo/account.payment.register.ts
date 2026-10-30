@@ -25,7 +25,6 @@ export interface TAccountPaymentRegister {
   installments_mode?: string;
   installments_switch_amount?: number;
   installments_switch_html?: string;
-  is_already_paid_through_a_payslip?: boolean;
   is_register_payment_on_draft?: boolean;
   journal_id?: number | false;
   line_ids?: number[];

@@ -1,6 +1,6 @@
 {
   "name": "odoo_ts",
-  "version": "1.0.0",
+  "version": "1.0.4.01",
   "description": "An Odoo Package wrapper to easily work with your odoo instances through code.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -21,10 +21,14 @@
     "version": "pnpm run format && git add -A src",
     "postversion": "git push && git push --tags",
     "clean": "rm -rf dist",
-    "build": "npm run clean && npm run build:cjs && npm run build:esm && npm run build:types",
+    "build": "pnpm run clean && pnpm run build:cjs && pnpm run build:esm && pnpm run build:types",
     "build:cjs": "tsc -p tsconfig.cjs.json && echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
     "build:esm": "tsc -p tsconfig.esm.json && echo '{\"type\": \"module\"}' > dist/esm/package.json",
     "build:types": "tsc -p tsconfig.types.json"
+  },
+  "lint-staged": {
+    "src/**/*.ts": "eslint",
+    "test/**/*.ts": "eslint"
   },
   "exports": {
     ".": {

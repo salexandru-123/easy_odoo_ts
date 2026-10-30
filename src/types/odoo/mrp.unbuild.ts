@@ -1,5 +1,4 @@
 export interface TMrpUnbuild {
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -39,7 +38,6 @@ export interface TMrpUnbuild {
   product_id: number | false;
   product_qty: number;
   product_uom_id: number | false;
-  rating_ids?: number[];
   state?: string;
   website_message_ids?: number[];
   write_date?: string;

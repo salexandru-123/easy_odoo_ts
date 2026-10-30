@@ -29,7 +29,6 @@ export interface TAccountBankStatement {
   message_partner_ids?: number[];
   name?: string;
   problem_description?: string;
-  rating_ids?: number[];
   reference?: string;
   website_message_ids?: number[];
   write_date?: string;

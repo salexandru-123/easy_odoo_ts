@@ -1,5 +1,5 @@
 import { BaseOdooModel } from './odoo';
-    import { T_unknown } from '../types/odoo/_unknown';
+import { T_unknown } from '../types/odoo/_unknown';
 import { TAccountAccountTag } from '../types/odoo/account.account.tag';
 import { TAccountAccount } from '../types/odoo/account.account';
 import { TAccountAccruedOrdersWizard } from '../types/odoo/account.accrued.orders.wizard';
@@ -446,9 +446,6 @@ import { TMaintenanceMixin } from '../types/odoo/maintenance.mixin';
 import { TMaintenanceRequest } from '../types/odoo/maintenance.request';
 import { TMaintenanceStage } from '../types/odoo/maintenance.stage';
 import { TMaintenanceTeam } from '../types/odoo/maintenance.team';
-import { TMoviaDevice } from '../types/odoo/movia.device';
-import { TMoviaUpdateAttendances } from '../types/odoo/movia.update.attendances';
-import { TMoviaZone } from '../types/odoo/movia.zone';
 import { TMrpAccountWipAccountingLine } from '../types/odoo/mrp.account.wip.accounting.line';
 import { TMrpAccountWipAccounting } from '../types/odoo/mrp.account.wip.accounting';
 import { TMrpBatchProduce } from '../types/odoo/mrp.batch.produce';
@@ -799,7 +796,6 @@ import { TWeb_tourTour } from '../types/odoo/web_tour.tour';
 import { TWizardIrModelMenuCreate } from '../types/odoo/wizard.ir.model.menu.create';
 import { TX_stock_picking_line_6a2c5 } from '../types/odoo/x_stock_picking_line_6a2c5';
 
-    
 export class _unknownModel extends BaseOdooModel<T_unknown> {
   protected readonly model = '_unknown';
 }
@@ -2586,18 +2582,6 @@ export class MaintenanceStageModel extends BaseOdooModel<TMaintenanceStage> {
 
 export class MaintenanceTeamModel extends BaseOdooModel<TMaintenanceTeam> {
   protected readonly model = 'maintenance.team';
-}
-
-export class MoviaDeviceModel extends BaseOdooModel<TMoviaDevice> {
-  protected readonly model = 'movia.device';
-}
-
-export class MoviaUpdateAttendancesModel extends BaseOdooModel<TMoviaUpdateAttendances> {
-  protected readonly model = 'movia.update.attendances';
-}
-
-export class MoviaZoneModel extends BaseOdooModel<TMoviaZone> {
-  protected readonly model = 'movia.zone';
 }
 
 export class MrpAccountWipAccountingLineModel extends BaseOdooModel<TMrpAccountWipAccountingLine> {

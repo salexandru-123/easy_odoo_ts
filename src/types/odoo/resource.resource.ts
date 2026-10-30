@@ -2,11 +2,9 @@ export interface TResourceResource {
   active?: boolean;
   avatar_128?: string | false;
   calendar_id?: number | false;
-  color?: number;
   company_id?: number | false;
   create_date?: string;
   create_uid?: number | false;
-  default_role_id?: number | false;
   department_id?: number | false;
   display_name?: string;
   email?: string;
@@ -19,7 +17,6 @@ export interface TResourceResource {
   name: string;
   phone?: string;
   resource_type: string;
-  role_ids?: number[];
   share?: boolean;
   show_hr_icon_display?: boolean;
   time_efficiency: number;

@@ -1,5 +1,4 @@
 export interface TMrpProduction {
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -22,7 +21,6 @@ export interface TMrpProduction {
   consumption: string;
   create_date?: string;
   create_uid?: number | false;
-  customer: number | false;
   date_deadline?: string;
   date_finished?: string;
   date_start: string;
@@ -31,13 +29,10 @@ export interface TMrpProduction {
   display_name?: string;
   duration?: number;
   duration_expected?: number;
-  eco_count?: number;
-  eco_ids?: number[];
   employee_ids?: number[];
   extra_cost?: number;
   finished_move_line_ids?: number[];
   forecasted_issue?: boolean;
-  has_analytic_account?: boolean;
   has_message?: boolean;
   id?: number;
   is_completed?: boolean;
@@ -46,13 +41,11 @@ export interface TMrpProduction {
   is_outdated_bom?: boolean;
   is_planned?: boolean;
   json_popover?: string;
-  latest_bom_id?: number | false;
   location_dest_id: number | false;
   location_final_id?: number | false;
   location_src_id: number | false;
   log_note?: string;
   lot_producing_id?: number | false;
-  maintenance_count?: number;
   message_attachment_count?: number;
   message_follower_ids?: number[];
   message_has_error?: boolean;
@@ -92,18 +85,10 @@ export interface TMrpProduction {
   product_variant_attributes?: number[];
   production_capacity?: number;
   production_location_id?: number | false;
-  project_id?: number | false;
   propagate_cancel?: boolean;
   purchase_order_count?: number;
   qty_produced?: number;
   qty_producing?: number;
-  quality_alert_count?: number;
-  quality_alert_ids?: number[];
-  quality_check_fail?: boolean;
-  quality_check_todo?: boolean;
-  rating_ids?: number[];
-  repair_count?: number;
-  request_ids?: number[];
   reservation_state?: string;
   reserve_visible?: boolean;
   sale_line_id?: number | false;
@@ -131,6 +116,4 @@ export interface TMrpProduction {
   workorder_ids?: number[];
   write_date?: string;
   write_uid?: number | false;
-  x_studio_many2many_field_95j_1jujt3o8m?: number[];
-  x_studio_many2one_field_o9_1jujt4rec?: number | false;
 }

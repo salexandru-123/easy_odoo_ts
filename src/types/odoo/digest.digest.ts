@@ -13,14 +13,8 @@ export interface TDigestDigest {
   kpi_account_total_revenue_value?: number;
   kpi_all_sale_total?: boolean;
   kpi_all_sale_total_value?: number;
-  kpi_helpdesk_tickets_closed?: boolean;
-  kpi_helpdesk_tickets_closed_value?: number;
-  kpi_hr_recruitment_new_colleagues?: boolean;
-  kpi_hr_recruitment_new_colleagues_value?: number;
   kpi_mail_message_total?: boolean;
   kpi_mail_message_total_value?: number;
-  kpi_project_task_opened?: boolean;
-  kpi_project_task_opened_value?: number;
   kpi_res_users_connected?: boolean;
   kpi_res_users_connected_value?: number;
   name: string;

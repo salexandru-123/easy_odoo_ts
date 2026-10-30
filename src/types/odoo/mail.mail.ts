@@ -51,9 +51,6 @@ export interface TMailMail {
   partner_ids?: number[];
   pinned_at?: string;
   preview?: string;
-  rating_id?: number | false;
-  rating_ids?: number[];
-  rating_value?: number;
   reaction_ids?: number[];
   recipient_ids?: number[];
   record_alias_domain_id?: number | false;

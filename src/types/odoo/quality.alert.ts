@@ -1,7 +1,6 @@
 export interface TQualityAlert {
   action_corrective?: string;
   action_preventive?: string;
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -41,13 +40,10 @@ export interface TQualityAlert {
   product_id?: number | false;
   product_tmpl_id?: number | false;
   production_id?: number | false;
-  rating_ids?: number[];
   reason_id?: number | false;
-  repair_id?: number | false;
   stage_id?: number | false;
   tag_ids?: number[];
   team_id: number | false;
-  title?: string;
   user_id?: number | false;
   website_message_ids?: number[];
   workcenter_id?: number | false;
