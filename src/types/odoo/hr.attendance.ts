@@ -28,9 +28,6 @@ export interface THrAttendance {
   message_needaction?: boolean;
   message_needaction_counter?: number;
   message_partner_ids?: number[];
-  movia_device_in_id?: number | false;
-  movia_device_out_id?: number | false;
-  movia_zone_id?: number | false;
   no_validated_overtime_hours?: boolean;
   out_browser?: string;
   out_city?: string;
