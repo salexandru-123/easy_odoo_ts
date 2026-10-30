@@ -1,4 +1,4 @@
-export interface Data_cleaningModel {
+export interface TData_cleaningModel {
   active?: boolean;
   cleaning_mode: string;
   create_date?: string;

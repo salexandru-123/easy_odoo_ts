@@ -1,4 +1,4 @@
-export interface AccountPaymentTermLine {
+export interface TAccountPaymentTermLine {
   create_date?: string;
   create_uid?: number | false;
   days_next_month?: string;

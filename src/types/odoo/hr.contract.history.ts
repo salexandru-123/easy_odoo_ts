@@ -1,4 +1,4 @@
-export interface HrContractHistory {
+export interface THrContractHistory {
   active_employee?: boolean;
   activity_state?: string;
   analytic_account_id?: number | false;

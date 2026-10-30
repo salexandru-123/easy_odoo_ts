@@ -1,4 +1,4 @@
-export interface MrpEcoBomChange {
+export interface TMrpEcoBomChange {
   bom_line_id?: number | false;
   byproduct_id?: number | false;
   change_type: string;

@@ -1,4 +1,4 @@
-export interface DiscussChannel {
+export interface TDiscussChannel {
   active?: boolean;
   allow_public_upload?: boolean;
   avatar_128?: string | false;

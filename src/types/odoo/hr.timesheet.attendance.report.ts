@@ -1,4 +1,4 @@
-export interface HrTimesheetAttendanceReport {
+export interface THrTimesheetAttendanceReport {
   attendance_cost?: number;
   company_id?: number | false;
   cost_difference?: number;

@@ -1,4 +1,4 @@
-export interface AccountOnlineLink {
+export interface TAccountOnlineLink {
   access_token?: string;
   account_online_account_ids?: number[];
   activity_calendar_event_id?: number | false;

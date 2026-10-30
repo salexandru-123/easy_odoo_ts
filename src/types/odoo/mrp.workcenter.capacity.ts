@@ -1,4 +1,4 @@
-export interface MrpWorkcenterCapacity {
+export interface TMrpWorkcenterCapacity {
   capacity?: number;
   create_date?: string;
   create_uid?: number | false;

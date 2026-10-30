@@ -1,4 +1,4 @@
-export interface StockLotReport {
+export interface TStockLotReport {
   address?: string;
   delivery_date?: string;
   display_name?: string;

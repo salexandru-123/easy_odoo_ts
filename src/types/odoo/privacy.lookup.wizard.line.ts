@@ -1,4 +1,4 @@
-export interface PrivacyLookupWizardLine {
+export interface TPrivacyLookupWizardLine {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

@@ -1,4 +1,4 @@
-export interface ResConfigSettings {
+export interface TResConfigSettings {
   absence_management?: boolean;
   account_cash_basis_base_account_id?: number | false;
   account_default_credit_limit?: number;

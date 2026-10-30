@@ -1,4 +1,4 @@
-export interface BasePartnerMergeLine {
+export interface TBasePartnerMergeLine {
   aggr_ids: string;
   create_date?: string;
   create_uid?: number | false;

@@ -1,4 +1,4 @@
-export interface HrExpenseSheet {
+export interface THrExpenseSheet {
   account_move_ids?: number[];
   accounting_date?: string;
   activity_calendar_event_id?: number | false;

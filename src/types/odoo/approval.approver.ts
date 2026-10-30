@@ -1,4 +1,4 @@
-export interface ApprovalApprover {
+export interface TApprovalApprover {
   can_edit?: boolean;
   can_edit_user_id?: boolean;
   category_approver?: boolean;

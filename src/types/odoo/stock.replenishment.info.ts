@@ -1,4 +1,4 @@
-export interface StockReplenishmentInfo {
+export interface TStockReplenishmentInfo {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

@@ -1,4 +1,4 @@
-export interface HrWorkEntryType {
+export interface THrWorkEntryType {
   active?: boolean;
   code: string;
   color?: number;

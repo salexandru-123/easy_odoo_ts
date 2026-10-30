@@ -1,4 +1,4 @@
-export interface ProjectProjectStage {
+export interface TProjectProjectStage {
   active?: boolean;
   company_id?: number | false;
   create_date?: string;

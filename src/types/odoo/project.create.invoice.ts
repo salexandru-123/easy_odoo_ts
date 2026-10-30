@@ -1,4 +1,4 @@
-export interface ProjectCreateInvoice {
+export interface TProjectCreateInvoice {
   _candidate_orders?: number[];
   amount_to_invoice?: number;
   create_date?: string;

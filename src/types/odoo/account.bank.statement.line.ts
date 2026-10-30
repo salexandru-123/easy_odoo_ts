@@ -1,4 +1,4 @@
-export interface AccountBankStatementLine {
+export interface TAccountBankStatementLine {
   abnormal_amount_warning?: string;
   abnormal_date_warning?: string;
   access_token?: string;

@@ -1,4 +1,4 @@
-export interface AccountAccountTag {
+export interface TAccountAccountTag {
   active?: boolean;
   applicability: string;
   color?: number;

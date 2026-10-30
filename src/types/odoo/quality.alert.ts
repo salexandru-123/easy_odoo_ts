@@ -1,4 +1,4 @@
-export interface QualityAlert {
+export interface TQualityAlert {
   action_corrective?: string;
   action_preventive?: string;
   activity_calendar_event_id?: number | false;

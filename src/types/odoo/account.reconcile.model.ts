@@ -1,4 +1,4 @@
-export interface AccountReconcileModel {
+export interface TAccountReconcileModel {
   active?: boolean;
   allow_payment_tolerance?: boolean;
   auto_reconcile?: boolean;

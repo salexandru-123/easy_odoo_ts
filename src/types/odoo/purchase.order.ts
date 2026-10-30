@@ -1,4 +1,4 @@
-export interface PurchaseOrder {
+export interface TPurchaseOrder {
   access_token?: string;
   access_url?: string;
   access_warning?: string;

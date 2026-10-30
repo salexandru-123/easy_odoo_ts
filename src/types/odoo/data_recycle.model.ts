@@ -1,4 +1,4 @@
-export interface Data_recycleModel {
+export interface TData_recycleModel {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

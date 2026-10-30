@@ -1,4 +1,4 @@
-export interface MailActivity {
+export interface TMailActivity {
   active?: boolean;
   activity_category?: string;
   activity_decoration?: string;

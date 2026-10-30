@@ -1,4 +1,4 @@
-export interface AccountBankStatement {
+export interface TAccountBankStatement {
   attachment_ids?: number[];
   balance_end?: number;
   balance_end_real?: number;

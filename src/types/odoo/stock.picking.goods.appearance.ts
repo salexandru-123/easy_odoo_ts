@@ -1,4 +1,4 @@
-export interface StockPickingGoodsAppearance {
+export interface TStockPickingGoodsAppearance {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

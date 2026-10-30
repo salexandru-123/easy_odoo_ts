@@ -1,2 +1,2 @@
-export interface IrQwebFieldMany2many {
+export interface TIrQwebFieldMany2many {
 }

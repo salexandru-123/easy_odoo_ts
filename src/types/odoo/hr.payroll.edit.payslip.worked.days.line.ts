@@ -1,4 +1,4 @@
-export interface HrPayrollEditPayslipWorkedDaysLine {
+export interface THrPayrollEditPayslipWorkedDaysLine {
   amount?: number;
   code?: string;
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface IrModelFields {
+export interface TIrModelFields {
   column1?: string;
   column2?: string;
   company_dependent?: boolean;

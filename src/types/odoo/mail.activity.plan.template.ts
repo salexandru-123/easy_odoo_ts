@@ -1,4 +1,4 @@
-export interface MailActivityPlanTemplate {
+export interface TMailActivityPlanTemplate {
   activity_type_id: number | false;
   company_id?: number | false;
   create_date?: string;

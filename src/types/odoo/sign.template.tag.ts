@@ -1,4 +1,4 @@
-export interface SignTemplateTag {
+export interface TSignTemplateTag {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

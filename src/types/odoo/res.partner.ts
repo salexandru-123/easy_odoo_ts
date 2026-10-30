@@ -1,4 +1,4 @@
-export interface ResPartner {
+export interface TResPartner {
   active?: boolean;
   active_lang_count?: number;
   activity_calendar_event_id?: number | false;

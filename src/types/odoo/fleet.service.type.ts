@@ -1,4 +1,4 @@
-export interface FleetServiceType {
+export interface TFleetServiceType {
   category: string;
   create_date?: string;
   create_uid?: number | false;

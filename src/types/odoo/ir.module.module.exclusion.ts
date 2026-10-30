@@ -1,4 +1,4 @@
-export interface IrModuleModuleExclusion {
+export interface TIrModuleModuleExclusion {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

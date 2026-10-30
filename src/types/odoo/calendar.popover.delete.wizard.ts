@@ -1,4 +1,4 @@
-export interface CalendarPopoverDeleteWizard {
+export interface TCalendarPopoverDeleteWizard {
   create_date?: string;
   create_uid?: number | false;
   delete?: string;

@@ -1,4 +1,4 @@
-export interface MailThreadCc {
+export interface TMailThreadCc {
   email_cc?: string;
   has_message?: boolean;
   message_attachment_count?: number;

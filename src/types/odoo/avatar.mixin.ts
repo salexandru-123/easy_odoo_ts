@@ -1,4 +1,4 @@
-export interface AvatarMixin {
+export interface TAvatarMixin {
   avatar_1024?: string | false;
   avatar_128?: string | false;
   avatar_1920?: string | false;

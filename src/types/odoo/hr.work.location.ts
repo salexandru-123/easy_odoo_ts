@@ -1,4 +1,4 @@
-export interface HrWorkLocation {
+export interface THrWorkLocation {
   active?: boolean;
   address_id: number | false;
   company_id: number | false;

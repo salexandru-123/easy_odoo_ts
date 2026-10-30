@@ -1,4 +1,4 @@
-export interface BaseDocumentLayout {
+export interface TBaseDocumentLayout {
   account_number?: string;
   company_details?: string;
   company_id: number | false;

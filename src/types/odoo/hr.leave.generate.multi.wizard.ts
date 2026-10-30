@@ -1,4 +1,4 @@
-export interface HrLeaveGenerateMultiWizard {
+export interface THrLeaveGenerateMultiWizard {
   allocation_mode: string;
   category_id?: number | false;
   company_id: number | false;

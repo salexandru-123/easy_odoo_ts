@@ -1,4 +1,4 @@
-export interface HrAttendanceOvertime {
+export interface THrAttendanceOvertime {
   adjustment?: boolean;
   company_id?: number | false;
   create_date?: string;

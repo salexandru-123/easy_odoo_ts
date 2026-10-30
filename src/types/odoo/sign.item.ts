@@ -1,4 +1,4 @@
-export interface SignItem {
+export interface TSignItem {
   alignment: string;
   create_date?: string;
   create_uid?: number | false;

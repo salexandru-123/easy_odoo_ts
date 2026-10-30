@@ -1,4 +1,4 @@
-export interface Mrp_productionAdditionalWorkorder {
+export interface TMrp_productionAdditionalWorkorder {
   blocked_by_workorder_id?: number | false;
   company_id?: number | false;
   create_date?: string;

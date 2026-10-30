@@ -1,4 +1,4 @@
-export interface IrCronProgress {
+export interface TIrCronProgress {
   create_date?: string;
   create_uid?: number | false;
   cron_id: number | false;

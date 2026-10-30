@@ -1,4 +1,4 @@
-export interface ProductDocument {
+export interface TProductDocument {
   access_token?: string;
   active?: boolean;
   attached_on_mrp: string;

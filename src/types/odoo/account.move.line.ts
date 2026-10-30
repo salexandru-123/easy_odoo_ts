@@ -1,4 +1,4 @@
-export interface AccountMoveLine {
+export interface TAccountMoveLine {
   account_code?: string;
   account_id?: number | false;
   account_internal_group?: string;

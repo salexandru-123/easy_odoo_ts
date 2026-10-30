@@ -1,4 +1,4 @@
-export interface Web_editorConverterTest {
+export interface TWeb_editorConverterTest {
   binary?: string | false;
   char?: string;
   create_date?: string;

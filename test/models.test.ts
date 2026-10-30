@@ -1,10 +1,10 @@
 import { OdooClient } from 'odoo-xmlrpc-ts';
-import { ProductProduct } from '../src/models';
+import { ProductProductModel } from '../src/models/';
 import Odoo from '../src/client/Odoo';
 
 describe('ProductProduct', () => {
   let odoo: Odoo;
-  let model: ProductProduct;
+  let model: ProductProductModel;
   let authenticate: jest.SpyInstance;
 
   beforeEach(async () => {
@@ -15,7 +15,7 @@ describe('ProductProduct', () => {
       username: 'test',
       password: 'test',
     });
-    model = await odoo.productProduct;
+    model = odoo.productProduct;
   });
 
   afterEach(() => {

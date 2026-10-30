@@ -1,4 +1,4 @@
-export interface AccountLock_exception {
+export interface TAccountLock_exception {
   active?: boolean;
   company_id: number | false;
   company_lock_date?: string;

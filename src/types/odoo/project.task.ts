@@ -1,4 +1,4 @@
-export interface ProjectTask {
+export interface TProjectTask {
   access_token?: string;
   access_url?: string;
   access_warning?: string;

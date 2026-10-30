@@ -1,4 +1,4 @@
-export interface MoviaZone {
+export interface TMoviaZone {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

@@ -1,4 +1,4 @@
-export interface ProductPricelist {
+export interface TProductPricelist {
   active?: boolean;
   activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;

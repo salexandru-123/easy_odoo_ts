@@ -1,4 +1,4 @@
-export interface UomCategory {
+export interface TUomCategory {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

@@ -1,2 +1,2 @@
-export interface IrQwebFieldQweb {
+export interface TIrQwebFieldQweb {
 }

@@ -1,4 +1,4 @@
-export interface ApplicantGetRefuseReason {
+export interface TApplicantGetRefuseReason {
   applicant_emails?: string;
   applicant_ids?: number[];
   applicant_without_email?: string;

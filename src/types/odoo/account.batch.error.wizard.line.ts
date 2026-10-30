@@ -1,4 +1,4 @@
-export interface AccountBatchErrorWizardLine {
+export interface TAccountBatchErrorWizardLine {
   create_date?: string;
   create_uid?: number | false;
   description: string;

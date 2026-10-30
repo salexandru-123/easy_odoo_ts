@@ -1,4 +1,4 @@
-export interface MailActivitySchedule {
+export interface TMailActivitySchedule {
   activity_category?: string;
   activity_type_id?: number | false;
   activity_user_id?: number | false;

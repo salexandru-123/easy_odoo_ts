@@ -1,2 +1,2 @@
-export interface BusListenerMixin {
+export interface TBusListenerMixin {
 }

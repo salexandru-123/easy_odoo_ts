@@ -1,4 +1,4 @@
-export interface BusBus {
+export interface TBusBus {
   channel?: string;
   create_date?: string;
   create_uid?: number | false;

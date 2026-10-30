@@ -1,2 +1,2 @@
-export interface KpiProvider {
+export interface TKpiProvider {
 }

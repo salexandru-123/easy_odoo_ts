@@ -1,4 +1,4 @@
-export interface StockWarehouseOrderpoint {
+export interface TStockWarehouseOrderpoint {
   active?: boolean;
   activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;

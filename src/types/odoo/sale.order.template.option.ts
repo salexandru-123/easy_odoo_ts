@@ -1,4 +1,4 @@
-export interface SaleOrderTemplateOption {
+export interface TSaleOrderTemplateOption {
   company_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

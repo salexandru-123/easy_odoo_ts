@@ -1,4 +1,4 @@
-export interface BankRecWidgetLine {
+export interface TBankRecWidgetLine {
   account_id?: number | false;
   amount_currency?: number;
   amount_transaction_currency?: number;

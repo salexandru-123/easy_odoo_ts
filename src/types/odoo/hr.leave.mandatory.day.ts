@@ -1,4 +1,4 @@
-export interface HrLeaveMandatoryDay {
+export interface THrLeaveMandatoryDay {
   color?: number;
   company_id: number | false;
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface SmsAccountPhone {
+export interface TSmsAccountPhone {
   account_id: number | false;
   create_date?: string;
   create_uid?: number | false;

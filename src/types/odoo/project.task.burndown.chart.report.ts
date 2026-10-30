@@ -1,4 +1,4 @@
-export interface ProjectTaskBurndownChartReport {
+export interface TProjectTaskBurndownChartReport {
   allocated_hours?: number;
   date?: string;
   date_assign?: string;

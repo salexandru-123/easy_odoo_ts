@@ -1,4 +1,4 @@
-export interface HrPayslipEmployees {
+export interface THrPayslipEmployees {
   create_date?: string;
   create_uid?: number | false;
   department_id?: number | false;

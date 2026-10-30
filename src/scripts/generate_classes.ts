@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import { readFile } from 'fs/promises';
 import * as path from 'path';
 
 const INTERFACES_DIR = path.join(__dirname, '..', '/types/odoo');
@@ -9,14 +10,6 @@ if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
-// Helper to convert snake_case or camelCase to PascalCase (e.g., stock_lot -> StockLot)
-function toPascalCase(str: string): string {
-  return str
-    .replace(/['-_]([.a-z])/g, (_, g) => g.toUpperCase())
-    .replace(/^[a-z]/, (match) => match.toUpperCase())
-    .replace(/\.ts$/, '');
-}
-
 // Helper to convert PascalCase or camelCase to dot.notation for Odoo (e.g., StockLot -> stock.lot)
 function toOdooModelName(str: string): string {
   return str
@@ -25,38 +18,45 @@ function toOdooModelName(str: string): string {
     .replace(/\.ts$/, '');
 }
 
-function generateClasses() {
+async function generateClasses() {
   const files = fs.readdirSync(INTERFACES_DIR);
 
   let indexFileContent = '';
-
+  let _imports = '';
+  let classesExports = '';
   for (const file of files) {
+    const filePath = path.join(INTERFACES_DIR, file);
     if (!file.endsWith('.ts') && !file.endsWith('.d.ts')) continue;
+    const fileContent = (await readFile(filePath)).toString();
 
-    const fileNameWithoutExt = path.basename(file, path.extname(file));
+    const fileNameWithoutExt = fileContent.match(/(?<=interface\s+).*?(?=\s+{)/gs)?.[0] || ''; //path.basename(file, path.extname(file));
     // extract interface name from the file directly (first row between interface and {)
-    const interfaceName = toPascalCase(fileNameWithoutExt); // e.g., StockLot
-    const modelName = toOdooModelName(fileNameWithoutExt); // e.g., stock.lot
-    const className = `${interfaceName}Model`;
-
-    // Generate the TypeScript code for the class file
-    const classCode = `import { BaseModel } from '../BaseModel';
-import { ${interfaceName} } from '../types/odoo/${fileNameWithoutExt}';
-
-export class ${className} extends BaseModel<${interfaceName}> {
+    const interfaceName = fileNameWithoutExt;
+    const modelInterfaceName = interfaceName.startsWith('T') ? interfaceName.slice(1) : interfaceName;
+    const modelName = toOdooModelName(modelInterfaceName);
+    if (interfaceName.includes('FleetVehicleModel')) {
+      console.log('Here');
+    }
+    const className = `${modelInterfaceName}Model`;
+    _imports += `import { ${interfaceName} } from '../types/odoo/${file.replace('.ts', '')}';\n`;
+    classesExports += `
+export class ${className} extends BaseOdooModel<${interfaceName}> {
   protected readonly model = '${modelName}';
-}
-`;
-
-    // Write individual model file
-    const outputFilePath = path.join(OUTPUT_DIR, `${fileNameWithoutExt}.model.ts`);
-    fs.writeFileSync(outputFilePath, classCode);
-
-    // Add to export index
-    indexFileContent += `export * from './${fileNameWithoutExt}.model';\n`;
+}\n`;
 
     console.log(`Generated: ${className} for model '${modelName}'`);
   }
+
+  // Add to export index
+  indexFileContent += `export * from './odoo_models';\n`;
+  // Generate the TypeScript code for the class file
+  const classCode = `import { BaseOdooModel } from './odoo';
+    ${_imports}
+    ${classesExports}`;
+
+  // Write individual model file
+  const outputFilePath = path.join(OUTPUT_DIR, `odoo_models.ts`);
+  fs.writeFileSync(outputFilePath, classCode);
 
   // Write an index.ts file so developers can import everything easily
   fs.writeFileSync(path.join(OUTPUT_DIR, 'index.ts'), indexFileContent);

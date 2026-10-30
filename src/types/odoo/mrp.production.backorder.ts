@@ -1,4 +1,4 @@
-export interface MrpProductionBackorder {
+export interface TMrpProductionBackorder {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

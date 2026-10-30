@@ -1,4 +1,4 @@
-export interface ValidateAccountMove {
+export interface TValidateAccountMove {
   abnormal_amount_partner_ids?: number[];
   abnormal_date_partner_ids?: number[];
   create_date?: string;

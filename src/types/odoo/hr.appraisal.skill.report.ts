@@ -1,4 +1,4 @@
-export interface HrAppraisalSkillReport {
+export interface THrAppraisalSkillReport {
   company_id?: number | false;
   create_date?: string;
   current_level_progress?: number;

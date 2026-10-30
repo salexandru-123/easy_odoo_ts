@@ -1,4 +1,4 @@
-export interface HrEmployeeBase {
+export interface THrEmployeeBase {
   active?: boolean;
   address_id?: number | false;
   allocation_count?: number;

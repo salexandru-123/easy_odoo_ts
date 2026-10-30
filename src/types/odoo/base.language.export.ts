@@ -1,4 +1,4 @@
-export interface BaseLanguageExport {
+export interface TBaseLanguageExport {
   create_date?: string;
   create_uid?: number | false;
   data?: string | false;

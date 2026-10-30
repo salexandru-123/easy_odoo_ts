@@ -1,2 +1,2 @@
-export interface ReportStockLabel_product_product_view {
+export interface TReportStockLabel_product_product_view {
 }

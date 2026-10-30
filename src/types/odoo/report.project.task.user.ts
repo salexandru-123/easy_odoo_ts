@@ -1,4 +1,4 @@
-export interface ReportProjectTaskUser {
+export interface TReportProjectTaskUser {
   active?: boolean;
   allocated_hours?: number;
   company_id?: number | false;

@@ -1,4 +1,4 @@
-export interface HrLeaveReport {
+export interface THrLeaveReport {
   allocation_id?: number | false;
   company_id?: number | false;
   date_from?: string;

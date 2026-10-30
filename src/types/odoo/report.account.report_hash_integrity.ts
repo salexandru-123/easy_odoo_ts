@@ -1,2 +1,2 @@
-export interface ReportAccountReport_hash_integrity {
+export interface TReportAccountReport_hash_integrity {
 }

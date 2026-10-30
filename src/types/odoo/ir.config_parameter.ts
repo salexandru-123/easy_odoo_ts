@@ -1,4 +1,4 @@
-export interface IrConfig_parameter {
+export interface TIrConfig_parameter {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

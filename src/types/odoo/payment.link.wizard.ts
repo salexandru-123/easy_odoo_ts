@@ -1,4 +1,4 @@
-export interface PaymentLinkWizard {
+export interface TPaymentLinkWizard {
   amount: number;
   amount_max?: number;
   amount_paid?: number;

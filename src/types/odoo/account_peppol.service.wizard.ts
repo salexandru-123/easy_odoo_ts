@@ -1,4 +1,4 @@
-export interface Account_peppolServiceWizard {
+export interface TAccount_peppolServiceWizard {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

@@ -1,4 +1,4 @@
-export interface HrExpenseSplit {
+export interface THrExpenseSplit {
   analytic_distribution?: unknown;
   analytic_precision?: number;
   can_be_reinvoiced?: boolean;

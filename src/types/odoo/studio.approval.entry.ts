@@ -1,4 +1,4 @@
-export interface StudioApprovalEntry {
+export interface TStudioApprovalEntry {
   action_id?: number | false;
   approved?: boolean;
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface StockScrap {
+export interface TStockScrap {
   _barcode_scanned?: string;
   bom_id?: number | false;
   company_id: number | false;

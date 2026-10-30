@@ -1,4 +1,4 @@
-export interface HrContractType {
+export interface THrContractType {
   code?: string;
   country_id?: number | false;
   create_date?: string;

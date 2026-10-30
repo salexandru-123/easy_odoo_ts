@@ -1,4 +1,4 @@
-export interface MailMessageTranslation {
+export interface TMailMessageTranslation {
   body: string;
   create_date?: string;
   create_uid?: number | false;

@@ -1,2 +1,2 @@
-export interface IrQwebFieldDuration {
+export interface TIrQwebFieldDuration {
 }

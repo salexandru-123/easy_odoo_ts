@@ -1,4 +1,4 @@
-export interface HrAppraisalReport {
+export interface THrAppraisalReport {
   color?: number;
   create_date?: string;
   deadline?: string;

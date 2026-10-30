@@ -1,4 +1,4 @@
-export interface HrAttendance {
+export interface THrAttendance {
   check_in: string;
   check_out?: string;
   color?: number;

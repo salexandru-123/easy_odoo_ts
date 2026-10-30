@@ -1,4 +1,4 @@
-export interface ResCurrencyRate {
+export interface TResCurrencyRate {
   company_id?: number | false;
   company_rate?: number;
   create_date?: string;

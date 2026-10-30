@@ -1,4 +1,4 @@
-export interface HelpdeskSla {
+export interface THelpdeskSla {
   active?: boolean;
   company_id?: number | false;
   create_date?: string;

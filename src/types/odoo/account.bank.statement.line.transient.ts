@@ -1,4 +1,4 @@
-export interface AccountBankStatementLineTransient {
+export interface TAccountBankStatementLineTransient {
   account_number?: string;
   amount?: number;
   amount_currency?: number;

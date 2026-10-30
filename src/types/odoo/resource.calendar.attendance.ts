@@ -1,4 +1,4 @@
-export interface ResourceCalendarAttendance {
+export interface TResourceCalendarAttendance {
   calendar_id: number | false;
   create_date?: string;
   create_uid?: number | false;

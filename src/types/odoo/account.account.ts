@@ -1,4 +1,4 @@
-export interface AccountAccount {
+export interface TAccountAccount {
   account_type: string;
   allowed_journal_ids?: number[];
   code?: string;

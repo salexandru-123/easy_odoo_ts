@@ -1,4 +1,4 @@
-export interface SaleAdvancePaymentInv {
+export interface TSaleAdvancePaymentInv {
   advance_payment_method: string;
   amount?: number;
   amount_invoiced?: number;

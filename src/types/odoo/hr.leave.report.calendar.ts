@@ -1,4 +1,4 @@
-export interface HrLeaveReportCalendar {
+export interface THrLeaveReportCalendar {
   company_id?: number | false;
   department_id?: number | false;
   description?: string;

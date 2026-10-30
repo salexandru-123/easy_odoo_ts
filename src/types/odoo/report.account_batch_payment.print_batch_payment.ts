@@ -1,2 +1,2 @@
-export interface ReportAccount_batch_paymentPrint_batch_payment {
+export interface TReportAccount_batch_paymentPrint_batch_payment {
 }

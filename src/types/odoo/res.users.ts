@@ -1,4 +1,4 @@
-export interface ResUsers {
+export interface TResUsers {
   accesses_count?: number;
   action_id?: number | false;
   active?: boolean;

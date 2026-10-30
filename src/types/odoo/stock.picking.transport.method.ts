@@ -1,4 +1,4 @@
-export interface StockPickingTransportMethod {
+export interface TStockPickingTransportMethod {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

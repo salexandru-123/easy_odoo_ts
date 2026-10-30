@@ -1,2 +1,2 @@
-export interface _unknown {
+export interface T_unknown {
 }

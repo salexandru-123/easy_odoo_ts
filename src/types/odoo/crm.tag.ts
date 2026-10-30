@@ -1,4 +1,4 @@
-export interface CrmTag {
+export interface TCrmTag {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

@@ -1,4 +1,4 @@
-export interface QualityCheckWizard {
+export interface TQualityCheckWizard {
   additional_note?: string;
   check_ids: number[];
   create_date?: string;

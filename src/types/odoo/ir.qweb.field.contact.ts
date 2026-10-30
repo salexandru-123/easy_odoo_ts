@@ -1,2 +1,2 @@
-export interface IrQwebFieldContact {
+export interface TIrQwebFieldContact {
 }

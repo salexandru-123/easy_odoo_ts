@@ -1,2 +1,2 @@
-export interface ReportProductReport_producttemplatelabel4x12noprice {
+export interface TReportProductReport_producttemplatelabel4x12noprice {
 }

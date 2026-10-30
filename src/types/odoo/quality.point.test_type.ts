@@ -1,4 +1,4 @@
-export interface QualityPointTest_type {
+export interface TQualityPointTest_type {
   active?: boolean;
   allow_registration?: boolean;
   create_date?: string;

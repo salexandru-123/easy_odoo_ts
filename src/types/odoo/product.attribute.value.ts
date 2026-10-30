@@ -1,4 +1,4 @@
-export interface ProductAttributeValue {
+export interface TProductAttributeValue {
   active?: boolean;
   attribute_id: number | false;
   color?: number;

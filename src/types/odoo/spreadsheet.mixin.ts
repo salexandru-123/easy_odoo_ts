@@ -1,4 +1,4 @@
-export interface SpreadsheetMixin {
+export interface TSpreadsheetMixin {
   current_revision_uuid?: string;
   display_thumbnail?: string | false;
   spreadsheet_binary_data?: string | false;

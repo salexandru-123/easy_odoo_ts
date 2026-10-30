@@ -1,4 +1,4 @@
-export interface SaleReport {
+export interface TSaleReport {
   campaign_id?: number | false;
   categ_id?: number | false;
   commercial_partner_id?: number | false;

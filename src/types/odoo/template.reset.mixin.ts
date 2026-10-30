@@ -1,3 +1,3 @@
-export interface TemplateResetMixin {
+export interface TTemplateResetMixin {
   template_fs?: string;
 }

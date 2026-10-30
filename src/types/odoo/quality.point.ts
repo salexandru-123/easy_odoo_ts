@@ -1,4 +1,4 @@
-export interface QualityPoint {
+export interface TQualityPoint {
   active?: boolean;
   average?: number;
   bom_active?: boolean;

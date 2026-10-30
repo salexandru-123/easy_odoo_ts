@@ -1,4 +1,4 @@
-export interface ProductProduct {
+export interface TProductProduct {
   account_tag_ids?: number[];
   active?: boolean;
   activity_calendar_event_id?: number | false;

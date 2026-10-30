@@ -1,4 +1,4 @@
-export interface HrDepartment {
+export interface THrDepartment {
   absence_of_today?: number;
   active?: boolean;
   activity_calendar_event_id?: number | false;

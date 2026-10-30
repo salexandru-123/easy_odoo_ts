@@ -1,4 +1,4 @@
-export interface HrSkillType {
+export interface THrSkillType {
   active?: boolean;
   color?: number;
   create_date?: string;

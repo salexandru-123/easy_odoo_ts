@@ -1,4 +1,4 @@
-export interface MailGuest {
+export interface TMailGuest {
   access_token: string;
   avatar_1024?: string | false;
   avatar_128?: string | false;

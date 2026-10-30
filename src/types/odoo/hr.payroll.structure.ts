@@ -1,4 +1,4 @@
-export interface HrPayrollStructure {
+export interface THrPayrollStructure {
   active?: boolean;
   code?: string;
   country_id?: number | false;

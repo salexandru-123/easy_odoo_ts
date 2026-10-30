@@ -1,4 +1,4 @@
-export interface StockScrapReasonTag {
+export interface TStockScrapReasonTag {
   color?: string;
   create_date?: string;
   create_uid?: number | false;

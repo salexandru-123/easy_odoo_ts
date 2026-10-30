@@ -1,4 +1,4 @@
-export interface ApprovalCategory {
+export interface TApprovalCategory {
   active?: boolean;
   allowed_group_ids?: number[];
   approval_minimum: number;

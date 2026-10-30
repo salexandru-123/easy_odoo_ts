@@ -1,4 +1,4 @@
-export interface UtmTag {
+export interface TUtmTag {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

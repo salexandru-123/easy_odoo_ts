@@ -1,4 +1,4 @@
-export interface QualityCheckOnDemand {
+export interface TQualityCheckOnDemand {
   allowed_product_ids?: number[];
   allowed_quality_point_ids?: number[];
   create_date?: string;

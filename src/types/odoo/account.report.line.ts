@@ -1,4 +1,4 @@
-export interface AccountReportLine {
+export interface TAccountReportLine {
   account_codes_formula?: string;
   action_id?: number | false;
   aggregation_formula?: string;

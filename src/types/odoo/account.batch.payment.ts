@@ -1,4 +1,4 @@
-export interface AccountBatchPayment {
+export interface TAccountBatchPayment {
   account_online_linked?: boolean;
   activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;

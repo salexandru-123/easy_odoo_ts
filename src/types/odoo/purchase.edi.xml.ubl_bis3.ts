@@ -1,2 +1,2 @@
-export interface PurchaseEdiXmlUbl_bis3 {
+export interface TPurchaseEdiXmlUbl_bis3 {
 }

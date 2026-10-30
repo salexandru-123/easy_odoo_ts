@@ -1,4 +1,4 @@
-export interface DiscussChannelRtcSession {
+export interface TDiscussChannelRtcSession {
   channel_id?: number | false;
   channel_member_id: number | false;
   create_date?: string;

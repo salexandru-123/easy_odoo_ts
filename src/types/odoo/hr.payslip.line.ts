@@ -1,4 +1,4 @@
-export interface HrPayslipLine {
+export interface THrPayslipLine {
   amount?: number;
   amount_fix?: number;
   amount_percentage?: number;

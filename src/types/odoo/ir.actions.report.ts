@@ -1,4 +1,4 @@
-export interface IrActionsReport {
+export interface TIrActionsReport {
   attachment?: string;
   attachment_use?: boolean;
   binding_model_id?: number | false;

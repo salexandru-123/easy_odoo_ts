@@ -1,4 +1,4 @@
-export interface MrpMpsForecastDetails {
+export interface TMrpMpsForecastDetails {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

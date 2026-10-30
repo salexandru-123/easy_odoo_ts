@@ -1,4 +1,4 @@
-export interface HrPayrollHeadcountLine {
+export interface THrPayrollHeadcountLine {
   contract_id: number | false;
   contract_names: string;
   create_date?: string;

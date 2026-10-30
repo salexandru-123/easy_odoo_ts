@@ -1,4 +1,4 @@
-export interface IrExportsLine {
+export interface TIrExportsLine {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

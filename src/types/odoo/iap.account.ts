@@ -1,4 +1,4 @@
-export interface IapAccount {
+export interface TIapAccount {
   account_token?: string;
   balance?: string;
   company_ids?: number[];

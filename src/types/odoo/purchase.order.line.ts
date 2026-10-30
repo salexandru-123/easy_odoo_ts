@@ -1,4 +1,4 @@
-export interface PurchaseOrderLine {
+export interface TPurchaseOrderLine {
   analytic_distribution?: unknown;
   analytic_precision?: number;
   company_id?: number | false;

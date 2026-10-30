@@ -1,4 +1,4 @@
-export interface AccountFullReconcile {
+export interface TAccountFullReconcile {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

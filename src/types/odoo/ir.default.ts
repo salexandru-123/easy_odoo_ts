@@ -1,4 +1,4 @@
-export interface IrDefault {
+export interface TIrDefault {
   company_id?: number | false;
   condition?: string;
   create_date?: string;

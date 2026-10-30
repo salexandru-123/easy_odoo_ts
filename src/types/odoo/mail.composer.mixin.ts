@@ -1,4 +1,4 @@
-export interface MailComposerMixin {
+export interface TMailComposerMixin {
   body?: string;
   body_has_template_value?: boolean;
   can_edit_body?: boolean;

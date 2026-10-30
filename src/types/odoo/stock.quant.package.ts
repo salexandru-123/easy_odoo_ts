@@ -1,4 +1,4 @@
-export interface StockQuantPackage {
+export interface TStockQuantPackage {
   company_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

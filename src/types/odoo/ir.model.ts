@@ -1,4 +1,4 @@
-export interface IrModel {
+export interface TIrModel {
   abstract?: boolean;
   access_ids?: number[];
   count?: number;

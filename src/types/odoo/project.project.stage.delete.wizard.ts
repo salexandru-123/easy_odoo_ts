@@ -1,4 +1,4 @@
-export interface ProjectProjectStageDeleteWizard {
+export interface TProjectProjectStageDeleteWizard {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

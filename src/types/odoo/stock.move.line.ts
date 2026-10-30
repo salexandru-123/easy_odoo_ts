@@ -1,4 +1,4 @@
-export interface StockMoveLine {
+export interface TStockMoveLine {
   carrier_id?: number | false;
   check_ids?: number[];
   check_state?: string;

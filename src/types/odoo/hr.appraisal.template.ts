@@ -1,4 +1,4 @@
-export interface HrAppraisalTemplate {
+export interface THrAppraisalTemplate {
   appraisal_employee_feedback_template?: string;
   appraisal_manager_feedback_template?: string;
   company_id?: number | false;

@@ -1,4 +1,4 @@
-export interface DiscussVoiceMetadata {
+export interface TDiscussVoiceMetadata {
   attachment_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

@@ -1,4 +1,4 @@
-export interface CalendarFilters {
+export interface TCalendarFilters {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

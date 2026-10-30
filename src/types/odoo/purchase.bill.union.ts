@@ -1,4 +1,4 @@
-export interface PurchaseBillUnion {
+export interface TPurchaseBillUnion {
   amount?: number;
   company_id?: number | false;
   currency_id?: number | false;

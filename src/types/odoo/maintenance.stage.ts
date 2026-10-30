@@ -1,4 +1,4 @@
-export interface MaintenanceStage {
+export interface TMaintenanceStage {
   create_date?: string;
   create_leaves?: boolean;
   create_uid?: number | false;

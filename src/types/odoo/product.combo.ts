@@ -1,4 +1,4 @@
-export interface ProductCombo {
+export interface TProductCombo {
   base_price?: number;
   combo_item_count?: number;
   combo_item_ids?: number[];

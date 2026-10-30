@@ -1,4 +1,4 @@
-export interface HrSalaryRule {
+export interface THrSalaryRule {
   account_credit?: number | false;
   account_debit?: number | false;
   active?: boolean;

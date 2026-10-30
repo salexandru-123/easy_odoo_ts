@@ -1,4 +1,4 @@
-export interface AccountAnalyticApplicability {
+export interface TAccountAnalyticApplicability {
   account_prefix?: string;
   account_prefix_placeholder?: string;
   analytic_plan_id?: number | false;

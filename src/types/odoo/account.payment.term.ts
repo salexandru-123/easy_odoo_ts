@@ -1,4 +1,4 @@
-export interface AccountPaymentTerm {
+export interface TAccountPaymentTerm {
   active?: boolean;
   company_id?: number | false;
   create_date?: string;

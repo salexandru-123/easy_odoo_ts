@@ -1,4 +1,4 @@
-export interface ResCompany {
+export interface TResCompany {
   absence_management?: boolean;
   account_cash_basis_base_account_id?: number | false;
   account_default_pos_receivable_account_id?: number | false;

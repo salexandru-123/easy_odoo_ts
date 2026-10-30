@@ -1,4 +1,4 @@
-export interface MoviaUpdateAttendances {
+export interface TMoviaUpdateAttendances {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

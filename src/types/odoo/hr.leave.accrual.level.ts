@@ -1,4 +1,4 @@
-export interface HrLeaveAccrualLevel {
+export interface THrLeaveAccrualLevel {
   accrual_plan_id: number | false;
   accrual_validity?: boolean;
   accrual_validity_count?: number;

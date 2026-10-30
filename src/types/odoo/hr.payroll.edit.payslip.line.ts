@@ -1,4 +1,4 @@
-export interface HrPayrollEditPayslipLine {
+export interface THrPayrollEditPayslipLine {
   amount?: number;
   category_id?: number | false;
   code?: string;

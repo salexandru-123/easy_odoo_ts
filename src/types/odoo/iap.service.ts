@@ -1,4 +1,4 @@
-export interface IapService {
+export interface TIapService {
   create_date?: string;
   create_uid?: number | false;
   description: string;

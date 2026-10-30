@@ -1,4 +1,4 @@
-export interface Base_importMapping {
+export interface TBase_importMapping {
   column_name?: string;
   create_date?: string;
   create_uid?: number | false;

@@ -1,4 +1,4 @@
-export interface IrActionsAct_url {
+export interface TIrActionsAct_url {
   binding_model_id?: number | false;
   binding_type: string;
   binding_view_types?: string;

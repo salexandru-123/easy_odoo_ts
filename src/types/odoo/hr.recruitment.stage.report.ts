@@ -1,4 +1,4 @@
-export interface HrRecruitmentStageReport {
+export interface THrRecruitmentStageReport {
   applicant_id?: number | false;
   company_id?: number | false;
   date_begin?: string;

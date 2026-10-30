@@ -1,4 +1,4 @@
-export interface QualityTag {
+export interface TQualityTag {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

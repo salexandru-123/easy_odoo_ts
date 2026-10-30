@@ -1,4 +1,4 @@
-export interface HrLeaveType {
+export interface THrLeaveType {
   accrual_count?: number;
   accruals_ids?: number[];
   active?: boolean;

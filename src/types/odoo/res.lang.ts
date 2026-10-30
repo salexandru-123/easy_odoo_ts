@@ -1,4 +1,4 @@
-export interface ResLang {
+export interface TResLang {
   active?: boolean;
   code: string;
   create_date?: string;

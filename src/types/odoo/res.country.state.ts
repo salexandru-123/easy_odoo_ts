@@ -1,4 +1,4 @@
-export interface ResCountryState {
+export interface TResCountryState {
   code: string;
   country_id: number | false;
   create_date?: string;

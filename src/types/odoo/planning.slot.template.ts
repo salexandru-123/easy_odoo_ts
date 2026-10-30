@@ -1,4 +1,4 @@
-export interface PlanningSlotTemplate {
+export interface TPlanningSlotTemplate {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

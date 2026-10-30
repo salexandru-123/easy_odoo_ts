@@ -1,4 +1,4 @@
-export interface MailComposeMessage {
+export interface TMailComposeMessage {
   attachment_ids?: number[];
   author_id?: number | false;
   auto_delete?: boolean;

@@ -1,4 +1,4 @@
-export interface MailThreadMainAttachment {
+export interface TMailThreadMainAttachment {
   has_message?: boolean;
   message_attachment_count?: number;
   message_follower_ids?: number[];

@@ -1,4 +1,4 @@
-export interface IrModuleModule {
+export interface TIrModuleModule {
   account_templates?: string | false;
   application?: boolean;
   author?: string;

@@ -1,4 +1,4 @@
-export interface MailThreadBlacklist {
+export interface TMailThreadBlacklist {
   email_normalized?: string;
   has_message?: boolean;
   is_blacklisted?: boolean;

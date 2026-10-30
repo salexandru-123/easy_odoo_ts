@@ -1,4 +1,4 @@
-export interface StockQuant {
+export interface TStockQuant {
   accounting_date?: string;
   available_quantity?: number;
   company_id?: number | false;

@@ -1,4 +1,4 @@
-export interface MaintenanceEquipmentCategory {
+export interface TMaintenanceEquipmentCategory {
   alias_bounced_content?: string;
   alias_contact: string;
   alias_defaults: string;

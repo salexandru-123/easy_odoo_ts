@@ -1,4 +1,4 @@
-export interface StockPickingType {
+export interface TStockPickingType {
   active?: boolean;
   analytic_costs?: boolean;
   auto_print_delivery_slip?: boolean;

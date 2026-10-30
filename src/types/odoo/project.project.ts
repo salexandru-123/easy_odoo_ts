@@ -1,4 +1,4 @@
-export interface ProjectProject {
+export interface TProjectProject {
   access_instruction_message?: string;
   access_token?: string;
   access_url?: string;

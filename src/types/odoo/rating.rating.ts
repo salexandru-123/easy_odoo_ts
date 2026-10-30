@@ -1,4 +1,4 @@
-export interface RatingRating {
+export interface TRatingRating {
   access_token?: string;
   consumed?: boolean;
   create_date?: string;

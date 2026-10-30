@@ -1,4 +1,4 @@
-export interface HrLeaveAccrualPlan {
+export interface THrLeaveAccrualPlan {
   accrued_gain_time: string;
   active?: boolean;
   added_value_type?: string;

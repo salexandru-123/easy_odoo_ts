@@ -1,4 +1,4 @@
-export interface HelpdeskStage {
+export interface THelpdeskStage {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

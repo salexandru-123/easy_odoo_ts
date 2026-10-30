@@ -1,4 +1,4 @@
-export interface ResourceCalendarLeaves {
+export interface TResourceCalendarLeaves {
   calendar_id?: number | false;
   company_id?: number | false;
   create_date?: string;

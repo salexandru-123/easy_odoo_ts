@@ -1,4 +1,4 @@
-export interface AccountAutoReconcileWizard {
+export interface TAccountAutoReconcileWizard {
   account_ids?: number[];
   company_id: number | false;
   create_date?: string;

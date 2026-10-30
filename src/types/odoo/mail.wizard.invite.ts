@@ -1,4 +1,4 @@
-export interface MailWizardInvite {
+export interface TMailWizardInvite {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

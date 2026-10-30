@@ -1,4 +1,4 @@
-export interface MailActivityTodoCreate {
+export interface TMailActivityTodoCreate {
   create_date?: string;
   create_uid?: number | false;
   date_deadline: string;

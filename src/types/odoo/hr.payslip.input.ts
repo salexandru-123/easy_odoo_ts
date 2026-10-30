@@ -1,4 +1,4 @@
-export interface HrPayslipInput {
+export interface THrPayslipInput {
   _allowed_input_type_ids?: number[];
   amount?: number;
   code: string;

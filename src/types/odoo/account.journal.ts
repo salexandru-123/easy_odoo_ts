@@ -1,4 +1,4 @@
-export interface AccountJournal {
+export interface TAccountJournal {
   access_token?: string;
   access_url?: string;
   access_warning?: string;

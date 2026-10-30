@@ -1,4 +1,4 @@
-export interface SmsTemplateReset {
+export interface TSmsTemplateReset {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

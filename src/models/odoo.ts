@@ -1,7 +1,7 @@
 import { OdooClient } from 'odoo-xmlrpc-ts';
 import { OdooDomain, OdooOptions, OdooValues } from '../types';
 
-export abstract class BaseModel<T extends object> {
+export abstract class BaseOdooModel<T extends object> {
   protected abstract readonly model: string;
 
   /**

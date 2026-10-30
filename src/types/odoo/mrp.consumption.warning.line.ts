@@ -1,4 +1,4 @@
-export interface MrpConsumptionWarningLine {
+export interface TMrpConsumptionWarningLine {
   consumption?: string;
   create_date?: string;
   create_uid?: number | false;

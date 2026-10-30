@@ -1,2 +1,2 @@
-export interface ReportHr_skillsReport_employee_cv {
+export interface TReportHr_skillsReport_employee_cv {
 }

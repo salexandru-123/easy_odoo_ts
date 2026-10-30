@@ -1,4 +1,4 @@
-export interface ResourceCalendar {
+export interface TResourceCalendar {
   active?: boolean;
   associated_leaves_count?: number;
   attendance_ids?: number[];

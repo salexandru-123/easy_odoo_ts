@@ -1,4 +1,4 @@
-export interface StockMove {
+export interface TStockMove {
   account_move_ids?: number[];
   additional?: boolean;
   allowed_operation_ids?: number[];

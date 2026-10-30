@@ -1,4 +1,4 @@
-export interface AccountFiscalPosition {
+export interface TAccountFiscalPosition {
   account_ids?: number[];
   account_map?: string | false;
   active?: boolean;

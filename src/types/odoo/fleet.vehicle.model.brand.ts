@@ -1,4 +1,4 @@
-export interface FleetVehicleModelBrand {
+export interface TFleetVehicleModelBrand {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

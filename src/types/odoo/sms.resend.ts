@@ -1,4 +1,4 @@
-export interface SmsResend {
+export interface TSmsResend {
   can_cancel?: boolean;
   can_resend?: boolean;
   create_date?: string;

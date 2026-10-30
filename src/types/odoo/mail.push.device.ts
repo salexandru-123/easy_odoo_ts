@@ -1,4 +1,4 @@
-export interface MailPushDevice {
+export interface TMailPushDevice {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

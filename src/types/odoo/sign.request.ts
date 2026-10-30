@@ -1,4 +1,4 @@
-export interface SignRequest {
+export interface TSignRequest {
   access_token: string;
   active?: boolean;
   activity_calendar_event_id?: number | false;

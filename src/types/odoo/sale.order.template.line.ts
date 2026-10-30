@@ -1,4 +1,4 @@
-export interface SaleOrderTemplateLine {
+export interface TSaleOrderTemplateLine {
   company_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

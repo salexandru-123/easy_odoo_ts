@@ -1,4 +1,4 @@
-export interface SaleOrderLine {
+export interface TSaleOrderLine {
   amount_invoiced?: number;
   amount_to_invoice?: number;
   analytic_distribution?: unknown;

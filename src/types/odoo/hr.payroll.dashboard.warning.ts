@@ -1,4 +1,4 @@
-export interface HrPayrollDashboardWarning {
+export interface THrPayrollDashboardWarning {
   active?: boolean;
   color?: number;
   country_id?: number | false;

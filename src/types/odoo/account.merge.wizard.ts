@@ -1,4 +1,4 @@
-export interface AccountMergeWizard {
+export interface TAccountMergeWizard {
   account_ids?: number[];
   create_date?: string;
   create_uid?: number | false;

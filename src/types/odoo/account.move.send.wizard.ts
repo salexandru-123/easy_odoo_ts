@@ -1,4 +1,4 @@
-export interface AccountMoveSendWizard {
+export interface TAccountMoveSendWizard {
   alerts?: unknown;
   company_id?: number | false;
   create_date?: string;

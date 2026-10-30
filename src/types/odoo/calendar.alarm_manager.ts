@@ -1,2 +1,2 @@
-export interface CalendarAlarm_manager {
+export interface TCalendarAlarm_manager {
 }

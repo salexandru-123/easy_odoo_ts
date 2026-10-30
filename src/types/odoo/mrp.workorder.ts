@@ -1,4 +1,4 @@
-export interface MrpWorkorder {
+export interface TMrpWorkorder {
   _barcode_scanned?: string;
   additional?: boolean;
   all_employees_allowed?: boolean;

@@ -1,4 +1,4 @@
-export interface MailResendMessage {
+export interface TMailResendMessage {
   can_cancel?: boolean;
   can_resend?: boolean;
   create_date?: string;

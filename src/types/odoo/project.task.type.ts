@@ -1,4 +1,4 @@
-export interface ProjectTaskType {
+export interface TProjectTaskType {
   active?: boolean;
   auto_validation_state?: boolean;
   create_date?: string;

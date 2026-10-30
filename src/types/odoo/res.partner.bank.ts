@@ -1,4 +1,4 @@
-export interface ResPartnerBank {
+export interface TResPartnerBank {
   acc_holder_name?: string;
   acc_number: string;
   acc_type?: string;

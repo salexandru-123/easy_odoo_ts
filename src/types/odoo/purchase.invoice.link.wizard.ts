@@ -1,4 +1,4 @@
-export interface PurchaseInvoiceLinkWizard {
+export interface TPurchaseInvoiceLinkWizard {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

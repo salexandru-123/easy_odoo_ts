@@ -1,4 +1,4 @@
-export interface HelpdeskTicket {
+export interface THelpdeskTicket {
   access_token?: string;
   access_url?: string;
   access_warning?: string;

@@ -1,4 +1,4 @@
-export interface MailMessage {
+export interface TMailMessage {
   account_audit_log_account_id?: number | false;
   account_audit_log_activated?: boolean;
   account_audit_log_company_id?: number | false;

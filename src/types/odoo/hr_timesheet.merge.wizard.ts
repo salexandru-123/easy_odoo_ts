@@ -1,4 +1,4 @@
-export interface Hr_timesheetMergeWizard {
+export interface THr_timesheetMergeWizard {
   create_date?: string;
   create_uid?: number | false;
   date?: string;

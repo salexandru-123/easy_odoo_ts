@@ -1,4 +1,4 @@
-export interface HrJob {
+export interface THrJob {
   active?: boolean;
   activities_overdue?: number;
   activities_today?: number;

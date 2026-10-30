@@ -1,4 +1,4 @@
-export interface HrSalaryAttachment {
+export interface THrSalaryAttachment {
   active_amount?: number;
   attachment?: string | false;
   attachment_name?: string;

@@ -1,4 +1,4 @@
-export interface ReportPaperformat {
+export interface TReportPaperformat {
   create_date?: string;
   create_uid?: number | false;
   css_margins?: boolean;

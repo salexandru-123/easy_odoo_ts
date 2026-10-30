@@ -1,4 +1,4 @@
-export interface IrUiViewCustom {
+export interface TIrUiViewCustom {
   arch: string;
   create_date?: string;
   create_uid?: number | false;

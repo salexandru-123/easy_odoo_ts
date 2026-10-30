@@ -1,4 +1,4 @@
-export interface CalendarEvent {
+export interface TCalendarEvent {
   accepted_count?: number;
   access_token?: string;
   active?: boolean;

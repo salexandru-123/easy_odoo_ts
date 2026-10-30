@@ -1,4 +1,4 @@
-export interface StockWarehouse {
+export interface TStockWarehouse {
   active?: boolean;
   buy_pull_id?: number | false;
   buy_to_resupply?: boolean;

@@ -1,4 +1,4 @@
-export interface IrActionsServer {
+export interface TIrActionsServer {
   activity_date_deadline_range?: number;
   activity_date_deadline_range_type?: string;
   activity_note?: string;

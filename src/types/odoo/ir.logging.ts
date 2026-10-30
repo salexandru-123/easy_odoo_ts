@@ -1,4 +1,4 @@
-export interface IrLogging {
+export interface TIrLogging {
   create_date?: string;
   create_uid?: number;
   dbname?: string;

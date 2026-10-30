@@ -1,4 +1,4 @@
-export interface SmsComposer {
+export interface TSmsComposer {
   body: string;
   comment_single_recipient?: boolean;
   composition_mode: string;

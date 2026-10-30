@@ -1,2 +1,2 @@
-export interface AccountEdiCommon {
+export interface TAccountEdiCommon {
 }

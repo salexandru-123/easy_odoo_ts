@@ -1,4 +1,4 @@
-export interface UtmCampaign {
+export interface TUtmCampaign {
   active?: boolean;
   color?: number;
   company_id?: number | false;

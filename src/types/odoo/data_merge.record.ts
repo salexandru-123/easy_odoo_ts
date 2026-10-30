@@ -1,4 +1,4 @@
-export interface Data_mergeRecord {
+export interface TData_mergeRecord {
   active?: boolean;
   company_id?: number | false;
   create_date?: string;

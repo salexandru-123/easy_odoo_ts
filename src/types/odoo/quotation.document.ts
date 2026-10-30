@@ -1,4 +1,4 @@
-export interface QuotationDocument {
+export interface TQuotationDocument {
   access_token?: string;
   active?: boolean;
   checksum?: string;

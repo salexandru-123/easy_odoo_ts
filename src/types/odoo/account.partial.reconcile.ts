@@ -1,4 +1,4 @@
-export interface AccountPartialReconcile {
+export interface TAccountPartialReconcile {
   amount?: number;
   company_currency_id?: number | false;
   company_id?: number | false;

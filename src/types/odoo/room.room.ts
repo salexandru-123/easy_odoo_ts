@@ -1,4 +1,4 @@
-export interface RoomRoom {
+export interface TRoomRoom {
   access_token: string;
   active?: boolean;
   bookable_background_color?: string;

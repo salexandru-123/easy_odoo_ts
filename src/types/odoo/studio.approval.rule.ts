@@ -1,4 +1,4 @@
-export interface StudioApprovalRule {
+export interface TStudioApprovalRule {
   action_id?: number | false;
   action_xmlid?: string;
   active?: boolean;

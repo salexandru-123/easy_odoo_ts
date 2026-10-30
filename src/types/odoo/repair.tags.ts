@@ -1,4 +1,4 @@
-export interface RepairTags {
+export interface TRepairTags {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

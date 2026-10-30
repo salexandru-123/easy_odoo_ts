@@ -1,4 +1,4 @@
-export interface IrFilters {
+export interface TIrFilters {
   action_id?: number | false;
   active?: boolean;
   context: string;

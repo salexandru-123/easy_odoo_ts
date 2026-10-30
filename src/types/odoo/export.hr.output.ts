@@ -1,4 +1,4 @@
-export interface ExportHrOutput {
+export interface TExportHrOutput {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

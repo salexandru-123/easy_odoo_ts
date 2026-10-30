@@ -1,4 +1,4 @@
-export interface HrSalaryRuleCategory {
+export interface THrSalaryRuleCategory {
   children_ids?: number[];
   code: string;
   create_date?: string;

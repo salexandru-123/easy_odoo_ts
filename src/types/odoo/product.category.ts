@@ -1,4 +1,4 @@
-export interface ProductCategory {
+export interface TProductCategory {
   child_id?: number[];
   complete_name?: string;
   create_date?: string;

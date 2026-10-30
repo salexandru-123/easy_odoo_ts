@@ -1,4 +1,4 @@
-export interface HrExpenseSplitWizard {
+export interface THrExpenseSplitWizard {
   create_date?: string;
   create_uid?: number | false;
   currency_id?: number | false;

@@ -1,4 +1,4 @@
-export interface ResBank {
+export interface TResBank {
   active?: boolean;
   bic?: string;
   city?: string;

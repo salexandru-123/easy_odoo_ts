@@ -1,4 +1,4 @@
-export interface ProductAttribute {
+export interface TProductAttribute {
   active?: boolean;
   attribute_line_ids?: number[];
   create_date?: string;

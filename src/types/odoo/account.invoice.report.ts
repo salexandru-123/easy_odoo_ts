@@ -1,4 +1,4 @@
-export interface AccountInvoiceReport {
+export interface TAccountInvoiceReport {
   account_id?: number | false;
   commercial_partner_id?: number | false;
   company_currency_id?: number | false;

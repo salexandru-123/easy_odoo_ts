@@ -1,4 +1,4 @@
-export interface BaseAutomation {
+export interface TBaseAutomation {
   action_server_ids?: number[];
   active?: boolean;
   create_date?: string;

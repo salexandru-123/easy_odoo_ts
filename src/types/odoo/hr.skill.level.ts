@@ -1,4 +1,4 @@
-export interface HrSkillLevel {
+export interface THrSkillLevel {
   create_date?: string;
   create_uid?: number | false;
   default_level?: boolean;

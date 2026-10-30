@@ -1,2 +1,2 @@
-export interface IapAutocompleteApi {
+export interface TIapAutocompleteApi {
 }

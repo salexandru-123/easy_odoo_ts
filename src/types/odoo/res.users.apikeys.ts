@@ -1,4 +1,4 @@
-export interface ResUsersApikeys {
+export interface TResUsersApikeys {
   create_date?: string;
   display_name?: string;
   expiration_date?: string;

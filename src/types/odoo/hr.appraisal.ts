@@ -1,4 +1,4 @@
-export interface HrAppraisal {
+export interface THrAppraisal {
   accessible_employee_feedback?: string;
   accessible_manager_feedback?: string;
   active?: boolean;

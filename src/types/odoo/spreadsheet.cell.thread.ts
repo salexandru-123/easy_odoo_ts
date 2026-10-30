@@ -1,4 +1,4 @@
-export interface SpreadsheetCellThread {
+export interface TSpreadsheetCellThread {
   create_date?: string;
   create_uid?: number | false;
   dashboard_id?: number | false;

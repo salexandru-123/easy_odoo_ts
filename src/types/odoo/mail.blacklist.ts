@@ -1,4 +1,4 @@
-export interface MailBlacklist {
+export interface TMailBlacklist {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

@@ -1,4 +1,4 @@
-export interface LotLabelLayout {
+export interface TLotLabelLayout {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

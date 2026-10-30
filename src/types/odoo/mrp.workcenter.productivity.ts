@@ -1,4 +1,4 @@
-export interface MrpWorkcenterProductivity {
+export interface TMrpWorkcenterProductivity {
   account_move_line_id?: number | false;
   company_id: number | false;
   create_date?: string;

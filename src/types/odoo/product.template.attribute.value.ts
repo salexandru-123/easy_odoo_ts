@@ -1,4 +1,4 @@
-export interface ProductTemplateAttributeValue {
+export interface TProductTemplateAttributeValue {
   attribute_id?: number | false;
   attribute_line_id: number | false;
   color?: number;

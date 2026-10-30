@@ -1,4 +1,4 @@
-export interface HelpdeskTag {
+export interface THelpdeskTag {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

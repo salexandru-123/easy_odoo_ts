@@ -1,4 +1,4 @@
-export interface BankRecWidget {
+export interface TBankRecWidget {
   available_reco_model_ids?: number[];
   company_currency_id?: number | false;
   company_id?: number | false;

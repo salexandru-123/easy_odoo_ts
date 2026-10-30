@@ -1,4 +1,4 @@
-export interface AccountTransferModelLine {
+export interface TAccountTransferModelLine {
   account_id: number | false;
   analytic_account_ids?: number[];
   create_date?: string;

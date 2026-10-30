@@ -1,2 +1,2 @@
-export interface IrQwebFieldDate {
+export interface TIrQwebFieldDate {
 }

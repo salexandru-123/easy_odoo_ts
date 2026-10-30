@@ -1,4 +1,4 @@
-export interface HrLeave {
+export interface THrLeave {
   active_employee?: boolean;
   activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;

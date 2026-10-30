@@ -1,4 +1,4 @@
-export interface DigestDigest {
+export interface TDigestDigest {
   available_fields?: string;
   company_id?: number | false;
   create_date?: string;

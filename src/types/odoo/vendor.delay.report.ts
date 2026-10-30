@@ -1,4 +1,4 @@
-export interface VendorDelayReport {
+export interface TVendorDelayReport {
   category_id?: number | false;
   date?: string;
   display_name?: string;

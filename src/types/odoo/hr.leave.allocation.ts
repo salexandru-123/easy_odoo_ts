@@ -1,4 +1,4 @@
-export interface HrLeaveAllocation {
+export interface THrLeaveAllocation {
   accrual_plan_id?: number | false;
   active_employee?: boolean;
   activity_calendar_event_id?: number | false;

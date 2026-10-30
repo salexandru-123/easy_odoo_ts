@@ -1,4 +1,4 @@
-export interface HrApplicantRefuseReason {
+export interface THrApplicantRefuseReason {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

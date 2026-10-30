@@ -1,4 +1,4 @@
-export interface TimesheetsAnalysisReport {
+export interface TTimesheetsAnalysisReport {
   amount?: number;
   billable_time?: number;
   company_id?: number | false;

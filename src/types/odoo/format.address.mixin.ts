@@ -1,2 +1,2 @@
-export interface FormatAddressMixin {
+export interface TFormatAddressMixin {
 }

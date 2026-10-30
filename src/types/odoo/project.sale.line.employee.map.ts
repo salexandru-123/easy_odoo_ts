@@ -1,4 +1,4 @@
-export interface ProjectSaleLineEmployeeMap {
+export interface TProjectSaleLineEmployeeMap {
   company_id?: number | false;
   cost?: number;
   cost_currency_id?: number | false;

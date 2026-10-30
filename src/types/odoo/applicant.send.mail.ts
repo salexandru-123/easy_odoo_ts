@@ -1,4 +1,4 @@
-export interface ApplicantSendMail {
+export interface TApplicantSendMail {
   applicant_ids: number[];
   attachment_ids?: number[];
   author_id: number | false;

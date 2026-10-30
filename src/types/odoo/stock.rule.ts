@@ -1,4 +1,4 @@
-export interface StockRule {
+export interface TStockRule {
   action: string;
   active?: boolean;
   auto: string;

@@ -1,4 +1,4 @@
-export interface HrWorkEntryReport {
+export interface THrWorkEntryReport {
   company_id?: number | false;
   date_start?: string;
   department_id?: number | false;

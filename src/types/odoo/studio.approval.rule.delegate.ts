@@ -1,4 +1,4 @@
-export interface StudioApprovalRuleDelegate {
+export interface TStudioApprovalRuleDelegate {
   approval_rule_id: number | false;
   approver_ids?: number[];
   create_date?: string;

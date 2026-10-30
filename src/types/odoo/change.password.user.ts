@@ -1,4 +1,4 @@
-export interface ChangePasswordUser {
+export interface TChangePasswordUser {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

@@ -1,4 +1,4 @@
-export interface DeliveryCarrier {
+export interface TDeliveryCarrier {
   active?: boolean;
   amount?: number;
   can_generate_return?: boolean;

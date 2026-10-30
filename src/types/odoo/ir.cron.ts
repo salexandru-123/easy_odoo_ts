@@ -1,4 +1,4 @@
-export interface IrCron {
+export interface TIrCron {
   active?: boolean;
   activity_date_deadline_range?: number;
   activity_date_deadline_range_type?: string;

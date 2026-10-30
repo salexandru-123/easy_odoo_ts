@@ -1,4 +1,4 @@
-export interface HrCandidate {
+export interface THrCandidate {
   accepted_applications_count?: number;
   active?: boolean;
   activity_calendar_event_id?: number | false;

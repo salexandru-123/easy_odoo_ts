@@ -1,4 +1,4 @@
-export interface MailActivityType {
+export interface TMailActivityType {
   active?: boolean;
   category?: string;
   chaining_type: string;

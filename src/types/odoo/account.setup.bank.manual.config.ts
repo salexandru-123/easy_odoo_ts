@@ -1,4 +1,4 @@
-export interface AccountSetupBankManualConfig {
+export interface TAccountSetupBankManualConfig {
   acc_holder_name?: string;
   acc_number: string;
   acc_type?: string;

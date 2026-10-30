@@ -1,4 +1,4 @@
-export interface SaleOrderCancel {
+export interface TSaleOrderCancel {
   author_id?: number | false;
   body?: string;
   body_has_template_value?: boolean;

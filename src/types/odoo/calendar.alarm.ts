@@ -1,4 +1,4 @@
-export interface CalendarAlarm {
+export interface TCalendarAlarm {
   alarm_type: string;
   body?: string;
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface HrPayrollReport {
+export interface THrPayrollReport {
   basic_wage?: number;
   company_id?: number | false;
   count?: number;

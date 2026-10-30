@@ -1,4 +1,4 @@
-export interface HrRuleParameterValue {
+export interface THrRuleParameterValue {
   code?: string;
   country_id?: number | false;
   create_date?: string;

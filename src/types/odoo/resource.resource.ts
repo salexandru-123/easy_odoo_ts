@@ -1,4 +1,4 @@
-export interface ResourceResource {
+export interface TResourceResource {
   active?: boolean;
   avatar_128?: string | false;
   calendar_id?: number | false;

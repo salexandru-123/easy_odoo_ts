@@ -1,2 +1,2 @@
-export interface IrQwebFieldRelative {
+export interface TIrQwebFieldRelative {
 }

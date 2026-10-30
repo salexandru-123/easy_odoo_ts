@@ -1,2 +1,2 @@
-export interface IrHttp {
+export interface TIrHttp {
 }

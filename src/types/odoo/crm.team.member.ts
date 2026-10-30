@@ -1,4 +1,4 @@
-export interface CrmTeamMember {
+export interface TCrmTeamMember {
   active?: boolean;
   company_id?: number | false;
   create_date?: string;

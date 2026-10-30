@@ -1,4 +1,4 @@
-export interface HrResumeLine {
+export interface THrResumeLine {
   create_date?: string;
   create_uid?: number | false;
   date_end?: string;

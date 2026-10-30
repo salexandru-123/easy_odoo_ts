@@ -1,4 +1,4 @@
-export interface AccountIncoterms {
+export interface TAccountIncoterms {
   active?: boolean;
   code: string;
   create_date?: string;

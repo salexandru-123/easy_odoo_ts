@@ -1,4 +1,4 @@
-export interface AccountTax {
+export interface TAccountTax {
   active?: boolean;
   amount: number;
   amount_type: string;

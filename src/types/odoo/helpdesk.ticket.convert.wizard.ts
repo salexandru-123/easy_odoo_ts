@@ -1,4 +1,4 @@
-export interface HelpdeskTicketConvertWizard {
+export interface THelpdeskTicketConvertWizard {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

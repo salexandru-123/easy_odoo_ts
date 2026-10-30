@@ -1,4 +1,4 @@
-export interface AccountBankSelection {
+export interface TAccountBankSelection {
   account_online_account_ids?: number[];
   account_online_link_id?: number | false;
   create_date?: string;

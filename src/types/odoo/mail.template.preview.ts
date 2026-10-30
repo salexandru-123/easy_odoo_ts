@@ -1,4 +1,4 @@
-export interface MailTemplatePreview {
+export interface TMailTemplatePreview {
   attachment_ids?: number[];
   body_html?: string;
   create_date?: string;

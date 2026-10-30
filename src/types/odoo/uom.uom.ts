@@ -1,4 +1,4 @@
-export interface UomUom {
+export interface TUomUom {
   active?: boolean;
   category_id: number | false;
   color?: number;

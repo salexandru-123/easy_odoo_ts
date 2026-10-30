@@ -1,4 +1,4 @@
-export interface MailScheduledMessage {
+export interface TMailScheduledMessage {
   attachment_ids?: number[];
   author_id: number | false;
   body?: string;

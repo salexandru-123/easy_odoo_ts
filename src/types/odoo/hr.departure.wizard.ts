@@ -1,4 +1,4 @@
-export interface HrDepartureWizard {
+export interface THrDepartureWizard {
   cancel_appraisal?: boolean;
   create_date?: string;
   create_uid?: number | false;

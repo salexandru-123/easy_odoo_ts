@@ -1,4 +1,4 @@
-export interface MrpBomByproduct {
+export interface TMrpBomByproduct {
   allowed_operation_ids?: number[];
   bom_id?: number | false;
   bom_product_template_attribute_value_ids?: number[];

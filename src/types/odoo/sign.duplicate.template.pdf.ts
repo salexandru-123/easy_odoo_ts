@@ -1,4 +1,4 @@
-export interface SignDuplicateTemplatePdf {
+export interface TSignDuplicateTemplatePdf {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

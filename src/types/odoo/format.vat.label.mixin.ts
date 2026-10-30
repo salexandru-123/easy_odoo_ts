@@ -1,2 +1,2 @@
-export interface FormatVatLabelMixin {
+export interface TFormatVatLabelMixin {
 }

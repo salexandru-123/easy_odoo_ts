@@ -1,4 +1,4 @@
-export interface CrmTeam {
+export interface TCrmTeam {
   active?: boolean;
   color?: number;
   company_id?: number | false;

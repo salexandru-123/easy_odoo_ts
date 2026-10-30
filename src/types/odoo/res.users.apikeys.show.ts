@@ -1,4 +1,4 @@
-export interface ResUsersApikeysShow {
+export interface TResUsersApikeysShow {
   id?: number;
   key?: string;
 }

@@ -1,4 +1,4 @@
-export interface PlanningSlot {
+export interface TPlanningSlot {
   access_token: string;
   allocated_hours?: number;
   allocated_percentage?: number;

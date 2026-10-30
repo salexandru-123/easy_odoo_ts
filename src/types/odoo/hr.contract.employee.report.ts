@@ -1,4 +1,4 @@
-export interface HrContractEmployeeReport {
+export interface THrContractEmployeeReport {
   age_sum?: number;
   company_id?: number | false;
   contract_id?: number | false;

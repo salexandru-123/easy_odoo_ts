@@ -1,4 +1,4 @@
-export interface AccountAnalyticLine {
+export interface TAccountAnalyticLine {
   account_id?: number | false;
   allow_billable?: boolean;
   amount: number;

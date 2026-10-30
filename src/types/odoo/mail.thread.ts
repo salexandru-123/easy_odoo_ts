@@ -1,4 +1,4 @@
-export interface MailThread {
+export interface TMailThread {
   has_message?: boolean;
   message_attachment_count?: number;
   message_follower_ids?: number[];

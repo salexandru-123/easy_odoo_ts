@@ -1,4 +1,4 @@
-export interface HrPayrollNote {
+export interface THrPayrollNote {
   company_id: number | false;
   create_date?: string;
   create_uid?: number | false;

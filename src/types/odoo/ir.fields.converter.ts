@@ -1,2 +1,2 @@
-export interface IrFieldsConverter {
+export interface TIrFieldsConverter {
 }

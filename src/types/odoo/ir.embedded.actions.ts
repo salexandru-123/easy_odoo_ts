@@ -1,4 +1,4 @@
-export interface IrEmbeddedActions {
+export interface TIrEmbeddedActions {
   action_id?: number | false;
   context?: string;
   create_date?: string;

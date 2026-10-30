@@ -1,4 +1,4 @@
-export interface QualityCheckSpreadsheet {
+export interface TQualityCheckSpreadsheet {
   check_cell?: string;
   company_id: number | false;
   create_date?: string;

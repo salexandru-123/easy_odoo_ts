@@ -1,4 +1,4 @@
-export interface AccountPaymentRegister {
+export interface TAccountPaymentRegister {
   actionable_errors?: unknown;
   amount?: number;
   available_journal_ids?: number[];

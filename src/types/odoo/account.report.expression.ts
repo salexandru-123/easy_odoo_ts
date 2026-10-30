@@ -1,4 +1,4 @@
-export interface AccountReportExpression {
+export interface TAccountReportExpression {
   auditable?: boolean;
   blank_if_zero?: boolean;
   carryover_target?: string;

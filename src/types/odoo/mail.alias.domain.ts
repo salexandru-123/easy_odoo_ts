@@ -1,4 +1,4 @@
-export interface MailAliasDomain {
+export interface TMailAliasDomain {
   bounce_alias: string;
   bounce_email?: string;
   catchall_alias: string;

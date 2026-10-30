@@ -1,4 +1,4 @@
-export interface AccountTaxRepartitionLine {
+export interface TAccountTaxRepartitionLine {
   account_id?: number | false;
   company_id?: number | false;
   create_date?: string;

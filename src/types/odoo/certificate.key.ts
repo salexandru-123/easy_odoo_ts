@@ -1,4 +1,4 @@
-export interface CertificateKey {
+export interface TCertificateKey {
   active?: boolean;
   company_id: number | false;
   content: string | false;

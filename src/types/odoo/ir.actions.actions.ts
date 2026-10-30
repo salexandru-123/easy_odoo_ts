@@ -1,4 +1,4 @@
-export interface IrActionsActions {
+export interface TIrActionsActions {
   binding_model_id?: number | false;
   binding_type: string;
   binding_view_types?: string;

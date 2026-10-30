@@ -1,4 +1,4 @@
-export interface AccountAnalyticAccount {
+export interface TAccountAnalyticAccount {
   active?: boolean;
   balance?: number;
   bom_count?: number;
