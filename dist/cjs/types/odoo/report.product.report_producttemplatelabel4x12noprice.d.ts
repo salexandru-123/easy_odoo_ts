@@ -1,0 +1,2 @@
+export interface TReportProductReport_producttemplatelabel4x12noprice {
+}

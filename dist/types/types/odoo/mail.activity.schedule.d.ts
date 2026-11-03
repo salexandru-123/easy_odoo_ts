@@ -1,0 +1,30 @@
+export interface TMailActivitySchedule {
+    activity_category?: string;
+    activity_type_id?: number | false;
+    activity_user_id?: number | false;
+    chaining_type?: string;
+    company_id: number | false;
+    create_date?: string;
+    create_uid?: number | false;
+    date_deadline?: string;
+    department_id?: number | false;
+    display_name?: string;
+    error?: string;
+    has_error?: boolean;
+    id?: number;
+    is_batch_mode?: boolean;
+    note?: string;
+    plan_available_ids?: number[];
+    plan_date?: string;
+    plan_department_filterable?: boolean;
+    plan_has_user_on_demand?: boolean;
+    plan_id?: number | false;
+    plan_on_demand_user_id?: number | false;
+    plan_summary?: string;
+    res_ids?: string;
+    res_model: string;
+    res_model_id: number | false;
+    summary?: string;
+    write_date?: string;
+    write_uid?: number | false;
+}

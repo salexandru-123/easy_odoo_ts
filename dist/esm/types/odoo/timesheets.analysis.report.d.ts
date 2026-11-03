@@ -1,0 +1,33 @@
+export interface TTimesheetsAnalysisReport {
+    amount?: number;
+    billable_time?: number;
+    company_id?: number | false;
+    currency_id?: number | false;
+    date?: string;
+    department_id?: number | false;
+    display_name?: string;
+    employee_id?: number | false;
+    has_department_manager_access?: boolean;
+    id?: number;
+    is_timer_running?: boolean;
+    is_timesheet?: boolean;
+    manager_id?: number | false;
+    margin?: number;
+    message_partner_ids?: number[];
+    milestone_id?: number | false;
+    name?: string;
+    non_billable_time?: number;
+    order_id?: number | false;
+    parent_task_id?: number | false;
+    partner_id?: number | false;
+    project_id?: number | false;
+    so_line?: number | false;
+    task_id?: number | false;
+    timesheet_invoice_id?: number | false;
+    timesheet_invoice_type?: string;
+    timesheet_revenues?: number;
+    unit_amount?: number;
+    user_id?: number | false;
+    validated?: boolean;
+    validated_status?: string;
+}

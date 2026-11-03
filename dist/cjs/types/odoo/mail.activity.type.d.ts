@@ -1,0 +1,30 @@
+export interface TMailActivityType {
+    active?: boolean;
+    category?: string;
+    chaining_type: string;
+    create_date?: string;
+    create_uid?: number | false;
+    decoration_type?: string;
+    default_note?: string;
+    default_user_id?: number | false;
+    delay_count?: number;
+    delay_from: string;
+    delay_label?: string;
+    delay_unit: string;
+    display_name?: string;
+    icon?: string;
+    id?: number;
+    initial_res_model?: string;
+    keep_done?: boolean;
+    mail_template_ids?: number[];
+    name: string;
+    previous_type_ids?: number[];
+    res_model?: string;
+    res_model_change?: boolean;
+    sequence?: number;
+    suggested_next_type_ids?: number[];
+    summary?: string;
+    triggered_next_type_id?: number | false;
+    write_date?: string;
+    write_uid?: number | false;
+}

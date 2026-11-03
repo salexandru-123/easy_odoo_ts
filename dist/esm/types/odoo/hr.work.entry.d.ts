@@ -1,0 +1,30 @@
+export interface THrWorkEntry {
+    active?: boolean;
+    attendance_id?: number | false;
+    code?: string;
+    color?: number;
+    company_id: number | false;
+    conflict?: boolean;
+    contract_id: number | false;
+    country_id?: number | false;
+    create_date?: string;
+    create_uid?: number | false;
+    date_start: string;
+    date_stop?: string;
+    department_id?: number | false;
+    display_name?: string;
+    duration?: number;
+    employee_id: number | false;
+    external_code?: string;
+    id?: number;
+    is_credit_time?: boolean;
+    leave_id?: number | false;
+    leave_state?: string;
+    name: string;
+    planning_slot_id?: number | false;
+    state?: string;
+    work_entry_source?: string;
+    work_entry_type_id?: number | false;
+    write_date?: string;
+    write_uid?: number | false;
+}

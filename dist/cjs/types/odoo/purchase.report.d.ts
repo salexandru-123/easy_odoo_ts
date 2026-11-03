@@ -1,0 +1,34 @@
+export interface TPurchaseReport {
+    category_id?: number | false;
+    commercial_partner_id?: number | false;
+    company_id?: number | false;
+    country_id?: number | false;
+    currency_id?: number | false;
+    date_approve?: string;
+    date_order?: string;
+    days_to_arrival?: number;
+    delay?: number;
+    delay_pass?: number;
+    display_name?: string;
+    effective_date?: string;
+    fiscal_position_id?: number | false;
+    id?: number;
+    nbr_lines?: number;
+    order_id?: number | false;
+    partner_id?: number | false;
+    picking_type_id?: number | false;
+    price_average?: number;
+    price_total?: number;
+    product_id?: number | false;
+    product_tmpl_id?: number | false;
+    product_uom: number | false;
+    qty_billed?: number;
+    qty_ordered?: number;
+    qty_received?: number;
+    qty_to_be_billed?: number;
+    state?: string;
+    untaxed_total?: number;
+    user_id?: number | false;
+    volume?: number;
+    weight?: number;
+}
