@@ -1,4 +1,4 @@
-export interface PlanningRecurrency {
+export interface TPlanningRecurrency {
   company_id: number | false;
   create_date?: string;
   create_uid?: number | false;

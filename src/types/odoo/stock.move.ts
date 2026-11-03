@@ -1,4 +1,4 @@
-export interface StockMove {
+export interface TStockMove {
   account_move_ids?: number[];
   additional?: boolean;
   allowed_operation_ids?: number[];
@@ -79,8 +79,6 @@ export interface StockMove {
   quantity?: number;
   raw_material_production_id?: number | false;
   reference?: string;
-  repair_id?: number | false;
-  repair_line_type?: string;
   reservation_date?: string;
   restrict_partner_id?: number | false;
   returned_move_ids?: number[];

@@ -1,4 +1,4 @@
-export interface ProductPricelistItem {
+export interface TProductPricelistItem {
   applied_on: string;
   base: string;
   base_pricelist_id?: number | false;

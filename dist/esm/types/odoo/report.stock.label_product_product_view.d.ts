@@ -1,0 +1,2 @@
+export interface TReportStockLabel_product_product_view {
+}

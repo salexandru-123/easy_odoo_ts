@@ -1,4 +1,4 @@
-export interface SignSendRequest {
+export interface TSignSendRequest {
   activity_id?: number | false;
   attachment_ids?: number[];
   cc_partner_ids?: number[];

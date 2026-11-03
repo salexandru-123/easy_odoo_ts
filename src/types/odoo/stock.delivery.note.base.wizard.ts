@@ -1,4 +1,4 @@
-export interface StockDeliveryNoteBaseWizard {
+export interface TStockDeliveryNoteBaseWizard {
   date?: string;
   error_message?: string;
   partner_id?: number | false;

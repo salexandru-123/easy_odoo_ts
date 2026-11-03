@@ -1,4 +1,4 @@
-export interface HrPayrollPaymentReportWizard {
+export interface THrPayrollPaymentReportWizard {
   company_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

@@ -1,4 +1,4 @@
-export interface HrEmployeeSkillReport {
+export interface THrEmployeeSkillReport {
   active?: boolean;
   company_id?: number | false;
   department_id?: number | false;

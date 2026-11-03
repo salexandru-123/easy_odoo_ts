@@ -1,4 +1,4 @@
-export interface ResourceCalendarAttendance {
+export interface TResourceCalendarAttendance {
   calendar_id: number | false;
   create_date?: string;
   create_uid?: number | false;
@@ -18,7 +18,6 @@ export interface ResourceCalendarAttendance {
   sequence?: number;
   two_weeks_calendar?: boolean;
   week_type?: string;
-  work_entry_type_id?: number | false;
   write_date?: string;
   write_uid?: number | false;
 }

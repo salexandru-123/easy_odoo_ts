@@ -1,4 +1,4 @@
-export interface KnowledgeArticleMember {
+export interface TKnowledgeArticleMember {
   article_id: number | false;
   article_permission?: string;
   create_date?: string;

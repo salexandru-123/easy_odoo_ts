@@ -1,0 +1,2 @@
+export interface TReportMrp_account_enterpriseMrp_cost_structure {
+}

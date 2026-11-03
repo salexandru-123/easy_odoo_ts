@@ -1,4 +1,4 @@
-export interface AccountMergeWizardLine {
+export interface TAccountMergeWizardLine {
   account_has_hashed_entries?: boolean;
   account_id?: number | false;
   company_ids?: number[];

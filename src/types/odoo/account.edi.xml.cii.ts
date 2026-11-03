@@ -1,2 +1,2 @@
-export interface AccountEdiXmlCii {
+export interface TAccountEdiXmlCii {
 }

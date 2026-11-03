@@ -1,4 +1,4 @@
-export interface HrWorkEntryExportMixin {
+export interface THrWorkEntryExportMixin {
   company_id: number | false;
   create_uid?: number | false;
   eligible_employee_count?: number;

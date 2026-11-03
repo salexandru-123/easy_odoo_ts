@@ -1,4 +1,4 @@
-export interface HrRecruitmentDegree {
+export interface THrRecruitmentDegree {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

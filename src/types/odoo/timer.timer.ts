@@ -1,4 +1,4 @@
-export interface TimerTimer {
+export interface TTimerTimer {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

@@ -1,4 +1,4 @@
-export interface IrModuleCategory {
+export interface TIrModuleCategory {
   child_ids?: number[];
   create_date?: string;
   create_uid?: number | false;

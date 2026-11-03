@@ -1,4 +1,4 @@
-export interface AccountPaymentMethodLine {
+export interface TAccountPaymentMethodLine {
   available_payment_method_ids?: number[];
   code?: string;
   company_id?: number | false;
@@ -8,7 +8,6 @@ export interface AccountPaymentMethodLine {
   display_name?: string;
   id?: number;
   journal_id?: number | false;
-  l10n_it_payment_method?: string;
   name?: string;
   payment_account_id?: number | false;
   payment_method_id: number | false;

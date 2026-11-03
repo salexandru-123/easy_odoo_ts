@@ -1,4 +1,4 @@
-export interface StockWarehouse {
+export interface TStockWarehouse {
   active?: boolean;
   buy_pull_id?: number | false;
   buy_to_resupply?: boolean;
@@ -32,8 +32,6 @@ export interface StockWarehouse {
   qc_type_id?: number | false;
   reception_route_id?: number | false;
   reception_steps: string;
-  repair_mto_pull_id?: number | false;
-  repair_type_id?: number | false;
   resupply_route_ids?: number[];
   resupply_wh_ids?: number[];
   route_ids?: number[];

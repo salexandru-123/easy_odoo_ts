@@ -1,4 +1,4 @@
-export interface IrMail_server {
+export interface TIrMail_server {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

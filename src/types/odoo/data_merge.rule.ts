@@ -1,4 +1,4 @@
-export interface Data_mergeRule {
+export interface TData_mergeRule {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

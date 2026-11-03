@@ -1,4 +1,4 @@
-export interface StockLocation {
+export interface TStockLocation {
   active?: boolean;
   barcode?: string;
   child_ids?: number[];

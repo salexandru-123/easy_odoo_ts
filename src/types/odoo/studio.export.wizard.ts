@@ -1,4 +1,4 @@
-export interface StudioExportWizard {
+export interface TStudioExportWizard {
   additional_export_data?: number[];
   additional_models?: number[];
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface StockWarnInsufficientQtyScrap {
+export interface TStockWarnInsufficientQtyScrap {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

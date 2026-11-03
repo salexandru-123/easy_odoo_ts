@@ -1,4 +1,4 @@
-export interface ChooseDeliveryCarrier {
+export interface TChooseDeliveryCarrier {
   available_carrier_ids?: number[];
   carrier_id: number | false;
   company_id?: number | false;

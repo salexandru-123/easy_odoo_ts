@@ -1,4 +1,4 @@
-export interface IrSequence {
+export interface TIrSequence {
   active?: boolean;
   code?: string;
   company_id?: number | false;

@@ -1,4 +1,4 @@
-export interface BaseAutomation {
+export interface TBaseAutomation {
   action_server_ids?: number[];
   active?: boolean;
   create_date?: string;
@@ -21,7 +21,6 @@ export interface BaseAutomation {
   trg_date_id?: number | false;
   trg_date_range?: number;
   trg_date_range_type?: string;
-  trg_date_resource_field_id?: number | false;
   trg_field_ref?: unknown;
   trg_field_ref_model_name?: string;
   trg_selection_field_id?: number | false;

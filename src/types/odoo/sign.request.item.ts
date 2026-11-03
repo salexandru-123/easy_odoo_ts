@@ -1,4 +1,4 @@
-export interface SignRequestItem {
+export interface TSignRequestItem {
   access_token: string;
   access_url?: string;
   access_via_link?: boolean;

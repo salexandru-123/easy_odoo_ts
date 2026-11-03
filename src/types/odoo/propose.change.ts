@@ -1,4 +1,4 @@
-export interface ProposeChange {
+export interface TProposeChange {
   change_type?: string;
   comment?: string;
   create_date?: string;

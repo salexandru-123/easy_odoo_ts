@@ -1,4 +1,4 @@
-export interface BankRecWidgetLine {
+export interface TBankRecWidgetLine {
   account_id?: number | false;
   amount_currency?: number;
   amount_transaction_currency?: number;
@@ -52,7 +52,5 @@ export interface BankRecWidgetLine {
   tax_repartition_line_id?: number | false;
   tax_tag_ids?: number[];
   transaction_currency_id?: number | false;
-  vehicle_id?: number | false;
-  vehicle_required?: boolean;
   wizard_id?: number | false;
 }

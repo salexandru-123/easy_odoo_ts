@@ -1,4 +1,4 @@
-export interface ResPartnerCategory {
+export interface TResPartnerCategory {
   active?: boolean;
   child_ids?: number[];
   color?: number;

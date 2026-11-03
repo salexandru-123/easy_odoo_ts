@@ -1,4 +1,4 @@
-export interface BasePartnerMergeAutomaticWizard {
+export interface TBasePartnerMergeAutomaticWizard {
   create_date?: string;
   create_uid?: number | false;
   current_line_id?: number | false;

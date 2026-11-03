@@ -1,4 +1,4 @@
-export interface IrActionsTodo {
+export interface TIrActionsTodo {
   action_id: number | false;
   create_date?: string;
   create_uid?: number | false;

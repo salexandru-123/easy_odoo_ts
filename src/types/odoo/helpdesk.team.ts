@@ -1,4 +1,4 @@
-export interface HelpdeskTeam {
+export interface THelpdeskTeam {
   access_instruction_message?: string;
   active?: boolean;
   alias_bounced_content?: string;

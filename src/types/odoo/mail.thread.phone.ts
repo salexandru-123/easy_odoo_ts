@@ -1,4 +1,4 @@
-export interface MailThreadPhone {
+export interface TMailThreadPhone {
   has_message?: boolean;
   message_attachment_count?: number;
   message_follower_ids?: number[];
@@ -15,6 +15,5 @@ export interface MailThreadPhone {
   phone_mobile_search?: string;
   phone_sanitized?: string;
   phone_sanitized_blacklisted?: boolean;
-  rating_ids?: number[];
   website_message_ids?: number[];
 }

@@ -1,4 +1,4 @@
-export interface CalendarRecurrence {
+export interface TCalendarRecurrence {
   base_event_id?: number | false;
   byday?: string;
   calendar_event_ids?: number[];

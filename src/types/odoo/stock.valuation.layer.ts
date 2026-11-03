@@ -1,4 +1,4 @@
-export interface StockValuationLayer {
+export interface TStockValuationLayer {
   account_move_id?: number | false;
   account_move_line_id?: number | false;
   categ_id?: number | false;

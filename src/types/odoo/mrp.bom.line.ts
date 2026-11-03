@@ -1,4 +1,4 @@
-export interface MrpBomLine {
+export interface TMrpBomLine {
   allowed_operation_ids?: number[];
   attachments_count?: number;
   bom_id: number | false;
@@ -6,7 +6,6 @@ export interface MrpBomLine {
   child_bom_id?: number | false;
   child_line_ids?: number[];
   company_id?: number | false;
-  component_position?: string;
   cost_share?: number;
   create_date?: string;
   create_uid?: number | false;

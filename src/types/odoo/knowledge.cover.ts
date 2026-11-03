@@ -1,4 +1,4 @@
-export interface KnowledgeCover {
+export interface TKnowledgeCover {
   article_ids?: number[];
   attachment_id: number | false;
   attachment_url?: string;

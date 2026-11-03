@@ -1,4 +1,4 @@
-export interface HrEmployeeSkillLog {
+export interface THrEmployeeSkillLog {
   create_date?: string;
   create_uid?: number | false;
   date?: string;

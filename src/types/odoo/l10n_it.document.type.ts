@@ -1,4 +1,4 @@
-export interface L10n_itDocumentType {
+export interface TL10n_itDocumentType {
   code: string;
   create_date?: string;
   create_uid?: number | false;

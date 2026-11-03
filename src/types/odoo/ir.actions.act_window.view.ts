@@ -1,4 +1,4 @@
-export interface IrActionsAct_windowView {
+export interface TIrActionsAct_windowView {
   act_window_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

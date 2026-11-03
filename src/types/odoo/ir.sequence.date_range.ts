@@ -1,4 +1,4 @@
-export interface IrSequenceDate_range {
+export interface TIrSequenceDate_range {
   create_date?: string;
   create_uid?: number | false;
   date_from: string;

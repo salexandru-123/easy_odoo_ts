@@ -1,2 +1,2 @@
-export interface AccountEdiXmlUbl_sg {
+export interface TAccountEdiXmlUbl_sg {
 }

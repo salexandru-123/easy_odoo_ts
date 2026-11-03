@@ -1,4 +1,4 @@
-export interface AccountAnalyticAccount {
+export interface TAccountAnalyticAccount {
   active?: boolean;
   balance?: number;
   bom_count?: number;
@@ -31,10 +31,7 @@ export interface AccountAnalyticAccount {
   plan_id: number | false;
   production_count?: number;
   production_ids?: number[];
-  project_count?: number;
-  project_ids?: number[];
   purchase_order_count?: number;
-  rating_ids?: number[];
   root_plan_id?: number | false;
   vendor_bill_count?: number;
   website_message_ids?: number[];

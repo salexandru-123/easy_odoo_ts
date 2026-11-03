@@ -1,4 +1,4 @@
-export interface SignItemRadioSet {
+export interface TSignItemRadioSet {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

@@ -1,4 +1,4 @@
-export interface OnboardingOnboarding {
+export interface TOnboardingOnboarding {
   create_date?: string;
   create_uid?: number | false;
   current_onboarding_state?: string;

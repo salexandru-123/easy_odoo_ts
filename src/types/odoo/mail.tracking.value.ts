@@ -1,4 +1,4 @@
-export interface MailTrackingValue {
+export interface TMailTrackingValue {
   create_date?: string;
   create_uid?: number | false;
   currency_id?: number | false;

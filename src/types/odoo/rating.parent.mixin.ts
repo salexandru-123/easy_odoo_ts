@@ -1,4 +1,4 @@
-export interface RatingParentMixin {
+export interface TRatingParentMixin {
   rating_avg?: number;
   rating_avg_percentage?: number;
   rating_count?: number;

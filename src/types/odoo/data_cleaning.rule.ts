@@ -1,4 +1,4 @@
-export interface Data_cleaningRule {
+export interface TData_cleaningRule {
   action: string;
   action_case?: string;
   action_display?: string;

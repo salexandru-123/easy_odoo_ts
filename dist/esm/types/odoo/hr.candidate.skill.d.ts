@@ -1,0 +1,13 @@
+export interface THrCandidateSkill {
+    candidate_id: number | false;
+    create_date?: string;
+    create_uid?: number | false;
+    display_name?: string;
+    id?: number;
+    level_progress?: number;
+    skill_id: number | false;
+    skill_level_id: number | false;
+    skill_type_id: number | false;
+    write_date?: string;
+    write_uid?: number | false;
+}

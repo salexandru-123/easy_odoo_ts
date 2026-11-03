@@ -1,4 +1,4 @@
-export interface SnailmailLetterMissingRequiredFields {
+export interface TSnailmailLetterMissingRequiredFields {
   city?: string;
   country_id?: number | false;
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface SpreadsheetDashboard {
+export interface TSpreadsheetDashboard {
   company_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

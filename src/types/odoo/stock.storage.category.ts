@@ -1,4 +1,4 @@
-export interface StockStorageCategory {
+export interface TStockStorageCategory {
   allow_new_product: string;
   capacity_ids?: number[];
   company_id?: number | false;

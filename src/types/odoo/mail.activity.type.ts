@@ -1,4 +1,4 @@
-export interface MailActivityType {
+export interface TMailActivityType {
   active?: boolean;
   category?: string;
   chaining_type: string;
@@ -6,7 +6,6 @@ export interface MailActivityType {
   create_uid?: number | false;
   decoration_type?: string;
   default_note?: string;
-  default_sign_template_id?: number | false;
   default_user_id?: number | false;
   delay_count?: number;
   delay_from: string;

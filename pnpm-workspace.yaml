@@ -1,3 +1,8 @@
 allowBuilds:
   '@scarf/scarf': true
   esbuild: true
+
+overrides:
+  odoo_ts: 'link:'
+
+packages: []

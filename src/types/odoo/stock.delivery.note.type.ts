@@ -1,4 +1,4 @@
-export interface StockDeliveryNoteType {
+export interface TStockDeliveryNoteType {
   active?: boolean;
   code: string;
   company_id?: number | false;

@@ -1,4 +1,4 @@
-export interface AccountMoveLine {
+export interface TAccountMoveLine {
   account_code?: string;
   account_id?: number | false;
   account_internal_group?: string;
@@ -12,6 +12,7 @@ export interface AccountMoveLine {
   analytic_line_ids?: number[];
   analytic_precision?: number;
   balance?: number;
+  check_number?: string;
   cogs_origin_id?: number | false;
   commercial_partner_country?: number | false;
   company_currency_id?: number | false;
@@ -27,7 +28,6 @@ export interface AccountMoveLine {
   debit?: number;
   deferred_end_date?: string;
   deferred_start_date?: string;
-  delivery_note_id?: number | false;
   discount?: number;
   discount_allocation_dirty?: boolean;
   discount_allocation_key?: string | false;
@@ -41,7 +41,6 @@ export interface AccountMoveLine {
   epd_dirty?: boolean;
   epd_key?: string | false;
   epd_needed?: string | false;
-  expense_id?: number | false;
   full_reconcile_id?: number | false;
   group_tax_id?: number | false;
   has_abnormal_deferred_dates?: boolean;
@@ -64,8 +63,6 @@ export interface AccountMoveLine {
   move_name?: string;
   move_type?: string;
   name?: string;
-  need_vehicle?: boolean;
-  note_dn?: boolean;
   parent_state?: string;
   partner_id?: number | false;
   payment_date?: string;
@@ -97,8 +94,6 @@ export interface AccountMoveLine {
   tax_tag_ids?: number[];
   tax_tag_invert?: boolean;
   term_key?: string | false;
-  vehicle_id?: number | false;
-  vehicle_log_service_ids?: number[];
   write_date?: string;
   write_uid?: number | false;
 }

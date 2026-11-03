@@ -1,0 +1,33 @@
+export interface TStockRule {
+    action: string;
+    active?: boolean;
+    auto: string;
+    company_id?: number | false;
+    create_date?: string;
+    create_uid?: number | false;
+    delay?: number;
+    display_name?: string;
+    group_id?: number | false;
+    group_propagation_option?: string;
+    id?: number;
+    location_dest_from_rule?: boolean;
+    location_dest_id: number | false;
+    location_src_id?: number | false;
+    name: string;
+    partner_address_id?: number | false;
+    picking_type_code_domain?: string;
+    picking_type_id: number | false;
+    procure_method: string;
+    propagate_cancel?: boolean;
+    propagate_carrier?: boolean;
+    propagate_warehouse_id?: number | false;
+    push_domain?: string;
+    route_company_id?: number | false;
+    route_id: number | false;
+    route_sequence?: number;
+    rule_message?: string;
+    sequence?: number;
+    warehouse_id?: number | false;
+    write_date?: string;
+    write_uid?: number | false;
+}

@@ -1,4 +1,4 @@
-export interface DeliveryZipPrefix {
+export interface TDeliveryZipPrefix {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

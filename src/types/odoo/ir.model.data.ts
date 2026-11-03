@@ -1,4 +1,4 @@
-export interface IrModelData {
+export interface TIrModelData {
   complete_name?: string;
   create_date?: string;
   create_uid?: number | false;

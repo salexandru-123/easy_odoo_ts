@@ -1,4 +1,4 @@
-export interface ProjectTaskTypeDeleteWizard {
+export interface TProjectTaskTypeDeleteWizard {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

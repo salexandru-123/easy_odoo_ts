@@ -1,4 +1,4 @@
-export interface HrPayrollEmployeeDeclaration {
+export interface THrPayrollEmployeeDeclaration {
   company_id: number | false;
   create_date?: string;
   create_uid?: number | false;

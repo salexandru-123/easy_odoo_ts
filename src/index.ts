@@ -1,3 +1,3 @@
-export * from './models/odoo';
-export * from './models/models';
-export type * from './types';
+export * from './models';
+export * from './client/Odoo';
+export * from './types';

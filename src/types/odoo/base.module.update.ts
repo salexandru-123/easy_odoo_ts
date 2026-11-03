@@ -1,4 +1,4 @@
-export interface BaseModuleUpdate {
+export interface TBaseModuleUpdate {
   added?: number;
   create_date?: string;
   create_uid?: number | false;

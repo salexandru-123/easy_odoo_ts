@@ -1,4 +1,4 @@
-export interface DiscussChannelMember {
+export interface TDiscussChannelMember {
   channel_id: number | false;
   create_date?: string;
   create_uid?: number | false;

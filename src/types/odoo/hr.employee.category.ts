@@ -1,4 +1,4 @@
-export interface HrEmployeeCategory {
+export interface THrEmployeeCategory {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

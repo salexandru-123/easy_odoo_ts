@@ -1,4 +1,4 @@
-export interface TimerMixin {
+export interface TTimerMixin {
   display_timer_pause?: boolean;
   display_timer_resume?: boolean;
   display_timer_start_primary?: boolean;

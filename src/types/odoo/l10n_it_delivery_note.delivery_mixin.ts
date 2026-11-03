@@ -1,4 +1,4 @@
-export interface L10n_it_delivery_noteDelivery_mixin {
+export interface TL10n_it_delivery_noteDelivery_mixin {
   delivery_carrier_id?: number | false;
   delivery_goods_appearance_id?: number | false;
   delivery_gross_weight?: number;

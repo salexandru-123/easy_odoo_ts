@@ -1,8 +1,10 @@
-export interface AccountFiscalPosition {
+export interface TAccountFiscalPosition {
   account_ids?: number[];
   account_map?: string | false;
   active?: boolean;
   auto_apply?: boolean;
+  avatax_invoice_account_id?: number | false;
+  avatax_refund_account_id?: number | false;
   company_country_id?: number | false;
   company_id: number | false;
   country_group_id?: number | false;
@@ -14,6 +16,7 @@ export interface AccountFiscalPosition {
   foreign_vat?: string;
   foreign_vat_header_mode?: string;
   id?: number;
+  is_avatax?: boolean;
   name: string;
   note?: string;
   sequence?: number;

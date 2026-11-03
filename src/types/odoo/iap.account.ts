@@ -1,4 +1,4 @@
-export interface IapAccount {
+export interface TIapAccount {
   account_token?: string;
   balance?: string;
   company_ids?: number[];
@@ -19,7 +19,6 @@ export interface IapAccount {
   message_needaction_counter?: number;
   message_partner_ids?: number[];
   name?: string;
-  rating_ids?: number[];
   sender_name?: string;
   service_id: number | false;
   service_locked?: boolean;

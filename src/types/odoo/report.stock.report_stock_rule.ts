@@ -1,2 +1,2 @@
-export interface ReportStockReport_stock_rule {
+export interface TReportStockReport_stock_rule {
 }

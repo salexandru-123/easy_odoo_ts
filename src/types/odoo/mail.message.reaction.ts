@@ -1,4 +1,4 @@
-export interface MailMessageReaction {
+export interface TMailMessageReaction {
   content: string;
   display_name?: string;
   guest_id?: number | false;

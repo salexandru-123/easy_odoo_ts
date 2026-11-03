@@ -1,4 +1,4 @@
-export interface HrWorkEntry {
+export interface THrWorkEntry {
   active?: boolean;
   attendance_id?: number | false;
   code?: string;

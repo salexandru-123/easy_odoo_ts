@@ -1,4 +1,4 @@
-export interface Account_edi_proxy_clientUser {
+export interface TAccount_edi_proxy_clientUser {
   active?: boolean;
   company_id: number | false;
   create_date?: string;

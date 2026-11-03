@@ -1,4 +1,4 @@
-export interface BaseModuleInstallReview {
+export interface TBaseModuleInstallReview {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

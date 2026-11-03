@@ -1,4 +1,4 @@
-export interface AccountMissingTransactionWizard {
+export interface TAccountMissingTransactionWizard {
   create_date?: string;
   create_uid?: number | false;
   date?: string;

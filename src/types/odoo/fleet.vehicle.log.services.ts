@@ -1,4 +1,4 @@
-export interface FleetVehicleLogServices {
+export interface TFleetVehicleLogServices {
   account_move_line_id?: number | false;
   account_move_state?: string;
   active?: boolean;

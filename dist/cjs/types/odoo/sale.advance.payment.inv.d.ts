@@ -1,0 +1,22 @@
+export interface TSaleAdvancePaymentInv {
+    advance_payment_method: string;
+    amount?: number;
+    amount_invoiced?: number;
+    amount_to_invoice?: number;
+    company_id?: number | false;
+    consolidated_billing?: boolean;
+    count?: number;
+    create_date?: string;
+    create_uid?: number | false;
+    currency_id?: number | false;
+    deduct_down_payments?: boolean;
+    display_draft_invoice_warning?: boolean;
+    display_invoice_amount_warning?: boolean;
+    display_name?: string;
+    fixed_amount?: number;
+    has_down_payments?: boolean;
+    id?: number;
+    sale_order_ids?: number[];
+    write_date?: string;
+    write_uid?: number | false;
+}

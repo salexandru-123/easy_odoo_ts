@@ -1,4 +1,4 @@
-export interface MrpBatchProduce {
+export interface TMrpBatchProduce {
   component_separator: string;
   create_date?: string;
   create_uid?: number | false;

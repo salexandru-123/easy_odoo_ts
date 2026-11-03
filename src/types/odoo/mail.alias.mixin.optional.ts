@@ -1,4 +1,4 @@
-export interface MailAliasMixinOptional {
+export interface TMailAliasMixinOptional {
   alias_defaults?: string;
   alias_domain?: string;
   alias_domain_id?: number | false;

@@ -1,4 +1,4 @@
-export interface BarcodeRule {
+export interface TBarcodeRule {
   alias: string;
   associated_uom_id?: number | false;
   barcode_nomenclature_id?: number | false;

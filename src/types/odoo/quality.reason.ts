@@ -1,4 +1,4 @@
-export interface QualityReason {
+export interface TQualityReason {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

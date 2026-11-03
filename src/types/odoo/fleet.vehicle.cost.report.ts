@@ -1,4 +1,4 @@
-export interface FleetVehicleCostReport {
+export interface TFleetVehicleCostReport {
   company_id?: number | false;
   cost?: number;
   cost_type?: string;

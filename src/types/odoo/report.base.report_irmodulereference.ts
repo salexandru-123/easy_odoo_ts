@@ -1,2 +1,2 @@
-export interface ReportBaseReport_irmodulereference {
+export interface TReportBaseReport_irmodulereference {
 }

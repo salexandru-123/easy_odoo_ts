@@ -1,4 +1,4 @@
-export interface StockRequestCount {
+export interface TStockRequestCount {
   accounting_date?: string;
   create_date?: string;
   create_uid?: number | false;

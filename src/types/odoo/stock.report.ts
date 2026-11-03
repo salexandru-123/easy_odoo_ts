@@ -1,4 +1,4 @@
-export interface StockReport {
+export interface TStockReport {
   categ_id?: number | false;
   company_id?: number | false;
   creation_date?: string;

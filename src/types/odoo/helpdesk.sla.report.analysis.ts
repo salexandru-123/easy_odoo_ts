@@ -1,4 +1,4 @@
-export interface HelpdeskSlaReportAnalysis {
+export interface THelpdeskSlaReportAnalysis {
   active?: boolean;
   avg_response_hours?: number;
   close_date?: string;

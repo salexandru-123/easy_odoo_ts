@@ -1,4 +1,4 @@
-export interface HrPayrollDeclarationMixin {
+export interface THrPayrollDeclarationMixin {
   company_id?: number | false;
   line_ids?: number[];
   lines_count?: number;

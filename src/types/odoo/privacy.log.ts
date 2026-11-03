@@ -1,4 +1,4 @@
-export interface PrivacyLog {
+export interface TPrivacyLog {
   additional_note?: string;
   anonymized_email: string;
   anonymized_name: string;

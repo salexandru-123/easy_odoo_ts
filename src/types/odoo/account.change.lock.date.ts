@@ -1,4 +1,4 @@
-export interface AccountChangeLockDate {
+export interface TAccountChangeLockDate {
   company_id: number | false;
   create_date?: string;
   create_uid?: number | false;

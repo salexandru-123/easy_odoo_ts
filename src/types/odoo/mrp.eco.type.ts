@@ -1,4 +1,4 @@
-export interface MrpEcoType {
+export interface TMrpEcoType {
   alias_bounced_content?: string;
   alias_contact: string;
   alias_defaults: string;

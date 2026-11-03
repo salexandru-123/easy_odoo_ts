@@ -1,4 +1,4 @@
-export interface ResGroups {
+export interface TResGroups {
   api_key_duration?: number;
   category_id?: number | false;
   color?: number;

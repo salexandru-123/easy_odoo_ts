@@ -1,4 +1,4 @@
-export interface QualityAlertTeam {
+export interface TQualityAlertTeam {
   alert_count?: number;
   alias_bounced_content?: string;
   alias_contact: string;
@@ -34,7 +34,6 @@ export interface QualityAlertTeam {
   message_needaction_counter?: number;
   message_partner_ids?: number[];
   name: string;
-  rating_ids?: number[];
   sequence?: number;
   website_message_ids?: number[];
   write_date?: string;

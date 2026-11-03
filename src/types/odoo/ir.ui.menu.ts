@@ -1,4 +1,4 @@
-export interface IrUiMenu {
+export interface TIrUiMenu {
   action?: unknown;
   active?: boolean;
   child_id?: number[];

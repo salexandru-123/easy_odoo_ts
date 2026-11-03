@@ -1,4 +1,4 @@
-export interface FleetVehicle {
+export interface TFleetVehicle {
   account_move_ids?: number[];
   acquisition_date?: string;
   active?: boolean;

@@ -1,4 +1,4 @@
-export interface HrPayslipInputType {
+export interface THrPayslipInputType {
   active?: boolean;
   available_in_attachments?: boolean;
   code: string;

@@ -1,4 +1,4 @@
-export interface Data_recycleRecord {
+export interface TData_recycleRecord {
   active?: boolean;
   company_id?: number | false;
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface ProcurementGroup {
+export interface TProcurementGroup {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

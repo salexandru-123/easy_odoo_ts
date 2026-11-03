@@ -1,0 +1,31 @@
+export interface TFetchmailServer {
+    active?: boolean;
+    attach?: boolean;
+    configuration?: string;
+    create_date?: string;
+    create_uid?: number | false;
+    date?: string;
+    display_name?: string;
+    google_gmail_access_token?: string;
+    google_gmail_access_token_expiration?: number;
+    google_gmail_authorization_code?: string;
+    google_gmail_refresh_token?: string;
+    google_gmail_uri?: string;
+    id?: number;
+    is_ssl?: boolean;
+    message_ids?: number[];
+    name: string;
+    object_id?: number | false;
+    original?: boolean;
+    password?: string;
+    port?: number;
+    priority?: number;
+    script?: string;
+    server?: string;
+    server_type: string;
+    server_type_info?: string;
+    state?: string;
+    user?: string;
+    write_date?: string;
+    write_uid?: number | false;
+}

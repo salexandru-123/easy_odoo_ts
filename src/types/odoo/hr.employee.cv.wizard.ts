@@ -1,4 +1,4 @@
-export interface HrEmployeeCvWizard {
+export interface THrEmployeeCvWizard {
   can_show_others?: boolean;
   can_show_skills?: boolean;
   color_primary: string;

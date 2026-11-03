@@ -1,4 +1,4 @@
-export interface PeppolRegistration {
+export interface TPeppolRegistration {
   account_peppol_migration_key?: string;
   account_peppol_proxy_state?: string;
   company_id: number | false;

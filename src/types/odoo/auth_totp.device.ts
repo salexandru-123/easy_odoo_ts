@@ -1,4 +1,4 @@
-export interface Auth_totpDevice {
+export interface TAuth_totpDevice {
   create_date?: string;
   display_name?: string;
   expiration_date?: string;

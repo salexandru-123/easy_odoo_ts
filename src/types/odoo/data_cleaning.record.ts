@@ -1,4 +1,4 @@
-export interface Data_cleaningRecord {
+export interface TData_cleaningRecord {
   action?: string;
   active?: boolean;
   cleaning_model_id?: number | false;

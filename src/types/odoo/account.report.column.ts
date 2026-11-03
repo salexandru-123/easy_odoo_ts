@@ -1,4 +1,4 @@
-export interface AccountReportColumn {
+export interface TAccountReportColumn {
   blank_if_zero?: boolean;
   create_date?: string;
   create_uid?: number | false;

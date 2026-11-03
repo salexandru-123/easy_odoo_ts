@@ -1,4 +1,4 @@
-export interface StudioApprovalRequest {
+export interface TStudioApprovalRequest {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

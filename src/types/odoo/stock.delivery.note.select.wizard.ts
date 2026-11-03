@@ -1,4 +1,4 @@
-export interface StockDeliveryNoteSelectWizard {
+export interface TStockDeliveryNoteSelectWizard {
   create_date?: string;
   create_uid?: number | false;
   date?: string;

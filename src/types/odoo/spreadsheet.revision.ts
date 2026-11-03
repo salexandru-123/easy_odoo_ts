@@ -1,4 +1,4 @@
-export interface SpreadsheetRevision {
+export interface TSpreadsheetRevision {
   active?: boolean;
   commands: string;
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface ProjectCollaborator {
+export interface TProjectCollaborator {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

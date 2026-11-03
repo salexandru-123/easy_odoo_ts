@@ -1,4 +1,4 @@
-export interface AccountAutomaticEntryWizard {
+export interface TAccountAutomaticEntryWizard {
   account_type?: string;
   action: string;
   company_currency_id?: number | false;

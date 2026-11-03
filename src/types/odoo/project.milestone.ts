@@ -1,4 +1,4 @@
-export interface ProjectMilestone {
+export interface TProjectMilestone {
   allow_billable?: boolean;
   can_be_marked_as_done?: boolean;
   create_date?: string;

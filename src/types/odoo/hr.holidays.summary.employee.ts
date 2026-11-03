@@ -1,4 +1,4 @@
-export interface HrHolidaysSummaryEmployee {
+export interface THrHolidaysSummaryEmployee {
   create_date?: string;
   create_uid?: number | false;
   date_from: string;

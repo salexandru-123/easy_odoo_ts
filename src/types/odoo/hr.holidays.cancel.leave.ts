@@ -1,4 +1,4 @@
-export interface HrHolidaysCancelLeave {
+export interface THrHolidaysCancelLeave {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

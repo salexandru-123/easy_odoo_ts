@@ -1,2 +1,2 @@
-export interface IrQwebFieldMonetary {
+export interface TIrQwebFieldMonetary {
 }

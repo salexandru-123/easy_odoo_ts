@@ -1,4 +1,4 @@
-export interface MaintenanceTeam {
+export interface TMaintenanceTeam {
   active?: boolean;
   color?: number;
   company_id?: number | false;

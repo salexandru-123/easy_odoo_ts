@@ -1,4 +1,4 @@
-export interface ReportStockQuantity {
+export interface TReportStockQuantity {
   company_id?: number | false;
   date?: string;
   display_name?: string;

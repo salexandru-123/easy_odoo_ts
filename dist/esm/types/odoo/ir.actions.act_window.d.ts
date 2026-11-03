@@ -1,0 +1,32 @@
+export interface TIrActionsAct_window {
+    binding_model_id?: number | false;
+    binding_type: string;
+    binding_view_types?: string;
+    context: string;
+    create_date?: string;
+    create_uid?: number | false;
+    display_name?: string;
+    domain?: string;
+    embedded_action_ids?: number[];
+    filter?: boolean;
+    groups_id?: number[];
+    help?: string;
+    id?: number;
+    limit?: number;
+    mobile_view_mode?: string;
+    name: string;
+    path?: string;
+    res_id?: number;
+    res_model: string;
+    search_view_id?: number | false;
+    target?: string;
+    type: string;
+    usage?: string;
+    view_id?: number | false;
+    view_ids?: number[];
+    view_mode: string;
+    views?: string | false;
+    write_date?: string;
+    write_uid?: number | false;
+    xml_id?: string;
+}

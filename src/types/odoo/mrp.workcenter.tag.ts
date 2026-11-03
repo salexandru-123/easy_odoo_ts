@@ -1,4 +1,4 @@
-export interface MrpWorkcenterTag {
+export interface TMrpWorkcenterTag {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

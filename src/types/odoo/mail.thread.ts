@@ -1,4 +1,4 @@
-export interface MailThread {
+export interface TMailThread {
   has_message?: boolean;
   message_attachment_count?: number;
   message_follower_ids?: number[];
@@ -10,6 +10,5 @@ export interface MailThread {
   message_needaction?: boolean;
   message_needaction_counter?: number;
   message_partner_ids?: number[];
-  rating_ids?: number[];
   website_message_ids?: number[];
 }

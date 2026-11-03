@@ -1,4 +1,4 @@
-export interface HrRecruitmentSource {
+export interface THrRecruitmentSource {
   alias_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

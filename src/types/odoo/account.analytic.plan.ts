@@ -1,4 +1,4 @@
-export interface AccountAnalyticPlan {
+export interface TAccountAnalyticPlan {
   account_count?: number;
   account_ids?: number[];
   all_account_count?: number;

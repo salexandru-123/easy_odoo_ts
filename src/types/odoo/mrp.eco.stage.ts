@@ -1,4 +1,4 @@
-export interface MrpEcoStage {
+export interface TMrpEcoStage {
   allow_apply_change?: boolean;
   approval_roles?: string;
   approval_template_ids?: number[];

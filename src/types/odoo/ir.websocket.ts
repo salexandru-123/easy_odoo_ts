@@ -1,2 +1,2 @@
-export interface IrWebsocket {
+export interface TIrWebsocket {
 }

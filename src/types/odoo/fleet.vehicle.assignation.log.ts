@@ -1,4 +1,4 @@
-export interface FleetVehicleAssignationLog {
+export interface TFleetVehicleAssignationLog {
   attachment_number?: number;
   create_date?: string;
   create_uid?: number | false;

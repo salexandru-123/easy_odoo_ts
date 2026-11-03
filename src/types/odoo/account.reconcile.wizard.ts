@@ -1,4 +1,4 @@
-export interface AccountReconcileWizard {
+export interface TAccountReconcileWizard {
   account_id?: number | false;
   allow_partials?: boolean;
   amount?: number;

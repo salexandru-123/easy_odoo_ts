@@ -1,4 +1,4 @@
-export interface MailNotification {
+export interface TMailNotification {
   author_id?: number | false;
   display_name?: string;
   failure_reason?: string;

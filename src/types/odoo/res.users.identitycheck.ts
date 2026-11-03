@@ -1,4 +1,4 @@
-export interface ResUsersIdentitycheck {
+export interface TResUsersIdentitycheck {
   auth_method?: string;
   create_date?: string;
   create_uid?: number | false;

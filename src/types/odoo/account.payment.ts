@@ -1,5 +1,4 @@
-export interface AccountPayment {
-  activity_calendar_event_id?: number | false;
+export interface TAccountPayment {
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -18,6 +17,9 @@ export interface AccountPayment {
   available_partner_bank_ids?: number[];
   available_payment_method_line_ids?: number[];
   batch_payment_id?: number | false;
+  check_amount_in_words?: string;
+  check_manual_sequencing?: boolean;
+  check_number?: string;
   company_currency_id?: number | false;
   company_id: number | false;
   country_code?: string;
@@ -28,15 +30,12 @@ export interface AccountPayment {
   destination_account_id?: number | false;
   display_name?: string;
   duplicate_payment_ids?: number[];
-  end_to_end_id?: string;
-  expense_sheet_id?: number | false;
   has_message?: boolean;
   id?: number;
   invoice_ids?: number[];
   is_matched?: boolean;
   is_reconciled?: boolean;
   is_sent?: boolean;
-  iso20022_uetr?: string;
   journal_id: number | false;
   memo?: string;
   message_attachment_count?: number;
@@ -69,7 +68,6 @@ export interface AccountPayment {
   payment_transaction_id?: number | false;
   payment_type: string;
   qr_code?: string;
-  rating_ids?: number[];
   reconciled_bill_ids?: number[];
   reconciled_bills_count?: number;
   reconciled_invoice_ids?: number[];
@@ -79,7 +77,7 @@ export interface AccountPayment {
   reconciled_statement_lines_count?: number;
   refunds_count?: number;
   require_partner_bank_account?: boolean;
-  sepa_pain_version?: string;
+  show_check_number?: boolean;
   show_partner_bank_account?: boolean;
   source_payment_id?: number | false;
   state: string;

@@ -1,4 +1,4 @@
-export interface MailTemplate {
+export interface TMailTemplate {
   active?: boolean;
   attachment_ids?: number[];
   auto_delete?: boolean;

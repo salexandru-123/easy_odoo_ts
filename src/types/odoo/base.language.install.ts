@@ -1,4 +1,4 @@
-export interface BaseLanguageInstall {
+export interface TBaseLanguageInstall {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

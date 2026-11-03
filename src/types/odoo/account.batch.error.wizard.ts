@@ -1,4 +1,4 @@
-export interface AccountBatchErrorWizard {
+export interface TAccountBatchErrorWizard {
   batch_payment_id: number | false;
   create_date?: string;
   create_uid?: number | false;

@@ -1,4 +1,4 @@
-export interface PlanningPlanning {
+export interface TPlanningPlanning {
   access_token: string;
   allow_self_unassign?: boolean;
   company_id: number | false;

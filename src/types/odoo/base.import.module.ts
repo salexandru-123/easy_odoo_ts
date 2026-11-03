@@ -1,4 +1,4 @@
-export interface BaseImportModule {
+export interface TBaseImportModule {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

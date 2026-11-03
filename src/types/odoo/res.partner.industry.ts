@@ -1,4 +1,4 @@
-export interface ResPartnerIndustry {
+export interface TResPartnerIndustry {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

@@ -1,4 +1,4 @@
-export interface MrpAccountWipAccounting {
+export interface TMrpAccountWipAccounting {
   create_date?: string;
   create_uid?: number | false;
   date?: string;

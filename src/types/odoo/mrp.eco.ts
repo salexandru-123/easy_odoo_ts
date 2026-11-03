@@ -1,4 +1,4 @@
-export interface MrpEco {
+export interface TMrpEco {
   active?: boolean;
   activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;

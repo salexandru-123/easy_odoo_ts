@@ -1,4 +1,4 @@
-export interface AccountTaxGroup {
+export interface TAccountTaxGroup {
   advance_tax_payment_account_id?: number | false;
   company_id: number | false;
   country_code?: string;

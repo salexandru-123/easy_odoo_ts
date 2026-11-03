@@ -1,4 +1,4 @@
-export interface PhoneBlacklist {
+export interface TPhoneBlacklist {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;
@@ -16,7 +16,6 @@ export interface PhoneBlacklist {
   message_needaction_counter?: number;
   message_partner_ids?: number[];
   number: string;
-  rating_ids?: number[];
   website_message_ids?: number[];
   write_date?: string;
   write_uid?: number | false;

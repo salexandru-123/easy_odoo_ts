@@ -1,4 +1,4 @@
-export interface AccountReconcileModelLine {
+export interface TAccountReconcileModelLine {
   account_id?: number | false;
   allow_payment_tolerance?: boolean;
   amount?: number;

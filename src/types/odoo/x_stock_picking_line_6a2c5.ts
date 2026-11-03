@@ -1,4 +1,4 @@
-export interface X_stock_picking_line_6a2c5 {
+export interface TX_stock_picking_line_6a2c5 {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

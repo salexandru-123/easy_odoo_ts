@@ -1,6 +1,5 @@
-export interface StockPickingType {
+export interface TStockPickingType {
   active?: boolean;
-  analytic_costs?: boolean;
   auto_print_delivery_slip?: boolean;
   auto_print_done_mrp_lot?: boolean;
   auto_print_done_mrp_product_labels?: boolean;
@@ -37,19 +36,11 @@ export interface StockPickingType {
   count_picking_late?: number;
   count_picking_ready?: number;
   count_picking_waiting?: number;
-  count_repair_confirmed?: number;
-  count_repair_late?: number;
-  count_repair_ready?: number;
-  count_repair_under_repair?: number;
   create_backorder: string;
   create_date?: string;
   create_uid?: number | false;
   default_location_dest_id: number | false;
   default_location_src_id: number | false;
-  default_product_location_dest_id?: number | false;
-  default_product_location_src_id?: number | false;
-  default_recycle_location_dest_id?: number | false;
-  default_remove_location_dest_id?: number | false;
   display_name?: string;
   done_mrp_lot_label_to_print?: string;
   favorite_user_ids?: number[];
@@ -58,9 +49,7 @@ export interface StockPickingType {
   id?: number;
   is_barcode_picking_type?: boolean;
   is_favorite?: boolean;
-  is_repairable?: boolean;
   kanban_dashboard_graph?: string;
-  l10n_it_ddt_sequence_id?: number | false;
   lot_label_format?: string;
   move_type: string;
   mrp_product_label_to_print?: string;
@@ -69,7 +58,6 @@ export interface StockPickingType {
   picking_properties_definition?: unknown;
   print_label?: boolean;
   product_label_format?: string;
-  repair_properties_definition?: unknown;
   reservation_days_before?: number;
   reservation_days_before_priority?: number;
   reservation_method: string;
@@ -79,7 +67,6 @@ export interface StockPickingType {
   restrict_scan_source_location: string;
   restrict_scan_tracking_number: string;
   return_picking_type_id?: number | false;
-  return_type_of_ids?: number[];
   sequence?: number;
   sequence_code: string;
   sequence_id?: number | false;

@@ -1,7 +1,6 @@
-export interface ProductProduct {
+export interface TProductProduct {
   account_tag_ids?: number[];
   active?: boolean;
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -14,12 +13,12 @@ export interface ProductProduct {
   additional_product_tag_ids?: number[];
   all_product_tag_ids?: number[];
   attribute_line_ids?: number[];
+  avatax_category_id?: number | false;
   avg_cost?: number;
   barcode?: string;
   bom_count?: number;
   bom_ids?: number[];
   bom_line_ids?: number[];
-  can_be_expensed?: boolean;
   can_image_1024_be_zoomed?: boolean;
   can_image_variant_1024_be_zoomed?: boolean;
   categ_id: number | false;
@@ -33,9 +32,7 @@ export interface ProductProduct {
   cost_method?: string;
   country_of_origin?: number | false;
   create_date?: string;
-  create_repair?: boolean;
   create_uid?: number | false;
-  ctart: string;
   currency_id?: number | false;
   default_code?: string;
   description?: string;
@@ -45,11 +42,7 @@ export interface ProductProduct {
   description_purchase?: string;
   description_sale?: string;
   display_name?: string;
-  ean_code?: string;
-  eco_count?: number;
-  eco_ids?: number[];
   expense_policy?: string;
-  expense_policy_tooltip?: string;
   fiscal_country_codes?: string;
   free_qty?: number;
   has_available_route_ids?: boolean;
@@ -69,12 +62,10 @@ export interface ProductProduct {
   image_variant_256?: string | false;
   image_variant_512?: string | false;
   incoming_qty?: number;
-  internal_sku?: string;
   invoice_policy?: string;
   is_favorite?: boolean;
   is_in_purchase_order?: boolean;
   is_kits?: boolean;
-  is_obsolete?: boolean;
   is_product_variant?: boolean;
   is_storable?: boolean;
   list_price?: number;
@@ -103,20 +94,14 @@ export interface ProductProduct {
   outgoing_qty?: number;
   packaging_ids?: number[];
   partner_ref?: string;
-  planning_enabled?: boolean;
-  planning_role_id?: number | false;
   price_extra?: number;
   pricelist_item_count?: number;
   product_catalog_product_is_in_bom?: boolean;
   product_catalog_product_is_in_mo?: boolean;
-  product_catalog_product_is_in_repair?: boolean;
   product_catalog_product_is_in_sale_order?: boolean;
-  product_category_id: number | false;
-  product_description?: string;
   product_document_count?: number;
   product_document_ids?: number[];
   product_properties?: Record<string, unknown> | false;
-  product_subcategory_id: number | false;
   product_tag_ids?: number[];
   product_template_attribute_value_ids?: number[];
   product_template_variant_value_ids?: number[];
@@ -125,8 +110,6 @@ export interface ProductProduct {
   product_variant_count?: number;
   product_variant_id?: number | false;
   product_variant_ids: number[];
-  project_id?: number | false;
-  project_template_id?: number | false;
   property_account_creditor_price_difference?: number | false;
   property_account_expense_id?: number | false;
   property_account_income_id?: number | false;
@@ -140,11 +123,7 @@ export interface ProductProduct {
   purchased_product_qty?: number;
   putaway_rule_ids?: number[];
   qty_available?: number;
-  quality_control_point_qty?: number;
-  quality_fail_qty?: number;
-  quality_pass_qty?: number;
   quantity_svl?: number;
-  rating_ids?: number[];
   reordering_max_qty?: number;
   reordering_min_qty?: number;
   responsible_id?: number | false;
@@ -155,20 +134,14 @@ export interface ProductProduct {
   sale_line_warn_msg?: string;
   sale_ok?: boolean;
   sales_count?: number;
-  schedule_count?: number;
   seller_ids?: number[];
   sequence?: number;
-  service_policy?: string;
   service_to_purchase?: boolean;
   service_tracking: string;
   service_type?: string;
-  service_upsell_threshold?: number;
-  service_upsell_threshold_ratio?: string;
   show_forecasted_qty_status_button?: boolean;
   show_on_hand_qty_status_button?: boolean;
   standard_price?: number;
-  standard_price_update_warning?: string;
-  state?: string;
   stock_move_ids?: number[];
   stock_quant_ids?: number[];
   stock_valuation_layer_ids?: number[];
@@ -179,7 +152,6 @@ export interface ProductProduct {
   total_value?: number;
   tracking: string;
   type: string;
-  uom: number | false;
   uom_category_id?: number | false;
   uom_id: number | false;
   uom_name?: string;
@@ -191,7 +163,6 @@ export interface ProductProduct {
   value_svl?: number;
   variant_bom_ids?: number[];
   variant_seller_ids?: number[];
-  version?: number;
   virtual_available?: number;
   visible_expense_policy?: boolean;
   volume?: number;

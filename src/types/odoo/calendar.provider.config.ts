@@ -1,4 +1,4 @@
-export interface CalendarProviderConfig {
+export interface TCalendarProviderConfig {
   cal_client_id?: string;
   cal_client_secret?: string;
   cal_sync_paused?: boolean;

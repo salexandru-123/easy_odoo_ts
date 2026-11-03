@@ -1,8 +1,10 @@
-export interface AccountMoveSendWizard {
+export interface TAccountMoveSendWizard {
   alerts?: unknown;
+  attachments_not_supported?: unknown;
   company_id?: number | false;
   create_date?: string;
   create_uid?: number | false;
+  display_attachments_widget?: boolean;
   display_name?: string;
   display_pdf_report_id?: boolean;
   extra_edi_checkboxes?: unknown;

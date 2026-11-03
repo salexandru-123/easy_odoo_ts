@@ -1,4 +1,4 @@
-export interface ProjectShareWizard {
+export interface TProjectShareWizard {
   access_warning?: string;
   collaborator_ids?: number[];
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface MailIceServer {
+export interface TMailIceServer {
   create_date?: string;
   create_uid?: number | false;
   credential?: string;

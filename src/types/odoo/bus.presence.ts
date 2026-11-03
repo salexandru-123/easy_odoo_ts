@@ -1,4 +1,4 @@
-export interface BusPresence {
+export interface TBusPresence {
   display_name?: string;
   guest_id?: number | false;
   id?: number;

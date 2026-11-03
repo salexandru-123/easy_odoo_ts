@@ -1,4 +1,4 @@
-export interface ProductLabelLayout {
+export interface TProductLabelLayout {
   columns?: number;
   create_date?: string;
   create_uid?: number | false;

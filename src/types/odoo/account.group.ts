@@ -1,4 +1,4 @@
-export interface AccountGroup {
+export interface TAccountGroup {
   code_prefix_end?: string;
   code_prefix_start?: string;
   company_id: number | false;

@@ -6,6 +6,7 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
+    "generate:models": "ts-node ./src/scripts/generate_classes.ts",
     "test": "jest --coverage",
     "test:ci": "jest --coverage --ci",
     "test:watch": "jest --watch",
@@ -20,10 +21,14 @@
     "version": "pnpm run format && git add -A src",
     "postversion": "git push && git push --tags",
     "clean": "rm -rf dist",
-    "build": "npm run clean && npm run build:cjs && npm run build:esm && npm run build:types",
+    "build": "pnpm run clean && pnpm run build:cjs && pnpm run build:esm && pnpm run build:types",
     "build:cjs": "tsc -p tsconfig.cjs.json && echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
     "build:esm": "tsc -p tsconfig.esm.json && echo '{\"type\": \"module\"}' > dist/esm/package.json",
     "build:types": "tsc -p tsconfig.types.json"
+  },
+  "lint-staged": {
+    "src/**/*.ts": "eslint",
+    "test/**/*.ts": "eslint"
   },
   "exports": {
     ".": {
@@ -60,6 +65,7 @@
   "type": "commonjs",
   "dependencies": {
     "odoo-xmlrpc-ts": "^1.3.0",
+    "odoo_ts": "link:",
     "tsyringe": "^4.10.0",
     "xmlrpc": "^1.3.2"
   },

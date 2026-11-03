@@ -1,4 +1,4 @@
-export interface SignLog {
+export interface TSignLog {
   action: string;
   create_date?: string;
   create_uid?: number | false;

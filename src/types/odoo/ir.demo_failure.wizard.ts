@@ -1,4 +1,4 @@
-export interface IrDemo_failureWizard {
+export interface TIrDemo_failureWizard {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

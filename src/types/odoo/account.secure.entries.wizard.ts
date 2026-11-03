@@ -1,4 +1,4 @@
-export interface AccountSecureEntriesWizard {
+export interface TAccountSecureEntriesWizard {
   chains_to_hash_with_gaps?: unknown;
   company_id: number | false;
   country_code?: string;

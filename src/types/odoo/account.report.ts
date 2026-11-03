@@ -1,4 +1,4 @@
-export interface AccountReport {
+export interface TAccountReport {
   active?: boolean;
   availability_condition?: string;
   chart_template?: string;

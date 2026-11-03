@@ -1,4 +1,4 @@
-export interface PurchaseReport {
+export interface TPurchaseReport {
   category_id?: number | false;
   commercial_partner_id?: number | false;
   company_id?: number | false;

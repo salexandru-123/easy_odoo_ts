@@ -1,4 +1,4 @@
-export interface MrpReport {
+export interface TMrpReport {
   byproduct_cost?: number;
   company_id?: number | false;
   component_cost?: number;

@@ -1,4 +1,4 @@
-export interface HrPayrollHeadcount {
+export interface THrPayrollHeadcount {
   company_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

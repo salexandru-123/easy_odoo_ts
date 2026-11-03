@@ -1,4 +1,4 @@
-export interface IrModelConstraint {
+export interface TIrModelConstraint {
   create_date?: string;
   create_uid?: number | false;
   definition?: string;

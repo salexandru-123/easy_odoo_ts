@@ -1,4 +1,4 @@
-export interface StockReplenishMixin {
+export interface TStockReplenishMixin {
   allowed_route_ids?: number[];
   bom_id?: number | false;
   route_id?: number | false;

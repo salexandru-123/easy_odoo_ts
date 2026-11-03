@@ -1,2 +1,2 @@
-export interface ReportMrp_account_enterpriseMrp_cost_structure {
+export interface TReportMrp_account_enterpriseMrp_cost_structure {
 }

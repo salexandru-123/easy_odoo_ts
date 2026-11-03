@@ -1,4 +1,4 @@
-export interface StockPackageType {
+export interface TStockPackageType {
   barcode?: string;
   base_weight?: number;
   company_id?: number | false;

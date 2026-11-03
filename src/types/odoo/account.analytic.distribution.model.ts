@@ -1,4 +1,4 @@
-export interface AccountAnalyticDistributionModel {
+export interface TAccountAnalyticDistributionModel {
   account_prefix?: string;
   analytic_distribution?: unknown;
   analytic_precision?: number;

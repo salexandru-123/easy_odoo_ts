@@ -1,4 +1,4 @@
-export interface AccountAccount {
+export interface TAccountAccount {
   account_type: string;
   allowed_journal_ids?: number[];
   code?: string;
@@ -36,7 +36,6 @@ export interface AccountAccount {
   opening_credit?: number;
   opening_debit?: number;
   placeholder_code?: string;
-  rating_ids?: number[];
   reconcile?: boolean;
   related_taxes_amount?: number;
   root_id?: number | false;

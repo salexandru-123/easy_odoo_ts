@@ -1,4 +1,4 @@
-export interface MailFollowers {
+export interface TMailFollowers {
   display_name?: string;
   email?: string;
   id?: number;

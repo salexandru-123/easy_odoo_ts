@@ -1,4 +1,4 @@
-export interface MaintenanceMixin {
+export interface TMaintenanceMixin {
   company_id?: number | false;
   effective_date: string;
   estimated_next_failure?: string;

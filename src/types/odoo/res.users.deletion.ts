@@ -1,4 +1,4 @@
-export interface ResUsersDeletion {
+export interface TResUsersDeletion {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

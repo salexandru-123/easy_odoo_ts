@@ -1,4 +1,4 @@
-export interface IrModelInherit {
+export interface TIrModelInherit {
   display_name?: string;
   id?: number;
   model_id: number | false;

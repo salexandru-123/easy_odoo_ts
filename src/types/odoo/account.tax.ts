@@ -1,4 +1,4 @@
-export interface AccountTax {
+export interface TAccountTax {
   active?: boolean;
   amount: number;
   amount_type: string;
@@ -23,8 +23,6 @@ export interface AccountTax {
   invoice_repartition_line_ids?: number[];
   is_base_affected?: boolean;
   is_used?: boolean;
-  l10n_it_exempt_reason?: string;
-  l10n_it_law_reference?: string;
   message_attachment_count?: number;
   message_follower_ids?: number[];
   message_has_error?: boolean;
@@ -39,7 +37,6 @@ export interface AccountTax {
   name_searchable?: string;
   price_include?: boolean;
   price_include_override?: string;
-  rating_ids?: number[];
   refund_repartition_line_ids?: number[];
   repartition_line_ids?: number[];
   repartition_lines_str?: string;

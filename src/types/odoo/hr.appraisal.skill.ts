@@ -1,4 +1,4 @@
-export interface HrAppraisalSkill {
+export interface THrAppraisalSkill {
   appraisal_id: number | false;
   create_date?: string;
   create_uid?: number | false;

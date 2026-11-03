@@ -1,4 +1,4 @@
-export interface SaleOrderTemplate {
+export interface TSaleOrderTemplate {
   active?: boolean;
   company_id?: number | false;
   create_date?: string;

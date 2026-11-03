@@ -1,4 +1,4 @@
-export interface Web_tourTour {
+export interface TWeb_tourTour {
   create_date?: string;
   create_uid?: number | false;
   custom?: boolean;

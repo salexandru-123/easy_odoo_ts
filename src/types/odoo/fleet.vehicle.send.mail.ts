@@ -1,4 +1,4 @@
-export interface FleetVehicleSendMail {
+export interface TFleetVehicleSendMail {
   attachment_ids?: number[];
   author_id: number | false;
   body?: string;

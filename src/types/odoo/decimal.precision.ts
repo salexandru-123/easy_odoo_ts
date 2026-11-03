@@ -1,4 +1,4 @@
-export interface DecimalPrecision {
+export interface TDecimalPrecision {
   create_date?: string;
   create_uid?: number | false;
   digits: number;

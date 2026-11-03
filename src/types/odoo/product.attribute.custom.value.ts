@@ -1,4 +1,4 @@
-export interface ProductAttributeCustomValue {
+export interface TProductAttributeCustomValue {
   create_date?: string;
   create_uid?: number | false;
   custom_product_template_attribute_value_id: number | false;

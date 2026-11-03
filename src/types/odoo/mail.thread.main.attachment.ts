@@ -1,4 +1,4 @@
-export interface MailThreadMainAttachment {
+export interface TMailThreadMainAttachment {
   has_message?: boolean;
   message_attachment_count?: number;
   message_follower_ids?: number[];
@@ -11,6 +11,5 @@ export interface MailThreadMainAttachment {
   message_needaction?: boolean;
   message_needaction_counter?: number;
   message_partner_ids?: number[];
-  rating_ids?: number[];
   website_message_ids?: number[];
 }

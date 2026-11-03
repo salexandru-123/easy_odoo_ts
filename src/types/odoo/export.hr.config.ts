@@ -1,4 +1,4 @@
-export interface ExportHrConfig {
+export interface TExportHrConfig {
   create_date?: string;
   create_uid?: number | false;
   date_end?: string;

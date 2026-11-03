@@ -1,4 +1,4 @@
-export interface HrContract {
+export interface THrContract {
   active?: boolean;
   active_employee?: boolean;
   activity_calendar_event_id?: number | false;

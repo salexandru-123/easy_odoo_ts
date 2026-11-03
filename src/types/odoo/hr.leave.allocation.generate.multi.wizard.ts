@@ -1,4 +1,4 @@
-export interface HrLeaveAllocationGenerateMultiWizard {
+export interface THrLeaveAllocationGenerateMultiWizard {
   accrual_plan_id?: number | false;
   allocation_mode: string;
   allocation_type: string;

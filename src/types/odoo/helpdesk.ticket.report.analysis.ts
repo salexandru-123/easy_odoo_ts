@@ -1,4 +1,4 @@
-export interface HelpdeskTicketReportAnalysis {
+export interface THelpdeskTicketReportAnalysis {
   active?: boolean;
   assign_date?: string;
   avg_response_hours?: number;

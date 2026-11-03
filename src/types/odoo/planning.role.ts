@@ -1,4 +1,4 @@
-export interface PlanningRole {
+export interface TPlanningRole {
   active?: boolean;
   color?: number;
   create_date?: string;

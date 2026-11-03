@@ -1,4 +1,4 @@
-export interface IrUiView {
+export interface TIrUiView {
   active?: boolean;
   arch?: string;
   arch_base?: string;

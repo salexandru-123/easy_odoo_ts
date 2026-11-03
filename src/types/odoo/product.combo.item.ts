@@ -1,4 +1,4 @@
-export interface ProductComboItem {
+export interface TProductComboItem {
   combo_id: number | false;
   company_id?: number | false;
   create_date?: string;

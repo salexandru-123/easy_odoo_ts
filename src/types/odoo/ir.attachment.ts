@@ -1,4 +1,4 @@
-export interface IrAttachment {
+export interface TIrAttachment {
   access_token?: string;
   checksum?: string;
   company_id?: number | false;

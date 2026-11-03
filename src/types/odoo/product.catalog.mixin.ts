@@ -1,2 +1,2 @@
-export interface ProductCatalogMixin {
+export interface TProductCatalogMixin {
 }

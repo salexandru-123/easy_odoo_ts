@@ -1,4 +1,4 @@
-export interface SignItemOption {
+export interface TSignItemOption {
   available?: boolean;
   create_date?: string;
   create_uid?: number | false;

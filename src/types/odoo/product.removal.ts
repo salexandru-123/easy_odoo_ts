@@ -1,4 +1,4 @@
-export interface ProductRemoval {
+export interface TProductRemoval {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

@@ -193,6 +193,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  odoo_ts: 'link:'
+
 importers:
 
   .:
@@ -200,6 +203,9 @@ importers:
       odoo-xmlrpc-ts:
         specifier: ^1.3.0
         version: 1.3.0
+      odoo_ts:
+        specifier: link:.
+        version: 'link:'
       tsyringe:
         specifier: ^4.10.0
         version: 4.10.0

@@ -1,4 +1,4 @@
-export interface IrProfile {
+export interface TIrProfile {
   create_date?: string;
   display_name?: string;
   duration?: number;

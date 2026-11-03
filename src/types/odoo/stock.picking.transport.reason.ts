@@ -1,4 +1,4 @@
-export interface StockPickingTransportReason {
+export interface TStockPickingTransportReason {
   active?: boolean;
   create_date?: string;
   create_uid?: number | false;

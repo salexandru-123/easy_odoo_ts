@@ -1,4 +1,4 @@
-export interface Data_mergeModel {
+export interface TData_mergeModel {
   active?: boolean;
   create_date?: string;
   create_threshold?: number;

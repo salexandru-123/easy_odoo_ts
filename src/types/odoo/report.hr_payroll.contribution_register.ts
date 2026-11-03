@@ -1,2 +1,2 @@
-export interface ReportHr_payrollContribution_register {
+export interface TReportHr_payrollContribution_register {
 }

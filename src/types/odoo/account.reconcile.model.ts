@@ -1,4 +1,4 @@
-export interface AccountReconcileModel {
+export interface TAccountReconcileModel {
   active?: boolean;
   allow_payment_tolerance?: boolean;
   auto_reconcile?: boolean;
@@ -46,7 +46,6 @@ export interface AccountReconcileModel {
   past_months_limit?: number;
   payment_tolerance_param?: number;
   payment_tolerance_type: string;
-  rating_ids?: number[];
   rule_type: string;
   sequence: number;
   show_decimal_separator?: boolean;

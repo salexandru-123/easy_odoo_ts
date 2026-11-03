@@ -1,4 +1,4 @@
-export interface DeliveryPriceRule {
+export interface TDeliveryPriceRule {
   carrier_id: number | false;
   create_date?: string;
   create_uid?: number | false;

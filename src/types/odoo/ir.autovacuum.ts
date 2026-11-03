@@ -1,2 +1,2 @@
-export interface IrAutovacuum {
+export interface TIrAutovacuum {
 }

@@ -1,4 +1,4 @@
-export interface ProductPackaging {
+export interface TProductPackaging {
   barcode?: string;
   company_id?: number | false;
   create_date?: string;

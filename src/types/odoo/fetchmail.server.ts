@@ -1,4 +1,4 @@
-export interface FetchmailServer {
+export interface TFetchmailServer {
   active?: boolean;
   attach?: boolean;
   configuration?: string;

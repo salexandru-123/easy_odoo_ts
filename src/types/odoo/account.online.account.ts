@@ -1,4 +1,4 @@
-export interface AccountOnlineAccount {
+export interface TAccountOnlineAccount {
   account_data?: string;
   account_number?: string;
   account_online_link_id?: number | false;

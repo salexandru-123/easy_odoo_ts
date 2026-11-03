@@ -1,4 +1,4 @@
-export interface SignItemRole {
+export interface TSignItemRole {
   auth_method?: string;
   change_authorized?: boolean;
   color?: number;

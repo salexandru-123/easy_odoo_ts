@@ -1,4 +1,4 @@
-export interface StockPackage_level {
+export interface TStockPackage_level {
   company_id: number | false;
   create_date?: string;
   create_uid?: number | false;

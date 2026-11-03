@@ -1,4 +1,4 @@
-export interface PurchaseBillLineMatch {
+export interface TPurchaseBillLineMatch {
   account_move_id?: number | false;
   aml_id?: number | false;
   billed_amount_untaxed?: number;

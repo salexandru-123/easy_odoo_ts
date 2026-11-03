@@ -1,4 +1,4 @@
-export interface HrPayslipWorked_days {
+export interface THrPayslipWorked_days {
   amount?: number;
   code?: string;
   contract_id?: number | false;

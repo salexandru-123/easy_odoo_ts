@@ -1,2 +1,2 @@
-export interface StudioMixin {
+export interface TStudioMixin {
 }

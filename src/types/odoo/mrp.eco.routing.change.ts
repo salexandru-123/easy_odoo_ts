@@ -1,4 +1,4 @@
-export interface MrpEcoRoutingChange {
+export interface TMrpEcoRoutingChange {
   change_type: string;
   create_date?: string;
   create_uid?: number | false;

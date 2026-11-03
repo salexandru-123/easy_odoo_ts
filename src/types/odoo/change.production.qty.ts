@@ -1,4 +1,4 @@
-export interface ChangeProductionQty {
+export interface TChangeProductionQty {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

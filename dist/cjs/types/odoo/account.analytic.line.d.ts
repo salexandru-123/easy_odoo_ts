@@ -1,0 +1,33 @@
+export interface TAccountAnalyticLine {
+    account_id?: number | false;
+    amount: number;
+    analytic_distribution?: unknown;
+    analytic_precision?: number;
+    auto_account_id?: number | false;
+    category?: string;
+    code?: string;
+    company_id: number | false;
+    create_date?: string;
+    create_uid?: number | false;
+    currency_id?: number | false;
+    date: string;
+    display_name?: string;
+    employee_id?: number | false;
+    general_account_id?: number | false;
+    id?: number;
+    journal_id?: number | false;
+    move_line_id?: number | false;
+    name: string;
+    partner_id?: number | false;
+    product_id?: number | false;
+    product_uom_category_id?: number | false;
+    product_uom_id?: number | false;
+    ref?: string;
+    so_line?: number | false;
+    unit_amount?: number;
+    user_id?: number | false;
+    write_date?: string;
+    write_uid?: number | false;
+    x_plan2_id?: number | false;
+    x_plan3_id?: number | false;
+}

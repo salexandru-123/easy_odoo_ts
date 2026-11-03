@@ -1,4 +1,4 @@
-export interface HrDepartureReason {
+export interface THrDepartureReason {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

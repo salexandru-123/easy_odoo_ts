@@ -1,4 +1,4 @@
-export interface SalePaymentProviderOnboardingWizard {
+export interface TSalePaymentProviderOnboardingWizard {
   _data_fetched?: boolean;
   acc_number?: string;
   create_date?: string;

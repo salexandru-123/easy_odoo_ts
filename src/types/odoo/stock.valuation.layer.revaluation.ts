@@ -1,4 +1,4 @@
-export interface StockValuationLayerRevaluation {
+export interface TStockValuationLayerRevaluation {
   account_id?: number | false;
   account_journal_id?: number | false;
   added_value: number;

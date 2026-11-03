@@ -1,4 +1,4 @@
-export interface UomUom {
+export interface TUomUom {
   active?: boolean;
   category_id: number | false;
   color?: number;
@@ -12,7 +12,6 @@ export interface UomUom {
   name: string;
   ratio?: number;
   rounding: number;
-  timesheet_widget?: string;
   uom_type: string;
   write_date?: string;
   write_uid?: number | false;

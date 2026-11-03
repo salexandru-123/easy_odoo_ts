@@ -1,4 +1,4 @@
-export interface ProductSupplierinfo {
+export interface TProductSupplierinfo {
   company_id?: number | false;
   create_date?: string;
   create_uid?: number | false;

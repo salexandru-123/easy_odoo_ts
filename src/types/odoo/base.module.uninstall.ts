@@ -1,4 +1,4 @@
-export interface BaseModuleUninstall {
+export interface TBaseModuleUninstall {
   create_date?: string;
   create_uid?: number | false;
   custom_fields?: number;

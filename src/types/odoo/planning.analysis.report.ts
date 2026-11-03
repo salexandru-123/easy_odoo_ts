@@ -1,4 +1,4 @@
-export interface PlanningAnalysisReport {
+export interface TPlanningAnalysisReport {
   allocated_hours?: number;
   allocated_percentage?: number;
   company_id?: number | false;

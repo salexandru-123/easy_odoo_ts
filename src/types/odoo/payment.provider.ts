@@ -1,4 +1,4 @@
-export interface PaymentProvider {
+export interface TPaymentProvider {
   allow_express_checkout?: boolean;
   allow_tokenization?: boolean;
   auth_msg?: string;

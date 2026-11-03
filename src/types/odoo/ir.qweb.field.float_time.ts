@@ -1,2 +1,2 @@
-export interface IrQwebFieldFloat_time {
+export interface TIrQwebFieldFloat_time {
 }

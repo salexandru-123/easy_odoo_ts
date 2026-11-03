@@ -1,4 +1,4 @@
-export interface CalendarAttendee {
+export interface TCalendarAttendee {
   access_token?: string;
   availability?: string;
   common_name?: string;

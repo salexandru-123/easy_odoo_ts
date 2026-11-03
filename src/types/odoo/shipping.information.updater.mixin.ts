@@ -1,2 +1,2 @@
-export interface ShippingInformationUpdaterMixin {
+export interface TShippingInformationUpdaterMixin {
 }

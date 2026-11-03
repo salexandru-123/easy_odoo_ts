@@ -1,4 +1,4 @@
-export interface MailBlacklistRemove {
+export interface TMailBlacklistRemove {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

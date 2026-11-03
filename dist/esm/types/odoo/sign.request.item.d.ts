@@ -1,0 +1,32 @@
+export interface TSignRequestItem {
+    access_token: string;
+    access_url?: string;
+    access_via_link?: boolean;
+    access_warning?: string;
+    change_authorized?: boolean;
+    color?: number;
+    communication_company_id?: number | false;
+    create_date?: string;
+    create_uid?: number | false;
+    display_name?: string;
+    frame_hash?: string;
+    id?: number;
+    is_mail_sent?: boolean;
+    latitude?: number;
+    longitude?: number;
+    mail_sent_order?: number;
+    partner_id?: number | false;
+    reference?: string;
+    role_id: number | false;
+    sign_item_value_ids?: number[];
+    sign_request_id: number | false;
+    signature?: string | false;
+    signed_without_extra_auth?: boolean;
+    signer_email?: string;
+    signing_date?: string;
+    sms_number?: string;
+    sms_token?: string;
+    state?: string;
+    write_date?: string;
+    write_uid?: number | false;
+}

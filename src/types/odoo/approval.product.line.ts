@@ -1,4 +1,4 @@
-export interface ApprovalProductLine {
+export interface TApprovalProductLine {
   approval_request_id: number | false;
   company_id?: number | false;
   create_date?: string;

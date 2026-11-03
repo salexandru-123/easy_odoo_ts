@@ -1,4 +1,4 @@
-export interface PaymentCaptureWizard {
+export interface TPaymentCaptureWizard {
   amount_to_capture?: number;
   authorized_amount?: number;
   available_amount?: number;

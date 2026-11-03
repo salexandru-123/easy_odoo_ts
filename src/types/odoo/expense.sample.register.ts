@@ -1,4 +1,4 @@
-export interface ExpenseSampleRegister {
+export interface TExpenseSampleRegister {
   amount?: number;
   available_payment_method_line_ids?: number[];
   company_id?: number | false;

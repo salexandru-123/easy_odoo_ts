@@ -1,4 +1,4 @@
-export interface StockWarnInsufficientQty {
+export interface TStockWarnInsufficientQty {
   location_id: number | false;
   product_id: number | false;
   product_uom_name: string;

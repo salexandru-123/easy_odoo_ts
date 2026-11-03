@@ -1,4 +1,4 @@
-export interface MrpEcoTag {
+export interface TMrpEcoTag {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

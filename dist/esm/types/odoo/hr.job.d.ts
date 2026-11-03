@@ -1,0 +1,32 @@
+export interface THrJob {
+    active?: boolean;
+    company_id?: number | false;
+    contract_type_id?: number | false;
+    create_date?: string;
+    create_uid?: number | false;
+    department_id?: number | false;
+    description?: string;
+    display_name?: string;
+    employee_ids?: number[];
+    expected_employees?: number;
+    has_message?: boolean;
+    id?: number;
+    message_attachment_count?: number;
+    message_follower_ids?: number[];
+    message_has_error?: boolean;
+    message_has_error_counter?: number;
+    message_has_sms_error?: boolean;
+    message_ids?: number[];
+    message_is_follower?: boolean;
+    message_needaction?: boolean;
+    message_needaction_counter?: number;
+    message_partner_ids?: number[];
+    name: string;
+    no_of_employee?: number;
+    no_of_recruitment?: number;
+    requirements?: string;
+    sequence?: number;
+    website_message_ids?: number[];
+    write_date?: string;
+    write_uid?: number | false;
+}

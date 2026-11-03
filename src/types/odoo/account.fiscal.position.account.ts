@@ -1,4 +1,4 @@
-export interface AccountFiscalPositionAccount {
+export interface TAccountFiscalPositionAccount {
   account_dest_id: number | false;
   account_src_id: number | false;
   company_id?: number | false;

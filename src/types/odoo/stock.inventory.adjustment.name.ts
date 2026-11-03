@@ -1,4 +1,4 @@
-export interface StockInventoryAdjustmentName {
+export interface TStockInventoryAdjustmentName {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

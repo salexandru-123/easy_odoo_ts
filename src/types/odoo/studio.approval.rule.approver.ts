@@ -1,4 +1,4 @@
-export interface StudioApprovalRuleApprover {
+export interface TStudioApprovalRuleApprover {
   create_date?: string;
   create_uid?: number | false;
   date_to?: string;

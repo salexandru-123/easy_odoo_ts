@@ -1,4 +1,4 @@
-export interface CrmTeam {
+export interface TCrmTeam {
   active?: boolean;
   color?: number;
   company_id?: number | false;
@@ -33,7 +33,6 @@ export interface CrmTeam {
   name: string;
   quotations_amount?: number;
   quotations_count?: number;
-  rating_ids?: number[];
   sale_order_count?: number;
   sales_to_invoice_count?: number;
   sequence?: number;

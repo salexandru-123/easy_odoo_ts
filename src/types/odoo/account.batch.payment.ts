@@ -1,6 +1,4 @@
-export interface AccountBatchPayment {
-  account_online_linked?: boolean;
-  activity_calendar_event_id?: number | false;
+export interface TAccountBatchPayment {
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -28,8 +26,7 @@ export interface AccountBatchPayment {
   file_generation_enabled?: boolean;
   has_message?: boolean;
   id?: number;
-  iso20022_batch_booking?: boolean;
-  iso20022_charge_bearer?: string;
+  invalid_sct_partners_ids?: number[];
   journal_id?: number | false;
   message_attachment_count?: number;
   message_follower_ids?: number[];
@@ -43,14 +40,10 @@ export interface AccountBatchPayment {
   message_partner_ids?: number[];
   my_activity_date_deadline?: string;
   name: string;
-  payment_identifier?: string;
   payment_ids: number[];
   payment_ids_domain?: string;
   payment_method_code?: string;
   payment_method_id?: number | false;
-  payment_online_status?: string;
-  rating_ids?: number[];
-  redirect_url?: string;
   state?: string;
   website_message_ids?: number[];
   write_date?: string;

@@ -1,4 +1,4 @@
-export interface AccountMoveSendBatchWizard {
+export interface TAccountMoveSendBatchWizard {
   alerts?: unknown;
   create_date?: string;
   create_uid?: number | false;

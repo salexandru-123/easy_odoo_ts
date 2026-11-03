@@ -1,4 +1,4 @@
-export interface Auth_totpWizard {
+export interface TAuth_totpWizard {
   code?: string;
   create_date?: string;
   create_uid?: number | false;

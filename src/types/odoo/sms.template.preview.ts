@@ -1,4 +1,4 @@
-export interface SmsTemplatePreview {
+export interface TSmsTemplatePreview {
   body?: string;
   create_date?: string;
   create_uid?: number | false;

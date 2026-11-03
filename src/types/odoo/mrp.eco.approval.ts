@@ -1,4 +1,4 @@
-export interface MrpEcoApproval {
+export interface TMrpEcoApproval {
   approval_date?: string;
   approval_template_id: number | false;
   awaiting_my_validation?: boolean;

@@ -1,4 +1,4 @@
-export interface StockScrap {
+export interface TStockScrap {
   _barcode_scanned?: string;
   bom_id?: number | false;
   company_id: number | false;
@@ -33,7 +33,6 @@ export interface StockScrap {
   product_uom_category_id?: number | false;
   product_uom_id: number | false;
   production_id?: number | false;
-  rating_ids?: number[];
   scrap_location_id: number | false;
   scrap_qty: number;
   scrap_reason_tag_ids?: number[];

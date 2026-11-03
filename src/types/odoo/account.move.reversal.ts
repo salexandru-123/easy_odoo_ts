@@ -1,4 +1,4 @@
-export interface AccountMoveReversal {
+export interface TAccountMoveReversal {
   available_journal_ids?: number[];
   company_id: number | false;
   country_code?: string;

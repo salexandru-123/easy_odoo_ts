@@ -1,4 +1,4 @@
-export interface SignTemplate {
+export interface TSignTemplate {
   active?: boolean;
   attachment_id: number | false;
   authorized_ids?: number[];

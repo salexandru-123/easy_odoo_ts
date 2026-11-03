@@ -1,2 +1,2 @@
-export interface ReportQuality_controlQuality_worksheet {
+export interface TReportQuality_controlQuality_worksheet {
 }

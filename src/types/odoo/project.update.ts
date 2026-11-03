@@ -1,4 +1,4 @@
-export interface ProjectUpdate {
+export interface TProjectUpdate {
   activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;

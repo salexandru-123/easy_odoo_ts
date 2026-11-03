@@ -1,4 +1,4 @@
-export interface OnboardingOnboardingStep {
+export interface TOnboardingOnboardingStep {
   button_text: string;
   create_date?: string;
   create_uid?: number | false;

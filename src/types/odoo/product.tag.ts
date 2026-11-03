@@ -1,4 +1,4 @@
-export interface ProductTag {
+export interface TProductTag {
   color?: string;
   create_date?: string;
   create_uid?: number | false;

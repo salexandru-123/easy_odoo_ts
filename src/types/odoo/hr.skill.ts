@@ -1,4 +1,4 @@
-export interface HrSkill {
+export interface THrSkill {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

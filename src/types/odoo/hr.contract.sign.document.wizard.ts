@@ -1,4 +1,4 @@
-export interface HrContractSignDocumentWizard {
+export interface THrContractSignDocumentWizard {
   attachment_ids?: number[];
   cc_partner_ids?: number[];
   contract_id?: number | false;

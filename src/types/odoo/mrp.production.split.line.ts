@@ -1,4 +1,4 @@
-export interface MrpProductionSplitLine {
+export interface TMrpProductionSplitLine {
   create_date?: string;
   create_uid?: number | false;
   date?: string;

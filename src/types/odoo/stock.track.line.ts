@@ -1,4 +1,4 @@
-export interface StockTrackLine {
+export interface TStockTrackLine {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

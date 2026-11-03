@@ -1,4 +1,4 @@
-export interface IrDemo {
+export interface TIrDemo {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

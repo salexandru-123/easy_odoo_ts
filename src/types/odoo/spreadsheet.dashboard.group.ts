@@ -1,4 +1,4 @@
-export interface SpreadsheetDashboardGroup {
+export interface TSpreadsheetDashboardGroup {
   create_date?: string;
   create_uid?: number | false;
   dashboard_ids?: number[];

@@ -1,15 +1,5 @@
-export interface StockWarehouseOrderpoint {
+export interface TStockWarehouseOrderpoint {
   active?: boolean;
-  activity_calendar_event_id?: number | false;
-  activity_date_deadline?: string;
-  activity_exception_decoration?: string;
-  activity_exception_icon?: string;
-  activity_ids?: number[];
-  activity_state?: string;
-  activity_summary?: string;
-  activity_type_icon?: string;
-  activity_type_id?: number | false;
-  activity_user_id?: number | false;
   allowed_location_ids?: number[];
   bom_id?: number | false;
   company_id: number | false;
@@ -18,22 +8,10 @@ export interface StockWarehouseOrderpoint {
   days_to_order?: number;
   display_name?: string;
   group_id?: number | false;
-  has_message?: boolean;
   id?: number;
   lead_days_date?: string;
   location_id: number | false;
   manufacturing_visibility_days?: number;
-  message_attachment_count?: number;
-  message_follower_ids?: number[];
-  message_has_error?: boolean;
-  message_has_error_counter?: number;
-  message_has_sms_error?: boolean;
-  message_ids?: number[];
-  message_is_follower?: boolean;
-  message_needaction?: boolean;
-  message_needaction_counter?: number;
-  message_partner_ids?: number[];
-  my_activity_date_deadline?: string;
   name: string;
   product_category_id?: number | false;
   product_id: number | false;
@@ -50,7 +28,6 @@ export interface StockWarehouseOrderpoint {
   qty_to_order?: number;
   qty_to_order_computed?: number;
   qty_to_order_manual?: number;
-  rating_ids?: number[];
   route_id?: number | false;
   rule_ids?: number[];
   show_bom?: boolean;
@@ -62,7 +39,6 @@ export interface StockWarehouseOrderpoint {
   vendor_id?: number | false;
   visibility_days?: number;
   warehouse_id: number | false;
-  website_message_ids?: number[];
   write_date?: string;
   write_uid?: number | false;
 }

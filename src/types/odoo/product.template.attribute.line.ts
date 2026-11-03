@@ -1,4 +1,4 @@
-export interface ProductTemplateAttributeLine {
+export interface TProductTemplateAttributeLine {
   active?: boolean;
   attribute_id: number | false;
   create_date?: string;

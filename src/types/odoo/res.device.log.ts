@@ -1,4 +1,4 @@
-export interface ResDeviceLog {
+export interface TResDeviceLog {
   browser?: string;
   city?: string;
   country?: string;

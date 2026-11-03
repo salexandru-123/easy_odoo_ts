@@ -1,4 +1,4 @@
-export interface KnowledgeArticleThread {
+export interface TKnowledgeArticleThread {
   article_anchor_text?: string;
   article_id: number | false;
   create_date?: string;

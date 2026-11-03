@@ -1,4 +1,4 @@
-export interface ResCountry {
+export interface TResCountry {
   address_format?: string;
   address_view_id?: number | false;
   code: string;

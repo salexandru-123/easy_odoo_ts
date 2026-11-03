@@ -1,4 +1,4 @@
-export interface ProjectShareCollaboratorWizard {
+export interface TProjectShareCollaboratorWizard {
   access_mode: string;
   create_date?: string;
   create_uid?: number | false;

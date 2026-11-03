@@ -1,4 +1,4 @@
-export interface MailActivityPlan {
+export interface TMailActivityPlan {
   active?: boolean;
   company_id?: number | false;
   create_date?: string;

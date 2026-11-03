@@ -1,6 +1,5 @@
-export interface MrpBom {
+export interface TMrpBom {
   active?: boolean;
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -20,11 +19,8 @@ export interface MrpBom {
   create_uid?: number | false;
   days_to_prepare_mo?: number;
   display_name?: string;
-  eco_count?: number;
-  eco_ids?: number[];
   has_message?: boolean;
   id?: number;
-  image_128?: string | false;
   message_attachment_count?: number;
   message_follower_ids?: number[];
   message_has_error?: boolean;
@@ -39,19 +35,15 @@ export interface MrpBom {
   operation_ids?: number[];
   picking_type_id?: number | false;
   possible_product_template_attribute_value_ids?: number[];
-  previous_bom_id?: number | false;
   produce_delay?: number;
   product_id?: number | false;
   product_qty: number;
   product_tmpl_id: number | false;
   product_uom_category_id?: number | false;
   product_uom_id: number | false;
-  project_id?: number | false;
-  rating_ids?: number[];
   ready_to_produce: string;
   sequence?: number;
   type: string;
-  version?: number;
   website_message_ids?: number[];
   write_date?: string;
   write_uid?: number | false;

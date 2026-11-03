@@ -1,4 +1,4 @@
-export interface IrAsset {
+export interface TIrAsset {
   active?: boolean;
   bundle: string;
   create_date?: string;

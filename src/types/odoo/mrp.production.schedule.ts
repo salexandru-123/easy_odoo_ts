@@ -1,4 +1,4 @@
-export interface MrpProductionSchedule {
+export interface TMrpProductionSchedule {
   allowed_route_ids?: number[];
   batch_size?: number;
   bom_id?: number | false;

@@ -1,6 +1,5 @@
-export interface MrpRoutingWorkcenter {
+export interface TMrpRoutingWorkcenter {
   active?: boolean;
-  activity_calendar_event_id?: number | false;
   activity_date_deadline?: string;
   activity_exception_decoration?: string;
   activity_exception_icon?: string;
@@ -38,7 +37,6 @@ export interface MrpRoutingWorkcenter {
   possible_bom_product_template_attribute_value_ids?: number[];
   quality_point_count?: number;
   quality_point_ids?: number[];
-  rating_ids?: number[];
   sequence?: number;
   time_computed_on?: string;
   time_cycle?: number;

@@ -1,4 +1,4 @@
-export interface SnailmailLetter {
+export interface TSnailmailLetter {
   attachment_datas?: string | false;
   attachment_fname?: string;
   attachment_id?: number | false;

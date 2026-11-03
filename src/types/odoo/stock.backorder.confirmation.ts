@@ -1,4 +1,4 @@
-export interface StockBackorderConfirmation {
+export interface TStockBackorderConfirmation {
   backorder_confirmation_line_ids?: number[];
   create_date?: string;
   create_uid?: number | false;

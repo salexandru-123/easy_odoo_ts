@@ -1,4 +1,4 @@
-export interface ResetViewArchWizard {
+export interface TResetViewArchWizard {
   arch_diff?: string;
   arch_to_compare?: string;
   compare_view_id?: number | false;

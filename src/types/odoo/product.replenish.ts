@@ -1,4 +1,4 @@
-export interface ProductReplenish {
+export interface TProductReplenish {
   allowed_route_ids?: number[];
   bom_id?: number | false;
   company_id?: number | false;

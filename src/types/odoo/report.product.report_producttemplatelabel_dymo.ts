@@ -1,2 +1,2 @@
-export interface ReportProductReport_producttemplatelabel_dymo {
+export interface TReportProductReport_producttemplatelabel_dymo {
 }

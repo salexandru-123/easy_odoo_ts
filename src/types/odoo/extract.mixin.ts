@@ -1,4 +1,4 @@
-export interface ExtractMixin {
+export interface TExtractMixin {
   extract_can_show_send_button?: boolean;
   extract_document_uuid?: string;
   extract_error_message?: string;
@@ -18,6 +18,5 @@ export interface ExtractMixin {
   message_needaction?: boolean;
   message_needaction_counter?: number;
   message_partner_ids?: number[];
-  rating_ids?: number[];
   website_message_ids?: number[];
 }

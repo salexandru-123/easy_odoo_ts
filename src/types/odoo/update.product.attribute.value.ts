@@ -1,4 +1,4 @@
-export interface UpdateProductAttributeValue {
+export interface TUpdateProductAttributeValue {
   attribute_value_id: number | false;
   create_date?: string;
   create_uid?: number | false;

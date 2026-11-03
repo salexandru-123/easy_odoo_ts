@@ -1,4 +1,4 @@
-export interface HrApplicantCategory {
+export interface THrApplicantCategory {
   color?: number;
   create_date?: string;
   create_uid?: number | false;

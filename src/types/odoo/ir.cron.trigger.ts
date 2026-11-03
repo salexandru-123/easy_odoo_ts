@@ -1,4 +1,4 @@
-export interface IrCronTrigger {
+export interface TIrCronTrigger {
   call_at?: string;
   create_date?: string;
   create_uid?: number | false;

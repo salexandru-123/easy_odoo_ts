@@ -1,0 +1,2 @@
+export interface TReportHr_payrollContribution_register {
+}

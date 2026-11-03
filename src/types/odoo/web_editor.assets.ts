@@ -1,2 +1,2 @@
-export interface Web_editorAssets {
+export interface TWeb_editorAssets {
 }

@@ -1,4 +1,4 @@
-export interface AccountAccruedOrdersWizard {
+export interface TAccountAccruedOrdersWizard {
   account_id: number | false;
   amount?: number;
   company_id?: number | false;

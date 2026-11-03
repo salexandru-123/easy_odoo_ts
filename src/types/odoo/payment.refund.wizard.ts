@@ -1,4 +1,4 @@
-export interface PaymentRefundWizard {
+export interface TPaymentRefundWizard {
   amount_available_for_refund?: number;
   amount_to_refund?: number;
   create_date?: string;

@@ -1,4 +1,4 @@
-export interface DiscussGifFavorite {
+export interface TDiscussGifFavorite {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

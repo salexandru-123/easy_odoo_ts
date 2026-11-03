@@ -1,4 +1,4 @@
-export interface ProductDocument {
+export interface TProductDocument {
   access_token?: string;
   active?: boolean;
   attached_on_mrp: string;
@@ -22,9 +22,6 @@ export interface ProductDocument {
   local_url?: string;
   mimetype?: string;
   name: string;
-  origin_attachment_id?: number | false;
-  origin_res_model?: string;
-  origin_res_name?: string;
   original_id?: number | false;
   public?: boolean;
   raw?: string | false;

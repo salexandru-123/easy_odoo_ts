@@ -1,4 +1,4 @@
-export interface AccountDebitNote {
+export interface TAccountDebitNote {
   copy_lines?: boolean;
   country_code?: string;
   create_date?: string;

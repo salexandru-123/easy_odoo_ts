@@ -1,4 +1,4 @@
-export interface MailMail {
+export interface TMailMail {
   account_audit_log_account_id?: number | false;
   account_audit_log_activated?: boolean;
   account_audit_log_company_id?: number | false;
@@ -51,9 +51,6 @@ export interface MailMail {
   partner_ids?: number[];
   pinned_at?: string;
   preview?: string;
-  rating_id?: number | false;
-  rating_ids?: number[];
-  rating_value?: number;
   reaction_ids?: number[];
   recipient_ids?: number[];
   record_alias_domain_id?: number | false;

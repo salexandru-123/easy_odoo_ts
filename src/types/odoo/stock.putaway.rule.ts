@@ -1,4 +1,4 @@
-export interface StockPutawayRule {
+export interface TStockPutawayRule {
   active?: boolean;
   category_id?: number | false;
   company_id: number | false;

@@ -1,4 +1,4 @@
-export interface RequestAppraisal {
+export interface TRequestAppraisal {
   appraisal_id: number | false;
   author_id: number | false;
   body?: string;

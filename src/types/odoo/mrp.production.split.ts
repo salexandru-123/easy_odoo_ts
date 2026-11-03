@@ -1,4 +1,4 @@
-export interface MrpProductionSplit {
+export interface TMrpProductionSplit {
   counter?: number;
   create_date?: string;
   create_uid?: number | false;

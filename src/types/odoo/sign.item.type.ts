@@ -1,4 +1,4 @@
-export interface SignItemType {
+export interface TSignItemType {
   auto_field?: string;
   create_date?: string;
   create_uid?: number | false;

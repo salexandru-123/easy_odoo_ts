@@ -1,4 +1,4 @@
-export interface HrPayrollIndex {
+export interface THrPayrollIndex {
   contract_ids?: number[];
   create_date?: string;
   create_uid?: number | false;

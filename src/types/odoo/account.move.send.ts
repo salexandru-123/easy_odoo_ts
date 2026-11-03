@@ -1,2 +1,2 @@
-export interface AccountMoveSend {
+export interface TAccountMoveSend {
 }

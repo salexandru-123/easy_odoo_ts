@@ -1,4 +1,4 @@
-export interface AccountTransferModel {
+export interface TAccountTransferModel {
   account_ids?: number[];
   active?: boolean;
   company_id?: number | false;

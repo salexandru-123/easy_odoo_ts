@@ -1,2 +1,2 @@
-export interface StockForecasted_product_template {
+export interface TStockForecasted_product_template {
 }

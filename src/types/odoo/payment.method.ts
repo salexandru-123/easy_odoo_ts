@@ -1,4 +1,4 @@
-export interface PaymentMethod {
+export interface TPaymentMethod {
   active?: boolean;
   brand_ids?: number[];
   code: string;

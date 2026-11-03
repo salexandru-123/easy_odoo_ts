@@ -1,4 +1,4 @@
-export interface ResDevice {
+export interface TResDevice {
   browser?: string;
   city?: string;
   country?: string;

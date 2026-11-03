@@ -1,4 +1,4 @@
-export interface SalePdfFormField {
+export interface TSalePdfFormField {
   create_date?: string;
   create_uid?: number | false;
   display_name?: string;

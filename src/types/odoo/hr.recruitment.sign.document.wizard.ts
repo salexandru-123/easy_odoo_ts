@@ -1,4 +1,4 @@
-export interface HrRecruitmentSignDocumentWizard {
+export interface THrRecruitmentSignDocumentWizard {
   applicant_id?: number | false;
   applicant_role_id: number | false;
   attachment_ids?: number[];

@@ -1,4 +1,4 @@
-export interface StockRoute {
+export interface TStockRoute {
   active?: boolean;
   categ_ids?: number[];
   company_id?: number | false;

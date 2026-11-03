@@ -1,4 +1,4 @@
-export interface HrLeaveEmployeeTypeReport {
+export interface THrLeaveEmployeeTypeReport {
   active_employee?: boolean;
   company_id?: number | false;
   date_from?: string;

@@ -1,4 +1,4 @@
-export interface PaymentTransaction {
+export interface TPaymentTransaction {
   amount: number;
   child_transaction_ids?: number[];
   company_id?: number | false;
