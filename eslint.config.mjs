@@ -27,6 +27,7 @@ export default [
       '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unused-vars': 'error',
+      '@typescript-eslint/no-empty-object-type': 'off',
     },
   },
 ];
