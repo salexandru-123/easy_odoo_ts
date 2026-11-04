@@ -1,4 +1,4 @@
-# odoo_ts
+# easy_odoo_ts
 
 An Odoo wrapper of the base Odoo ORM Api, that allows the developers to easily work with Odoo using typescript.
 
@@ -11,19 +11,19 @@ An Odoo wrapper of the base Odoo ORM Api, that allows the developers to easily w
 
 Using npm:
 ```
-npm i @salexandru-123/odoo_ts
+npm i @salexandru-123/easy_odoo_ts
 ```
 
 Using pnpm:
 ```
-pnpm i @salexandru-123/odoo_ts
+pnpm i @salexandru-123/easy_odoo_ts
 ```
 
 # Usage
 
 - Create the configuration to login to your odoo account and create an Odoo Instance:
 ```typescript
-import {Odoo} from 'odoo_ts'
+import {Odoo} from 'easy_odoo_ts'
 
 const odooConfig = {
   url: "http://your-odoo-domain",

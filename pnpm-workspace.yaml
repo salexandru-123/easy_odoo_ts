@@ -3,6 +3,6 @@ allowBuilds:
   esbuild: true
 
 overrides:
-  odoo_ts: 'link:'
+  easy_odoo_ts: 'link:'
 
 packages: []

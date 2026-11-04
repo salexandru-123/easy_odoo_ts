@@ -194,7 +194,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  odoo_ts: 'link:'
+  easy_odoo_ts: 'link:'
 
 importers:
 
@@ -203,7 +203,7 @@ importers:
       odoo-xmlrpc-ts:
         specifier: ^1.3.0
         version: 1.3.0
-      odoo_ts:
+      easy_odoo_ts:
         specifier: link:.
         version: 'link:'
       tsyringe:

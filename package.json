@@ -1,5 +1,5 @@
 {
-  "name": "odoo_ts",
+  "name": "easy_easy_odoo_ts",
   "version": "1.0.0",
   "description": "An Odoo Package wrapper to easily work with your odoo instances through code.",
   "main": "./dist/cjs/index.js",
@@ -65,7 +65,7 @@
   "type": "commonjs",
   "dependencies": {
     "odoo-xmlrpc-ts": "^1.3.0",
-    "odoo_ts": "link:",
+    "easy_odoo_ts": "link:",
     "tsyringe": "^4.10.0",
     "xmlrpc": "^1.3.2"
   },
