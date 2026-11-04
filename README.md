@@ -11,12 +11,12 @@ An Odoo wrapper of the base Odoo ORM Api, that allows the developers to easily w
 
 Using npm:
 ```
-npm i @salexandru-123/easy_odoo_ts
+npm i easy_odoo_ts
 ```
 
 Using pnpm:
 ```
-pnpm i @salexandru-123/easy_odoo_ts
+pnpm i easy_odoo_ts
 ```
 
 # Usage
