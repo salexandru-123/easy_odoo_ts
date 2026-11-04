@@ -30,6 +30,18 @@
     "src/**/*.ts": "eslint",
     "test/**/*.ts": "eslint"
   },
+  "keywords": [
+    "typescript",
+    "odoo"
+  ],
+  "homepage": "https://github.com/salexandru-123/easy_odoo_ts#readme",
+  "bugs": {
+    "url": "https://github.com/salexandru-123/easy_odoo_ts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salexandru-123/easy_odoo_ts.git"
+  },
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
