@@ -1,6 +1,6 @@
 {
   "name": "easy_odoo_ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An Odoo Package wrapper to easily work with your odoo instances through code.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -64,9 +64,8 @@
       "types": "./dist/types/errors.d.ts"
     }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Stefan Alexandru Soreanu",
+  "license": "MIT",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
