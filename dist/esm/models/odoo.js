@@ -29,5 +29,8 @@ class BaseOdooModel {
     async search(domain, opts) {
         return this.client.search(this.model, domain || [], opts);
     }
+    async execute(method, domain, opts) {
+        return this.client.execute(this.model, method, domain, opts);
+    }
 }
 exports.BaseOdooModel = BaseOdooModel;

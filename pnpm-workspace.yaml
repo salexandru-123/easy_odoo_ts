@@ -4,5 +4,6 @@ allowBuilds:
 
 overrides:
   easy_odoo_ts: 'link:'
+  test: link:../test
 
 packages: []

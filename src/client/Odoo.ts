@@ -2,7 +2,7 @@ import { OdooClient, OdooConfig } from 'odoo-xmlrpc-ts';
 import * as Models from '../models';
 
 export class Odoo {
-  private readonly client: OdooClient;
+  readonly client: OdooClient;
   readonly _unknown: Models._unknownModel;
   readonly accountAccountTag: Models.AccountAccountTagModel;
   readonly accountAccount: Models.AccountAccountModel;
@@ -1685,8 +1685,11 @@ export class Odoo {
     this.x_stock_picking_line_6a2c5 = new Models.X_stock_picking_line_6a2c5Model(this.client);
   }
 
-  static async connect(config: OdooConfig): Promise<Odoo> {
-    const odoo = new Odoo(config);
+  static async connect<T extends typeof Odoo>(
+    this: T,
+    config: OdooConfig,
+  ): Promise<InstanceType<T>> {
+    const odoo = new this(config) as InstanceType<T>;
     await odoo.client.authenticate();
     return odoo;
   }

@@ -32,4 +32,8 @@ export abstract class BaseOdooModel<T extends object> {
   async search(domain?: OdooDomain, opts?: OdooOptions): Promise<number[]> {
     return this.client.search(this.model, domain || [], opts);
   }
+
+  async execute(method: string, domain?: OdooDomain, opts?: OdooOptions): Promise<unknown> {
+    return this.client.execute(this.model, method, domain, opts);
+  }
 }

@@ -14,4 +14,5 @@ export declare abstract class BaseOdooModel<T extends object> {
     searchRead(domain?: OdooDomain, opts?: OdooOptions): Promise<T[]>;
     searchCount(domain?: OdooDomain): Promise<number>;
     search(domain?: OdooDomain, opts?: OdooOptions): Promise<number[]>;
+    execute(method: string, domain?: OdooDomain, opts?: OdooOptions): Promise<unknown>;
 }
