@@ -1,2 +1,1 @@
-export interface TIapEnrichApi {
-}
+export interface TIapEnrichApi {}

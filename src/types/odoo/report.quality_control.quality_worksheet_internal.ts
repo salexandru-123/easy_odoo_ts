@@ -1,2 +1,1 @@
-export interface TReportQuality_controlQuality_worksheet_internal {
-}
+export interface TReportQuality_controlQuality_worksheet_internal {}

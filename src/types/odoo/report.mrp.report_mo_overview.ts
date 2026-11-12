@@ -1,2 +1,1 @@
-export interface TReportMrpReport_mo_overview {
-}
+export interface TReportMrpReport_mo_overview {}

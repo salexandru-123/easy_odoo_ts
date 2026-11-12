@@ -11,6 +11,9 @@ export abstract class BaseOdooModel<T extends object> {
   async create(values: OdooValues): Promise<number> {
     return this.client.create(this.model, values);
   }
+  async createMulti(values: OdooValues[]): Promise<number[]> {
+    return this.client.execute(this.model, 'create', values);
+  }
   async read(ids: number[]): Promise<T[]> {
     return this.client.read<T>(this.model, ids);
   }
@@ -31,5 +34,9 @@ export abstract class BaseOdooModel<T extends object> {
 
   async search(domain?: OdooDomain, opts?: OdooOptions): Promise<number[]> {
     return this.client.search(this.model, domain || [], opts);
+  }
+
+  async execute(method: string, domain?: OdooDomain, opts?: OdooOptions): Promise<unknown> {
+    return this.client.execute(this.model, method, domain, opts);
   }
 }

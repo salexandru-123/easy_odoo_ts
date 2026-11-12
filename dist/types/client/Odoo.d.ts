@@ -1,7 +1,7 @@
-import { OdooConfig } from 'odoo-xmlrpc-ts';
+import { OdooClient, OdooConfig } from 'odoo-xmlrpc-ts';
 import * as Models from '../models';
 export declare class Odoo {
-    private readonly client;
+    readonly client: OdooClient;
     readonly _unknown: Models._unknownModel;
     readonly accountAccountTag: Models.AccountAccountTagModel;
     readonly accountAccount: Models.AccountAccountModel;
@@ -799,5 +799,5 @@ export declare class Odoo {
     readonly wizardIrModelMenuCreate: Models.WizardIrModelMenuCreateModel;
     readonly x_stock_picking_line_6a2c5: Models.X_stock_picking_line_6a2c5Model;
     constructor(config: OdooConfig);
-    static connect(config: OdooConfig): Promise<Odoo>;
+    static connect<T extends typeof Odoo>(this: T, config: OdooConfig): Promise<InstanceType<T>>;
 }

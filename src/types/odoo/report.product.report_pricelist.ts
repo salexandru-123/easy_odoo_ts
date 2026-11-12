@@ -1,2 +1,1 @@
-export interface TReportProductReport_pricelist {
-}
+export interface TReportProductReport_pricelist {}

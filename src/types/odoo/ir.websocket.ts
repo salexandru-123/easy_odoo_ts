@@ -1,2 +1,1 @@
-export interface TIrWebsocket {
-}
+export interface TIrWebsocket {}

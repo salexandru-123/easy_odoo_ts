@@ -1,2 +1,1 @@
-export interface TReportHr_holidaysReport_holidayssummary {
-}
+export interface TReportHr_holidaysReport_holidayssummary {}

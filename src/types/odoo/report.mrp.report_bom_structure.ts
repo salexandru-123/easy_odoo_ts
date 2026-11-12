@@ -1,2 +1,1 @@
-export interface TReportMrpReport_bom_structure {
-}
+export interface TReportMrpReport_bom_structure {}

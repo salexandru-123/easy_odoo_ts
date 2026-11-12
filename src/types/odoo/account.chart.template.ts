@@ -1,2 +1,1 @@
-export interface TAccountChartTemplate {
-}
+export interface TAccountChartTemplate {}

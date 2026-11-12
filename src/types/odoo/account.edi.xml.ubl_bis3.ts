@@ -1,2 +1,1 @@
-export interface TAccountEdiXmlUbl_bis3 {
-}
+export interface TAccountEdiXmlUbl_bis3 {}

@@ -25,7 +25,7 @@ We use GitHub Actions for automated deployments. The process is triggered when a
 
 ```bash
 {
-  "name": "odoo_ts",
+  "name": "easy_odoo_ts",
   "version": "X.Y.Z", // Update this
   ...
 }

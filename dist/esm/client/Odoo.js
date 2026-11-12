@@ -853,7 +853,7 @@ class Odoo {
         this.x_stock_picking_line_6a2c5 = new Models.X_stock_picking_line_6a2c5Model(this.client);
     }
     static async connect(config) {
-        const odoo = new Odoo(config);
+        const odoo = new this(config);
         await odoo.client.authenticate();
         return odoo;
     }

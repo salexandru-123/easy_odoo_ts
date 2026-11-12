@@ -1,2 +1,1 @@
-export interface TIrQwebFieldImage_url {
-}
+export interface TIrQwebFieldImage_url {}

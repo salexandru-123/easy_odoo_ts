@@ -11,6 +11,9 @@ class BaseOdooModel {
     async create(values) {
         return this.client.create(this.model, values);
     }
+    async createMulti(values) {
+        return this.client.execute(this.model, 'create', values);
+    }
     async read(ids) {
         return this.client.read(this.model, ids);
     }
@@ -28,6 +31,9 @@ class BaseOdooModel {
     }
     async search(domain, opts) {
         return this.client.search(this.model, domain || [], opts);
+    }
+    async execute(method, domain, opts) {
+        return this.client.execute(this.model, method, domain, opts);
     }
 }
 exports.BaseOdooModel = BaseOdooModel;

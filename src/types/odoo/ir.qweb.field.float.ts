@@ -1,2 +1,1 @@
-export interface TIrQwebFieldFloat {
-}
+export interface TIrQwebFieldFloat {}

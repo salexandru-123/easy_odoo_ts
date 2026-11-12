@@ -1,8 +1,10 @@
 allowBuilds:
+  '@parcel/watcher': true
   '@scarf/scarf': true
   esbuild: true
 
 overrides:
-  odoo_ts: 'link:'
+  easy_odoo_ts: 'link:'
+  test: link:../test
 
 packages: []

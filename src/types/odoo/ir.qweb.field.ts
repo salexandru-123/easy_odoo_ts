@@ -1,2 +1,1 @@
-export interface TIrQwebField {
-}
+export interface TIrQwebField {}

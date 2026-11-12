@@ -1,2 +1,1 @@
-export interface TIrBinary {
-}
+export interface TIrBinary {}

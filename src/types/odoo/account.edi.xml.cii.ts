@@ -1,2 +1,1 @@
-export interface TAccountEdiXmlCii {
-}
+export interface TAccountEdiXmlCii {}

@@ -1,2 +1,1 @@
-export interface TIrQwebFieldDatetime {
-}
+export interface TIrQwebFieldDatetime {}

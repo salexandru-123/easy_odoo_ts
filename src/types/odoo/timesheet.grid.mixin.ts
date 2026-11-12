@@ -1,2 +1,1 @@
-export interface TTimesheetGridMixin {
-}
+export interface TTimesheetGridMixin {}

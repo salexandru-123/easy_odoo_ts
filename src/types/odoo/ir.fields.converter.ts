@@ -1,2 +1,1 @@
-export interface TIrFieldsConverter {
-}
+export interface TIrFieldsConverter {}
