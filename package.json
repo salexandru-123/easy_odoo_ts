@@ -1,96 +1,96 @@
 {
-  "name": "easy_odoo_ts",
-  "version": "1.0.5",
-  "description": "An Odoo Package wrapper to easily work with your odoo instances through code.",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/types/index.d.ts",
-  "scripts": {
-    "generate:models": "ts-node ./src/scripts/generate_classes.ts",
-    "test": "jest --coverage",
-    "test:ci": "jest --coverage --ci",
-    "test:watch": "jest --watch",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "type-check": "tsc --noEmit",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
-    "prepare": "husky",
-    "prepublishOnly": "pnpm test && pnpm run lint ",
-    "preversion": "pnpm run lint",
-    "postversion": "git push && git push --tags",
-    "clean": "rm -rf dist",
-    "build": "pnpm run clean && pnpm run build:cjs && pnpm run build:esm && pnpm run build:types",
-    "build:cjs": "tsc -p tsconfig.cjs.json && echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
-    "build:esm": "tsc -p tsconfig.esm.json && echo '{\"type\": \"module\"}' > dist/esm/package.json",
-    "build:types": "tsc -p tsconfig.types.json"
-  },
-  "lint-staged": {
-    "src/**/*.ts": "eslint",
-    "test/**/*.ts": "eslint",
-    "*.{js,ts,jsx,tsx,json,css,md}": "prettier --write"
-  },
-  "keywords": [
-    "typescript",
-    "odoo"
-  ],
-  "homepage": "https://github.com/salexandru-123/easy_odoo_ts#readme",
-  "bugs": {
-    "url": "https://github.com/salexandru-123/easy_odoo_ts/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/salexandru-123/easy_odoo_ts.git"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js",
-      "types": "./dist/types/index.d.ts"
+    "name": "easy_odoo_ts",
+    "version": "2.0.0",
+    "description": "An Odoo Package wrapper to easily work with your odoo instances through code.",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/types/index.d.ts",
+    "scripts": {
+        "generate:models": "ts-node ./src/scripts/generate_classes.ts",
+        "test": "jest --coverage",
+        "test:ci": "jest --coverage --ci",
+        "test:watch": "jest --watch",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "type-check": "tsc --noEmit",
+        "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+        "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
+        "prepare": "husky",
+        "prepublishOnly": "pnpm test && pnpm run lint ",
+        "preversion": "pnpm run lint",
+        "postversion": "git push && git push --tags",
+        "clean": "rm -rf dist",
+        "build": "pnpm run clean && pnpm run build:cjs && pnpm run build:esm && pnpm run build:types",
+        "build:cjs": "tsc -p tsconfig.cjs.json && echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
+        "build:esm": "tsc -p tsconfig.esm.json && echo '{\"type\": \"module\"}' > dist/esm/package.json",
+        "build:types": "tsc -p tsconfig.types.json"
     },
-    "./client": {
-      "import": "./dist/esm/client.js",
-      "require": "./dist/cjs/client.js",
-      "types": "./dist/types/client.d.ts"
+    "lint-staged": {
+        "src/**/*.ts": "eslint",
+        "test/**/*.ts": "eslint",
+        "*.{js,ts,jsx,tsx,json,css,md}": "prettier --write"
     },
-    "./types": {
-      "import": "./dist/esm/types.js",
-      "require": "./dist/cjs/types.js",
-      "types": "./dist/types/types.d.ts"
+    "keywords": [
+        "typescript",
+        "odoo"
+    ],
+    "homepage": "https://github.com/salexandru-123/easy_odoo_ts#readme",
+    "bugs": {
+        "url": "https://github.com/salexandru-123/easy_odoo_ts/issues"
     },
-    "./errors": {
-      "import": "./dist/esm/errors.js",
-      "require": "./dist/cjs/errors.js",
-      "types": "./dist/types/errors.d.ts"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/salexandru-123/easy_odoo_ts.git"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js",
+            "types": "./dist/types/index.d.ts"
+        },
+        "./client": {
+            "import": "./dist/esm/client.js",
+            "require": "./dist/cjs/client.js",
+            "types": "./dist/types/client.d.ts"
+        },
+        "./types": {
+            "import": "./dist/esm/types.js",
+            "require": "./dist/cjs/types.js",
+            "types": "./dist/types/types.d.ts"
+        },
+        "./errors": {
+            "import": "./dist/esm/errors.js",
+            "require": "./dist/cjs/errors.js",
+            "types": "./dist/types/errors.d.ts"
+        }
+    },
+    "author": "Stefan Alexandru Soreanu",
+    "license": "MIT",
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "^11.9.0",
+            "onFail": "warn"
+        }
+    },
+    "type": "commonjs",
+    "dependencies": {
+        "jest": "^30.5.2",
+        "odoo-xmlrpc-ts": "^1.3.0",
+        "xmlrpc": "^1.3.2"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.9.0",
+        "@types/xmlrpc": "^1.3.10",
+        "@typescript-eslint/eslint-plugin": "^8.13.0",
+        "@typescript-eslint/parser": "^8.13.0",
+        "eslint": "^9.14.0",
+        "globals": "15.12.0",
+        "husky": "^9.1.6",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.3.3",
+        "ts-jest": "^29.2.5",
+        "typescript": "^5.6.3"
     }
-  },
-  "author": "Stefan Alexandru Soreanu",
-  "license": "MIT",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.9.0",
-      "onFail": "warn"
-    }
-  },
-  "type": "commonjs",
-  "dependencies": {
-    "jest": "^30.5.2",
-    "odoo-xmlrpc-ts": "^1.3.0",
-    "xmlrpc": "^1.3.2"
-  },
-  "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "@types/node": "^22.9.0",
-    "@types/xmlrpc": "^1.3.10",
-    "@typescript-eslint/eslint-plugin": "^8.13.0",
-    "@typescript-eslint/parser": "^8.13.0",
-    "eslint": "^9.14.0",
-    "globals": "15.12.0",
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
-    "prettier": "^3.3.3",
-    "ts-jest": "^29.2.5",
-    "typescript": "^5.6.3"
-  }
 }

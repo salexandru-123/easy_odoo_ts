@@ -1,4 +1,4 @@
 export interface TMailRenderMixin {
-  lang?: string;
-  render_model?: string;
+    lang?: string;
+    render_model?: string;
 }

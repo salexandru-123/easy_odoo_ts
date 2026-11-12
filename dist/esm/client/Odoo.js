@@ -1,41 +1,61 @@
-"use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || (function () {
-    var ownKeys = function(o) {
-        ownKeys = Object.getOwnPropertyNames || function (o) {
-            var ar = [];
-            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
-            return ar;
+'use strict';
+var __createBinding =
+    (this && this.__createBinding) ||
+    (Object.create
+        ? function (o, m, k, k2) {
+              if (k2 === undefined) k2 = k;
+              var desc = Object.getOwnPropertyDescriptor(m, k);
+              if (!desc || ('get' in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+                  desc = {
+                      enumerable: true,
+                      get: function () {
+                          return m[k];
+                      },
+                  };
+              }
+              Object.defineProperty(o, k2, desc);
+          }
+        : function (o, m, k, k2) {
+              if (k2 === undefined) k2 = k;
+              o[k2] = m[k];
+          });
+var __setModuleDefault =
+    (this && this.__setModuleDefault) ||
+    (Object.create
+        ? function (o, v) {
+              Object.defineProperty(o, 'default', { enumerable: true, value: v });
+          }
+        : function (o, v) {
+              o['default'] = v;
+          });
+var __importStar =
+    (this && this.__importStar) ||
+    (function () {
+        var ownKeys = function (o) {
+            ownKeys =
+                Object.getOwnPropertyNames ||
+                function (o) {
+                    var ar = [];
+                    for (var k in o)
+                        if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+                    return ar;
+                };
+            return ownKeys(o);
         };
-        return ownKeys(o);
-    };
-    return function (mod) {
-        if (mod && mod.__esModule) return mod;
-        var result = {};
-        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
-        __setModuleDefault(result, mod);
-        return result;
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
+        return function (mod) {
+            if (mod && mod.__esModule) return mod;
+            var result = {};
+            if (mod != null)
+                for (var k = ownKeys(mod), i = 0; i < k.length; i++)
+                    if (k[i] !== 'default') __createBinding(result, mod, k[i]);
+            __setModuleDefault(result, mod);
+            return result;
+        };
+    })();
+Object.defineProperty(exports, '__esModule', { value: true });
 exports.Odoo = void 0;
-const odoo_xmlrpc_ts_1 = require("odoo-xmlrpc-ts");
-const Models = __importStar(require("../models"));
+const odoo_xmlrpc_ts_1 = require('odoo-xmlrpc-ts');
+const Models = __importStar(require('../models'));
 class Odoo {
     constructor(config) {
         this.client = new odoo_xmlrpc_ts_1.OdooClient(config);
@@ -44,27 +64,37 @@ class Odoo {
         this.accountAccount = new Models.AccountAccountModel(this.client);
         this.accountAccruedOrdersWizard = new Models.AccountAccruedOrdersWizardModel(this.client);
         this.accountAnalyticAccount = new Models.AccountAnalyticAccountModel(this.client);
-        this.accountAnalyticApplicability = new Models.AccountAnalyticApplicabilityModel(this.client);
-        this.accountAnalyticDistributionModel = new Models.AccountAnalyticDistributionModelModel(this.client);
+        this.accountAnalyticApplicability = new Models.AccountAnalyticApplicabilityModel(
+            this.client,
+        );
+        this.accountAnalyticDistributionModel = new Models.AccountAnalyticDistributionModelModel(
+            this.client,
+        );
         this.accountAnalyticLine = new Models.AccountAnalyticLineModel(this.client);
         this.accountAnalyticPlan = new Models.AccountAnalyticPlanModel(this.client);
         this.accountAutoReconcileWizard = new Models.AccountAutoReconcileWizardModel(this.client);
         this.accountAutomaticEntryWizard = new Models.AccountAutomaticEntryWizardModel(this.client);
         this.accountAutopostBillsWizard = new Models.AccountAutopostBillsWizardModel(this.client);
         this.accountBankSelection = new Models.AccountBankSelectionModel(this.client);
-        this.accountBankStatementLineTransient = new Models.AccountBankStatementLineTransientModel(this.client);
+        this.accountBankStatementLineTransient = new Models.AccountBankStatementLineTransientModel(
+            this.client,
+        );
         this.accountBankStatementLine = new Models.AccountBankStatementLineModel(this.client);
         this.accountBankStatement = new Models.AccountBankStatementModel(this.client);
         this.accountBatchErrorWizardLine = new Models.AccountBatchErrorWizardLineModel(this.client);
         this.accountBatchErrorWizard = new Models.AccountBatchErrorWizardModel(this.client);
-        this.accountBatchPaymentRejection = new Models.AccountBatchPaymentRejectionModel(this.client);
+        this.accountBatchPaymentRejection = new Models.AccountBatchPaymentRejectionModel(
+            this.client,
+        );
         this.accountBatchPayment = new Models.AccountBatchPaymentModel(this.client);
         this.accountCashRounding = new Models.AccountCashRoundingModel(this.client);
         this.accountChangeLockDate = new Models.AccountChangeLockDateModel(this.client);
         this.accountChartTemplate = new Models.AccountChartTemplateModel(this.client);
         this.accountCodeMapping = new Models.AccountCodeMappingModel(this.client);
         this.accountDebitNote = new Models.AccountDebitNoteModel(this.client);
-        this.accountDuplicateTransactionWizard = new Models.AccountDuplicateTransactionWizardModel(this.client);
+        this.accountDuplicateTransactionWizard = new Models.AccountDuplicateTransactionWizardModel(
+            this.client,
+        );
         this.accountEdiCommon = new Models.AccountEdiCommonModel(this.client);
         this.accountEdiXmlCii = new Models.AccountEdiXmlCiiModel(this.client);
         this.accountEdiXmlUbl_20 = new Models.AccountEdiXmlUbl_20Model(this.client);
@@ -76,7 +106,9 @@ class Odoo {
         this.accountEdiXmlUbl_nl = new Models.AccountEdiXmlUbl_nlModel(this.client);
         this.accountEdiXmlUbl_sg = new Models.AccountEdiXmlUbl_sgModel(this.client);
         this.accountFinancialYearOp = new Models.AccountFinancialYearOpModel(this.client);
-        this.accountFiscalPositionAccount = new Models.AccountFiscalPositionAccountModel(this.client);
+        this.accountFiscalPositionAccount = new Models.AccountFiscalPositionAccountModel(
+            this.client,
+        );
         this.accountFiscalPositionTax = new Models.AccountFiscalPositionTaxModel(this.client);
         this.accountFiscalPosition = new Models.AccountFiscalPositionModel(this.client);
         this.accountFiscalYear = new Models.AccountFiscalYearModel(this.client);
@@ -91,7 +123,9 @@ class Odoo {
         this.accountLock_exception = new Models.AccountLock_exceptionModel(this.client);
         this.accountMergeWizardLine = new Models.AccountMergeWizardLineModel(this.client);
         this.accountMergeWizard = new Models.AccountMergeWizardModel(this.client);
-        this.accountMissingTransactionWizard = new Models.AccountMissingTransactionWizardModel(this.client);
+        this.accountMissingTransactionWizard = new Models.AccountMissingTransactionWizardModel(
+            this.client,
+        );
         this.accountMoveLine = new Models.AccountMoveLineModel(this.client);
         this.accountMoveReversal = new Models.AccountMoveReversalModel(this.client);
         this.accountMoveSendBatchWizard = new Models.AccountMoveSendBatchWizardModel(this.client);
@@ -108,7 +142,8 @@ class Odoo {
         this.accountPaymentTerm = new Models.AccountPaymentTermModel(this.client);
         this.accountPayment = new Models.AccountPaymentModel(this.client);
         this.accountReconcileModelLine = new Models.AccountReconcileModelLineModel(this.client);
-        this.accountReconcileModelPartnerMapping = new Models.AccountReconcileModelPartnerMappingModel(this.client);
+        this.accountReconcileModelPartnerMapping =
+            new Models.AccountReconcileModelPartnerMappingModel(this.client);
         this.accountReconcileModel = new Models.AccountReconcileModelModel(this.client);
         this.accountReconcileWizard = new Models.AccountReconcileWizardModel(this.client);
         this.accountReportColumn = new Models.AccountReportColumnModel(this.client);
@@ -119,13 +154,17 @@ class Odoo {
         this.accountResequenceWizard = new Models.AccountResequenceWizardModel(this.client);
         this.accountRoot = new Models.AccountRootModel(this.client);
         this.accountSecureEntriesWizard = new Models.AccountSecureEntriesWizardModel(this.client);
-        this.accountSetupBankManualConfig = new Models.AccountSetupBankManualConfigModel(this.client);
+        this.accountSetupBankManualConfig = new Models.AccountSetupBankManualConfigModel(
+            this.client,
+        );
         this.accountTaxGroup = new Models.AccountTaxGroupModel(this.client);
         this.accountTaxRepartitionLine = new Models.AccountTaxRepartitionLineModel(this.client);
         this.accountTax = new Models.AccountTaxModel(this.client);
         this.accountTransferModelLine = new Models.AccountTransferModelLineModel(this.client);
         this.accountTransferModel = new Models.AccountTransferModelModel(this.client);
-        this.account_edi_proxy_clientUser = new Models.Account_edi_proxy_clientUserModel(this.client);
+        this.account_edi_proxy_clientUser = new Models.Account_edi_proxy_clientUserModel(
+            this.client,
+        );
         this.account_peppolService = new Models.Account_peppolServiceModel(this.client);
         this.account_peppolServiceWizard = new Models.Account_peppolServiceWizardModel(this.client);
         this.analyticMixin = new Models.AnalyticMixinModel(this.client);
@@ -145,7 +184,9 @@ class Odoo {
         this.bankRecWidget = new Models.BankRecWidgetModel(this.client);
         this.barcodeNomenclature = new Models.BarcodeNomenclatureModel(this.client);
         this.barcodeRule = new Models.BarcodeRuleModel(this.client);
-        this.barcodesBarcode_events_mixin = new Models.BarcodesBarcode_events_mixinModel(this.client);
+        this.barcodesBarcode_events_mixin = new Models.BarcodesBarcode_events_mixinModel(
+            this.client,
+        );
         this.baseAutomation = new Models.BaseAutomationModel(this.client);
         this.baseDocumentLayout = new Models.BaseDocumentLayoutModel(this.client);
         this.baseEnableProfilingWizard = new Models.BaseEnableProfilingWizardModel(this.client);
@@ -158,7 +199,9 @@ class Odoo {
         this.baseModuleUninstall = new Models.BaseModuleUninstallModel(this.client);
         this.baseModuleUpdate = new Models.BaseModuleUpdateModel(this.client);
         this.baseModuleUpgrade = new Models.BaseModuleUpgradeModel(this.client);
-        this.basePartnerMergeAutomaticWizard = new Models.BasePartnerMergeAutomaticWizardModel(this.client);
+        this.basePartnerMergeAutomaticWizard = new Models.BasePartnerMergeAutomaticWizardModel(
+            this.client,
+        );
         this.basePartnerMergeLine = new Models.BasePartnerMergeLineModel(this.client);
         this.base = new Models.BaseModel(this.client);
         this.base_importImport = new Models.Base_importImportModel(this.client);
@@ -239,7 +282,9 @@ class Odoo {
         this.helpdeskTag = new Models.HelpdeskTagModel(this.client);
         this.helpdeskTeam = new Models.HelpdeskTeamModel(this.client);
         this.helpdeskTicketConvertWizard = new Models.HelpdeskTicketConvertWizardModel(this.client);
-        this.helpdeskTicketReportAnalysis = new Models.HelpdeskTicketReportAnalysisModel(this.client);
+        this.helpdeskTicketReportAnalysis = new Models.HelpdeskTicketReportAnalysisModel(
+            this.client,
+        );
         this.helpdeskTicket = new Models.HelpdeskTicketModel(this.client);
         this.hrApplicantCategory = new Models.HrApplicantCategoryModel(this.client);
         this.hrApplicantRefuseReason = new Models.HrApplicantRefuseReasonModel(this.client);
@@ -258,7 +303,9 @@ class Odoo {
         this.hrCandidate = new Models.HrCandidateModel(this.client);
         this.hrContractEmployeeReport = new Models.HrContractEmployeeReportModel(this.client);
         this.hrContractHistory = new Models.HrContractHistoryModel(this.client);
-        this.hrContractSignDocumentWizard = new Models.HrContractSignDocumentWizardModel(this.client);
+        this.hrContractSignDocumentWizard = new Models.HrContractSignDocumentWizardModel(
+            this.client,
+        );
         this.hrContract = new Models.HrContractModel(this.client);
         this.hrContractType = new Models.HrContractTypeModel(this.client);
         this.hrDepartment = new Models.HrDepartmentModel(this.client);
@@ -299,15 +346,24 @@ class Odoo {
         this.hrPayrollDashboardWarning = new Models.HrPayrollDashboardWarningModel(this.client);
         this.hrPayrollDeclarationMixin = new Models.HrPayrollDeclarationMixinModel(this.client);
         this.hrPayrollEditPayslipLine = new Models.HrPayrollEditPayslipLineModel(this.client);
-        this.hrPayrollEditPayslipLinesWizard = new Models.HrPayrollEditPayslipLinesWizardModel(this.client);
-        this.hrPayrollEditPayslipWorkedDaysLine = new Models.HrPayrollEditPayslipWorkedDaysLineModel(this.client);
-        this.hrPayrollEmployeeDeclaration = new Models.HrPayrollEmployeeDeclarationModel(this.client);
+        this.hrPayrollEditPayslipLinesWizard = new Models.HrPayrollEditPayslipLinesWizardModel(
+            this.client,
+        );
+        this.hrPayrollEditPayslipWorkedDaysLine =
+            new Models.HrPayrollEditPayslipWorkedDaysLineModel(this.client);
+        this.hrPayrollEmployeeDeclaration = new Models.HrPayrollEmployeeDeclarationModel(
+            this.client,
+        );
         this.hrPayrollHeadcountLine = new Models.HrPayrollHeadcountLineModel(this.client);
         this.hrPayrollHeadcount = new Models.HrPayrollHeadcountModel(this.client);
-        this.hrPayrollHeadcountWorkingRate = new Models.HrPayrollHeadcountWorkingRateModel(this.client);
+        this.hrPayrollHeadcountWorkingRate = new Models.HrPayrollHeadcountWorkingRateModel(
+            this.client,
+        );
         this.hrPayrollIndex = new Models.HrPayrollIndexModel(this.client);
         this.hrPayrollNote = new Models.HrPayrollNoteModel(this.client);
-        this.hrPayrollPaymentReportWizard = new Models.HrPayrollPaymentReportWizardModel(this.client);
+        this.hrPayrollPaymentReportWizard = new Models.HrPayrollPaymentReportWizardModel(
+            this.client,
+        );
         this.hrPayrollReport = new Models.HrPayrollReportModel(this.client);
         this.hrPayrollStructure = new Models.HrPayrollStructureModel(this.client);
         this.hrPayrollStructureType = new Models.HrPayrollStructureTypeModel(this.client);
@@ -320,7 +376,9 @@ class Odoo {
         this.hrPayslipWorked_days = new Models.HrPayslipWorked_daysModel(this.client);
         this.hrRecruitmentDegree = new Models.HrRecruitmentDegreeModel(this.client);
         this.hrRecruitmentReport = new Models.HrRecruitmentReportModel(this.client);
-        this.hrRecruitmentSignDocumentWizard = new Models.HrRecruitmentSignDocumentWizardModel(this.client);
+        this.hrRecruitmentSignDocumentWizard = new Models.HrRecruitmentSignDocumentWizardModel(
+            this.client,
+        );
         this.hrRecruitmentSource = new Models.HrRecruitmentSourceModel(this.client);
         this.hrRecruitmentStageReport = new Models.HrRecruitmentStageReportModel(this.client);
         this.hrRecruitmentStage = new Models.HrRecruitmentStageModel(this.client);
@@ -337,9 +395,13 @@ class Odoo {
         this.hrTimesheetAttendanceReport = new Models.HrTimesheetAttendanceReportModel(this.client);
         this.hrTimesheetTip = new Models.HrTimesheetTipModel(this.client);
         this.hrUserWorkEntryEmployee = new Models.HrUserWorkEntryEmployeeModel(this.client);
-        this.hrWorkEntryExportEmployeeMixin = new Models.HrWorkEntryExportEmployeeMixinModel(this.client);
+        this.hrWorkEntryExportEmployeeMixin = new Models.HrWorkEntryExportEmployeeMixinModel(
+            this.client,
+        );
         this.hrWorkEntryExportMixin = new Models.HrWorkEntryExportMixinModel(this.client);
-        this.hrWorkEntryRegenerationWizard = new Models.HrWorkEntryRegenerationWizardModel(this.client);
+        this.hrWorkEntryRegenerationWizard = new Models.HrWorkEntryRegenerationWizardModel(
+            this.client,
+        );
         this.hrWorkEntryReport = new Models.HrWorkEntryReportModel(this.client);
         this.hrWorkEntry = new Models.HrWorkEntryModel(this.client);
         this.hrWorkEntryType = new Models.HrWorkEntryTypeModel(this.client);
@@ -425,7 +487,9 @@ class Odoo {
         this.knowledgeArticleFavorite = new Models.KnowledgeArticleFavoriteModel(this.client);
         this.knowledgeArticleMember = new Models.KnowledgeArticleMemberModel(this.client);
         this.knowledgeArticleStage = new Models.KnowledgeArticleStageModel(this.client);
-        this.knowledgeArticleTemplateCategory = new Models.KnowledgeArticleTemplateCategoryModel(this.client);
+        this.knowledgeArticleTemplateCategory = new Models.KnowledgeArticleTemplateCategoryModel(
+            this.client,
+        );
         this.knowledgeArticleThread = new Models.KnowledgeArticleThreadModel(this.client);
         this.knowledgeArticle = new Models.KnowledgeArticleModel(this.client);
         this.knowledgeCover = new Models.KnowledgeCoverModel(this.client);
@@ -433,7 +497,8 @@ class Odoo {
         this.kpiProvider = new Models.KpiProviderModel(this.client);
         this.l10n_itDdt = new Models.L10n_itDdtModel(this.client);
         this.l10n_itDocumentType = new Models.L10n_itDocumentTypeModel(this.client);
-        this.l10n_it_delivery_noteDelivery_mixin = new Models.L10n_it_delivery_noteDelivery_mixinModel(this.client);
+        this.l10n_it_delivery_noteDelivery_mixin =
+            new Models.L10n_it_delivery_noteDelivery_mixinModel(this.client);
         this.lotLabelLayout = new Models.LotLabelLayoutModel(this.client);
         this.mailActivityMixin = new Models.MailActivityMixinModel(this.client);
         this.mailActivityPlanTemplate = new Models.MailActivityPlanTemplateModel(this.client);
@@ -481,7 +546,9 @@ class Odoo {
         this.mailTrackingDurationMixin = new Models.MailTrackingDurationMixinModel(this.client);
         this.mailTrackingValue = new Models.MailTrackingValueModel(this.client);
         this.mailWizardInvite = new Models.MailWizardInviteModel(this.client);
-        this.maintenanceEquipmentCategory = new Models.MaintenanceEquipmentCategoryModel(this.client);
+        this.maintenanceEquipmentCategory = new Models.MaintenanceEquipmentCategoryModel(
+            this.client,
+        );
         this.maintenanceEquipment = new Models.MaintenanceEquipmentModel(this.client);
         this.maintenanceMixin = new Models.MaintenanceMixinModel(this.client);
         this.maintenanceRequest = new Models.MaintenanceRequestModel(this.client);
@@ -516,13 +583,19 @@ class Odoo {
         this.mrpRoutingWorkcenter = new Models.MrpRoutingWorkcenterModel(this.client);
         this.mrpUnbuild = new Models.MrpUnbuildModel(this.client);
         this.mrpWorkcenterCapacity = new Models.MrpWorkcenterCapacityModel(this.client);
-        this.mrpWorkcenterProductivityLoss = new Models.MrpWorkcenterProductivityLossModel(this.client);
-        this.mrpWorkcenterProductivityLossType = new Models.MrpWorkcenterProductivityLossTypeModel(this.client);
+        this.mrpWorkcenterProductivityLoss = new Models.MrpWorkcenterProductivityLossModel(
+            this.client,
+        );
+        this.mrpWorkcenterProductivityLossType = new Models.MrpWorkcenterProductivityLossTypeModel(
+            this.client,
+        );
         this.mrpWorkcenterProductivity = new Models.MrpWorkcenterProductivityModel(this.client);
         this.mrpWorkcenterTag = new Models.MrpWorkcenterTagModel(this.client);
         this.mrpWorkcenter = new Models.MrpWorkcenterModel(this.client);
         this.mrpWorkorder = new Models.MrpWorkorderModel(this.client);
-        this.mrp_productionAdditionalWorkorder = new Models.Mrp_productionAdditionalWorkorderModel(this.client);
+        this.mrp_productionAdditionalWorkorder = new Models.Mrp_productionAdditionalWorkorderModel(
+            this.client,
+        );
         this.onboardingOnboardingStep = new Models.OnboardingOnboardingStepModel(this.client);
         this.onboardingOnboarding = new Models.OnboardingOnboardingModel(this.client);
         this.onboardingProgressStep = new Models.OnboardingProgressStepModel(this.client);
@@ -530,7 +603,9 @@ class Odoo {
         this.paymentCaptureWizard = new Models.PaymentCaptureWizardModel(this.client);
         this.paymentLinkWizard = new Models.PaymentLinkWizardModel(this.client);
         this.paymentMethod = new Models.PaymentMethodModel(this.client);
-        this.paymentProviderOnboardingWizard = new Models.PaymentProviderOnboardingWizardModel(this.client);
+        this.paymentProviderOnboardingWizard = new Models.PaymentProviderOnboardingWizardModel(
+            this.client,
+        );
         this.paymentProvider = new Models.PaymentProviderModel(this.client);
         this.paymentRefundWizard = new Models.PaymentRefundWizardModel(this.client);
         this.paymentToken = new Models.PaymentTokenModel(this.client);
@@ -571,21 +646,33 @@ class Odoo {
         this.productReplenish = new Models.ProductReplenishModel(this.client);
         this.productSupplierinfo = new Models.ProductSupplierinfoModel(this.client);
         this.productTag = new Models.ProductTagModel(this.client);
-        this.productTemplateAttributeExclusion = new Models.ProductTemplateAttributeExclusionModel(this.client);
-        this.productTemplateAttributeLine = new Models.ProductTemplateAttributeLineModel(this.client);
-        this.productTemplateAttributeValue = new Models.ProductTemplateAttributeValueModel(this.client);
+        this.productTemplateAttributeExclusion = new Models.ProductTemplateAttributeExclusionModel(
+            this.client,
+        );
+        this.productTemplateAttributeLine = new Models.ProductTemplateAttributeLineModel(
+            this.client,
+        );
+        this.productTemplateAttributeValue = new Models.ProductTemplateAttributeValueModel(
+            this.client,
+        );
         this.productTemplate = new Models.ProductTemplateModel(this.client);
         this.projectCollaborator = new Models.ProjectCollaboratorModel(this.client);
         this.projectCreateInvoice = new Models.ProjectCreateInvoiceModel(this.client);
         this.projectMilestone = new Models.ProjectMilestoneModel(this.client);
-        this.projectProjectStageDeleteWizard = new Models.ProjectProjectStageDeleteWizardModel(this.client);
+        this.projectProjectStageDeleteWizard = new Models.ProjectProjectStageDeleteWizardModel(
+            this.client,
+        );
         this.projectProjectStage = new Models.ProjectProjectStageModel(this.client);
         this.projectProject = new Models.ProjectProjectModel(this.client);
         this.projectSaleLineEmployeeMap = new Models.ProjectSaleLineEmployeeMapModel(this.client);
-        this.projectShareCollaboratorWizard = new Models.ProjectShareCollaboratorWizardModel(this.client);
+        this.projectShareCollaboratorWizard = new Models.ProjectShareCollaboratorWizardModel(
+            this.client,
+        );
         this.projectShareWizard = new Models.ProjectShareWizardModel(this.client);
         this.projectTags = new Models.ProjectTagsModel(this.client);
-        this.projectTaskBurndownChartReport = new Models.ProjectTaskBurndownChartReportModel(this.client);
+        this.projectTaskBurndownChartReport = new Models.ProjectTaskBurndownChartReportModel(
+            this.client,
+        );
         this.projectTaskConvertWizard = new Models.ProjectTaskConvertWizardModel(this.client);
         this.projectTaskCreateTimesheet = new Models.ProjectTaskCreateTimesheetModel(this.client);
         this.projectTaskRecurrence = new Models.ProjectTaskRecurrenceModel(this.client);
@@ -621,27 +708,37 @@ class Odoo {
         this.ratingRating = new Models.RatingRatingModel(this.client);
         this.repairOrder = new Models.RepairOrderModel(this.client);
         this.repairTags = new Models.RepairTagsModel(this.client);
-        this.reportAccountReport_hash_integrity = new Models.ReportAccountReport_hash_integrityModel(this.client);
+        this.reportAccountReport_hash_integrity =
+            new Models.ReportAccountReport_hash_integrityModel(this.client);
         this.reportAccountReport_invoice = new Models.ReportAccountReport_invoiceModel(this.client);
         this.reportAccountReport_invoice_with_payments =
             new Models.ReportAccountReport_invoice_with_paymentsModel(this.client);
         this.reportAccount_batch_paymentPrint_batch_payment =
             new Models.ReportAccount_batch_paymentPrint_batch_paymentModel(this.client);
-        this.reportBaseReport_irmodulereference = new Models.ReportBaseReport_irmodulereferenceModel(this.client);
+        this.reportBaseReport_irmodulereference =
+            new Models.ReportBaseReport_irmodulereferenceModel(this.client);
         this.reportHr_holidaysReport_holidayssummary =
             new Models.ReportHr_holidaysReport_holidayssummaryModel(this.client);
         this.reportHr_payrollContribution_register =
             new Models.ReportHr_payrollContribution_registerModel(this.client);
-        this.reportHr_skillsReport_employee_cv = new Models.ReportHr_skillsReport_employee_cvModel(this.client);
+        this.reportHr_skillsReport_employee_cv = new Models.ReportHr_skillsReport_employee_cvModel(
+            this.client,
+        );
         this.reportLayout = new Models.ReportLayoutModel(this.client);
-        this.reportMrpReport_bom_structure = new Models.ReportMrpReport_bom_structureModel(this.client);
+        this.reportMrpReport_bom_structure = new Models.ReportMrpReport_bom_structureModel(
+            this.client,
+        );
         this.reportMrpReport_mo_overview = new Models.ReportMrpReport_mo_overviewModel(this.client);
         this.reportMrp_account_enterpriseMrp_cost_structure =
             new Models.ReportMrp_account_enterpriseMrp_cost_structureModel(this.client);
         this.reportMrp_account_enterpriseProduct_template_cost_structure =
-            new Models.ReportMrp_account_enterpriseProduct_template_cost_structureModel(this.client);
+            new Models.ReportMrp_account_enterpriseProduct_template_cost_structureModel(
+                this.client,
+            );
         this.reportPaperformat = new Models.ReportPaperformatModel(this.client);
-        this.reportProductReport_pricelist = new Models.ReportProductReport_pricelistModel(this.client);
+        this.reportProductReport_pricelist = new Models.ReportProductReport_pricelistModel(
+            this.client,
+        );
         this.reportProductReport_producttemplatelabel2x7 =
             new Models.ReportProductReport_producttemplatelabel2x7Model(this.client);
         this.reportProductReport_producttemplatelabel4x12 =
@@ -657,13 +754,18 @@ class Odoo {
             new Models.ReportQuality_controlQuality_worksheetModel(this.client);
         this.reportQuality_controlQuality_worksheet_internal =
             new Models.ReportQuality_controlQuality_worksheet_internalModel(this.client);
-        this.reportSignGreen_savings_report = new Models.ReportSignGreen_savings_reportModel(this.client);
-        this.reportStockLabel_lot_template_view = new Models.ReportStockLabel_lot_template_viewModel(this.client);
+        this.reportSignGreen_savings_report = new Models.ReportSignGreen_savings_reportModel(
+            this.client,
+        );
+        this.reportStockLabel_lot_template_view =
+            new Models.ReportStockLabel_lot_template_viewModel(this.client);
         this.reportStockLabel_product_product_view =
             new Models.ReportStockLabel_product_product_viewModel(this.client);
         this.reportStockQuantity = new Models.ReportStockQuantityModel(this.client);
         this.reportStockReport_reception = new Models.ReportStockReport_receptionModel(this.client);
-        this.reportStockReport_stock_rule = new Models.ReportStockReport_stock_ruleModel(this.client);
+        this.reportStockReport_stock_rule = new Models.ReportStockReport_stock_ruleModel(
+            this.client,
+        );
         this.requestAppraisal = new Models.RequestAppraisalModel(this.client);
         this.resBank = new Models.ResBankModel(this.client);
         this.resCompany = new Models.ResCompanyModel(this.client);
@@ -715,11 +817,14 @@ class Odoo {
         this.saleOrderTemplateOption = new Models.SaleOrderTemplateOptionModel(this.client);
         this.saleOrderTemplate = new Models.SaleOrderTemplateModel(this.client);
         this.saleOrder = new Models.SaleOrderModel(this.client);
-        this.salePaymentProviderOnboardingWizard = new Models.SalePaymentProviderOnboardingWizardModel(this.client);
+        this.salePaymentProviderOnboardingWizard =
+            new Models.SalePaymentProviderOnboardingWizardModel(this.client);
         this.salePdfFormField = new Models.SalePdfFormFieldModel(this.client);
         this.saleReport = new Models.SaleReportModel(this.client);
         this.sequenceMixin = new Models.SequenceMixinModel(this.client);
-        this.shippingInformationUpdaterMixin = new Models.ShippingInformationUpdaterMixinModel(this.client);
+        this.shippingInformationUpdaterMixin = new Models.ShippingInformationUpdaterMixinModel(
+            this.client,
+        );
         this.signDuplicateTemplatePdf = new Models.SignDuplicateTemplatePdfModel(this.client);
         this.signItemOption = new Models.SignItemOptionModel(this.client);
         this.signItemRadioSet = new Models.SignItemRadioSetModel(this.client);
@@ -755,20 +860,36 @@ class Odoo {
         this.spreadsheetDashboard = new Models.SpreadsheetDashboardModel(this.client);
         this.spreadsheetMixin = new Models.SpreadsheetMixinModel(this.client);
         this.spreadsheetRevision = new Models.SpreadsheetRevisionModel(this.client);
-        this.stockBackorderConfirmationLine = new Models.StockBackorderConfirmationLineModel(this.client);
+        this.stockBackorderConfirmationLine = new Models.StockBackorderConfirmationLineModel(
+            this.client,
+        );
         this.stockBackorderConfirmation = new Models.StockBackorderConfirmationModel(this.client);
         this.stockChangeProductQty = new Models.StockChangeProductQtyModel(this.client);
         this.stockDeliveryNoteBaseWizard = new Models.StockDeliveryNoteBaseWizardModel(this.client);
-        this.stockDeliveryNoteConfirmWizard = new Models.StockDeliveryNoteConfirmWizardModel(this.client);
-        this.stockDeliveryNoteCreateWizard = new Models.StockDeliveryNoteCreateWizardModel(this.client);
-        this.stockDeliveryNoteInvoiceWizard = new Models.StockDeliveryNoteInvoiceWizardModel(this.client);
+        this.stockDeliveryNoteConfirmWizard = new Models.StockDeliveryNoteConfirmWizardModel(
+            this.client,
+        );
+        this.stockDeliveryNoteCreateWizard = new Models.StockDeliveryNoteCreateWizardModel(
+            this.client,
+        );
+        this.stockDeliveryNoteInvoiceWizard = new Models.StockDeliveryNoteInvoiceWizardModel(
+            this.client,
+        );
         this.stockDeliveryNoteLine = new Models.StockDeliveryNoteLineModel(this.client);
-        this.stockDeliveryNoteSelectWizard = new Models.StockDeliveryNoteSelectWizardModel(this.client);
+        this.stockDeliveryNoteSelectWizard = new Models.StockDeliveryNoteSelectWizardModel(
+            this.client,
+        );
         this.stockDeliveryNote = new Models.StockDeliveryNoteModel(this.client);
         this.stockDeliveryNoteType = new Models.StockDeliveryNoteTypeModel(this.client);
-        this.stockForecasted_product_product = new Models.StockForecasted_product_productModel(this.client);
-        this.stockForecasted_product_template = new Models.StockForecasted_product_templateModel(this.client);
-        this.stockInventoryAdjustmentName = new Models.StockInventoryAdjustmentNameModel(this.client);
+        this.stockForecasted_product_product = new Models.StockForecasted_product_productModel(
+            this.client,
+        );
+        this.stockForecasted_product_template = new Models.StockForecasted_product_templateModel(
+            this.client,
+        );
+        this.stockInventoryAdjustmentName = new Models.StockInventoryAdjustmentNameModel(
+            this.client,
+        );
         this.stockInventoryConflict = new Models.StockInventoryConflictModel(this.client);
         this.stockInventoryWarning = new Models.StockInventoryWarningModel(this.client);
         this.stockLocation = new Models.StockLocationModel(this.client);
@@ -782,7 +903,9 @@ class Odoo {
         this.stockPackage_level = new Models.StockPackage_levelModel(this.client);
         this.stockPickingCheckerMixin = new Models.StockPickingCheckerMixinModel(this.client);
         this.stockPickingGoodsAppearance = new Models.StockPickingGoodsAppearanceModel(this.client);
-        this.stockPickingTransportCondition = new Models.StockPickingTransportConditionModel(this.client);
+        this.stockPickingTransportCondition = new Models.StockPickingTransportConditionModel(
+            this.client,
+        );
         this.stockPickingTransportMethod = new Models.StockPickingTransportMethodModel(this.client);
         this.stockPickingTransportReason = new Models.StockPickingTransportReasonModel(this.client);
         this.stockPicking = new Models.StockPickingModel(this.client);
@@ -804,20 +927,32 @@ class Odoo {
         this.stockRulesReport = new Models.StockRulesReportModel(this.client);
         this.stockScrapReasonTag = new Models.StockScrapReasonTagModel(this.client);
         this.stockScrap = new Models.StockScrapModel(this.client);
-        this.stockStorageCategoryCapacity = new Models.StockStorageCategoryCapacityModel(this.client);
+        this.stockStorageCategoryCapacity = new Models.StockStorageCategoryCapacityModel(
+            this.client,
+        );
         this.stockStorageCategory = new Models.StockStorageCategoryModel(this.client);
         this.stockTraceabilityReport = new Models.StockTraceabilityReportModel(this.client);
         this.stockTrackConfirmation = new Models.StockTrackConfirmationModel(this.client);
         this.stockTrackLine = new Models.StockTrackLineModel(this.client);
-        this.stockValuationLayerRevaluation = new Models.StockValuationLayerRevaluationModel(this.client);
+        this.stockValuationLayerRevaluation = new Models.StockValuationLayerRevaluationModel(
+            this.client,
+        );
         this.stockValuationLayer = new Models.StockValuationLayerModel(this.client);
         this.stockWarehouseOrderpoint = new Models.StockWarehouseOrderpointModel(this.client);
         this.stockWarehouse = new Models.StockWarehouseModel(this.client);
-        this.stockWarnInsufficientQtyRepair = new Models.StockWarnInsufficientQtyRepairModel(this.client);
-        this.stockWarnInsufficientQtyScrap = new Models.StockWarnInsufficientQtyScrapModel(this.client);
+        this.stockWarnInsufficientQtyRepair = new Models.StockWarnInsufficientQtyRepairModel(
+            this.client,
+        );
+        this.stockWarnInsufficientQtyScrap = new Models.StockWarnInsufficientQtyScrapModel(
+            this.client,
+        );
         this.stockWarnInsufficientQty = new Models.StockWarnInsufficientQtyModel(this.client);
-        this.stockWarnInsufficientQtyUnbuild = new Models.StockWarnInsufficientQtyUnbuildModel(this.client);
-        this.stock_barcodeCancelOperation = new Models.Stock_barcodeCancelOperationModel(this.client);
+        this.stockWarnInsufficientQtyUnbuild = new Models.StockWarnInsufficientQtyUnbuildModel(
+            this.client,
+        );
+        this.stock_barcodeCancelOperation = new Models.Stock_barcodeCancelOperationModel(
+            this.client,
+        );
         this.studioApprovalEntry = new Models.StudioApprovalEntryModel(this.client);
         this.studioApprovalRequest = new Models.StudioApprovalRequestModel(this.client);
         this.studioApprovalRuleApprover = new Models.StudioApprovalRuleApproverModel(this.client);

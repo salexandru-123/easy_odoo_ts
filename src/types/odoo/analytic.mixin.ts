@@ -1,5 +1,5 @@
 export interface TAnalyticMixin {
-  analytic_distribution?: unknown;
-  analytic_precision?: number;
-  distribution_analytic_account_ids?: number[];
+    analytic_distribution?: unknown;
+    analytic_precision?: number;
+    distribution_analytic_account_ids?: number[];
 }

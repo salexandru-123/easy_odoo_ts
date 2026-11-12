@@ -1,3 +1,3 @@
 export interface TTemplateResetMixin {
-  template_fs?: string;
+    template_fs?: string;
 }

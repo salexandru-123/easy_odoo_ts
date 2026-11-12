@@ -1,3 +1,3 @@
 export interface TMailTrackingDurationMixin {
-  duration_tracking?: unknown;
+    duration_tracking?: unknown;
 }
