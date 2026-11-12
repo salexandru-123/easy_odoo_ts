@@ -23,7 +23,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 11.9.0
 
       - name: Export PNPM to PATH
         run: echo "${PNPM_HOME}" >> $GITHUB_PATH
