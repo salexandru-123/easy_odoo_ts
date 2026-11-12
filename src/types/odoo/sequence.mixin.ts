@@ -1,4 +1,4 @@
 export interface TSequenceMixin {
-  sequence_number?: number;
-  sequence_prefix?: string;
+    sequence_number?: number;
+    sequence_prefix?: string;
 }
