@@ -15,7 +15,7 @@
     "type-check": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prepublishOnly": "pnpm test && pnpm run lint ",
     "preversion": "pnpm run lint",
     "postversion": "git push && git push --tags",
@@ -27,7 +27,8 @@
   },
   "lint-staged": {
     "src/**/*.ts": "eslint",
-    "test/**/*.ts": "eslint"
+    "test/**/*.ts": "eslint",
+    "*.{js,ts,jsx,tsx,json,css,md}": "prettier --write"
   },
   "keywords": [
     "typescript",
