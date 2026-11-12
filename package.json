@@ -18,7 +18,6 @@
     "prepare": "husky install",
     "prepublishOnly": "pnpm test && pnpm run lint ",
     "preversion": "pnpm run lint",
-    "version": "pnpm run format && git add -A && pnpm version patch &&  git commit",
     "postversion": "git push && git push --tags",
     "clean": "rm -rf dist",
     "build": "pnpm run clean && pnpm run build:cjs && pnpm run build:esm && pnpm run build:types",
