@@ -29,5 +29,4 @@ var __exportStar =
 Object.defineProperty(exports, '__esModule', { value: true });
 __exportStar(require('./models'), exports);
 __exportStar(require('./client/Odoo'), exports);
-__exportStar(require('./client/Test'), exports);
 __exportStar(require('./types'), exports);
