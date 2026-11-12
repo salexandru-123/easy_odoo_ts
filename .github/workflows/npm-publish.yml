@@ -50,6 +50,6 @@ jobs:
         run: pnpm run build
 
       - name: Publish to NPM
-        run: npm stage publish --access public --provenance
+        run: npm_config_dev_engines_package_manager=warn npm stage publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
