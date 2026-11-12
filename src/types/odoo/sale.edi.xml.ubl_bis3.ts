@@ -1,2 +1,1 @@
-export interface TSaleEdiXmlUbl_bis3 {
-}
+export interface TSaleEdiXmlUbl_bis3 {}

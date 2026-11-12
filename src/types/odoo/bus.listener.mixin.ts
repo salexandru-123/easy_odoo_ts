@@ -1,2 +1,1 @@
-export interface TBusListenerMixin {
-}
+export interface TBusListenerMixin {}

@@ -1,2 +1,1 @@
-export interface TMailBot {
-}
+export interface TMailBot {}

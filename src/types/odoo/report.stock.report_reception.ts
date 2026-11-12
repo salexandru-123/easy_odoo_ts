@@ -1,2 +1,1 @@
-export interface TReportStockReport_reception {
-}
+export interface TReportStockReport_reception {}

@@ -1,2 +1,1 @@
-export interface TAccountMoveSend {
-}
+export interface TAccountMoveSend {}

@@ -1,2 +1,1 @@
-export interface TIrQweb {
-}
+export interface TIrQweb {}

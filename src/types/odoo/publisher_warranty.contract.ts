@@ -1,2 +1,1 @@
-export interface TPublisher_warrantyContract {
-}
+export interface TPublisher_warrantyContract {}

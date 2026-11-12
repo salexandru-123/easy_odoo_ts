@@ -1,2 +1,1 @@
-export interface TIrQwebFieldInteger {
-}
+export interface TIrQwebFieldInteger {}

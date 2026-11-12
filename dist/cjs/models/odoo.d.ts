@@ -8,6 +8,7 @@ export declare abstract class BaseOdooModel<T extends object> {
      */
     constructor(client: OdooClient);
     create(values: OdooValues): Promise<number>;
+    createMulti(values: OdooValues[]): Promise<number[]>;
     read(ids: number[]): Promise<T[]>;
     write(ids: number[], values: OdooValues): Promise<boolean>;
     unlink(ids: number[]): Promise<boolean>;

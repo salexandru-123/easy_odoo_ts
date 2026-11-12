@@ -1,2 +1,1 @@
-export interface TSaleEdiCommon {
-}
+export interface TSaleEdiCommon {}

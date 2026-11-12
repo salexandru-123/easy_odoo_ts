@@ -1,2 +1,1 @@
-export interface TIrQwebFieldBarcode {
-}
+export interface TIrQwebFieldBarcode {}

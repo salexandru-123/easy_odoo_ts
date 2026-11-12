@@ -1,2 +1,1 @@
-export interface TReportSignGreen_savings_report {
-}
+export interface TReportSignGreen_savings_report {}

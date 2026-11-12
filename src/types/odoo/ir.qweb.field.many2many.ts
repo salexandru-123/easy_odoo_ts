@@ -1,2 +1,1 @@
-export interface TIrQwebFieldMany2many {
-}
+export interface TIrQwebFieldMany2many {}

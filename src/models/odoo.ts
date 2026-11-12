@@ -11,6 +11,9 @@ export abstract class BaseOdooModel<T extends object> {
   async create(values: OdooValues): Promise<number> {
     return this.client.create(this.model, values);
   }
+  async createMulti(values: OdooValues[]): Promise<number[]> {
+    return this.client.execute(this.model, 'create', values);
+  }
   async read(ids: number[]): Promise<T[]> {
     return this.client.read<T>(this.model, ids);
   }

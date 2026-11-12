@@ -1,2 +1,1 @@
-export interface TBase {
-}
+export interface TBase {}

@@ -1,2 +1,1 @@
-export interface TStockPickingCheckerMixin {
-}
+export interface TStockPickingCheckerMixin {}

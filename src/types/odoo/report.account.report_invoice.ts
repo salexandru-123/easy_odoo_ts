@@ -1,2 +1,1 @@
-export interface TReportAccountReport_invoice {
-}
+export interface TReportAccountReport_invoice {}
