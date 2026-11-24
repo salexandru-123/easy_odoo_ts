@@ -1,21 +1,22 @@
 import { OdooClient } from 'odoo-xmlrpc-ts';
 import { OdooDomain, OdooOptions } from '../types/base';
 
-export abstract class BaseOdooModel<T> {
+export abstract class BaseOdooModel<T extends object> {
     protected abstract readonly model: string;
 
     /**
      *
      */
     constructor(protected readonly client: OdooClient) {}
-    async create(values: T): Promise<number> {
-        return this.client.create(this.model, values as object);
+
+    async create<K extends T>(values: K): Promise<number> {
+        return this.client.create<K>(this.model, values);
     }
-    async createMulti(values: T[]): Promise<number[]> {
+    async createMulti<K extends T>(values: K[]): Promise<number[]> {
         return this.client.execute(this.model, 'create', values);
     }
-    async read(ids: number[]): Promise<T[]> {
-        return this.client.read<T>(this.model, ids);
+    async read<K extends T>(ids: number[]): Promise<K[]> {
+        return this.client.read<K>(this.model, ids);
     }
     async write(ids: number[], values: Partial<T>): Promise<boolean> {
         return this.client.write(this.model, ids, values as object);
@@ -24,8 +25,8 @@ export abstract class BaseOdooModel<T> {
         return await this.client.unlink(this.model, ids);
     }
 
-    async searchRead(domain?: OdooDomain, opts?: OdooOptions): Promise<T[]> {
-        return this.client.searchRead<T>(this.model, domain || [], opts);
+    async searchRead<K extends T>(domain?: OdooDomain, opts?: OdooOptions): Promise<K[]> {
+        return this.client.searchRead<K>(this.model, domain || [], opts);
     }
 
     async searchCount(domain?: OdooDomain): Promise<number> {
@@ -36,7 +37,11 @@ export abstract class BaseOdooModel<T> {
         return this.client.search(this.model, domain || [], opts);
     }
 
-    async execute(method: string, domain?: OdooDomain, opts?: OdooOptions): Promise<unknown> {
-        return this.client.execute(this.model, method, domain, opts);
+    async execute<K extends T | unknown>(
+        method: string,
+        domain?: OdooDomain,
+        opts?: OdooOptions,
+    ): Promise<K> {
+        return this.client.execute<K>(this.model, method, domain, opts);
     }
 }

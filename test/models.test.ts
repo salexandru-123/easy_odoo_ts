@@ -30,8 +30,20 @@ describe('ProductProduct', () => {
     it('delegates create to the configured Odoo model', async () => {
         const create = jest.spyOn(OdooClient.prototype, 'create').mockResolvedValue(42);
 
-        await expect(model.create({ name: 'Widget' })).resolves.toBe(42);
-        expect(create).toHaveBeenCalledWith('product.product', { name: 'Widget' });
+        await expect(
+            model.create({
+                name: 'Widget',
+                product_tmpl_id: 10,
+                product_variant_ids: [],
+                uom_po_id: 10,
+            }),
+        ).resolves.toBe(42);
+        expect(create).toHaveBeenCalledWith('product.product', {
+            name: 'Widget',
+            product_tmpl_id: 10,
+            product_variant_ids: [],
+            uom_po_id: 10,
+        });
     });
 
     it('delegates read, write, and unlink to the configured Odoo model', async () => {

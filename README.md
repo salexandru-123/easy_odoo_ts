@@ -112,6 +112,27 @@ pnpm i easy_odoo_ts
     const newModelResults = await odoo.newModel.searchRead();
     ```
 
+## Use Custom Fields on Base Odoo Models
+
+There is the possibility to add custom fields to methods when working with Base Odoo Models.
+
+In the example below I added the field `newField` of type `'string'` to the result of the `searchRead()`, conserving the fields of the **resPartner** model.
+
+```typescript
+const partners = await odoo.models.resPartner.searchRead<TResPartner & { newField: string }>([
+    ['is_company', '=', true],
+    ['name', '=', item.name],
+]);
+```
+
+Now when hovering over the variable `partners` it has the following type:
+
+```typescript
+const partners: (TResPartner & {
+    newField: string;
+})[];
+```
+
 # License
 
 **MIT**
