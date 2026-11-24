@@ -6,7 +6,14 @@ export interface TIrModuleModuleExclusion {
     id?: number;
     module_id?: number | false;
     name?: string;
-    state?: string;
+    state?:
+        | 'uninstallable'
+        | 'uninstalled'
+        | 'installed'
+        | 'to upgrade'
+        | 'to remove'
+        | 'to install'
+        | 'unknown';
     write_date?: string;
     write_uid?: number | false;
 }

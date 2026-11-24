@@ -1,5 +1,5 @@
 export interface TSaleAdvancePaymentInv {
-    advance_payment_method: string;
+    advance_payment_method?: 'delivered' | 'percentage' | 'fixed';
     amount?: number;
     amount_invoiced?: number;
     amount_to_invoice?: number;
@@ -17,6 +17,7 @@ export interface TSaleAdvancePaymentInv {
     has_down_payments?: boolean;
     id?: number;
     sale_order_ids?: number[];
+    step?: 'initial' | 'confirm';
     write_date?: string;
     write_uid?: number | false;
 }

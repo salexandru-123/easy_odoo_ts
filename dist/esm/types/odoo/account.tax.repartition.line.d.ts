@@ -4,11 +4,11 @@ export interface TAccountTaxRepartitionLine {
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
-    document_type: string;
+    document_type: 'invoice' | 'refund';
     factor?: number;
-    factor_percent: number;
+    factor_percent?: number;
     id?: number;
-    repartition_type: string;
+    repartition_type?: 'base' | 'tax';
     sequence?: number;
     tag_ids?: number[];
     tag_ids_domain?: string | false;

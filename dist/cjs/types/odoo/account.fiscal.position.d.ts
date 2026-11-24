@@ -6,7 +6,7 @@ export interface TAccountFiscalPosition {
     avatax_invoice_account_id?: number | false;
     avatax_refund_account_id?: number | false;
     company_country_id?: number | false;
-    company_id: number | false;
+    company_id?: number | false;
     country_group_id?: number | false;
     country_id?: number | false;
     create_date?: string;
@@ -14,7 +14,7 @@ export interface TAccountFiscalPosition {
     display_name?: string;
     fiscal_country_codes?: string;
     foreign_vat?: string;
-    foreign_vat_header_mode?: string;
+    foreign_vat_header_mode?: 'templates_found' | 'no_template';
     id?: number;
     is_avatax?: boolean;
     name: string;

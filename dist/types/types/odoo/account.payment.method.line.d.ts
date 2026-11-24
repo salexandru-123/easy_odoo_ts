@@ -12,8 +12,8 @@ export interface TAccountPaymentMethodLine {
     payment_account_id?: number | false;
     payment_method_id: number | false;
     payment_provider_id?: number | false;
-    payment_provider_state?: string;
-    payment_type?: string;
+    payment_provider_state?: '';
+    payment_type?: '';
     sequence?: number;
     write_date?: string;
     write_uid?: number | false;

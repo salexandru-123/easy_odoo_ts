@@ -10,7 +10,7 @@ export interface TPaymentRefundWizard {
     payment_amount?: number;
     payment_id?: number | false;
     refunded_amount?: number;
-    support_refund?: string;
+    support_refund?: 'none' | 'full_only' | 'partial';
     transaction_id?: number | false;
     write_date?: string;
     write_uid?: number | false;

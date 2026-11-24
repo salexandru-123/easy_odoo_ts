@@ -1,12 +1,30 @@
 export interface TAccountAccount {
-    account_type: string;
+    account_type:
+        | 'asset_receivable'
+        | 'asset_cash'
+        | 'asset_current'
+        | 'asset_non_current'
+        | 'asset_prepayments'
+        | 'asset_fixed'
+        | 'liability_payable'
+        | 'liability_credit_card'
+        | 'liability_current'
+        | 'liability_non_current'
+        | 'equity'
+        | 'equity_unaffected'
+        | 'income'
+        | 'income_other'
+        | 'expense'
+        | 'expense_depreciation'
+        | 'expense_direct_cost'
+        | 'off_balance';
     allowed_journal_ids?: number[];
     code?: string;
     code_mapping_ids?: number[];
     code_store?: string;
     company_currency_id?: number | false;
     company_fiscal_country_code?: string;
-    company_ids: number[];
+    company_ids?: number[];
     create_date?: string;
     create_uid?: number | false;
     currency_id?: number | false;
@@ -18,7 +36,7 @@ export interface TAccountAccount {
     has_message?: boolean;
     id?: number;
     include_initial_balance?: boolean;
-    internal_group?: string;
+    internal_group?: 'equity' | 'asset' | 'liability' | 'income' | 'expense' | 'off';
     message_attachment_count?: number;
     message_follower_ids?: number[];
     message_has_error?: boolean;

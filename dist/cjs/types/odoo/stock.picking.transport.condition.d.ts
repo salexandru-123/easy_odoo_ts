@@ -6,7 +6,7 @@ export interface TStockPickingTransportCondition {
     id?: number;
     name: string;
     note?: string;
-    price_to_show: string;
+    price_to_show?: 'unit' | 'total' | 'none';
     sequence?: number;
     write_date?: string;
     write_uid?: number | false;

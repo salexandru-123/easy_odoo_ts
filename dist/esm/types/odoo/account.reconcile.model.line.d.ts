@@ -2,8 +2,8 @@ export interface TAccountReconcileModelLine {
     account_id?: number | false;
     allow_payment_tolerance?: boolean;
     amount?: number;
-    amount_string: string;
-    amount_type: string;
+    amount_string?: string;
+    amount_type: 'fixed' | 'percentage' | 'percentage_st_line' | 'regex';
     analytic_distribution?: unknown;
     analytic_precision?: number;
     company_id?: number | false;
@@ -17,8 +17,8 @@ export interface TAccountReconcileModelLine {
     label?: string;
     model_id?: number | false;
     payment_tolerance_param?: number;
-    rule_type?: string;
-    sequence: number;
+    rule_type?: '';
+    sequence?: number;
     show_force_tax_included?: boolean;
     tax_ids?: number[];
     write_date?: string;

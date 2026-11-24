@@ -1,15 +1,15 @@
 export interface TMailActivity {
     active?: boolean;
-    activity_category?: string;
-    activity_decoration?: string;
+    activity_category?: '';
+    activity_decoration?: '';
     activity_type_id?: number | false;
     attachment_ids?: number[];
     automated?: boolean;
     can_write?: boolean;
-    chaining_type?: string;
+    chaining_type?: '';
     create_date?: string;
     create_uid?: number | false;
-    date_deadline: string;
+    date_deadline?: string;
     date_done?: string;
     display_name?: string;
     has_recommended_activities?: boolean;
@@ -24,10 +24,10 @@ export interface TMailActivity {
     res_model?: string;
     res_model_id: number | false;
     res_name?: string;
-    state?: string;
+    state?: 'overdue' | 'today' | 'planned' | 'done';
     summary?: string;
-    user_id: number | false;
-    user_tz?: string;
+    user_id?: number | false;
+    user_tz?: '';
     write_date?: string;
     write_uid?: number | false;
 }

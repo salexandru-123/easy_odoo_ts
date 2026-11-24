@@ -1,10 +1,10 @@
 export interface TMrpRoutingWorkcenter {
     active?: boolean;
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -41,7 +41,7 @@ export interface TMrpRoutingWorkcenter {
     time_computed_on?: string;
     time_cycle?: number;
     time_cycle_manual?: number;
-    time_mode?: string;
+    time_mode?: 'auto' | 'manual';
     time_mode_batch?: number;
     website_message_ids?: number[];
     workcenter_id: number | false;
@@ -49,7 +49,7 @@ export interface TMrpRoutingWorkcenter {
     workorder_ids?: number[];
     worksheet?: string | false;
     worksheet_google_slide?: string;
-    worksheet_type?: string;
+    worksheet_type?: 'pdf' | 'google_slide' | 'text';
     write_date?: string;
     write_uid?: number | false;
 }

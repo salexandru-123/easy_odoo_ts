@@ -4,7 +4,7 @@ export interface TBaseModuleUpdate {
     create_uid?: number | false;
     display_name?: string;
     id?: number;
-    state?: string;
+    state?: 'init' | 'done';
     updated?: number;
     write_date?: string;
     write_uid?: number | false;

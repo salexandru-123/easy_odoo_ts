@@ -1,5 +1,5 @@
 export interface TSpreadsheetDashboardShare {
-    access_token: string;
+    access_token?: string;
     create_date?: string;
     create_uid?: number | false;
     current_revision_uuid?: string;

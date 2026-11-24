@@ -1,7 +1,7 @@
 export interface TAccountReportExternalValue {
     carryover_origin_expression_label?: string;
     carryover_origin_report_line_id?: number | false;
-    company_id: number | false;
+    company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     date: string;

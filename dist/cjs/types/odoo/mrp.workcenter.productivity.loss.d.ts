@@ -4,7 +4,7 @@ export interface TMrpWorkcenterProductivityLoss {
     display_name?: string;
     id?: number;
     loss_id?: number | false;
-    loss_type?: string;
+    loss_type?: '';
     manual?: boolean;
     name: string;
     sequence?: number;

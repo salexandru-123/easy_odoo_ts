@@ -3,13 +3,13 @@ export interface TSaleOrderTemplateLine {
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
-    display_type?: string;
+    display_type?: 'line_section' | 'line_note';
     id?: number;
     name?: string;
     product_id?: number | false;
     product_uom_category_id?: number | false;
     product_uom_id?: number | false;
-    product_uom_qty: number;
+    product_uom_qty?: number;
     sale_order_template_id: number | false;
     sequence?: number;
     write_date?: string;

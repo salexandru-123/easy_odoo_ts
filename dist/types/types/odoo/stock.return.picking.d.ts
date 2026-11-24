@@ -5,7 +5,7 @@ export interface TStockReturnPicking {
     display_name?: string;
     id?: number;
     picking_id?: number | false;
-    picking_type_code?: string;
+    picking_type_code?: '';
     product_return_moves?: number[];
     write_date?: string;
     write_uid?: number | false;

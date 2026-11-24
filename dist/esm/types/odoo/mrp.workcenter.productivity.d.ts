@@ -1,11 +1,11 @@
 export interface TMrpWorkcenterProductivity {
     account_move_line_id?: number | false;
-    company_id: number | false;
+    company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     currency_id?: number | false;
     date_end?: string;
-    date_start: string;
+    date_start?: string;
     description?: string;
     display_name?: string;
     duration?: number;
@@ -13,7 +13,7 @@ export interface TMrpWorkcenterProductivity {
     employee_id?: number | false;
     id?: number;
     loss_id: number | false;
-    loss_type?: string;
+    loss_type?: '';
     production_id?: number | false;
     total_cost?: number;
     user_id?: number | false;

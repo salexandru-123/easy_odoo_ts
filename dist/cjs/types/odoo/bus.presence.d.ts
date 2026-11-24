@@ -4,6 +4,6 @@ export interface TBusPresence {
     id?: number;
     last_poll?: string;
     last_presence?: string;
-    status?: string;
+    status?: 'online' | 'away' | 'offline';
     user_id?: number | false;
 }

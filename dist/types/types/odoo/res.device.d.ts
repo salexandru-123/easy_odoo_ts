@@ -4,7 +4,7 @@ export interface TResDevice {
     country?: string;
     create_date?: string;
     create_uid?: number | false;
-    device_type?: string;
+    device_type?: 'computer' | 'mobile';
     display_name?: string;
     first_activity?: string;
     id?: number;

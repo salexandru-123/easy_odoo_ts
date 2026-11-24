@@ -5,10 +5,10 @@ export interface TResUsers {
     active_lang_count?: number;
     active_partner?: boolean;
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: '';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: '';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -17,7 +17,7 @@ export interface TResUsers {
     additional_note?: string;
     address_id?: number | false;
     api_key_ids?: number[];
-    autopost_bills: string;
+    autopost_bills?: '';
     available_peppol_eas?: unknown;
     avalara_exemption_id?: number | false;
     avalara_partner_code?: string;
@@ -37,7 +37,7 @@ export interface TResUsers {
     can_edit?: boolean;
     category_id?: number[];
     category_ids?: number[];
-    certificate?: string;
+    certificate?: '';
     channel_ids?: number[];
     child_ids?: number[];
     children?: number;
@@ -48,12 +48,12 @@ export interface TResUsers {
     commercial_company_name?: string;
     commercial_partner_id?: number | false;
     companies_count?: number;
-    company_id: number | false;
+    company_id?: number | false;
     company_ids?: number[];
     company_name?: string;
     company_registry?: string;
     company_registry_label?: string;
-    company_type?: string;
+    company_type?: '';
     complete_name?: string;
     contact_address?: string;
     contact_address_complete?: string;
@@ -76,13 +76,17 @@ export interface TResUsers {
     days_sales_outstanding?: number;
     debit?: number;
     debit_limit?: number;
+    default_goods_appearance_id?: number | false;
+    default_transport_condition_id?: number | false;
+    default_transport_method_id?: number | false;
+    default_transport_reason_id?: number | false;
     department_id?: number | false;
     device_ids?: number[];
     display_invoice_edi_format?: boolean;
     display_invoice_template_pdf_report_id?: boolean;
     display_name?: string;
     distance_home_work?: number;
-    distance_home_work_unit?: string;
+    distance_home_work_unit?: '';
     duplicate_bank_partner_ids?: number[];
     duplicated_bank_account_partners_count?: number;
     email?: string;
@@ -99,15 +103,15 @@ export interface TResUsers {
     employee_parent_id?: number | false;
     employee_resource_calendar_id?: number | false;
     employee_skill_ids?: number[];
-    employee_type?: string;
+    employee_type?: '';
     employees_count?: number;
     fiscal_country_codes?: string;
     function?: string;
-    gender?: string;
+    gender?: '';
     groups_count?: number;
     groups_id?: number[];
     has_message?: boolean;
-    hr_presence_state?: string;
+    hr_presence_state?: '';
     id?: number;
     identification_id?: string;
     ignore_abnormal_invoice_amount?: boolean;
@@ -120,12 +124,12 @@ export interface TResUsers {
     image_512?: string | false;
     image_medium?: string | false;
     industry_id?: number | false;
-    invoice_edi_format?: string;
+    invoice_edi_format?: '';
     invoice_edi_format_store?: string;
     invoice_ids?: number[];
-    invoice_sending_method?: string;
+    invoice_sending_method?: '';
     invoice_template_pdf_report_id?: number | false;
-    invoice_warn?: string;
+    invoice_warn?: '';
     invoice_warn_msg?: string;
     is_blacklisted?: boolean;
     is_coa_installed?: boolean;
@@ -137,13 +141,13 @@ export interface TResUsers {
     job_title?: string;
     journal_item_count?: number;
     km_home_work?: number;
-    lang?: string;
+    lang?: '';
     last_activity?: string;
     last_activity_time?: string;
     log_ids?: number[];
     login: string;
     login_date?: string;
-    marital?: string;
+    marital?: '';
     message_attachment_count?: number;
     message_bounce?: number;
     message_follower_ids?: number[];
@@ -161,10 +165,18 @@ export interface TResUsers {
     my_activity_date_deadline?: string;
     name?: string;
     new_password?: string;
-    notification_type: string;
+    notification_type?: 'email' | 'inbox';
     ocn_token?: string;
     odoobot_failed?: boolean;
-    odoobot_state?: string;
+    odoobot_state?:
+        | 'not_initialized'
+        | 'onboarding_emoji'
+        | 'onboarding_attachement'
+        | 'onboarding_command'
+        | 'onboarding_ping'
+        | 'onboarding_canned'
+        | 'idle'
+        | 'disabled';
     on_time_rate?: number;
     online_partner_information?: string;
     parent_id?: number | false;
@@ -180,7 +192,7 @@ export interface TResUsers {
     password?: string;
     payment_token_count?: number;
     payment_token_ids?: number[];
-    peppol_eas?: string;
+    peppol_eas?: '';
     peppol_endpoint?: string;
     permit_no?: string;
     phone?: string;
@@ -188,14 +200,14 @@ export interface TResUsers {
     phone_mobile_search?: string;
     phone_sanitized?: string;
     phone_sanitized_blacklisted?: boolean;
-    picking_warn?: string;
+    picking_warn?: '';
     picking_warn_msg?: string;
     pin?: string;
     place_of_birth?: string;
     private_city?: string;
     private_country_id?: number | false;
     private_email?: string;
-    private_lang?: string;
+    private_lang?: '';
     private_phone?: string;
     private_state_id?: number | false;
     private_street?: string;
@@ -216,7 +228,7 @@ export interface TResUsers {
     property_warehouse_id?: number | false;
     purchase_line_ids?: number[];
     purchase_order_count?: number;
-    purchase_warn?: string;
+    purchase_warn?: '';
     purchase_warn_msg?: string;
     receipt_reminder_email?: boolean;
     ref?: string;
@@ -231,7 +243,7 @@ export interface TResUsers {
     sale_order_count?: number;
     sale_order_ids?: number[];
     sale_team_id?: number | false;
-    sale_warn?: string;
+    sale_warn?: '';
     sale_warn_msg?: string;
     same_company_registry_partner_id?: number | false;
     same_vat_partner_id?: number | false;
@@ -245,7 +257,7 @@ export interface TResUsers {
     spouse_complete_name?: string;
     ssnid?: string;
     starred_message_ids?: number[];
-    state?: string;
+    state?: 'new' | 'active';
     state_id?: number | false;
     street?: string;
     street2?: string;
@@ -259,9 +271,9 @@ export interface TResUsers {
     totp_secret?: string;
     totp_trusted_device_ids?: number[];
     tour_enabled?: boolean;
-    trust?: string;
-    type?: string;
-    tz?: string;
+    trust?: '';
+    type?: '';
+    tz?: '';
     tz_offset?: string;
     use_partner_credit_limit?: boolean;
     user_group_warning?: string;
@@ -277,7 +289,7 @@ export interface TResUsers {
     work_email?: string;
     work_location_id?: number | false;
     work_location_name?: string;
-    work_location_type?: string;
+    work_location_type?: '';
     work_phone?: string;
     write_date?: string;
     write_uid?: number | false;

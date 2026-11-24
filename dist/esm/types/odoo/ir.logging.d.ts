@@ -10,7 +10,7 @@ export interface TIrLogging {
     message: string;
     name: string;
     path: string;
-    type: string;
+    type: 'client' | 'server';
     write_date?: string;
     write_uid?: number;
 }

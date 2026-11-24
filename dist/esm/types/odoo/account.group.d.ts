@@ -1,7 +1,7 @@
 export interface TAccountGroup {
     code_prefix_end?: string;
     code_prefix_start?: string;
-    company_id: number | false;
+    company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;

@@ -22,16 +22,27 @@ export interface TIrModuleModule {
     imported?: boolean;
     installed_version?: string;
     latest_version?: string;
-    license?: string;
+    license?:
+        | 'GPL-2'
+        | 'GPL-2 or any later version'
+        | 'GPL-3'
+        | 'GPL-3 or any later version'
+        | 'AGPL-3'
+        | 'LGPL-3'
+        | 'Other OSI approved licence'
+        | 'OEEL-1'
+        | 'OPL-1'
+        | 'Other proprietary';
     maintainer?: string;
     menus_by_module?: string;
-    module_type?: string;
+    module_type?: 'official' | 'industries';
     name: string;
     published_version?: string;
     reports_by_module?: string;
     sequence?: number;
     shortdesc?: string;
-    state?: string;
+    state?:
+        'uninstallable' | 'uninstalled' | 'installed' | 'to upgrade' | 'to remove' | 'to install';
     summary?: string;
     to_buy?: boolean;
     url?: string;

@@ -12,10 +12,10 @@ export interface TStockPackage_level {
     move_line_ids?: number[];
     package_id: number | false;
     picking_id?: number | false;
-    picking_type_code?: string;
+    picking_type_code?: '';
     show_lots_m2o?: boolean;
     show_lots_text?: boolean;
-    state?: string;
+    state?: 'draft' | 'confirmed' | 'assigned' | 'new' | 'done' | 'cancel';
     write_date?: string;
     write_uid?: number | false;
 }

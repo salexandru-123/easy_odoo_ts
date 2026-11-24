@@ -10,7 +10,7 @@ export interface TPurchaseOrderLine {
     date_planned?: string;
     discount?: number;
     display_name?: string;
-    display_type?: string;
+    display_type?: 'line_section' | 'line_note';
     distribution_analytic_account_ids?: number[];
     forecasted_issue?: boolean;
     group_id?: number | false;
@@ -37,7 +37,7 @@ export interface TPurchaseOrderLine {
     product_packaging_qty?: number;
     product_qty: number;
     product_template_attribute_value_ids?: number[];
-    product_type?: string;
+    product_type?: '';
     product_uom?: number | false;
     product_uom_category_id?: number | false;
     product_uom_qty?: number;
@@ -45,13 +45,13 @@ export interface TPurchaseOrderLine {
     qty_invoiced?: number;
     qty_received?: number;
     qty_received_manual?: number;
-    qty_received_method?: string;
+    qty_received_method?: 'manual' | 'stock_moves';
     qty_to_invoice?: number;
     sale_line_id?: number | false;
     sale_order_id?: number | false;
     sequence?: number;
-    state?: string;
-    tax_calculation_rounding_method?: string;
+    state?: '';
+    tax_calculation_rounding_method?: '';
     taxes_id?: number[];
     write_date?: string;
     write_uid?: number | false;

@@ -1,8 +1,8 @@
 export interface TQualityAlertTeam {
     alert_count?: number;
     alias_bounced_content?: string;
-    alias_contact: string;
-    alias_defaults: string;
+    alias_contact?: '';
+    alias_defaults?: string;
     alias_domain?: string;
     alias_domain_id?: number | false;
     alias_email?: string;
@@ -14,7 +14,7 @@ export interface TQualityAlertTeam {
     alias_name?: string;
     alias_parent_model_id?: number | false;
     alias_parent_thread_id?: number;
-    alias_status?: string;
+    alias_status?: '';
     check_count?: number;
     color?: number;
     company_id?: number | false;

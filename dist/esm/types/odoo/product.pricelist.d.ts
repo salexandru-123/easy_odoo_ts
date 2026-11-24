@@ -1,10 +1,10 @@
 export interface TProductPricelist {
     active?: boolean;
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -13,7 +13,7 @@ export interface TProductPricelist {
     country_group_ids?: number[];
     create_date?: string;
     create_uid?: number | false;
-    currency_id: number | false;
+    currency_id?: number | false;
     display_name?: string;
     has_message?: boolean;
     id?: number;

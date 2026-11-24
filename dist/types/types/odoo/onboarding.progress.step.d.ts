@@ -6,7 +6,7 @@ export interface TOnboardingProgressStep {
     id?: number;
     progress_ids?: number[];
     step_id: number | false;
-    step_state?: string;
+    step_state?: 'not_done' | 'just_done' | 'done';
     write_date?: string;
     write_uid?: number | false;
 }

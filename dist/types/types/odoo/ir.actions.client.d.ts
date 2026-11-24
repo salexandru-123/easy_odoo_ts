@@ -1,8 +1,8 @@
 export interface TIrActionsClient {
     binding_model_id?: number | false;
-    binding_type: string;
+    binding_type?: 'action' | 'report';
     binding_view_types?: string;
-    context: string;
+    context?: string;
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
@@ -14,8 +14,8 @@ export interface TIrActionsClient {
     path?: string;
     res_model?: string;
     tag: string;
-    target?: string;
-    type: string;
+    target?: 'current' | 'new' | 'fullscreen' | 'main';
+    type?: string;
     write_date?: string;
     write_uid?: number | false;
     xml_id?: string;

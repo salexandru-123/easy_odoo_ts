@@ -12,13 +12,14 @@ export interface TPaymentTransaction {
     is_post_processed?: boolean;
     landing_route?: string;
     last_state_change?: string;
-    operation?: string;
+    operation?:
+        'online_redirect' | 'online_direct' | 'online_token' | 'validation' | 'offline' | 'refund';
     partner_address?: string;
     partner_city?: string;
     partner_country_id?: number | false;
     partner_email?: string;
     partner_id: number | false;
-    partner_lang?: string;
+    partner_lang?: '';
     partner_name?: string;
     partner_phone?: string;
     partner_state_id?: number | false;
@@ -26,7 +27,7 @@ export interface TPaymentTransaction {
     payment_id?: number | false;
     payment_method_code?: string;
     payment_method_id: number | false;
-    provider_code?: string;
+    provider_code?: '';
     provider_id: number | false;
     provider_reference?: string;
     reference: string;
@@ -34,7 +35,7 @@ export interface TPaymentTransaction {
     sale_order_ids?: number[];
     sale_order_ids_nbr?: number;
     source_transaction_id?: number | false;
-    state: string;
+    state?: 'draft' | 'pending' | 'authorized' | 'done' | 'cancel' | 'error';
     state_message?: string;
     token_id?: number | false;
     tokenize?: boolean;

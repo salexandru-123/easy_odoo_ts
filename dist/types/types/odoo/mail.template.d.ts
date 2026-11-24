@@ -26,7 +26,7 @@ export interface TMailTemplate {
     report_template_ids?: number[];
     scheduled_date?: string;
     subject?: string;
-    template_category?: string;
+    template_category?: 'base_template' | 'hidden_template' | 'custom_template';
     template_fs?: string;
     use_default_to?: boolean;
     user_id?: number | false;

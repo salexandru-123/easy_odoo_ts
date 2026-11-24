@@ -7,7 +7,7 @@ export interface TResCurrencyRate {
     display_name?: string;
     id?: number;
     inverse_company_rate?: number;
-    name: string;
+    name?: string;
     rate?: number;
     write_date?: string;
     write_uid?: number | false;

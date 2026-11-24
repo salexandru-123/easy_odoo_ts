@@ -6,7 +6,7 @@ export interface TIrActionsTodo {
     id?: number;
     name?: string;
     sequence?: number;
-    state: string;
+    state?: 'open' | 'done';
     write_date?: string;
     write_uid?: number | false;
 }

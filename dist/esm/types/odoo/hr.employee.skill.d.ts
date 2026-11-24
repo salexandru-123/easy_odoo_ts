@@ -8,7 +8,7 @@ export interface THrEmployeeSkill {
     level_progress?: number;
     skill_id: number | false;
     skill_level_id: number | false;
-    skill_type_id: number | false;
+    skill_type_id?: number | false;
     write_date?: string;
     write_uid?: number | false;
 }

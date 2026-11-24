@@ -1,8 +1,8 @@
 export interface TProductDocument {
     access_token?: string;
     active?: boolean;
-    attached_on_mrp: string;
-    attached_on_sale: string;
+    attached_on_mrp?: 'hidden' | 'bom';
+    attached_on_sale?: 'hidden' | 'quotation' | 'sale_order' | 'inside';
     checksum?: string;
     company_id?: number | false;
     create_date?: string;
@@ -31,7 +31,7 @@ export interface TProductDocument {
     res_name?: string;
     sequence?: number;
     store_fname?: string;
-    type: string;
+    type?: '';
     url?: string;
     voice_ids?: number[];
     write_date?: string;

@@ -5,14 +5,14 @@ export interface TUomUom {
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
-    factor: number;
+    factor?: number;
     factor_inv: number;
     fiscal_country_codes?: string;
     id?: number;
     name: string;
     ratio?: number;
-    rounding: number;
-    uom_type: string;
+    rounding?: number;
+    uom_type?: 'bigger' | 'reference' | 'smaller';
     write_date?: string;
     write_uid?: number | false;
 }

@@ -6,9 +6,9 @@ export interface TPaymentProvider {
     available_currency_ids?: number[];
     cancel_msg?: string;
     capture_manually?: boolean;
-    code: string;
+    code?: 'none';
     color?: number;
-    company_id: number | false;
+    company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
@@ -22,7 +22,7 @@ export interface TPaymentProvider {
     main_currency_id?: number | false;
     maximum_amount?: number;
     module_id?: number | false;
-    module_state?: string;
+    module_state?: '';
     module_to_buy?: boolean;
     name: string;
     payment_method_ids?: number[];
@@ -30,11 +30,11 @@ export interface TPaymentProvider {
     pre_msg?: string;
     redirect_form_view_id?: number | false;
     sequence?: number;
-    so_reference_type?: string;
-    state: string;
+    so_reference_type?: 'so_name' | 'partner';
+    state?: 'disabled' | 'enabled' | 'test';
     support_express_checkout?: boolean;
-    support_manual_capture?: string;
-    support_refund?: string;
+    support_manual_capture?: 'full_only' | 'partial';
+    support_refund?: 'none' | 'full_only' | 'partial';
     support_tokenization?: boolean;
     token_inline_form_view_id?: number | false;
     write_date?: string;

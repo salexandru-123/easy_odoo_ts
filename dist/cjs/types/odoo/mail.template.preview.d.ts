@@ -9,7 +9,7 @@ export interface TMailTemplatePreview {
     email_to?: string;
     error_msg?: string;
     id?: number;
-    lang?: string;
+    lang?: '';
     mail_template_id: number | false;
     model_id?: number | false;
     no_record?: boolean;

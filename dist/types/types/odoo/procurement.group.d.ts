@@ -3,9 +3,9 @@ export interface TProcurementGroup {
     create_uid?: number | false;
     display_name?: string;
     id?: number;
-    move_type?: string;
+    move_type?: 'direct' | 'one';
     mrp_production_ids?: number[];
-    name: string;
+    name?: string;
     partner_id?: number | false;
     purchase_line_ids?: number[];
     sale_id?: number | false;

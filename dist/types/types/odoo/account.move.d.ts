@@ -5,10 +5,10 @@ export interface TAccountMove {
     access_url?: string;
     access_warning?: string;
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -29,7 +29,7 @@ export interface TAccountMove {
     attachment_ids?: number[];
     audit_trail_message_ids?: number[];
     authorized_transaction_ids?: number[];
-    auto_post: string;
+    auto_post?: 'no' | 'at_date' | 'monthly' | 'quarterly' | 'yearly';
     auto_post_origin_id?: number | false;
     auto_post_until?: string;
     avatax_tax_date?: string;
@@ -40,16 +40,18 @@ export interface TAccountMove {
     commercial_partner_id?: number | false;
     company_currency_id?: number | false;
     company_id?: number | false;
-    company_price_include?: string;
+    company_price_include?: '';
     country_code?: string;
     create_date?: string;
     create_uid?: number | false;
     currency_id: number | false;
     date: string;
-    deferred_entry_type?: string;
+    deferred_entry_type?: 'expense' | 'revenue';
     deferred_move_ids?: number[];
     deferred_original_move_ids?: number[];
     delivery_date?: string;
+    delivery_note_count?: number;
+    delivery_note_ids?: number[];
     direction_sign?: number;
     display_inactive_currency_warning?: boolean;
     display_name?: string;
@@ -64,7 +66,15 @@ export interface TAccountMove {
     extract_error_message?: string;
     extract_partner_name?: string;
     extract_prefill_data?: unknown;
-    extract_state?: string;
+    extract_state?:
+        | 'no_extract_requested'
+        | 'not_enough_credit'
+        | 'error_status'
+        | 'waiting_extraction'
+        | 'extract_not_ready'
+        | 'waiting_validation'
+        | 'to_validate'
+        | 'done';
     extract_state_processed?: boolean;
     extract_status?: string;
     extract_word_ids?: number[];
@@ -119,8 +129,15 @@ export interface TAccountMove {
     message_needaction?: boolean;
     message_needaction_counter?: number;
     message_partner_ids?: number[];
-    move_sent_values?: string;
-    move_type: string;
+    move_sent_values?: 'sent' | 'not_sent';
+    move_type?:
+        | 'entry'
+        | 'out_invoice'
+        | 'out_refund'
+        | 'in_invoice'
+        | 'in_refund'
+        | 'out_receipt'
+        | 'in_receipt';
     my_activity_date_deadline?: string;
     name?: string;
     name_placeholder?: string;
@@ -138,7 +155,14 @@ export interface TAccountMove {
     payment_count?: number;
     payment_ids?: number[];
     payment_reference?: string;
-    payment_state?: string;
+    payment_state?:
+        | 'not_paid'
+        | 'in_payment'
+        | 'paid'
+        | 'partial'
+        | 'reversed'
+        | 'blocked'
+        | 'invoicing_legacy';
     payment_state_before_switch?: string;
     payment_term_details?: string | false;
     posted_before?: boolean;
@@ -147,7 +171,7 @@ export interface TAccountMove {
     purchase_order_count?: number;
     purchase_order_name?: string;
     purchase_vendor_bill_id?: number | false;
-    qr_code_method?: string;
+    qr_code_method?: '';
     quick_edit_mode?: boolean;
     quick_edit_total_amount?: number;
     quick_encoding_vals?: unknown;
@@ -172,15 +196,24 @@ export interface TAccountMove {
     signature?: string | false;
     signing_user?: number | false;
     source_id?: number | false;
-    state: string;
+    state?: 'draft' | 'posted' | 'cancel';
     statement_id?: number | false;
     statement_line_id?: number | false;
     statement_line_ids?: number[];
-    status_in_payment?: string;
+    status_in_payment?:
+        | 'not_paid'
+        | 'in_payment'
+        | 'paid'
+        | 'partial'
+        | 'reversed'
+        | 'blocked'
+        | 'invoicing_legacy'
+        | 'draft'
+        | 'cancel';
     stock_move_id?: number | false;
     stock_valuation_layer_ids?: number[];
     suitable_journal_ids?: number[];
-    tax_calculation_rounding_method?: string;
+    tax_calculation_rounding_method?: '';
     tax_cash_basis_created_move_ids?: number[];
     tax_cash_basis_origin_move_id?: number | false;
     tax_cash_basis_rec_id?: number | false;

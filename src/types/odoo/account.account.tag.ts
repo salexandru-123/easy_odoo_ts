@@ -1,6 +1,6 @@
 export interface TAccountAccountTag {
     active?: boolean;
-    applicability: string;
+    applicability?: 'accounts' | 'taxes' | 'products';
     color?: number;
     country_id?: number | false;
     create_date?: string;

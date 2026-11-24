@@ -1,5 +1,5 @@
 export interface TProposeChange {
-    change_type?: string;
+    change_type?: 'update_step' | 'remove_step' | 'set_picture';
     comment?: string;
     create_date?: string;
     create_uid?: number | false;

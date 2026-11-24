@@ -3,7 +3,7 @@ export interface TStockChangeProductQty {
     create_uid?: number | false;
     display_name?: string;
     id?: number;
-    new_quantity: number;
+    new_quantity?: number;
     product_id: number | false;
     product_tmpl_id: number | false;
     product_uom_id?: number | false;

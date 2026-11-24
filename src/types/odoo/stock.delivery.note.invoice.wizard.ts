@@ -4,7 +4,7 @@ export interface TStockDeliveryNoteInvoiceWizard {
     display_name?: string;
     id?: number;
     invoice_date?: string;
-    invoice_method: string;
+    invoice_method?: 'dn' | 'service';
     write_date?: string;
     write_uid?: number | false;
 }

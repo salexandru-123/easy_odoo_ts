@@ -20,8 +20,13 @@ export interface THrEmployeePublic {
     email?: string;
     employee_id?: number | false;
     employee_skill_ids?: number[];
-    hr_icon_display?: string;
-    hr_presence_state?: string;
+    hr_icon_display?:
+        | 'presence_present'
+        | 'presence_out_of_working_hour'
+        | 'presence_absent'
+        | 'presence_archive'
+        | 'presence_undetermined';
+    hr_presence_state?: 'present' | 'absent' | 'archive' | 'out_of_working_hour';
     id?: number;
     im_status?: string;
     image_1024?: string | false;
@@ -49,14 +54,14 @@ export interface THrEmployeePublic {
     share?: boolean;
     show_hr_icon_display?: boolean;
     subordinate_ids?: number[];
-    tz?: string;
+    tz?: '';
     user_id?: number | false;
     user_partner_id?: number | false;
     work_contact_id?: number | false;
     work_email?: string;
     work_location_id?: number | false;
     work_location_name?: string;
-    work_location_type?: string;
+    work_location_type?: 'home' | 'office' | 'other';
     work_phone?: string;
     write_date?: string;
     write_uid?: number | false;

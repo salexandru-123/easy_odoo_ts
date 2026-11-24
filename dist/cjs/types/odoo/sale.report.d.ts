@@ -11,8 +11,8 @@ export interface TSaleReport {
     display_name?: string;
     id?: number;
     industry_id?: number | false;
-    invoice_status?: string;
-    line_invoice_status?: string;
+    invoice_status?: 'upselling' | 'invoiced' | 'to invoice' | 'no';
+    line_invoice_status?: 'upselling' | 'invoiced' | 'to invoice' | 'no';
     medium_id?: number | false;
     name?: string;
     nbr?: number;
@@ -32,7 +32,7 @@ export interface TSaleReport {
     qty_to_deliver?: number;
     qty_to_invoice?: number;
     source_id?: number | false;
-    state?: string;
+    state?: 'draft' | 'sent' | 'sale' | 'cancel';
     state_id?: number | false;
     team_id?: number | false;
     untaxed_amount_invoiced?: number;

@@ -3,10 +3,10 @@ export interface TDiscussChannelMember {
     create_date?: string;
     create_uid?: number | false;
     custom_channel_name?: string;
-    custom_notifications?: string;
+    custom_notifications?: 'all' | 'mentions' | 'no_notif';
     display_name?: string;
     fetched_message_id?: number | false;
-    fold_state?: string;
+    fold_state?: 'open' | 'folded' | 'closed';
     guest_id?: number | false;
     id?: number;
     is_pinned?: boolean;
@@ -15,7 +15,7 @@ export interface TDiscussChannelMember {
     last_seen_dt?: string;
     message_unread_counter?: number;
     mute_until_dt?: string;
-    new_message_separator: number;
+    new_message_separator?: number;
     partner_id?: number | false;
     rtc_inviting_session_id?: number | false;
     rtc_session_ids?: number[];

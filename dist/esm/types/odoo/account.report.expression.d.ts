@@ -4,10 +4,24 @@ export interface TAccountReportExpression {
     carryover_target?: string;
     create_date?: string;
     create_uid?: number | false;
-    date_scope: string;
+    date_scope?:
+        | 'from_beginning'
+        | 'from_fiscalyear'
+        | 'to_beginning_of_fiscalyear'
+        | 'to_beginning_of_period'
+        | 'strict_range'
+        | 'previous_tax_period';
     display_name?: string;
-    engine: string;
-    figure_type?: string;
+    engine: 'domain' | 'tax_tags' | 'aggregation' | 'account_codes' | 'external' | 'custom';
+    figure_type?:
+        | 'monetary'
+        | 'percentage'
+        | 'integer'
+        | 'float'
+        | 'date'
+        | 'datetime'
+        | 'boolean'
+        | 'string';
     formula: string;
     green_on_positive?: boolean;
     id?: number;

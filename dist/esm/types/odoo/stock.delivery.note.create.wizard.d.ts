@@ -8,9 +8,9 @@ export interface TStockDeliveryNoteCreateWizard {
     partner_id?: number | false;
     partner_sender_id?: number | false;
     partner_shipping_id: number | false;
-    picking_type?: string;
+    picking_type?: 'incoming' | 'outgoing' | 'internal' | 'mrp_operation';
     selected_picking_ids?: number[];
-    type_id: number | false;
+    type_id?: number | false;
     warning_message?: string;
     write_date?: string;
     write_uid?: number | false;

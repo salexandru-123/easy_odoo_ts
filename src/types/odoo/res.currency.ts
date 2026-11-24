@@ -15,7 +15,7 @@ export interface TResCurrency {
     is_current_company_currency?: boolean;
     iso_numeric?: number;
     name: string;
-    position?: string;
+    position?: 'after' | 'before';
     rate?: number;
     rate_ids?: number[];
     rate_string?: string;

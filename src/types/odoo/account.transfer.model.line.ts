@@ -6,7 +6,7 @@ export interface TAccountTransferModelLine {
     display_name?: string;
     id?: number;
     partner_ids?: number[];
-    percent: number;
+    percent?: number;
     percent_is_readonly?: boolean;
     sequence?: number;
     transfer_model_id: number | false;

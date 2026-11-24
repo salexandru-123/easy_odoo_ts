@@ -1,7 +1,7 @@
 export interface TStockScrap {
     _barcode_scanned?: string;
     bom_id?: number | false;
-    company_id: number | false;
+    company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     date_done?: string;
@@ -21,7 +21,7 @@ export interface TStockScrap {
     message_needaction_counter?: number;
     message_partner_ids?: number[];
     move_ids?: number[];
-    name: string;
+    name?: string;
     origin?: string;
     owner_id?: number | false;
     package_id?: number | false;
@@ -34,11 +34,11 @@ export interface TStockScrap {
     product_uom_id: number | false;
     production_id?: number | false;
     scrap_location_id: number | false;
-    scrap_qty: number;
+    scrap_qty?: number;
     scrap_reason_tag_ids?: number[];
     should_replenish?: boolean;
-    state?: string;
-    tracking?: string;
+    state?: 'draft' | 'done';
+    tracking?: '';
     website_message_ids?: number[];
     workorder_id?: number | false;
     write_date?: string;

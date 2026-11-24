@@ -7,7 +7,7 @@ export interface TResetViewArchWizard {
     display_name?: string;
     has_diff?: boolean;
     id?: number;
-    reset_mode: string;
+    reset_mode?: 'soft' | 'hard' | 'other_view';
     view_id?: number | false;
     view_name?: string;
     write_date?: string;

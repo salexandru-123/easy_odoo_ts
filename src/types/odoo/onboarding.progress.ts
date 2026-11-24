@@ -6,7 +6,7 @@ export interface TOnboardingProgress {
     id?: number;
     is_onboarding_closed?: boolean;
     onboarding_id: number | false;
-    onboarding_state?: string;
+    onboarding_state?: 'not_done' | 'just_done' | 'done';
     progress_step_ids?: number[];
     write_date?: string;
     write_uid?: number | false;

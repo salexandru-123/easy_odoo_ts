@@ -6,7 +6,7 @@ export interface TMailPushDevice {
     expiration_time?: string;
     id?: number;
     keys: string;
-    partner_id: number | false;
+    partner_id?: number | false;
     write_date?: string;
     write_uid?: number | false;
 }

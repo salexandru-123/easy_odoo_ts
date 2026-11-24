@@ -3,9 +3,9 @@ export interface TLotLabelLayout {
     create_uid?: number | false;
     display_name?: string;
     id?: number;
-    label_quantity: string;
+    label_quantity?: 'lots' | 'units';
     move_line_ids?: number[];
-    print_format: string;
+    print_format?: '4x12' | 'zpl';
     write_date?: string;
     write_uid?: number | false;
 }

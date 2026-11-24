@@ -3,12 +3,12 @@ export interface TIrAsset {
     bundle: string;
     create_date?: string;
     create_uid?: number | false;
-    directive?: string;
+    directive?: 'append' | 'prepend' | 'after' | 'before' | 'remove' | 'replace' | 'include';
     display_name?: string;
     id?: number;
     name: string;
     path: string;
-    sequence: number;
+    sequence?: number;
     target?: string;
     write_date?: string;
     write_uid?: number | false;

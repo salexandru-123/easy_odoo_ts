@@ -10,7 +10,7 @@ export interface TAccountMoveSendWizard {
     extra_edi_checkboxes?: unknown;
     extra_edis?: unknown;
     id?: number;
-    invoice_edi_format?: string;
+    invoice_edi_format?: '';
     is_download_only?: boolean;
     mail_attachments_widget?: unknown;
     mail_body?: string;

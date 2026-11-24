@@ -2,7 +2,7 @@ export interface TSalePdfFormField {
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
-    document_type: string;
+    document_type: 'quotation_document' | 'product_document';
     id?: number;
     name: string;
     path?: string;

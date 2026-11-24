@@ -30,7 +30,15 @@ export interface TMailMessage {
     mail_ids?: number[];
     mail_server_id?: number | false;
     message_id?: string;
-    message_type: string;
+    message_type?:
+        | 'email'
+        | 'comment'
+        | 'email_outgoing'
+        | 'notification'
+        | 'auto_comment'
+        | 'user_notification'
+        | 'sms'
+        | 'snailmail';
     model?: string;
     needaction?: boolean;
     notification_ids?: number[];

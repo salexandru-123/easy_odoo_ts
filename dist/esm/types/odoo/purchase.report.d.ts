@@ -26,7 +26,7 @@ export interface TPurchaseReport {
     qty_ordered?: number;
     qty_received?: number;
     qty_to_be_billed?: number;
-    state?: string;
+    state?: 'draft' | 'sent' | 'to approve' | 'purchase' | 'done' | 'cancel';
     untaxed_total?: number;
     user_id?: number | false;
     volume?: number;

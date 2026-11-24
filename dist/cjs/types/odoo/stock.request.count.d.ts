@@ -4,9 +4,9 @@ export interface TStockRequestCount {
     create_uid?: number | false;
     display_name?: string;
     id?: number;
-    inventory_date: string;
+    inventory_date?: string;
     quant_ids?: number[];
-    set_count?: string;
+    set_count?: 'empty' | 'set';
     user_id?: number | false;
     write_date?: string;
     write_uid?: number | false;

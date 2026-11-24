@@ -1,14 +1,14 @@
 export interface TStockRule {
-    action: string;
+    action?: 'pull' | 'push' | 'pull_push' | 'manufacture' | 'buy';
     active?: boolean;
-    auto: string;
+    auto?: 'manual' | 'transparent';
     company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     delay?: number;
     display_name?: string;
     group_id?: number | false;
-    group_propagation_option?: string;
+    group_propagation_option?: 'none' | 'propagate' | 'fixed';
     id?: number;
     location_dest_from_rule?: boolean;
     location_dest_id: number | false;
@@ -17,7 +17,7 @@ export interface TStockRule {
     partner_address_id?: number | false;
     picking_type_code_domain?: string;
     picking_type_id: number | false;
-    procure_method: string;
+    procure_method?: 'make_to_stock' | 'make_to_order' | 'mts_else_mto';
     propagate_cancel?: boolean;
     propagate_carrier?: boolean;
     propagate_warehouse_id?: number | false;

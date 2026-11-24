@@ -16,7 +16,7 @@ export interface TBasePartnerMergeAutomaticWizard {
     maximum_group?: number;
     number_group?: number;
     partner_ids?: number[];
-    state: string;
+    state?: 'option' | 'selection' | 'finished';
     write_date?: string;
     write_uid?: number | false;
 }

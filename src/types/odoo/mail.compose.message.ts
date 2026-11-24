@@ -7,7 +7,7 @@ export interface TMailComposeMessage {
     body_has_template_value?: boolean;
     can_edit_body?: boolean;
     composition_batch?: boolean;
-    composition_mode?: string;
+    composition_mode?: 'comment' | 'mass_mail';
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
@@ -20,7 +20,7 @@ export interface TMailComposeMessage {
     lang?: string;
     mail_activity_type_id?: number | false;
     mail_server_id?: number | false;
-    message_type: string;
+    message_type?: 'auto_comment' | 'comment' | 'notification';
     model?: string;
     model_is_thread?: boolean;
     parent_id?: number | false;
@@ -31,7 +31,7 @@ export interface TMailComposeMessage {
     render_model?: string;
     reply_to?: string;
     reply_to_force_new?: boolean;
-    reply_to_mode?: string;
+    reply_to_mode?: 'update' | 'new';
     res_domain?: string;
     res_domain_user_id?: number | false;
     res_ids?: string;

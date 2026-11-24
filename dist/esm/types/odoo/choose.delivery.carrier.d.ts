@@ -7,7 +7,7 @@ export interface TChooseDeliveryCarrier {
     currency_id?: number | false;
     delivery_message?: string;
     delivery_price?: number;
-    delivery_type?: string;
+    delivery_type?: '';
     display_name?: string;
     display_price?: number;
     id?: number;

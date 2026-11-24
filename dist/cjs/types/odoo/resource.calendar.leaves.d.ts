@@ -9,7 +9,7 @@ export interface TResourceCalendarLeaves {
     id?: number;
     name?: string;
     resource_id?: number | false;
-    time_type?: string;
+    time_type?: 'leave' | 'other';
     write_date?: string;
     write_uid?: number | false;
 }

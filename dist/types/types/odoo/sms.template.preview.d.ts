@@ -4,7 +4,7 @@ export interface TSmsTemplatePreview {
     create_uid?: number | false;
     display_name?: string;
     id?: number;
-    lang?: string;
+    lang?: '';
     model_id?: number | false;
     no_record?: boolean;
     resource_ref?: unknown;

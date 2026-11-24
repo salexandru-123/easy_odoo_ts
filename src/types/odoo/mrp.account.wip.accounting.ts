@@ -4,7 +4,7 @@ export interface TMrpAccountWipAccounting {
     date?: string;
     display_name?: string;
     id?: number;
-    journal_id: number | false;
+    journal_id?: number | false;
     line_ids?: number[];
     mo_ids?: number[];
     reference?: string;

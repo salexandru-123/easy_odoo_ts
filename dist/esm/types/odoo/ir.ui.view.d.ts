@@ -15,13 +15,27 @@ export interface TIrUiView {
     inherit_children_ids?: number[];
     inherit_id?: number | false;
     key?: string;
-    mode: string;
+    mode?: 'primary' | 'extension';
     model?: string;
     model_data_id?: number | false;
     model_id?: number | false;
     name: string;
-    priority: number;
-    type?: string;
+    priority?: number;
+    type?:
+        | 'list'
+        | 'form'
+        | 'graph'
+        | 'pivot'
+        | 'calendar'
+        | 'kanban'
+        | 'search'
+        | 'qweb'
+        | 'cohort'
+        | 'gantt'
+        | 'grid'
+        | 'hierarchy'
+        | 'map'
+        | 'activity';
     warning_info?: string;
     write_date?: string;
     write_uid?: number | false;

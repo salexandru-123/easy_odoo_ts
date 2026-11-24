@@ -1,8 +1,8 @@
 export interface TIrActionsAct_window {
     binding_model_id?: number | false;
-    binding_type: string;
+    binding_type?: 'action' | 'report';
     binding_view_types?: string;
-    context: string;
+    context?: string;
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
@@ -19,12 +19,12 @@ export interface TIrActionsAct_window {
     res_id?: number;
     res_model: string;
     search_view_id?: number | false;
-    target?: string;
-    type: string;
+    target?: 'current' | 'new' | 'inline' | 'fullscreen' | 'main';
+    type?: string;
     usage?: string;
     view_id?: number | false;
     view_ids?: number[];
-    view_mode: string;
+    view_mode?: string;
     views?: string | false;
     write_date?: string;
     write_uid?: number | false;

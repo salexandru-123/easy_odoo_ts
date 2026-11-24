@@ -7,7 +7,7 @@ export interface TSaleOrderTemplateOption {
     name: string;
     product_id: number | false;
     product_uom_category_id?: number | false;
-    quantity: number;
+    quantity?: number;
     sale_order_template_id: number | false;
     uom_id: number | false;
     write_date?: string;

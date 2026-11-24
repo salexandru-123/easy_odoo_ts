@@ -11,7 +11,7 @@ export interface TApprovalApprover {
     request_id?: number | false;
     required?: boolean;
     sequence?: number;
-    status?: string;
+    status?: 'new' | 'pending' | 'waiting' | 'approved' | 'refused' | 'cancel';
     user_id: number | false;
     write_date?: string;
     write_uid?: number | false;

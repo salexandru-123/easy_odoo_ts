@@ -25,7 +25,16 @@ export interface TMailMail {
     email_layout_xmlid?: string;
     email_to?: string;
     failure_reason?: string;
-    failure_type?: string;
+    failure_type?:
+        | 'unknown'
+        | 'mail_email_invalid'
+        | 'mail_email_missing'
+        | 'mail_from_invalid'
+        | 'mail_from_missing'
+        | 'mail_smtp'
+        | 'mail_bl'
+        | 'mail_optout'
+        | 'mail_dup';
     fetchmail_server_id?: number | false;
     has_error?: boolean;
     has_sms_error?: boolean;
@@ -42,7 +51,7 @@ export interface TMailMail {
     mail_message_id_int?: number;
     mail_server_id?: number | false;
     message_id?: string;
-    message_type: string;
+    message_type?: '';
     model?: string;
     needaction?: boolean;
     notification_ids?: number[];
@@ -65,7 +74,7 @@ export interface TMailMail {
     snailmail_error?: boolean;
     starred?: boolean;
     starred_partner_ids?: number[];
-    state?: string;
+    state?: 'outgoing' | 'sent' | 'received' | 'exception' | 'cancel';
     subject?: string;
     subtype_id?: number | false;
     tracking_value_ids?: number[];

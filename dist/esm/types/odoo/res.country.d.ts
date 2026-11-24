@@ -11,7 +11,7 @@ export interface TResCountry {
     image_url?: string;
     is_stripe_supported_country?: boolean;
     name: string;
-    name_position?: string;
+    name_position?: 'before' | 'after';
     phone_code?: number;
     state_ids?: number[];
     state_required?: boolean;

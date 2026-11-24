@@ -5,11 +5,11 @@ export interface TStockQuantPackage {
     display_name?: string;
     id?: number;
     location_id?: number | false;
-    name: string;
+    name?: string;
     owner_id?: number | false;
     pack_date?: string;
     package_type_id?: number | false;
-    package_use: string;
+    package_use?: 'disposable' | 'reusable';
     quant_ids?: number[];
     shipping_weight?: number;
     valid_sscc?: boolean;

@@ -2,7 +2,7 @@ export interface TSmsResendRecipient {
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
-    failure_type?: string;
+    failure_type?: '';
     id?: number;
     notification_id: number | false;
     partner_id?: number | false;

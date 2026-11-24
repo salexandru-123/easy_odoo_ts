@@ -14,10 +14,10 @@ export interface TIrMail_server {
     max_email_size?: number;
     name: string;
     sequence?: number;
-    smtp_authentication: string;
+    smtp_authentication?: 'login' | 'certificate' | 'cli' | 'gmail';
     smtp_authentication_info?: string;
     smtp_debug?: boolean;
-    smtp_encryption: string;
+    smtp_encryption?: 'none' | 'starttls' | 'ssl';
     smtp_host?: string;
     smtp_pass?: string;
     smtp_port?: number;

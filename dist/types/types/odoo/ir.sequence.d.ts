@@ -7,12 +7,12 @@ export interface TIrSequence {
     date_range_ids?: number[];
     display_name?: string;
     id?: number;
-    implementation: string;
+    implementation?: 'standard' | 'no_gap';
     name: string;
-    number_increment: number;
-    number_next: number;
+    number_increment?: number;
+    number_next?: number;
     number_next_actual?: number;
-    padding: number;
+    padding?: number;
     prefix?: string;
     suffix?: string;
     use_date_range?: boolean;

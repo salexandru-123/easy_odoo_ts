@@ -6,7 +6,7 @@ export interface TStockReturnPickingLine {
     move_id?: number | false;
     move_quantity?: number;
     product_id: number | false;
-    quantity: number;
+    quantity?: number;
     to_refund?: boolean;
     uom_id?: number | false;
     wizard_id?: number | false;

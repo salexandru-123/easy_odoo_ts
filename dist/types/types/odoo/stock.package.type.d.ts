@@ -10,7 +10,7 @@ export interface TStockPackageType {
     length_uom_name?: string;
     max_weight?: number;
     name: string;
-    package_carrier_type?: string;
+    package_carrier_type?: 'none';
     packaging_length?: number;
     sequence?: number;
     shipper_package_code?: string;

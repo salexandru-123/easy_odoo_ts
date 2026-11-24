@@ -5,5 +5,12 @@ export interface TIrModuleModuleDependency {
     id?: number;
     module_id?: number | false;
     name?: string;
-    state?: string;
+    state?:
+        | 'uninstallable'
+        | 'uninstalled'
+        | 'installed'
+        | 'to upgrade'
+        | 'to remove'
+        | 'to install'
+        | 'unknown';
 }

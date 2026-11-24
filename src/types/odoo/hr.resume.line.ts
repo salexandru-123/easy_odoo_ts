@@ -5,7 +5,7 @@ export interface THrResumeLine {
     date_start: string;
     description?: string;
     display_name?: string;
-    display_type?: string;
+    display_type?: 'classic';
     employee_id: number | false;
     id?: number;
     line_type_id?: number | false;

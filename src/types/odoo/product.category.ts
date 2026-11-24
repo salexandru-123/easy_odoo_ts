@@ -19,7 +19,7 @@ export interface TProductCategory {
     message_needaction_counter?: number;
     message_partner_ids?: number[];
     name: string;
-    packaging_reserve_method?: string;
+    packaging_reserve_method?: 'full' | 'partial';
     parent_id?: number | false;
     parent_path?: string;
     parent_route_ids?: number[];
@@ -29,13 +29,13 @@ export interface TProductCategory {
     property_account_downpayment_categ_id?: number | false;
     property_account_expense_categ_id?: number | false;
     property_account_income_categ_id?: number | false;
-    property_cost_method?: string;
+    property_cost_method?: 'standard' | 'fifo' | 'average';
     property_stock_account_input_categ_id?: number | false;
     property_stock_account_output_categ_id?: number | false;
     property_stock_account_production_cost_id?: number | false;
     property_stock_journal?: number | false;
     property_stock_valuation_account_id?: number | false;
-    property_valuation?: string;
+    property_valuation?: 'manual_periodic' | 'real_time';
     putaway_rule_ids?: number[];
     removal_strategy_id?: number | false;
     route_ids?: number[];

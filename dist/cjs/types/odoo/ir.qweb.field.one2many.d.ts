@@ -1,1 +1,1 @@
-export type TIrQwebFieldOne2many = any;
+export interface TIrQwebFieldOne2many {}

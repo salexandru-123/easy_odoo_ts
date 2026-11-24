@@ -1,7 +1,7 @@
 export interface TMailAliasDomain {
-    bounce_alias: string;
+    bounce_alias?: string;
     bounce_email?: string;
-    catchall_alias: string;
+    catchall_alias?: string;
     catchall_email?: string;
     company_ids?: number[];
     create_date?: string;

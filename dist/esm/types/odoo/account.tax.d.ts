@@ -1,12 +1,12 @@
 export interface TAccountTax {
     active?: boolean;
-    amount: number;
-    amount_type: string;
+    amount?: number;
+    amount_type?: 'group' | 'fixed' | 'percent' | 'division';
     analytic?: boolean;
     cash_basis_transition_account_id?: number | false;
     children_tax_ids?: number[];
-    company_id: number | false;
-    company_price_include?: string;
+    company_id?: number | false;
+    company_price_include?: '';
     country_code?: string;
     country_id: number | false;
     create_date?: string;
@@ -36,15 +36,15 @@ export interface TAccountTax {
     name: string;
     name_searchable?: string;
     price_include?: boolean;
-    price_include_override?: string;
+    price_include_override?: 'tax_included' | 'tax_excluded';
     refund_repartition_line_ids?: number[];
     repartition_line_ids?: number[];
     repartition_lines_str?: string;
-    sequence: number;
-    tax_exigibility?: string;
+    sequence?: number;
+    tax_exigibility?: 'on_invoice' | 'on_payment';
     tax_group_id: number | false;
-    tax_scope?: string;
-    type_tax_use: string;
+    tax_scope?: 'service' | 'consu';
+    type_tax_use?: 'sale' | 'purchase' | 'none';
     website_message_ids?: number[];
     write_date?: string;
     write_uid?: number | false;

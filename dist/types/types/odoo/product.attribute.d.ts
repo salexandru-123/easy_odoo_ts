@@ -3,9 +3,9 @@ export interface TProductAttribute {
     attribute_line_ids?: number[];
     create_date?: string;
     create_uid?: number | false;
-    create_variant: string;
+    create_variant?: 'always' | 'dynamic' | 'no_variant';
     display_name?: string;
-    display_type: string;
+    display_type?: 'radio' | 'pills' | 'select' | 'color' | 'multi';
     id?: number;
     name: string;
     number_related_products?: number;

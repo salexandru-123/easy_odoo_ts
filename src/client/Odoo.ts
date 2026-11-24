@@ -1,6 +1,7 @@
 import { OdooClient, OdooConfig } from 'odoo-xmlrpc-ts';
 import { ModelInstances, ModelConstructor } from '../types/base';
 import * as Models from '../models';
+import { BaseOdooModel } from '../models/odoo';
 // type ModelName = (typeof Models)[keyof typeof Models];
 export class Odoo {
     readonly client: OdooClient;
@@ -14,8 +15,7 @@ export class Odoo {
             Object.entries(Models)
                 .filter(
                     ([_, model]) =>
-                        typeof model === 'function' &&
-                        model.prototype instanceof Models.BaseOdooModel,
+                        typeof model === 'function' && model.prototype instanceof BaseOdooModel,
                 )
                 .map(([name, Model]) => [
                     name.replace(/Model$/, '').replace(/^./, (char) => char.toLowerCase()),

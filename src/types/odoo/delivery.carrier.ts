@@ -9,7 +9,7 @@ export interface TDeliveryCarrier {
     create_uid?: number | false;
     currency_id?: number | false;
     debug_logging?: boolean;
-    delivery_type: string;
+    delivery_type?: 'base_on_rule' | 'fixed';
     display_name?: string;
     excluded_tag_ids?: number[];
     fixed_margin?: number;
@@ -17,8 +17,8 @@ export interface TDeliveryCarrier {
     free_over?: boolean;
     get_return_label_from_portal?: boolean;
     id?: number;
-    integration_level?: string;
-    invoice_policy: string;
+    integration_level?: 'rate' | 'rate_and_ship';
+    invoice_policy?: 'estimated' | 'real';
     margin?: number;
     max_volume?: number;
     max_weight?: number;

@@ -5,7 +5,7 @@ export interface TAccountPaymentMethod {
     display_name?: string;
     id?: number;
     name: string;
-    payment_type: string;
+    payment_type: 'inbound' | 'outbound';
     write_date?: string;
     write_uid?: number | false;
 }

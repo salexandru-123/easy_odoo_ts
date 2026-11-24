@@ -1,21 +1,21 @@
 export interface TMrpUnbuild {
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
     activity_user_id?: number | false;
     bom_id?: number | false;
-    company_id: number | false;
+    company_id?: number | false;
     consume_line_ids?: number[];
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
     has_message?: boolean;
-    has_tracking?: string;
+    has_tracking?: '';
     id?: number;
     location_dest_id: number | false;
     location_id: number | false;
@@ -36,9 +36,9 @@ export interface TMrpUnbuild {
     name?: string;
     produce_line_ids?: number[];
     product_id: number | false;
-    product_qty: number;
+    product_qty?: number;
     product_uom_id: number | false;
-    state?: string;
+    state?: 'draft' | 'done';
     website_message_ids?: number[];
     write_date?: string;
     write_uid?: number | false;

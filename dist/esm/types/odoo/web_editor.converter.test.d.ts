@@ -12,7 +12,7 @@ export interface TWeb_editorConverterTest {
     integer?: number;
     many2one?: number | false;
     numeric?: number;
-    selection_str?: string;
+    selection_str?: 'D';
     text?: string;
     write_date?: string;
     write_uid?: number | false;

@@ -5,7 +5,7 @@ export interface TIrModel {
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
-    field_id: number[];
+    field_id?: number[];
     id?: number;
     info?: string;
     inherited_model_ids?: number[];
@@ -13,12 +13,12 @@ export interface TIrModel {
     is_mail_blacklist?: boolean;
     is_mail_thread?: boolean;
     is_mail_thread_sms?: boolean;
-    model: string;
+    model?: string;
     modules?: string;
     name: string;
-    order: string;
+    order?: string;
     rule_ids?: number[];
-    state?: string;
+    state?: 'manual' | 'base';
     transient?: boolean;
     view_ids?: number[];
     write_date?: string;

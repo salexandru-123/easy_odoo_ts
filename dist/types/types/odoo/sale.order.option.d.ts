@@ -11,7 +11,7 @@ export interface TSaleOrderOption {
     price_unit: number;
     product_id: number | false;
     product_uom_category_id?: number | false;
-    quantity: number;
+    quantity?: number;
     sequence?: number;
     uom_id: number | false;
     write_date?: string;

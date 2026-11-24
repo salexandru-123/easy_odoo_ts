@@ -14,7 +14,7 @@ export interface TPaymentMethod {
     provider_ids?: number[];
     sequence?: number;
     support_express_checkout?: boolean;
-    support_refund: string;
+    support_refund?: 'none' | 'full_only' | 'partial';
     support_tokenization?: boolean;
     supported_country_ids?: number[];
     supported_currency_ids?: number[];

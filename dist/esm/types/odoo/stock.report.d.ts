@@ -13,10 +13,11 @@ export interface TStockReport {
     partner_id?: number | false;
     picking_id?: number | false;
     picking_name?: string;
-    picking_type_code?: string;
+    picking_type_code?: 'incoming' | 'outgoing' | 'internal';
     product_id?: number | false;
     product_qty?: number;
     reference?: string;
     scheduled_date?: string;
-    state?: string;
+    state?:
+        'draft' | 'cancel' | 'waiting' | 'confirmed' | 'partially_available' | 'assigned' | 'done';
 }

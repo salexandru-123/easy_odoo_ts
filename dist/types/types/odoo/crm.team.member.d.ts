@@ -3,7 +3,7 @@ export interface TCrmTeamMember {
     company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
-    crm_team_id: number | false;
+    crm_team_id?: number | false;
     display_name?: string;
     email?: string;
     has_message?: boolean;

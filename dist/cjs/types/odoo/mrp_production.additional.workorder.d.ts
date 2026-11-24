@@ -9,7 +9,7 @@ export interface TMrp_productionAdditionalWorkorder {
     employee_assigned_ids?: number[];
     id?: number;
     name: string;
-    production_id: number | false;
+    production_id?: number | false;
     workcenter_id: number | false;
     write_date?: string;
     write_uid?: number | false;

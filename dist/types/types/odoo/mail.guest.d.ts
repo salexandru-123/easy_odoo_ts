@@ -1,5 +1,5 @@
 export interface TMailGuest {
-    access_token: string;
+    access_token?: string;
     avatar_1024?: string | false;
     avatar_128?: string | false;
     avatar_1920?: string | false;
@@ -17,9 +17,9 @@ export interface TMailGuest {
     image_1920?: string | false;
     image_256?: string | false;
     image_512?: string | false;
-    lang?: string;
+    lang?: '';
     name: string;
-    timezone?: string;
+    timezone?: '';
     write_date?: string;
     write_uid?: number | false;
 }

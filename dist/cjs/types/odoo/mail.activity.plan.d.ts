@@ -9,7 +9,7 @@ export interface TMailActivityPlan {
     has_user_on_demand?: boolean;
     id?: number;
     name: string;
-    res_model: string;
+    res_model: '';
     res_model_id: number | false;
     steps_count?: number;
     template_ids?: number[];

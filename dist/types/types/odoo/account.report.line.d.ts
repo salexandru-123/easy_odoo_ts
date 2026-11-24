@@ -14,7 +14,7 @@ export interface TAccountReportLine {
     groupby?: string;
     hide_if_zero?: boolean;
     hierarchy_level: number;
-    horizontal_split_side?: string;
+    horizontal_split_side?: 'left' | 'right';
     id?: number;
     name: string;
     parent_id?: number | false;

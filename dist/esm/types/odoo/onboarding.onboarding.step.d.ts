@@ -1,9 +1,9 @@
 export interface TOnboardingOnboardingStep {
-    button_text: string;
+    button_text?: string;
     create_date?: string;
     create_uid?: number | false;
     current_progress_step_id?: number | false;
-    current_step_state?: string;
+    current_step_state?: 'not_done' | 'just_done' | 'done';
     description?: string;
     display_name?: string;
     done_icon?: string;

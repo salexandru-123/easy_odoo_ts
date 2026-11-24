@@ -6,7 +6,7 @@ export interface TSaleOrderSpreadsheet {
     display_name?: string;
     display_thumbnail?: string | false;
     id?: number;
-    name: string;
+    name?: string;
     order_id?: number | false;
     spreadsheet_binary_data?: string | false;
     spreadsheet_data?: string;

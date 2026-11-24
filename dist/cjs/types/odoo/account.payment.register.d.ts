@@ -22,7 +22,7 @@ export interface TAccountPaymentRegister {
     group_payment?: boolean;
     hide_writeoff_section?: boolean;
     id?: number;
-    installments_mode?: string;
+    installments_mode?: 'next' | 'overdue' | 'before_date' | 'full';
     installments_switch_amount?: number;
     installments_switch_html?: string;
     is_register_payment_on_draft?: boolean;
@@ -31,14 +31,14 @@ export interface TAccountPaymentRegister {
     missing_account_partners?: number[];
     partner_bank_id?: number | false;
     partner_id?: number | false;
-    partner_type?: string;
-    payment_date: string;
+    partner_type?: 'customer' | 'supplier';
+    payment_date?: string;
     payment_difference?: number;
-    payment_difference_handling?: string;
+    payment_difference_handling?: 'open' | 'reconcile';
     payment_method_code?: string;
     payment_method_line_id?: number | false;
     payment_token_id?: number | false;
-    payment_type?: string;
+    payment_type?: 'outbound' | 'inbound';
     qr_code?: string;
     require_partner_bank_account?: boolean;
     show_partner_bank_account?: boolean;

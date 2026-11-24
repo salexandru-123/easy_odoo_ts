@@ -1,7 +1,7 @@
 export interface TSmsComposer {
     body: string;
     comment_single_recipient?: boolean;
-    composition_mode: string;
+    composition_mode: 'numbers' | 'comment' | 'mass';
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;

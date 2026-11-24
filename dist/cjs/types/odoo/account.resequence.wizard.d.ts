@@ -8,7 +8,7 @@ export interface TAccountResequenceWizard {
     id?: number;
     move_ids?: number[];
     new_values?: string;
-    ordering: string;
+    ordering?: 'keep' | 'date';
     preview_moves?: string;
     sequence_number_reset?: string;
     write_date?: string;

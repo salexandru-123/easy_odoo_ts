@@ -11,7 +11,7 @@ export interface TIrModelFields {
     depends?: string;
     display_name?: string;
     domain?: string;
-    field_description: string;
+    field_description?: string;
     group_expand?: boolean;
     groups?: number[];
     help?: string;
@@ -20,8 +20,8 @@ export interface TIrModelFields {
     model: string;
     model_id: number | false;
     modules?: string;
-    name: string;
-    on_delete?: string;
+    name?: string;
+    on_delete?: 'cascade' | 'set null' | 'restrict';
     readonly?: boolean;
     related?: string;
     related_field_id?: number | false;
@@ -40,13 +40,32 @@ export interface TIrModelFields {
     selection?: string;
     selection_ids?: number[];
     size?: number;
-    state: string;
+    state?: 'manual' | 'base';
     store?: boolean;
     strip_classes?: boolean;
     strip_style?: boolean;
     tracking?: number;
     translate?: boolean;
-    ttype: string;
+    ttype:
+        | 'binary'
+        | 'boolean'
+        | 'char'
+        | 'date'
+        | 'datetime'
+        | 'float'
+        | 'html'
+        | 'integer'
+        | 'json'
+        | 'many2many'
+        | 'many2one'
+        | 'many2one_reference'
+        | 'monetary'
+        | 'one2many'
+        | 'properties'
+        | 'properties_definition'
+        | 'reference'
+        | 'selection'
+        | 'text';
     write_date?: string;
     write_uid?: number | false;
 }

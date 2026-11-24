@@ -1,16 +1,16 @@
 export interface TProductPricelistItem {
-    applied_on: string;
-    base: string;
+    applied_on?: '3_global' | '2_product_category' | '1_product' | '0_product_variant';
+    base?: 'list_price' | 'standard_price' | 'pricelist';
     base_pricelist_id?: number | false;
     categ_id?: number | false;
     company_id?: number | false;
-    compute_price: string;
+    compute_price?: 'percentage' | 'formula' | 'fixed';
     create_date?: string;
     create_uid?: number | false;
     currency_id?: number | false;
     date_end?: string;
     date_start?: string;
-    display_applied_on: string;
+    display_applied_on?: '1_product' | '2_product_category';
     display_name?: string;
     fixed_price?: number;
     id?: number;
@@ -24,7 +24,7 @@ export interface TProductPricelistItem {
     price_min_margin?: number;
     price_round?: number;
     price_surcharge?: number;
-    pricelist_id: number | false;
+    pricelist_id?: number | false;
     product_id?: number | false;
     product_tmpl_id?: number | false;
     product_uom?: string;

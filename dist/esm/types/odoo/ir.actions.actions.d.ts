@@ -1,6 +1,6 @@
 export interface TIrActionsActions {
     binding_model_id?: number | false;
-    binding_type: string;
+    binding_type?: 'action' | 'report';
     binding_view_types?: string;
     create_date?: string;
     create_uid?: number | false;

@@ -4,7 +4,7 @@ export interface TMailIceServer {
     credential?: string;
     display_name?: string;
     id?: number;
-    server_type: string;
+    server_type?: 'stun' | 'turn';
     uri: string;
     username?: string;
     write_date?: string;

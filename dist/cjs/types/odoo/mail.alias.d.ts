@@ -1,7 +1,7 @@
 export interface TMailAlias {
     alias_bounced_content?: string;
-    alias_contact: string;
-    alias_defaults: string;
+    alias_contact?: 'everyone' | 'partners' | 'followers' | 'employees';
+    alias_defaults?: string;
     alias_domain?: string;
     alias_domain_id?: number | false;
     alias_force_thread_id?: number;
@@ -11,7 +11,7 @@ export interface TMailAlias {
     alias_name?: string;
     alias_parent_model_id?: number | false;
     alias_parent_thread_id?: number;
-    alias_status?: string;
+    alias_status?: 'not_tested' | 'valid' | 'invalid';
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;

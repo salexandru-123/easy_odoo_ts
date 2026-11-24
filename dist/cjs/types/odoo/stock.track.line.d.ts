@@ -5,7 +5,7 @@ export interface TStockTrackLine {
     id?: number;
     product_display_name?: string;
     product_id?: number | false;
-    tracking?: string;
+    tracking?: '';
     wizard_id?: number | false;
     write_date?: string;
     write_uid?: number | false;

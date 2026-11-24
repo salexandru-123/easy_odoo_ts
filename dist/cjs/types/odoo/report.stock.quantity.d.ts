@@ -6,6 +6,6 @@ export interface TReportStockQuantity {
     product_id?: number | false;
     product_qty?: number;
     product_tmpl_id?: number | false;
-    state?: string;
+    state?: 'forecast' | 'in' | 'out';
     warehouse_id?: number | false;
 }

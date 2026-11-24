@@ -5,7 +5,7 @@ export interface TIrModelData {
     display_name?: string;
     id?: number;
     model: string;
-    module: string;
+    module?: string;
     name: string;
     noupdate?: boolean;
     reference?: string;

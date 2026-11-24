@@ -2,13 +2,13 @@ export interface TStockDeliveryNoteLine {
     company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
-    currency_id: number | false;
+    currency_id?: number | false;
     delivery_note_id: number | false;
     discount?: number;
     display_name?: string;
-    display_type?: string;
+    display_type?: 'line_section' | 'line_note';
     id?: number;
-    invoice_status: string;
+    invoice_status?: 'no' | 'to invoice' | 'invoiced';
     move_id?: number | false;
     name: string;
     price_unit?: number;
@@ -19,7 +19,7 @@ export interface TStockDeliveryNoteLine {
     sale_line_id?: number | false;
     sale_order_client_ref?: string;
     sale_order_number?: string;
-    sequence: number;
+    sequence?: number;
     tax_ids?: number[];
     write_date?: string;
     write_uid?: number | false;

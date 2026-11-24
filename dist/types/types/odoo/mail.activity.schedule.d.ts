@@ -1,8 +1,8 @@
 export interface TMailActivitySchedule {
-    activity_category?: string;
+    activity_category?: '';
     activity_type_id?: number | false;
     activity_user_id?: number | false;
-    chaining_type?: string;
+    chaining_type?: '';
     company_id: number | false;
     create_date?: string;
     create_uid?: number | false;
@@ -22,7 +22,7 @@ export interface TMailActivitySchedule {
     plan_on_demand_user_id?: number | false;
     plan_summary?: string;
     res_ids?: string;
-    res_model: string;
+    res_model?: string;
     res_model_id: number | false;
     summary?: string;
     write_date?: string;

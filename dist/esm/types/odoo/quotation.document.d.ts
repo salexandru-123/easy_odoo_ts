@@ -9,7 +9,7 @@ export interface TQuotationDocument {
     db_datas?: string | false;
     description?: string;
     display_name?: string;
-    document_type: string;
+    document_type?: 'header' | 'footer';
     file_size?: number;
     form_field_ids?: number[];
     id?: number;
@@ -31,7 +31,7 @@ export interface TQuotationDocument {
     res_name?: string;
     sequence?: number;
     store_fname?: string;
-    type: string;
+    type?: '';
     url?: string;
     voice_ids?: number[];
     write_date?: string;

@@ -5,9 +5,9 @@ export interface TPortalShare {
     display_name?: string;
     id?: number;
     note?: string;
-    partner_ids: number[];
-    res_id: number;
-    res_model: string;
+    partner_ids?: number[];
+    res_id?: number;
+    res_model?: string;
     resource_ref?: unknown;
     share_link?: string;
     write_date?: string;

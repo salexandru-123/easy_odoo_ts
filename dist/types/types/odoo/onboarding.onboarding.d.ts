@@ -1,7 +1,7 @@
 export interface TOnboardingOnboarding {
     create_date?: string;
     create_uid?: number | false;
-    current_onboarding_state?: string;
+    current_onboarding_state?: 'not_done' | 'just_done' | 'done';
     current_progress_id?: number | false;
     display_name?: string;
     id?: number;

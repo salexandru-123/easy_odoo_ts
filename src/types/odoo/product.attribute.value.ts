@@ -7,7 +7,7 @@ export interface TProductAttributeValue {
     default_extra_price?: number;
     default_extra_price_changed?: boolean;
     display_name?: string;
-    display_type?: string;
+    display_type?: '';
     html_color?: string;
     id?: number;
     image?: string | false;

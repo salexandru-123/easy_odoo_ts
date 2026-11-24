@@ -1,5 +1,6 @@
 import { OdooClient } from 'odoo-xmlrpc-ts';
 import * as Models from '../models';
+import { BaseOdooModel } from '../models/odoo';
 type Operator =
     | '='
     | '!='
@@ -64,7 +65,7 @@ type RemoveModelSuffix<S extends string> = S extends `${infer Name}Model`
     ? UncapitalizeFirst<Name>
     : UncapitalizeFirst<S>;
 
-export type ModelConstructor = new (client: OdooClient) => Models.BaseOdooModel<object>;
+export type ModelConstructor = new (client: OdooClient) => BaseOdooModel<object>;
 
 export type ModelRegistry = typeof Models;
 

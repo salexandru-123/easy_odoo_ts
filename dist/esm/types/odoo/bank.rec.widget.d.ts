@@ -23,7 +23,7 @@ export interface TBankRecWidget {
     st_line_is_reconciled?: boolean;
     st_line_journal_id?: number | false;
     st_line_transaction_details?: string;
-    state?: string;
+    state?: 'invalid' | 'valid' | 'reconciled';
     todo_command?: unknown;
     transaction_currency_id?: number | false;
 }

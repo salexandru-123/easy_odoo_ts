@@ -23,7 +23,7 @@ export interface TIapAccount {
     service_id: number | false;
     service_locked?: boolean;
     service_name?: string;
-    state?: string;
+    state?: 'banned' | 'registered' | 'unregistered';
     warning_threshold?: number;
     warning_user_ids?: number[];
     website_message_ids?: number[];

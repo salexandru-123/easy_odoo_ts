@@ -9,7 +9,7 @@ export interface TPaymentToken {
     payment_details?: string;
     payment_method_code?: string;
     payment_method_id: number | false;
-    provider_code?: string;
+    provider_code?: '';
     provider_id: number | false;
     provider_ref: string;
     transaction_ids?: number[];

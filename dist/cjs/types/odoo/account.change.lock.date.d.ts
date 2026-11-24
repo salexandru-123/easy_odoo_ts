@@ -1,11 +1,11 @@
 export interface TAccountChangeLockDate {
-    company_id: number | false;
+    company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     current_hard_lock_date?: string;
     display_name?: string;
-    exception_applies_to: string;
-    exception_duration: string;
+    exception_applies_to?: 'me' | 'everyone';
+    exception_duration?: '5min' | '15min' | '1h' | '24h' | 'forever';
     exception_needed?: boolean;
     exception_needed_fields?: string;
     exception_reason?: string;

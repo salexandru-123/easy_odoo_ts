@@ -22,9 +22,9 @@ export interface TFetchmailServer {
     priority?: number;
     script?: string;
     server?: string;
-    server_type: string;
+    server_type?: 'imap' | 'pop' | 'local' | 'gmail';
     server_type_info?: string;
-    state?: string;
+    state?: 'draft' | 'done';
     user?: string;
     write_date?: string;
     write_uid?: number | false;

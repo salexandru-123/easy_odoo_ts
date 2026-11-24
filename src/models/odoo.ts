@@ -1,24 +1,24 @@
 import { OdooClient } from 'odoo-xmlrpc-ts';
-import { OdooDomain, OdooOptions, OdooValues } from '../types/base';
+import { OdooDomain, OdooOptions } from '../types/base';
 
-export abstract class BaseOdooModel<T extends object> {
+export abstract class BaseOdooModel<T> {
     protected abstract readonly model: string;
 
     /**
      *
      */
     constructor(protected readonly client: OdooClient) {}
-    async create(values: OdooValues): Promise<number> {
-        return this.client.create(this.model, values);
+    async create(values: T): Promise<number> {
+        return this.client.create(this.model, values as object);
     }
-    async createMulti(values: OdooValues[]): Promise<number[]> {
+    async createMulti(values: T[]): Promise<number[]> {
         return this.client.execute(this.model, 'create', values);
     }
     async read(ids: number[]): Promise<T[]> {
         return this.client.read<T>(this.model, ids);
     }
-    async write(ids: number[], values: OdooValues): Promise<boolean> {
-        return this.client.write(this.model, ids, values);
+    async write(ids: number[], values: Partial<T>): Promise<boolean> {
+        return this.client.write(this.model, ids, values as object);
     }
     async unlink(ids: number[]): Promise<boolean> {
         return await this.client.unlink(this.model, ids);

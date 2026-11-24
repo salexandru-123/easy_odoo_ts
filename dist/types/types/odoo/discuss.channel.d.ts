@@ -5,10 +5,10 @@ export interface TDiscussChannel {
     avatar_cache_key?: string;
     channel_member_ids?: number[];
     channel_partner_ids?: number[];
-    channel_type: string;
+    channel_type?: 'chat' | 'channel' | 'group';
     create_date?: string;
     create_uid?: number | false;
-    default_display_mode?: string;
+    default_display_mode?: 'video_full_screen';
     description?: string;
     display_name?: string;
     from_message_id?: number | false;

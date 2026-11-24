@@ -1,8 +1,8 @@
 export interface THrEmployeeCvWizard {
     can_show_others?: boolean;
     can_show_skills?: boolean;
-    color_primary: string;
-    color_secondary: string;
+    color_primary?: string;
+    color_secondary?: string;
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;

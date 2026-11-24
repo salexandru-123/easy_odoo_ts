@@ -1,9 +1,9 @@
 export interface TAccountPayment {
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -26,7 +26,7 @@ export interface TAccountPayment {
     create_date?: string;
     create_uid?: number | false;
     currency_id?: number | false;
-    date: string;
+    date?: string;
     destination_account_id?: number | false;
     display_name?: string;
     duplicate_payment_ids?: number[];
@@ -57,7 +57,7 @@ export interface TAccountPayment {
     paired_internal_transfer_payment_id?: number | false;
     partner_bank_id?: number | false;
     partner_id?: number | false;
-    partner_type: string;
+    partner_type?: 'customer' | 'supplier';
     payment_method_code?: string;
     payment_method_id?: number | false;
     payment_method_line_id?: number | false;
@@ -66,13 +66,13 @@ export interface TAccountPayment {
     payment_reference?: string;
     payment_token_id?: number | false;
     payment_transaction_id?: number | false;
-    payment_type: string;
+    payment_type?: 'outbound' | 'inbound';
     qr_code?: string;
     reconciled_bill_ids?: number[];
     reconciled_bills_count?: number;
     reconciled_invoice_ids?: number[];
     reconciled_invoices_count?: number;
-    reconciled_invoices_type?: string;
+    reconciled_invoices_type?: 'credit_note' | 'invoice';
     reconciled_statement_line_ids?: number[];
     reconciled_statement_lines_count?: number;
     refunds_count?: number;
@@ -80,7 +80,7 @@ export interface TAccountPayment {
     show_check_number?: boolean;
     show_partner_bank_account?: boolean;
     source_payment_id?: number | false;
-    state: string;
+    state?: 'draft' | 'in_process' | 'paid' | 'canceled' | 'rejected';
     suitable_payment_token_ids?: number[];
     use_electronic_payment_method?: boolean;
     website_message_ids?: number[];

@@ -4,7 +4,7 @@ export interface TStockMoveLine {
     consume_line_ids?: number[];
     create_date?: string;
     create_uid?: number | false;
-    date: string;
+    date?: string;
     description_bom_line?: string;
     description_picking?: string;
     destination_country_code?: string;
@@ -18,10 +18,10 @@ export interface TStockMoveLine {
     is_inventory?: boolean;
     is_locked?: boolean;
     location_dest_id: number | false;
-    location_dest_usage?: string;
+    location_dest_usage?: '';
     location_id: number | false;
     location_processed?: boolean;
-    location_usage?: string;
+    location_usage?: '';
     lot_id?: number | false;
     lot_name?: string;
     lots_visible?: boolean;
@@ -35,7 +35,7 @@ export interface TStockMoveLine {
     parent_location_id?: number | false;
     pick_type_create_components_lots?: boolean;
     picked?: boolean;
-    picking_code?: string;
+    picking_code?: '';
     picking_id?: number | false;
     picking_location_dest_id?: number | false;
     picking_location_id?: number | false;
@@ -65,8 +65,8 @@ export interface TStockMoveLine {
     result_package_id?: number | false;
     sale_price?: number;
     scheduled_date?: string;
-    state?: string;
-    tracking?: string;
+    state?: '';
+    tracking?: '';
     workorder_id?: number | false;
     write_date?: string;
     write_uid?: number | false;

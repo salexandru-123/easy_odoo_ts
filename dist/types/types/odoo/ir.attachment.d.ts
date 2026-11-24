@@ -25,7 +25,7 @@ export interface TIrAttachment {
     res_model?: string;
     res_name?: string;
     store_fname?: string;
-    type: string;
+    type?: 'url' | 'binary';
     url?: string;
     voice_ids?: number[];
     write_date?: string;

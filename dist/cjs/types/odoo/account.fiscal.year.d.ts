@@ -1,5 +1,5 @@
 export interface TAccountFiscalYear {
-    company_id: number | false;
+    company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     date_from: string;

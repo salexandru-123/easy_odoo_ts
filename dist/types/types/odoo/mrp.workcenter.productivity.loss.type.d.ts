@@ -3,7 +3,7 @@ export interface TMrpWorkcenterProductivityLossType {
     create_uid?: number | false;
     display_name?: string;
     id?: number;
-    loss_type: string;
+    loss_type?: 'availability' | 'performance' | 'quality' | 'productive';
     write_date?: string;
     write_uid?: number | false;
 }

@@ -7,7 +7,7 @@ export interface TBaseImportModule {
     import_message?: string;
     module_file: string | false;
     modules_dependencies?: string;
-    state?: string;
+    state?: 'init' | 'done';
     with_demo?: boolean;
     write_date?: string;
     write_uid?: number | false;

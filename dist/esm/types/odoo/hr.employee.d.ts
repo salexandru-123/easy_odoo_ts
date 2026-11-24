@@ -1,10 +1,10 @@
 export interface THrEmployee {
     active?: boolean;
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -20,7 +20,7 @@ export interface THrEmployee {
     barcode?: string;
     birthday?: string;
     category_ids?: number[];
-    certificate?: string;
+    certificate?: 'graduate' | 'bachelor' | 'master' | 'doctor' | 'other';
     child_all_count?: number;
     child_count?: number;
     child_ids?: number[];
@@ -29,7 +29,7 @@ export interface THrEmployee {
     color?: number;
     company_country_code?: string;
     company_country_id?: number | false;
-    company_id: number | false;
+    company_id?: number | false;
     country_id?: number | false;
     country_of_birth?: number | false;
     create_date?: string;
@@ -42,20 +42,25 @@ export interface THrEmployee {
     departure_reason_id?: number | false;
     display_name?: string;
     distance_home_work?: number;
-    distance_home_work_unit: string;
+    distance_home_work_unit?: 'kilometers' | 'miles';
     driving_license?: string | false;
     email?: string;
     emergency_contact?: string;
     emergency_phone?: string;
     employee_properties?: Record<string, unknown> | false;
     employee_skill_ids?: number[];
-    employee_type: string;
-    gender?: string;
+    employee_type?: 'employee' | 'worker' | 'student' | 'trainee' | 'contractor' | 'freelance';
+    gender?: 'male' | 'female' | 'other';
     has_message?: boolean;
     has_work_permit?: string | false;
     hourly_cost?: number;
-    hr_icon_display?: string;
-    hr_presence_state?: string;
+    hr_icon_display?:
+        | 'presence_present'
+        | 'presence_out_of_working_hour'
+        | 'presence_absent'
+        | 'presence_archive'
+        | 'presence_undetermined';
+    hr_presence_state?: 'present' | 'absent' | 'archive' | 'out_of_working_hour';
     id?: number;
     id_card?: string | false;
     identification_id?: string;
@@ -71,10 +76,10 @@ export interface THrEmployee {
     job_id?: number | false;
     job_title?: string;
     km_home_work?: number;
-    lang?: string;
+    lang?: '';
     last_activity?: string;
     last_activity_time?: string;
-    marital: string;
+    marital?: '';
     member_of_department?: boolean;
     message_attachment_count?: number;
     message_follower_ids?: number[];
@@ -121,7 +126,7 @@ export interface THrEmployee {
     study_field?: string;
     study_school?: string;
     subordinate_ids?: number[];
-    tz?: string;
+    tz?: '';
     user_id?: number | false;
     user_partner_id?: number | false;
     visa_expire?: string;
@@ -131,7 +136,7 @@ export interface THrEmployee {
     work_email?: string;
     work_location_id?: number | false;
     work_location_name?: string;
-    work_location_type?: string;
+    work_location_type?: 'home' | 'office' | 'other';
     work_permit_expiration_date?: string;
     work_permit_name?: string;
     work_permit_scheduled_activity?: boolean;

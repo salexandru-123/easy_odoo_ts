@@ -5,7 +5,7 @@ export interface TAccountMergeWizardLine {
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;
-    display_type: string;
+    display_type: 'line_section' | 'account';
     grouping_key?: string;
     id?: number;
     info?: string;

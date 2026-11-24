@@ -1,22 +1,590 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.AccountLock_exceptionModel = exports.AccountJournalModel = exports.AccountJournalGroupModel = exports.AccountInvoice_extractWordsModel = exports.AccountInvoiceReportModel = exports.AccountIncotermsModel = exports.AccountImportSummaryModel = exports.AccountGroupModel = exports.AccountFullReconcileModel = exports.AccountFiscalYearModel = exports.AccountFiscalPositionModel = exports.AccountFiscalPositionTaxModel = exports.AccountFiscalPositionAccountModel = exports.AccountFinancialYearOpModel = exports.AccountEdiXmlUbl_sgModel = exports.AccountEdiXmlUbl_nlModel = exports.AccountEdiXmlUbl_efffModel = exports.AccountEdiXmlUbl_deModel = exports.AccountEdiXmlUbl_bis3Model = exports.AccountEdiXmlUbl_a_nzModel = exports.AccountEdiXmlUbl_21Model = exports.AccountEdiXmlUbl_20Model = exports.AccountEdiXmlCiiModel = exports.AccountEdiCommonModel = exports.AccountDuplicateTransactionWizardModel = exports.AccountDebitNoteModel = exports.AccountCodeMappingModel = exports.AccountChartTemplateModel = exports.AccountChangeLockDateModel = exports.AccountCashRoundingModel = exports.AccountBatchPaymentModel = exports.AccountBatchPaymentRejectionModel = exports.AccountBatchErrorWizardModel = exports.AccountBatchErrorWizardLineModel = exports.AccountBankStatementModel = exports.AccountBankStatementLineModel = exports.AccountBankStatementLineTransientModel = exports.AccountBankSelectionModel = exports.AccountAutopostBillsWizardModel = exports.AccountAutomaticEntryWizardModel = exports.AccountAutoReconcileWizardModel = exports.AccountAnalyticPlanModel = exports.AccountAnalyticLineModel = exports.AccountAnalyticDistributionModelModel = exports.AccountAnalyticApplicabilityModel = exports.AccountAnalyticAccountModel = exports.AccountAccruedOrdersWizardModel = exports.AccountAccountModel = exports.AccountAccountTagModel = exports._unknownModel = void 0;
-exports.Auth_totpDeviceModel = exports.ApprovalRequestWizardModel = exports.ApprovalRequestModel = exports.ApprovalProductLineModel = exports.ApprovalCategoryModel = exports.ApprovalCategoryApproverModel = exports.ApprovalApproverModel = exports.ApplicantSendMailModel = exports.ApplicantGetRefuseReasonModel = exports.AnalyticPlanFieldsMixinModel = exports.AnalyticMixinModel = exports.Account_peppolServiceWizardModel = exports.Account_peppolServiceModel = exports.Account_edi_proxy_clientUserModel = exports.AccountTransferModelModel = exports.AccountTransferModelLineModel = exports.AccountTaxModel = exports.AccountTaxRepartitionLineModel = exports.AccountTaxGroupModel = exports.AccountSetupBankManualConfigModel = exports.AccountSecureEntriesWizardModel = exports.AccountRootModel = exports.AccountResequenceWizardModel = exports.AccountReportModel = exports.AccountReportLineModel = exports.AccountReportExternalValueModel = exports.AccountReportExpressionModel = exports.AccountReportColumnModel = exports.AccountReconcileWizardModel = exports.AccountReconcileModelModel = exports.AccountReconcileModelPartnerMappingModel = exports.AccountReconcileModelLineModel = exports.AccountPaymentModel = exports.AccountPaymentTermModel = exports.AccountPaymentTermLineModel = exports.AccountPaymentRegisterModel = exports.AccountPaymentMethodModel = exports.AccountPaymentMethodLineModel = exports.AccountPartialReconcileModel = exports.AccountOnlineLinkModel = exports.AccountOnlineAccountModel = exports.AccountMoveModel = exports.AccountMoveSendWizardModel = exports.AccountMoveSendModel = exports.AccountMoveSendBatchWizardModel = exports.AccountMoveReversalModel = exports.AccountMoveLineModel = exports.AccountMissingTransactionWizardModel = exports.AccountMergeWizardModel = exports.AccountMergeWizardLineModel = void 0;
-exports.CrmTeamModel = exports.CrmTeamMemberModel = exports.CrmTagModel = exports.ConfirmStockSmsModel = exports.ChooseDeliveryPackageModel = exports.ChooseDeliveryCarrierModel = exports.ChangeProductionQtyModel = exports.ChangePasswordWizardModel = exports.ChangePasswordUserModel = exports.ChangePasswordOwnModel = exports.CertificateKeyModel = exports.CertificateCertificateModel = exports.CandidateSendMailModel = exports.CalendarRecurrenceModel = exports.CalendarProviderConfigModel = exports.CalendarPopoverDeleteWizardModel = exports.CalendarFiltersModel = exports.CalendarEventTypeModel = exports.CalendarEventModel = exports.CalendarAttendeeModel = exports.CalendarAlarm_managerModel = exports.CalendarAlarmModel = exports.BusPresenceModel = exports.BusListenerMixinModel = exports.BusBusModel = exports.BillToPoWizardModel = exports.Base_importMappingModel = exports.Base_importImportModel = exports.BaseModel = exports.BasePartnerMergeLineModel = exports.BasePartnerMergeAutomaticWizardModel = exports.BaseModuleUpgradeModel = exports.BaseModuleUpdateModel = exports.BaseModuleUninstallModel = exports.BaseModuleInstallReviewModel = exports.BaseModuleInstallRequestModel = exports.BaseLanguageInstallModel = exports.BaseLanguageImportModel = exports.BaseLanguageExportModel = exports.BaseImportModuleModel = exports.BaseEnableProfilingWizardModel = exports.BaseDocumentLayoutModel = exports.BaseAutomationModel = exports.BarcodesBarcode_events_mixinModel = exports.BarcodeRuleModel = exports.BarcodeNomenclatureModel = exports.BankRecWidgetModel = exports.BankRecWidgetLineModel = exports.AvatarMixinModel = exports.Auth_totpWizardModel = void 0;
-exports.HelpdeskTicketConvertWizardModel = exports.HelpdeskTeamModel = exports.HelpdeskTagModel = exports.HelpdeskStageModel = exports.HelpdeskStageDeleteWizardModel = exports.HelpdeskSlaModel = exports.HelpdeskSlaStatusModel = exports.HelpdeskSlaReportAnalysisModel = exports.GoogleGmailMixinModel = exports.FormatVatLabelMixinModel = exports.FormatAddressMixinModel = exports.FleetVehicleModel = exports.FleetVehicleTagModel = exports.FleetVehicleStateModel = exports.FleetVehicleSendMailModel = exports.FleetVehicleOdometerModel = exports.FleetVehicleModelModel = exports.FleetVehicleModelCategoryModel = exports.FleetVehicleModelBrandModel = exports.FleetVehicleLogServicesModel = exports.FleetVehicleLogContractModel = exports.FleetVehicleCostReportModel = exports.FleetVehicleAssignationLogModel = exports.FleetServiceTypeModel = exports.FetchmailServerModel = exports.ExtractMixinModel = exports.ExportHrOutputModel = exports.ExportHrConfigModel = exports.ExpenseSampleRegisterModel = exports.ExpenseSampleReceiptModel = exports.DiscussVoiceMetadataModel = exports.DiscussGifFavoriteModel = exports.DiscussChannelModel = exports.DiscussChannelRtcSessionModel = exports.DiscussChannelMemberModel = exports.DigestTipModel = exports.DigestDigestModel = exports.DeliveryZipPrefixModel = exports.DeliveryPriceRuleModel = exports.DeliveryCarrierModel = exports.DecimalPrecisionModel = exports.Data_recycleRecordModel = exports.Data_recycleModelModel = exports.Data_mergeRuleModel = exports.Data_mergeRecordModel = exports.Data_mergeModelModel = exports.Data_mergeGroupModel = exports.Data_cleaningRuleModel = exports.Data_cleaningRecordModel = exports.Data_cleaningModelModel = void 0;
-exports.HrLeaveGenerateMultiWizardModel = exports.HrLeaveEmployeeTypeReportModel = exports.HrLeaveAllocationModel = exports.HrLeaveAllocationGenerateMultiWizardModel = exports.HrLeaveAccrualPlanModel = exports.HrLeaveAccrualLevelModel = exports.HrJobModel = exports.HrJobPlatformModel = exports.HrHolidaysSummaryEmployeeModel = exports.HrHolidaysCancelLeaveModel = exports.HrExpenseModel = exports.HrExpenseSplitWizardModel = exports.HrExpenseSplitModel = exports.HrExpenseSheetModel = exports.HrExpenseRefuseWizardModel = exports.HrExpenseApproveDuplicateModel = exports.HrEmployeeModel = exports.HrEmployeeSkillModel = exports.HrEmployeeSkillReportModel = exports.HrEmployeeSkillLogModel = exports.HrEmployeePublicModel = exports.HrEmployeeDeleteWizardModel = exports.HrEmployeeCvWizardModel = exports.HrEmployeeCategoryModel = exports.HrEmployeeBaseModel = exports.HrDepartureWizardModel = exports.HrDepartureReasonModel = exports.HrDepartmentModel = exports.HrContractTypeModel = exports.HrContractModel = exports.HrContractSignDocumentWizardModel = exports.HrContractHistoryModel = exports.HrContractEmployeeReportModel = exports.HrCandidateModel = exports.HrCandidateSkillModel = exports.HrAttendanceModel = exports.HrAttendanceOvertimeModel = exports.HrAppraisalModel = exports.HrAppraisalTemplateModel = exports.HrAppraisalSkillModel = exports.HrAppraisalSkillReportModel = exports.HrAppraisalReportModel = exports.HrAppraisalNoteModel = exports.HrAppraisalGoalModel = exports.HrAppraisalGoalTagModel = exports.HrApplicantModel = exports.HrApplicantRefuseReasonModel = exports.HrApplicantCategoryModel = exports.HelpdeskTicketModel = exports.HelpdeskTicketReportAnalysisModel = void 0;
-exports.HrWorkEntryRegenerationWizardModel = exports.HrWorkEntryExportMixinModel = exports.HrWorkEntryExportEmployeeMixinModel = exports.HrUserWorkEntryEmployeeModel = exports.HrTimesheetTipModel = exports.HrTimesheetAttendanceReportModel = exports.HrSkillTypeModel = exports.HrSkillModel = exports.HrSkillLevelModel = exports.HrSalaryRuleModel = exports.HrSalaryRuleCategoryModel = exports.HrSalaryAttachmentModel = exports.HrRuleParameterValueModel = exports.HrRuleParameterModel = exports.HrResumeLineTypeModel = exports.HrResumeLineModel = exports.HrRecruitmentStageModel = exports.HrRecruitmentStageReportModel = exports.HrRecruitmentSourceModel = exports.HrRecruitmentSignDocumentWizardModel = exports.HrRecruitmentReportModel = exports.HrRecruitmentDegreeModel = exports.HrPayslipWorked_daysModel = exports.HrPayslipModel = exports.HrPayslipRunModel = exports.HrPayslipLineModel = exports.HrPayslipInputTypeModel = exports.HrPayslipInputModel = exports.HrPayslipEmployeesModel = exports.HrPayrollStructureTypeModel = exports.HrPayrollStructureModel = exports.HrPayrollReportModel = exports.HrPayrollPaymentReportWizardModel = exports.HrPayrollNoteModel = exports.HrPayrollIndexModel = exports.HrPayrollHeadcountWorkingRateModel = exports.HrPayrollHeadcountModel = exports.HrPayrollHeadcountLineModel = exports.HrPayrollEmployeeDeclarationModel = exports.HrPayrollEditPayslipWorkedDaysLineModel = exports.HrPayrollEditPayslipLinesWizardModel = exports.HrPayrollEditPayslipLineModel = exports.HrPayrollDeclarationMixinModel = exports.HrPayrollDashboardWarningModel = exports.HrManagerDepartmentReportModel = exports.HrLeaveTypeModel = exports.HrLeaveModel = exports.HrLeaveReportModel = exports.HrLeaveReportCalendarModel = exports.HrLeaveMandatoryDayModel = void 0;
-exports.IrModuleCategoryModel = exports.IrModelModel = exports.IrModelRelationModel = exports.IrModelInheritModel = exports.IrModelFieldsModel = exports.IrModelFieldsSelectionModel = exports.IrModelDataModel = exports.IrModelConstraintModel = exports.IrModelAccessModel = exports.IrMail_serverModel = exports.IrLoggingModel = exports.IrHttpModel = exports.IrFiltersModel = exports.IrFieldsConverterModel = exports.IrExportsModel = exports.IrExportsLineModel = exports.IrEmbeddedActionsModel = exports.IrDemo_failureWizardModel = exports.IrDemo_failureModel = exports.IrDemoModel = exports.IrDefaultModel = exports.IrCronModel = exports.IrCronTriggerModel = exports.IrCronProgressModel = exports.IrConfig_parameterModel = exports.IrBinaryModel = exports.IrAutovacuumModel = exports.IrAttachmentModel = exports.IrAttachmentReportModel = exports.IrAssetModel = exports.IrActionsTodoModel = exports.IrActionsServerModel = exports.IrActionsReportModel = exports.IrActionsClientModel = exports.IrActionsActionsModel = exports.IrActionsAct_window_closeModel = exports.IrActionsAct_windowViewModel = exports.IrActionsAct_windowModel = exports.IrActionsAct_urlModel = exports.ImageMixinModel = exports.IapServiceModel = exports.IapEnrichApiModel = exports.IapAutocompleteApiModel = exports.IapAccountModel = exports.HtmlFieldHistoryMixinModel = exports.Hr_timesheetMergeWizardModel = exports.HrWorkLocationModel = exports.HrWorkEntryTypeModel = exports.HrWorkEntryModel = exports.HrWorkEntryReportModel = void 0;
-exports.MailActivityTodoCreateModel = exports.MailActivityScheduleModel = exports.MailActivityPlanModel = exports.MailActivityPlanTemplateModel = exports.MailActivityMixinModel = exports.LotLabelLayoutModel = exports.L10n_it_delivery_noteDelivery_mixinModel = exports.L10n_itDocumentTypeModel = exports.L10n_itDdtModel = exports.KpiProviderModel = exports.KnowledgeInviteModel = exports.KnowledgeCoverModel = exports.KnowledgeArticleModel = exports.KnowledgeArticleThreadModel = exports.KnowledgeArticleTemplateCategoryModel = exports.KnowledgeArticleStageModel = exports.KnowledgeArticleMemberModel = exports.KnowledgeArticleFavoriteModel = exports.IrWebsocketModel = exports.IrUiViewModel = exports.IrUiViewCustomModel = exports.IrUiMenuModel = exports.IrSequenceModel = exports.IrSequenceDate_rangeModel = exports.IrRuleModel = exports.IrQwebModel = exports.IrQwebFieldModel = exports.IrQwebFieldTimeModel = exports.IrQwebFieldTextModel = exports.IrQwebFieldSelectionModel = exports.IrQwebFieldRelativeModel = exports.IrQwebFieldQwebModel = exports.IrQwebFieldMonetaryModel = exports.IrQwebFieldMany2oneModel = exports.IrQwebFieldMany2manyModel = exports.IrQwebFieldIntegerModel = exports.IrQwebFieldImage_urlModel = exports.IrQwebFieldImageModel = exports.IrQwebFieldHtmlModel = exports.IrQwebFieldFloat_timeModel = exports.IrQwebFieldFloatModel = exports.IrQwebFieldDurationModel = exports.IrQwebFieldDatetimeModel = exports.IrQwebFieldDateModel = exports.IrQwebFieldContactModel = exports.IrQwebFieldBarcodeModel = exports.IrProfileModel = exports.IrModuleModuleModel = exports.IrModuleModuleExclusionModel = exports.IrModuleModuleDependencyModel = void 0;
-exports.MrpBatchProduceModel = exports.MrpAccountWipAccountingModel = exports.MrpAccountWipAccountingLineModel = exports.MaintenanceTeamModel = exports.MaintenanceStageModel = exports.MaintenanceRequestModel = exports.MaintenanceMixinModel = exports.MaintenanceEquipmentModel = exports.MaintenanceEquipmentCategoryModel = exports.MailWizardInviteModel = exports.MailTrackingValueModel = exports.MailTrackingDurationMixinModel = exports.MailThreadModel = exports.MailThreadPhoneModel = exports.MailThreadMainAttachmentModel = exports.MailThreadCcModel = exports.MailThreadBlacklistModel = exports.MailTemplateModel = exports.MailTemplateResetModel = exports.MailTemplatePreviewModel = exports.MailScheduledMessageModel = exports.MailResendPartnerModel = exports.MailResendMessageModel = exports.MailRenderMixinModel = exports.MailPushModel = exports.MailPushDeviceModel = exports.MailNotificationModel = exports.MailMessageModel = exports.MailMessageTranslationModel = exports.MailMessageSubtypeModel = exports.MailMessageScheduleModel = exports.MailMessageReactionModel = exports.MailMailModel = exports.MailLinkPreviewModel = exports.MailIceServerModel = exports.MailGuestModel = exports.MailGatewayAllowedModel = exports.MailFollowersModel = exports.MailComposerMixinModel = exports.MailComposeMessageModel = exports.MailCannedResponseModel = exports.MailBotModel = exports.MailBlacklistModel = exports.MailBlacklistRemoveModel = exports.MailAliasModel = exports.MailAliasMixinModel = exports.MailAliasMixinOptionalModel = exports.MailAliasDomainModel = exports.MailActivityTypeModel = exports.MailActivityModel = void 0;
-exports.PlanningAnalysisReportModel = exports.PickingLabelTypeModel = exports.PhoneBlacklistModel = exports.PhoneBlacklistRemoveModel = exports.PeppolRegistrationModel = exports.PaymentTransactionModel = exports.PaymentTokenModel = exports.PaymentRefundWizardModel = exports.PaymentProviderModel = exports.PaymentProviderOnboardingWizardModel = exports.PaymentMethodModel = exports.PaymentLinkWizardModel = exports.PaymentCaptureWizardModel = exports.OnboardingProgressModel = exports.OnboardingProgressStepModel = exports.OnboardingOnboardingModel = exports.OnboardingOnboardingStepModel = exports.Mrp_productionAdditionalWorkorderModel = exports.MrpWorkorderModel = exports.MrpWorkcenterModel = exports.MrpWorkcenterTagModel = exports.MrpWorkcenterProductivityModel = exports.MrpWorkcenterProductivityLossTypeModel = exports.MrpWorkcenterProductivityLossModel = exports.MrpWorkcenterCapacityModel = exports.MrpUnbuildModel = exports.MrpRoutingWorkcenterModel = exports.MrpReportModel = exports.MrpProductionModel = exports.MrpProductionSplitModel = exports.MrpProductionSplitMultiModel = exports.MrpProductionSplitLineModel = exports.MrpProductionScheduleModel = exports.MrpProductionBackorderModel = exports.MrpProductionBackorderLineModel = exports.MrpProductForecastModel = exports.MrpMpsForecastDetailsModel = exports.MrpEcoTypeModel = exports.MrpEcoModel = exports.MrpEcoTagModel = exports.MrpEcoStageModel = exports.MrpEcoRoutingChangeModel = exports.MrpEcoBomChangeModel = exports.MrpEcoApprovalModel = exports.MrpEcoApprovalTemplateModel = exports.MrpConsumptionWarningModel = exports.MrpConsumptionWarningLineModel = exports.MrpBomModel = exports.MrpBomLineModel = exports.MrpBomByproductModel = void 0;
-exports.ProjectTaskStagePersonalModel = exports.ProjectTaskRecurrenceModel = exports.ProjectTaskCreateTimesheetModel = exports.ProjectTaskConvertWizardModel = exports.ProjectTaskBurndownChartReportModel = exports.ProjectTagsModel = exports.ProjectShareWizardModel = exports.ProjectShareCollaboratorWizardModel = exports.ProjectSaleLineEmployeeMapModel = exports.ProjectProjectModel = exports.ProjectProjectStageModel = exports.ProjectProjectStageDeleteWizardModel = exports.ProjectMilestoneModel = exports.ProjectCreateInvoiceModel = exports.ProjectCollaboratorModel = exports.ProductTemplateModel = exports.ProductTemplateAttributeValueModel = exports.ProductTemplateAttributeLineModel = exports.ProductTemplateAttributeExclusionModel = exports.ProductTagModel = exports.ProductSupplierinfoModel = exports.ProductReplenishModel = exports.ProductRemovalModel = exports.ProductProductModel = exports.ProductPricelistModel = exports.ProductPricelistItemModel = exports.ProductPackagingModel = exports.ProductLabelLayoutModel = exports.ProductDocumentModel = exports.ProductComboModel = exports.ProductComboItemModel = exports.ProductCategoryModel = exports.ProductCatalogMixinModel = exports.ProductAttributeValueModel = exports.ProductAttributeModel = exports.ProductAttributeCustomValueModel = exports.ProcurementGroupModel = exports.PrivacyLookupWizardModel = exports.PrivacyLookupWizardLineModel = exports.PrivacyLogModel = exports.PortalWizardUserModel = exports.PortalWizardModel = exports.PortalShareModel = exports.PortalMixinModel = exports.PlanningSlotModel = exports.PlanningSlotTemplateModel = exports.PlanningSendModel = exports.PlanningRoleModel = exports.PlanningRecurrencyModel = exports.PlanningPlanningModel = void 0;
-exports.ReportProductReport_producttemplatelabel4x7Model = exports.ReportProductReport_producttemplatelabel4x12nopriceModel = exports.ReportProductReport_producttemplatelabel4x12Model = exports.ReportProductReport_producttemplatelabel2x7Model = exports.ReportProductReport_pricelistModel = exports.ReportPaperformatModel = exports.ReportMrp_account_enterpriseProduct_template_cost_structureModel = exports.ReportMrp_account_enterpriseMrp_cost_structureModel = exports.ReportMrpReport_mo_overviewModel = exports.ReportMrpReport_bom_structureModel = exports.ReportLayoutModel = exports.ReportHr_skillsReport_employee_cvModel = exports.ReportHr_payrollContribution_registerModel = exports.ReportHr_holidaysReport_holidayssummaryModel = exports.ReportBaseReport_irmodulereferenceModel = exports.ReportAccount_batch_paymentPrint_batch_paymentModel = exports.ReportAccountReport_invoice_with_paymentsModel = exports.ReportAccountReport_invoiceModel = exports.ReportAccountReport_hash_integrityModel = exports.RepairTagsModel = exports.RepairOrderModel = exports.RatingRatingModel = exports.RatingParentMixinModel = exports.RatingMixinModel = exports.QuotationDocumentModel = exports.QualityTagModel = exports.QualitySpreadsheetTemplateModel = exports.QualityReasonModel = exports.QualityPointModel = exports.QualityPointTest_typeModel = exports.QualityCheckWizardModel = exports.QualityCheckModel = exports.QualityCheckSpreadsheetModel = exports.QualityCheckOnDemandModel = exports.QualityAlertModel = exports.QualityAlertTeamModel = exports.QualityAlertStageModel = exports.PurchaseReportModel = exports.PurchaseOrderModel = exports.PurchaseOrderLineModel = exports.PurchaseInvoiceLinkWizardModel = exports.PurchaseEdiXmlUbl_bis3Model = exports.PurchaseBillUnionModel = exports.PurchaseBillLineMatchModel = exports.Publisher_warrantyContractModel = exports.ProposeChangeModel = exports.ProjectUpdateModel = exports.ProjectTaskTypeModel = exports.ProjectTaskTypeDeleteWizardModel = exports.ProjectTaskModel = void 0;
-exports.SaleEdiCommonModel = exports.SaleAdvancePaymentInvModel = exports.RoomRoomModel = exports.RoomOfficeModel = exports.RoomBookingModel = exports.ResourceResourceModel = exports.ResourceMixinModel = exports.ResourceCalendarModel = exports.ResourceCalendarLeavesModel = exports.ResourceCalendarAttendanceModel = exports.ResetViewArchWizardModel = exports.ResUsersModel = exports.ResUsersSettingsVolumesModel = exports.ResUsersSettingsModel = exports.ResUsersLogModel = exports.ResUsersIdentitycheckModel = exports.ResUsersDeletionModel = exports.ResUsersApikeysModel = exports.ResUsersApikeysShowModel = exports.ResUsersApikeysDescriptionModel = exports.ResPartnerModel = exports.ResPartnerTitleModel = exports.ResPartnerIndustryModel = exports.ResPartnerCategoryModel = exports.ResPartnerBankModel = exports.ResPartnerAutocompleteSyncModel = exports.ResLangModel = exports.ResGroupsModel = exports.ResDeviceModel = exports.ResDeviceLogModel = exports.ResCurrencyModel = exports.ResCurrencyRateModel = exports.ResCountryModel = exports.ResCountryStateModel = exports.ResCountryGroupModel = exports.ResConfigModel = exports.ResConfigSettingsModel = exports.ResCompanyModel = exports.ResBankModel = exports.RequestAppraisalModel = exports.ReportStockReport_stock_ruleModel = exports.ReportStockReport_receptionModel = exports.ReportStockQuantityModel = exports.ReportStockLabel_product_product_viewModel = exports.ReportStockLabel_lot_template_viewModel = exports.ReportSignGreen_savings_reportModel = exports.ReportQuality_controlQuality_worksheet_internalModel = exports.ReportQuality_controlQuality_worksheetModel = exports.ReportProjectTaskUserModel = exports.ReportProductReport_producttemplatelabel_dymoModel = void 0;
-exports.SpreadsheetRevisionModel = exports.SpreadsheetMixinModel = exports.SpreadsheetDashboardModel = exports.SpreadsheetDashboardShareModel = exports.SpreadsheetDashboardGroupModel = exports.SpreadsheetCellThreadModel = exports.SnailmailLetterModel = exports.SnailmailLetterMissingRequiredFieldsModel = exports.SnailmailLetterFormatErrorModel = exports.SmsTrackerModel = exports.SmsTemplateModel = exports.SmsTemplateResetModel = exports.SmsTemplatePreviewModel = exports.SmsSmsModel = exports.SmsResendModel = exports.SmsResendRecipientModel = exports.SmsComposerModel = exports.SmsAccountSenderModel = exports.SmsAccountPhoneModel = exports.SmsAccountCodeModel = exports.SignTemplateModel = exports.SignTemplateTagModel = exports.SignSendRequestModel = exports.SignSendRequestSignerModel = exports.SignRequestModel = exports.SignRequestItemValueModel = exports.SignRequestItemModel = exports.SignLogModel = exports.SignItemTypeModel = exports.SignItemModel = exports.SignItemRoleModel = exports.SignItemRadioSetModel = exports.SignItemOptionModel = exports.SignDuplicateTemplatePdfModel = exports.ShippingInformationUpdaterMixinModel = exports.SequenceMixinModel = exports.SaleReportModel = exports.SalePdfFormFieldModel = exports.SalePaymentProviderOnboardingWizardModel = exports.SaleOrderModel = exports.SaleOrderTemplateModel = exports.SaleOrderTemplateOptionModel = exports.SaleOrderTemplateLineModel = exports.SaleOrderSpreadsheetModel = exports.SaleOrderOptionModel = exports.SaleOrderLineModel = exports.SaleOrderDiscountModel = exports.SaleOrderCancelModel = exports.SaleMassCancelOrdersModel = exports.SaleEdiXmlUbl_bis3Model = void 0;
-exports.StockStorageCategoryCapacityModel = exports.StockScrapModel = exports.StockScrapReasonTagModel = exports.StockRulesReportModel = exports.StockRuleModel = exports.StockRouteModel = exports.StockReturnPickingModel = exports.StockReturnPickingLineModel = exports.StockRequestCountModel = exports.StockReportModel = exports.StockReplenishmentOptionModel = exports.StockReplenishmentInfoModel = exports.StockReplenishMixinModel = exports.StockQuantityHistoryModel = exports.StockQuantModel = exports.StockQuantRelocateModel = exports.StockQuantPackageModel = exports.StockPutawayRuleModel = exports.StockPickingTypeModel = exports.StockPickingModel = exports.StockPickingTransportReasonModel = exports.StockPickingTransportMethodModel = exports.StockPickingTransportConditionModel = exports.StockPickingGoodsAppearanceModel = exports.StockPickingCheckerMixinModel = exports.StockPackage_levelModel = exports.StockPackageTypeModel = exports.StockPackageDestinationModel = exports.StockOrderpointSnoozeModel = exports.StockMoveModel = exports.StockMoveLineModel = exports.StockLotModel = exports.StockLotReportModel = exports.StockLocationModel = exports.StockInventoryWarningModel = exports.StockInventoryConflictModel = exports.StockInventoryAdjustmentNameModel = exports.StockForecasted_product_templateModel = exports.StockForecasted_product_productModel = exports.StockDeliveryNoteTypeModel = exports.StockDeliveryNoteModel = exports.StockDeliveryNoteSelectWizardModel = exports.StockDeliveryNoteLineModel = exports.StockDeliveryNoteInvoiceWizardModel = exports.StockDeliveryNoteCreateWizardModel = exports.StockDeliveryNoteConfirmWizardModel = exports.StockDeliveryNoteBaseWizardModel = exports.StockChangeProductQtyModel = exports.StockBackorderConfirmationModel = exports.StockBackorderConfirmationLineModel = void 0;
-exports.X_stock_picking_line_6a2c5Model = exports.WizardIrModelMenuCreateModel = exports.Web_tourTourModel = exports.Web_tourTourStepModel = exports.Web_editorConverterTestModel = exports.Web_editorConverterTestSubModel = exports.Web_editorAssetsModel = exports.VendorDelayReportModel = exports.ValidateAccountMoveModel = exports.UtmTagModel = exports.UtmStageModel = exports.UtmSourceModel = exports.UtmSourceMixinModel = exports.UtmMixinModel = exports.UtmMediumModel = exports.UtmCampaignModel = exports.UpdateProductAttributeValueModel = exports.UomUomModel = exports.UomCategoryModel = exports.TimesheetsAnalysisReportModel = exports.TimesheetGridMixinModel = exports.TimerTimerModel = exports.TimerMixinModel = exports.TemplateResetMixinModel = exports.StudioMixinModel = exports.StudioExportWizardModel = exports.StudioExportWizardDataModel = exports.StudioExportModelModel = exports.StudioApprovalRuleModel = exports.StudioApprovalRuleDelegateModel = exports.StudioApprovalRuleApproverModel = exports.StudioApprovalRequestModel = exports.StudioApprovalEntryModel = exports.Stock_barcodeCancelOperationModel = exports.StockWarnInsufficientQtyUnbuildModel = exports.StockWarnInsufficientQtyModel = exports.StockWarnInsufficientQtyScrapModel = exports.StockWarnInsufficientQtyRepairModel = exports.StockWarehouseModel = exports.StockWarehouseOrderpointModel = exports.StockValuationLayerModel = exports.StockValuationLayerRevaluationModel = exports.StockTrackLineModel = exports.StockTrackConfirmationModel = exports.StockTraceabilityReportModel = exports.StockStorageCategoryModel = void 0;
-const odoo_1 = require("./odoo");
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
+exports.AccountJournalModel =
+    exports.AccountJournalGroupModel =
+    exports.AccountInvoice_extractWordsModel =
+    exports.AccountInvoiceReportModel =
+    exports.AccountIncotermsModel =
+    exports.AccountImportSummaryModel =
+    exports.AccountGroupModel =
+    exports.AccountFullReconcileModel =
+    exports.AccountFiscalYearModel =
+    exports.AccountFiscalPositionModel =
+    exports.AccountFiscalPositionTaxModel =
+    exports.AccountFiscalPositionAccountModel =
+    exports.AccountFinancialYearOpModel =
+    exports.AccountExternalTaxMixinModel =
+    exports.AccountEdiXmlUbl_sgModel =
+    exports.AccountEdiXmlUbl_nlModel =
+    exports.AccountEdiXmlUbl_efffModel =
+    exports.AccountEdiXmlUbl_deModel =
+    exports.AccountEdiXmlUbl_bis3Model =
+    exports.AccountEdiXmlUbl_a_nzModel =
+    exports.AccountEdiXmlUbl_21Model =
+    exports.AccountEdiXmlUbl_20Model =
+    exports.AccountEdiXmlCiiModel =
+    exports.AccountEdiCommonModel =
+    exports.AccountDuplicateTransactionWizardModel =
+    exports.AccountCodeMappingModel =
+    exports.AccountChartTemplateModel =
+    exports.AccountChangeLockDateModel =
+    exports.AccountCashRoundingModel =
+    exports.AccountBatchPaymentModel =
+    exports.AccountBatchPaymentRejectionModel =
+    exports.AccountBatchErrorWizardModel =
+    exports.AccountBatchErrorWizardLineModel =
+    exports.AccountBankStatementModel =
+    exports.AccountBankStatementLineModel =
+    exports.AccountBankStatementLineTransientModel =
+    exports.AccountBankSelectionModel =
+    exports.AccountAvataxUniqueCodeModel =
+    exports.AccountAutopostBillsWizardModel =
+    exports.AccountAutomaticEntryWizardModel =
+    exports.AccountAutoReconcileWizardModel =
+    exports.AccountAnalyticPlanModel =
+    exports.AccountAnalyticLineModel =
+    exports.AccountAnalyticDistributionModelModel =
+    exports.AccountAnalyticApplicabilityModel =
+    exports.AccountAnalyticAccountModel =
+    exports.AccountAccruedOrdersWizardModel =
+    exports.AccountAccountModel =
+    exports.AccountAccountTagModel =
+    exports._unknownModel =
+        void 0;
+exports.AvataxValidateAddressModel =
+    exports.AvataxExemptionModel =
+    exports.AvataxConnectionTestResultModel =
+    exports.AvatarMixinModel =
+    exports.Auth_totpWizardModel =
+    exports.Auth_totpDeviceModel =
+    exports.ApprovalRequestModel =
+    exports.ApprovalProductLineModel =
+    exports.ApprovalCategoryModel =
+    exports.ApprovalCategoryApproverModel =
+    exports.ApprovalApproverModel =
+    exports.AnalyticPlanFieldsMixinModel =
+    exports.AnalyticMixinModel =
+    exports.AccountTransferModelModel =
+    exports.AccountTransferModelLineModel =
+    exports.AccountTaxModel =
+    exports.AccountTaxRepartitionLineModel =
+    exports.AccountTaxGroupModel =
+    exports.AccountSetupBankManualConfigModel =
+    exports.AccountSecureEntriesWizardModel =
+    exports.AccountRootModel =
+    exports.AccountResequenceWizardModel =
+    exports.AccountReportModel =
+    exports.AccountReportLineModel =
+    exports.AccountReportExternalValueModel =
+    exports.AccountReportExpressionModel =
+    exports.AccountReportColumnModel =
+    exports.AccountReconcileWizardModel =
+    exports.AccountReconcileModelModel =
+    exports.AccountReconcileModelPartnerMappingModel =
+    exports.AccountReconcileModelLineModel =
+    exports.AccountPaymentModel =
+    exports.AccountPaymentTermModel =
+    exports.AccountPaymentTermLineModel =
+    exports.AccountPaymentRegisterModel =
+    exports.AccountPaymentMethodModel =
+    exports.AccountPaymentMethodLineModel =
+    exports.AccountPartialReconcileModel =
+    exports.AccountOnlineLinkModel =
+    exports.AccountOnlineAccountModel =
+    exports.AccountMoveModel =
+    exports.AccountMoveSendWizardModel =
+    exports.AccountMoveSendModel =
+    exports.AccountMoveSendBatchWizardModel =
+    exports.AccountMoveReversalModel =
+    exports.AccountMoveLineModel =
+    exports.AccountMissingTransactionWizardModel =
+    exports.AccountMergeWizardModel =
+    exports.AccountMergeWizardLineModel =
+    exports.AccountLock_exceptionModel =
+        void 0;
+exports.FormatAddressMixinModel =
+    exports.FetchmailServerModel =
+    exports.ExtractMixinModel =
+    exports.DiscussVoiceMetadataModel =
+    exports.DiscussGifFavoriteModel =
+    exports.DiscussChannelModel =
+    exports.DiscussChannelRtcSessionModel =
+    exports.DiscussChannelMemberModel =
+    exports.DigestTipModel =
+    exports.DigestDigestModel =
+    exports.DeliveryZipPrefixModel =
+    exports.DeliveryPriceRuleModel =
+    exports.DeliveryCarrierModel =
+    exports.DecimalPrecisionModel =
+    exports.CrmTeamModel =
+    exports.CrmTeamMemberModel =
+    exports.CrmTagModel =
+    exports.ConfirmStockSmsModel =
+    exports.ChooseDeliveryPackageModel =
+    exports.ChooseDeliveryCarrierModel =
+    exports.ChangeProductionQtyModel =
+    exports.ChangePasswordWizardModel =
+    exports.ChangePasswordUserModel =
+    exports.ChangePasswordOwnModel =
+    exports.BusPresenceModel =
+    exports.BusListenerMixinModel =
+    exports.BusBusModel =
+    exports.BillToPoWizardModel =
+    exports.Base_importMappingModel =
+    exports.Base_importImportModel =
+    exports.BaseModel =
+    exports.BasePartnerMergeLineModel =
+    exports.BasePartnerMergeAutomaticWizardModel =
+    exports.BaseModuleUpgradeModel =
+    exports.BaseModuleUpdateModel =
+    exports.BaseModuleUninstallModel =
+    exports.BaseModuleInstallReviewModel =
+    exports.BaseModuleInstallRequestModel =
+    exports.BaseLanguageInstallModel =
+    exports.BaseLanguageImportModel =
+    exports.BaseLanguageExportModel =
+    exports.BaseImportModuleModel =
+    exports.BaseEnableProfilingWizardModel =
+    exports.BaseDocumentLayoutModel =
+    exports.BaseAutomationModel =
+    exports.BarcodesBarcode_events_mixinModel =
+    exports.BarcodeRuleModel =
+    exports.BarcodeNomenclatureModel =
+    exports.BankRecWidgetModel =
+    exports.BankRecWidgetLineModel =
+        void 0;
+exports.IrEmbeddedActionsModel =
+    exports.IrDemo_failureWizardModel =
+    exports.IrDemo_failureModel =
+    exports.IrDemoModel =
+    exports.IrDefaultModel =
+    exports.IrCronModel =
+    exports.IrCronTriggerModel =
+    exports.IrCronProgressModel =
+    exports.IrConfig_parameterModel =
+    exports.IrBinaryModel =
+    exports.IrAutovacuumModel =
+    exports.IrAttachmentModel =
+    exports.IrAssetModel =
+    exports.IrActionsTodoModel =
+    exports.IrActionsServerModel =
+    exports.IrActionsReportModel =
+    exports.IrActionsClientModel =
+    exports.IrActionsActionsModel =
+    exports.IrActionsAct_window_closeModel =
+    exports.IrActionsAct_windowViewModel =
+    exports.IrActionsAct_windowModel =
+    exports.IrActionsAct_urlModel =
+    exports.ImageMixinModel =
+    exports.IapServiceModel =
+    exports.IapEnrichApiModel =
+    exports.IapAutocompleteApiModel =
+    exports.IapAccountModel =
+    exports.HtmlFieldHistoryMixinModel =
+    exports.HrWorkLocationModel =
+    exports.HrSkillTypeModel =
+    exports.HrSkillModel =
+    exports.HrSkillLevelModel =
+    exports.HrResumeLineTypeModel =
+    exports.HrResumeLineModel =
+    exports.HrManagerDepartmentReportModel =
+    exports.HrJobModel =
+    exports.HrEmployeeModel =
+    exports.HrEmployeeSkillModel =
+    exports.HrEmployeeSkillReportModel =
+    exports.HrEmployeeSkillLogModel =
+    exports.HrEmployeePublicModel =
+    exports.HrEmployeeCvWizardModel =
+    exports.HrEmployeeCategoryModel =
+    exports.HrEmployeeBaseModel =
+    exports.HrDepartureWizardModel =
+    exports.HrDepartureReasonModel =
+    exports.HrDepartmentModel =
+    exports.HrContractTypeModel =
+    exports.GoogleGmailMixinModel =
+    exports.FormatVatLabelMixinModel =
+        void 0;
+exports.KpiProviderModel =
+    exports.IrWebsocketModel =
+    exports.IrUiViewModel =
+    exports.IrUiViewCustomModel =
+    exports.IrUiMenuModel =
+    exports.IrSequenceModel =
+    exports.IrSequenceDate_rangeModel =
+    exports.IrRuleModel =
+    exports.IrQwebModel =
+    exports.IrQwebFieldModel =
+    exports.IrQwebFieldTimeModel =
+    exports.IrQwebFieldTextModel =
+    exports.IrQwebFieldSelectionModel =
+    exports.IrQwebFieldRelativeModel =
+    exports.IrQwebFieldQwebModel =
+    exports.IrQwebFieldOne2manyModel =
+    exports.IrQwebFieldMonetaryModel =
+    exports.IrQwebFieldMany2oneModel =
+    exports.IrQwebFieldMany2manyModel =
+    exports.IrQwebFieldIntegerModel =
+    exports.IrQwebFieldImage_urlModel =
+    exports.IrQwebFieldImageModel =
+    exports.IrQwebFieldHtmlModel =
+    exports.IrQwebFieldFloat_timeModel =
+    exports.IrQwebFieldFloatModel =
+    exports.IrQwebFieldDurationModel =
+    exports.IrQwebFieldDatetimeModel =
+    exports.IrQwebFieldDateModel =
+    exports.IrQwebFieldContactModel =
+    exports.IrQwebFieldBarcodeModel =
+    exports.IrProfileModel =
+    exports.IrModuleModuleModel =
+    exports.IrModuleModuleExclusionModel =
+    exports.IrModuleModuleDependencyModel =
+    exports.IrModuleCategoryModel =
+    exports.IrModelModel =
+    exports.IrModelRelationModel =
+    exports.IrModelInheritModel =
+    exports.IrModelFieldsModel =
+    exports.IrModelFieldsSelectionModel =
+    exports.IrModelDataModel =
+    exports.IrModelConstraintModel =
+    exports.IrModelAccessModel =
+    exports.IrMail_serverModel =
+    exports.IrLoggingModel =
+    exports.IrHttpModel =
+    exports.IrFiltersModel =
+    exports.IrFieldsConverterModel =
+    exports.IrExportsModel =
+    exports.IrExportsLineModel =
+        void 0;
+exports.MrpAccountWipAccountingLineModel =
+    exports.MailWizardInviteModel =
+    exports.MailTrackingValueModel =
+    exports.MailTrackingDurationMixinModel =
+    exports.MailThreadModel =
+    exports.MailThreadPhoneModel =
+    exports.MailThreadMainAttachmentModel =
+    exports.MailThreadCcModel =
+    exports.MailThreadBlacklistModel =
+    exports.MailTemplateModel =
+    exports.MailTemplateResetModel =
+    exports.MailTemplatePreviewModel =
+    exports.MailScheduledMessageModel =
+    exports.MailResendPartnerModel =
+    exports.MailResendMessageModel =
+    exports.MailRenderMixinModel =
+    exports.MailPushModel =
+    exports.MailPushDeviceModel =
+    exports.MailNotificationModel =
+    exports.MailMessageModel =
+    exports.MailMessageTranslationModel =
+    exports.MailMessageSubtypeModel =
+    exports.MailMessageScheduleModel =
+    exports.MailMessageReactionModel =
+    exports.MailMailModel =
+    exports.MailLinkPreviewModel =
+    exports.MailIceServerModel =
+    exports.MailGuestModel =
+    exports.MailGatewayAllowedModel =
+    exports.MailFollowersModel =
+    exports.MailComposerMixinModel =
+    exports.MailComposeMessageModel =
+    exports.MailCannedResponseModel =
+    exports.MailBotModel =
+    exports.MailBlacklistModel =
+    exports.MailBlacklistRemoveModel =
+    exports.MailAliasModel =
+    exports.MailAliasMixinModel =
+    exports.MailAliasMixinOptionalModel =
+    exports.MailAliasDomainModel =
+    exports.MailActivityTypeModel =
+    exports.MailActivityModel =
+    exports.MailActivityScheduleModel =
+    exports.MailActivityPlanModel =
+    exports.MailActivityPlanTemplateModel =
+    exports.MailActivityMixinModel =
+    exports.LotLabelLayoutModel =
+    exports.L10n_us_1099WizardModel =
+    exports.L10n_us1099_boxModel =
+    exports.L10n_it_delivery_noteDelivery_mixinModel =
+        void 0;
+exports.ProductAttributeModel =
+    exports.ProductAttributeCustomValueModel =
+    exports.ProcurementGroupModel =
+    exports.PrivacyLookupWizardModel =
+    exports.PrivacyLookupWizardLineModel =
+    exports.PrivacyLogModel =
+    exports.PrintPrenumberedChecksModel =
+    exports.PortalWizardUserModel =
+    exports.PortalWizardModel =
+    exports.PortalShareModel =
+    exports.PortalMixinModel =
+    exports.PickingLabelTypeModel =
+    exports.PhoneBlacklistModel =
+    exports.PhoneBlacklistRemoveModel =
+    exports.PaymentTransactionModel =
+    exports.PaymentTokenModel =
+    exports.PaymentRefundWizardModel =
+    exports.PaymentProviderModel =
+    exports.PaymentProviderOnboardingWizardModel =
+    exports.PaymentMethodModel =
+    exports.PaymentLinkWizardModel =
+    exports.PaymentCaptureWizardModel =
+    exports.OnboardingProgressModel =
+    exports.OnboardingProgressStepModel =
+    exports.OnboardingOnboardingModel =
+    exports.OnboardingOnboardingStepModel =
+    exports.Mrp_productionAdditionalWorkorderModel =
+    exports.MrpWorkorderModel =
+    exports.MrpWorkcenterModel =
+    exports.MrpWorkcenterTagModel =
+    exports.MrpWorkcenterProductivityModel =
+    exports.MrpWorkcenterProductivityLossTypeModel =
+    exports.MrpWorkcenterProductivityLossModel =
+    exports.MrpWorkcenterCapacityModel =
+    exports.MrpUnbuildModel =
+    exports.MrpRoutingWorkcenterModel =
+    exports.MrpReportModel =
+    exports.MrpProductionModel =
+    exports.MrpProductionSplitModel =
+    exports.MrpProductionSplitMultiModel =
+    exports.MrpProductionSplitLineModel =
+    exports.MrpProductionBackorderModel =
+    exports.MrpProductionBackorderLineModel =
+    exports.MrpConsumptionWarningModel =
+    exports.MrpConsumptionWarningLineModel =
+    exports.MrpBomModel =
+    exports.MrpBomLineModel =
+    exports.MrpBomByproductModel =
+    exports.MrpBatchProduceModel =
+    exports.MrpAccountWipAccountingModel =
+        void 0;
+exports.ReportProductReport_pricelistModel =
+    exports.ReportPaperformatModel =
+    exports.ReportMrp_account_enterpriseProduct_template_cost_structureModel =
+    exports.ReportMrp_account_enterpriseMrp_cost_structureModel =
+    exports.ReportMrpReport_mo_overviewModel =
+    exports.ReportMrpReport_bom_structureModel =
+    exports.ReportLayoutModel =
+    exports.ReportHr_skillsReport_employee_cvModel =
+    exports.ReportBaseReport_irmodulereferenceModel =
+    exports.ReportAccount_batch_paymentPrint_batch_paymentModel =
+    exports.ReportAccountReport_invoice_with_paymentsModel =
+    exports.ReportAccountReport_invoiceModel =
+    exports.ReportAccountReport_hash_integrityModel =
+    exports.QuotationDocumentModel =
+    exports.QualityTagModel =
+    exports.QualityReasonModel =
+    exports.QualityPointModel =
+    exports.QualityPointTest_typeModel =
+    exports.QualityCheckModel =
+    exports.QualityAlertModel =
+    exports.QualityAlertTeamModel =
+    exports.QualityAlertStageModel =
+    exports.PurchaseReportModel =
+    exports.PurchaseOrderModel =
+    exports.PurchaseOrderLineModel =
+    exports.PurchaseEdiXmlUbl_bis3Model =
+    exports.PurchaseBillUnionModel =
+    exports.PurchaseBillLineMatchModel =
+    exports.Publisher_warrantyContractModel =
+    exports.ProposeChangeModel =
+    exports.ProductTemplateModel =
+    exports.ProductTemplateAttributeValueModel =
+    exports.ProductTemplateAttributeLineModel =
+    exports.ProductTemplateAttributeExclusionModel =
+    exports.ProductTagModel =
+    exports.ProductSupplierinfoModel =
+    exports.ProductReplenishModel =
+    exports.ProductRemovalModel =
+    exports.ProductProductModel =
+    exports.ProductPricelistModel =
+    exports.ProductPricelistItemModel =
+    exports.ProductPackagingModel =
+    exports.ProductLabelLayoutModel =
+    exports.ProductDocumentModel =
+    exports.ProductComboModel =
+    exports.ProductComboItemModel =
+    exports.ProductCategoryModel =
+    exports.ProductCatalogMixinModel =
+    exports.ProductAvataxCategoryModel =
+    exports.ProductAttributeValueModel =
+        void 0;
+exports.SaleOrderDiscountModel =
+    exports.SaleOrderCancelModel =
+    exports.SaleMassCancelOrdersModel =
+    exports.SaleEdiXmlUbl_bis3Model =
+    exports.SaleEdiCommonModel =
+    exports.SaleAdvancePaymentInvModel =
+    exports.ResourceResourceModel =
+    exports.ResourceMixinModel =
+    exports.ResourceCalendarModel =
+    exports.ResourceCalendarLeavesModel =
+    exports.ResourceCalendarAttendanceModel =
+    exports.ResetViewArchWizardModel =
+    exports.ResUsersModel =
+    exports.ResUsersSettingsVolumesModel =
+    exports.ResUsersSettingsModel =
+    exports.ResUsersLogModel =
+    exports.ResUsersIdentitycheckModel =
+    exports.ResUsersDeletionModel =
+    exports.ResUsersApikeysModel =
+    exports.ResUsersApikeysShowModel =
+    exports.ResUsersApikeysDescriptionModel =
+    exports.ResPartnerModel =
+    exports.ResPartnerTitleModel =
+    exports.ResPartnerIndustryModel =
+    exports.ResPartnerCategoryModel =
+    exports.ResPartnerBankModel =
+    exports.ResPartnerAutocompleteSyncModel =
+    exports.ResLangModel =
+    exports.ResGroupsModel =
+    exports.ResDeviceModel =
+    exports.ResDeviceLogModel =
+    exports.ResCurrencyModel =
+    exports.ResCurrencyRateModel =
+    exports.ResCountryModel =
+    exports.ResCountryStateModel =
+    exports.ResCountryGroupModel =
+    exports.ResConfigModel =
+    exports.ResConfigSettingsModel =
+    exports.ResCompanyModel =
+    exports.ResBankModel =
+    exports.ReportStockReport_stock_ruleModel =
+    exports.ReportStockReport_receptionModel =
+    exports.ReportStockQuantityModel =
+    exports.ReportStockLabel_product_product_viewModel =
+    exports.ReportStockLabel_lot_template_viewModel =
+    exports.ReportProductReport_producttemplatelabel_dymoModel =
+    exports.ReportProductReport_producttemplatelabel4x7Model =
+    exports.ReportProductReport_producttemplatelabel4x12nopriceModel =
+    exports.ReportProductReport_producttemplatelabel4x12Model =
+    exports.ReportProductReport_producttemplatelabel2x7Model =
+        void 0;
+exports.StockLotReportModel =
+    exports.StockLocationModel =
+    exports.StockInventoryWarningModel =
+    exports.StockInventoryConflictModel =
+    exports.StockInventoryAdjustmentNameModel =
+    exports.StockForecasted_product_templateModel =
+    exports.StockForecasted_product_productModel =
+    exports.StockDeliveryNoteTypeModel =
+    exports.StockDeliveryNoteModel =
+    exports.StockDeliveryNoteSelectWizardModel =
+    exports.StockDeliveryNoteLineModel =
+    exports.StockDeliveryNoteInvoiceWizardModel =
+    exports.StockDeliveryNoteCreateWizardModel =
+    exports.StockDeliveryNoteConfirmWizardModel =
+    exports.StockDeliveryNoteBaseWizardModel =
+    exports.StockChangeProductQtyModel =
+    exports.StockBackorderConfirmationModel =
+    exports.StockBackorderConfirmationLineModel =
+    exports.SpreadsheetRevisionModel =
+    exports.SpreadsheetMixinModel =
+    exports.SpreadsheetDashboardModel =
+    exports.SpreadsheetDashboardShareModel =
+    exports.SpreadsheetDashboardGroupModel =
+    exports.SpreadsheetCellThreadModel =
+    exports.SnailmailLetterModel =
+    exports.SnailmailLetterMissingRequiredFieldsModel =
+    exports.SnailmailLetterFormatErrorModel =
+    exports.SmsTrackerModel =
+    exports.SmsTemplateModel =
+    exports.SmsTemplateResetModel =
+    exports.SmsTemplatePreviewModel =
+    exports.SmsSmsModel =
+    exports.SmsResendModel =
+    exports.SmsResendRecipientModel =
+    exports.SmsComposerModel =
+    exports.SmsAccountSenderModel =
+    exports.SmsAccountPhoneModel =
+    exports.SmsAccountCodeModel =
+    exports.ShippingInformationUpdaterMixinModel =
+    exports.SequenceMixinModel =
+    exports.SaleReportModel =
+    exports.SalePdfFormFieldModel =
+    exports.SalePaymentProviderOnboardingWizardModel =
+    exports.SaleOrderModel =
+    exports.SaleOrderTemplateModel =
+    exports.SaleOrderTemplateOptionModel =
+    exports.SaleOrderTemplateLineModel =
+    exports.SaleOrderSpreadsheetModel =
+    exports.SaleOrderOptionModel =
+    exports.SaleOrderLineModel =
+        void 0;
+exports.StudioExportModelModel =
+    exports.StudioApprovalRuleModel =
+    exports.StudioApprovalRuleDelegateModel =
+    exports.StudioApprovalRuleApproverModel =
+    exports.StudioApprovalRequestModel =
+    exports.StudioApprovalEntryModel =
+    exports.Stock_barcodeCancelOperationModel =
+    exports.StockWarnInsufficientQtyUnbuildModel =
+    exports.StockWarnInsufficientQtyModel =
+    exports.StockWarnInsufficientQtyScrapModel =
+    exports.StockWarehouseModel =
+    exports.StockWarehouseOrderpointModel =
+    exports.StockValuationLayerModel =
+    exports.StockValuationLayerRevaluationModel =
+    exports.StockTrackLineModel =
+    exports.StockTrackConfirmationModel =
+    exports.StockTraceabilityReportModel =
+    exports.StockStorageCategoryModel =
+    exports.StockStorageCategoryCapacityModel =
+    exports.StockScrapModel =
+    exports.StockScrapReasonTagModel =
+    exports.StockRulesReportModel =
+    exports.StockRuleModel =
+    exports.StockRouteModel =
+    exports.StockReturnPickingModel =
+    exports.StockReturnPickingLineModel =
+    exports.StockRequestCountModel =
+    exports.StockReportModel =
+    exports.StockReplenishmentOptionModel =
+    exports.StockReplenishmentInfoModel =
+    exports.StockReplenishMixinModel =
+    exports.StockQuantityHistoryModel =
+    exports.StockQuantModel =
+    exports.StockQuantRelocateModel =
+    exports.StockQuantPackageModel =
+    exports.StockPutawayRuleModel =
+    exports.StockPickingTypeModel =
+    exports.StockPickingModel =
+    exports.StockPickingTransportReasonModel =
+    exports.StockPickingTransportMethodModel =
+    exports.StockPickingTransportConditionModel =
+    exports.StockPickingGoodsAppearanceModel =
+    exports.StockPickingCheckerMixinModel =
+    exports.StockPackage_levelModel =
+    exports.StockPackageTypeModel =
+    exports.StockPackageDestinationModel =
+    exports.StockOrderpointSnoozeModel =
+    exports.StockMoveModel =
+    exports.StockMoveLineModel =
+    exports.StockLotModel =
+        void 0;
+exports.WizardIrModelMenuCreateModel =
+    exports.Web_tourTourModel =
+    exports.Web_tourTourStepModel =
+    exports.Web_editorConverterTestModel =
+    exports.Web_editorConverterTestSubModel =
+    exports.Web_editorAssetsModel =
+    exports.VendorDelayReportModel =
+    exports.ValidateAccountMoveModel =
+    exports.UtmTagModel =
+    exports.UtmStageModel =
+    exports.UtmSourceModel =
+    exports.UtmSourceMixinModel =
+    exports.UtmMixinModel =
+    exports.UtmMediumModel =
+    exports.UtmCampaignModel =
+    exports.UpdateProductAttributeValueModel =
+    exports.UomUomModel =
+    exports.UomCategoryModel =
+    exports.TemplateResetMixinModel =
+    exports.StudioMixinModel =
+    exports.StudioExportWizardModel =
+    exports.StudioExportWizardDataModel =
+        void 0;
+const odoo_1 = require('./odoo');
 class _unknownModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -101,6 +669,13 @@ class AccountAutopostBillsWizardModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.AccountAutopostBillsWizardModel = AccountAutopostBillsWizardModel;
+class AccountAvataxUniqueCodeModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'account.avatax.unique.code';
+    }
+}
+exports.AccountAvataxUniqueCodeModel = AccountAvataxUniqueCodeModel;
 class AccountBankSelectionModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -185,13 +760,6 @@ class AccountCodeMappingModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.AccountCodeMappingModel = AccountCodeMappingModel;
-class AccountDebitNoteModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'account.debit.note';
-    }
-}
-exports.AccountDebitNoteModel = AccountDebitNoteModel;
 class AccountDuplicateTransactionWizardModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -269,6 +837,13 @@ class AccountEdiXmlUbl_sgModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.AccountEdiXmlUbl_sgModel = AccountEdiXmlUbl_sgModel;
+class AccountExternalTaxMixinModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'account.external.tax.mixin';
+    }
+}
+exports.AccountExternalTaxMixinModel = AccountExternalTaxMixinModel;
 class AccountFinancialYearOpModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -619,27 +1194,6 @@ class AccountTransferModelModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.AccountTransferModelModel = AccountTransferModelModel;
-class Account_edi_proxy_clientUserModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'account_edi_proxy_client.user';
-    }
-}
-exports.Account_edi_proxy_clientUserModel = Account_edi_proxy_clientUserModel;
-class Account_peppolServiceModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'account_peppol.service';
-    }
-}
-exports.Account_peppolServiceModel = Account_peppolServiceModel;
-class Account_peppolServiceWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'account_peppol.service.wizard';
-    }
-}
-exports.Account_peppolServiceWizardModel = Account_peppolServiceWizardModel;
 class AnalyticMixinModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -654,20 +1208,6 @@ class AnalyticPlanFieldsMixinModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.AnalyticPlanFieldsMixinModel = AnalyticPlanFieldsMixinModel;
-class ApplicantGetRefuseReasonModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'applicant.get.refuse.reason';
-    }
-}
-exports.ApplicantGetRefuseReasonModel = ApplicantGetRefuseReasonModel;
-class ApplicantSendMailModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'applicant.send.mail';
-    }
-}
-exports.ApplicantSendMailModel = ApplicantSendMailModel;
 class ApprovalApproverModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -703,13 +1243,6 @@ class ApprovalRequestModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.ApprovalRequestModel = ApprovalRequestModel;
-class ApprovalRequestWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'approval.request.wizard';
-    }
-}
-exports.ApprovalRequestWizardModel = ApprovalRequestWizardModel;
 class Auth_totpDeviceModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -731,6 +1264,27 @@ class AvatarMixinModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.AvatarMixinModel = AvatarMixinModel;
+class AvataxConnectionTestResultModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'avatax.connection.test.result';
+    }
+}
+exports.AvataxConnectionTestResultModel = AvataxConnectionTestResultModel;
+class AvataxExemptionModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'avatax.exemption';
+    }
+}
+exports.AvataxExemptionModel = AvataxExemptionModel;
+class AvataxValidateAddressModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'avatax.validate.address';
+    }
+}
+exports.AvataxValidateAddressModel = AvataxValidateAddressModel;
 class BankRecWidgetLineModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -913,90 +1467,6 @@ class BusPresenceModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.BusPresenceModel = BusPresenceModel;
-class CalendarAlarmModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'calendar.alarm';
-    }
-}
-exports.CalendarAlarmModel = CalendarAlarmModel;
-class CalendarAlarm_managerModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'calendar.alarm_manager';
-    }
-}
-exports.CalendarAlarm_managerModel = CalendarAlarm_managerModel;
-class CalendarAttendeeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'calendar.attendee';
-    }
-}
-exports.CalendarAttendeeModel = CalendarAttendeeModel;
-class CalendarEventModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'calendar.event';
-    }
-}
-exports.CalendarEventModel = CalendarEventModel;
-class CalendarEventTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'calendar.event.type';
-    }
-}
-exports.CalendarEventTypeModel = CalendarEventTypeModel;
-class CalendarFiltersModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'calendar.filters';
-    }
-}
-exports.CalendarFiltersModel = CalendarFiltersModel;
-class CalendarPopoverDeleteWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'calendar.popover.delete.wizard';
-    }
-}
-exports.CalendarPopoverDeleteWizardModel = CalendarPopoverDeleteWizardModel;
-class CalendarProviderConfigModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'calendar.provider.config';
-    }
-}
-exports.CalendarProviderConfigModel = CalendarProviderConfigModel;
-class CalendarRecurrenceModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'calendar.recurrence';
-    }
-}
-exports.CalendarRecurrenceModel = CalendarRecurrenceModel;
-class CandidateSendMailModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'candidate.send.mail';
-    }
-}
-exports.CandidateSendMailModel = CandidateSendMailModel;
-class CertificateCertificateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'certificate.certificate';
-    }
-}
-exports.CertificateCertificateModel = CertificateCertificateModel;
-class CertificateKeyModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'certificate.key';
-    }
-}
-exports.CertificateKeyModel = CertificateKeyModel;
 class ChangePasswordOwnModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -1067,69 +1537,6 @@ class CrmTeamModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.CrmTeamModel = CrmTeamModel;
-class Data_cleaningModelModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'data_cleaning.model';
-    }
-}
-exports.Data_cleaningModelModel = Data_cleaningModelModel;
-class Data_cleaningRecordModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'data_cleaning.record';
-    }
-}
-exports.Data_cleaningRecordModel = Data_cleaningRecordModel;
-class Data_cleaningRuleModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'data_cleaning.rule';
-    }
-}
-exports.Data_cleaningRuleModel = Data_cleaningRuleModel;
-class Data_mergeGroupModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'data_merge.group';
-    }
-}
-exports.Data_mergeGroupModel = Data_mergeGroupModel;
-class Data_mergeModelModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'data_merge.model';
-    }
-}
-exports.Data_mergeModelModel = Data_mergeModelModel;
-class Data_mergeRecordModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'data_merge.record';
-    }
-}
-exports.Data_mergeRecordModel = Data_mergeRecordModel;
-class Data_mergeRuleModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'data_merge.rule';
-    }
-}
-exports.Data_mergeRuleModel = Data_mergeRuleModel;
-class Data_recycleModelModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'data_recycle.model';
-    }
-}
-exports.Data_recycleModelModel = Data_recycleModelModel;
-class Data_recycleRecordModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'data_recycle.record';
-    }
-}
-exports.Data_recycleRecordModel = Data_recycleRecordModel;
 class DecimalPrecisionModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -1207,34 +1614,6 @@ class DiscussVoiceMetadataModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.DiscussVoiceMetadataModel = DiscussVoiceMetadataModel;
-class ExpenseSampleReceiptModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'expense.sample.receipt';
-    }
-}
-exports.ExpenseSampleReceiptModel = ExpenseSampleReceiptModel;
-class ExpenseSampleRegisterModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'expense.sample.register';
-    }
-}
-exports.ExpenseSampleRegisterModel = ExpenseSampleRegisterModel;
-class ExportHrConfigModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'export.hr.config';
-    }
-}
-exports.ExportHrConfigModel = ExportHrConfigModel;
-class ExportHrOutputModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'export.hr.output';
-    }
-}
-exports.ExportHrOutputModel = ExportHrOutputModel;
 class ExtractMixinModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -1249,97 +1628,6 @@ class FetchmailServerModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.FetchmailServerModel = FetchmailServerModel;
-class FleetServiceTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.service.type';
-    }
-}
-exports.FleetServiceTypeModel = FleetServiceTypeModel;
-class FleetVehicleAssignationLogModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.assignation.log';
-    }
-}
-exports.FleetVehicleAssignationLogModel = FleetVehicleAssignationLogModel;
-class FleetVehicleCostReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.cost.report';
-    }
-}
-exports.FleetVehicleCostReportModel = FleetVehicleCostReportModel;
-class FleetVehicleLogContractModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.log.contract';
-    }
-}
-exports.FleetVehicleLogContractModel = FleetVehicleLogContractModel;
-class FleetVehicleLogServicesModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.log.services';
-    }
-}
-exports.FleetVehicleLogServicesModel = FleetVehicleLogServicesModel;
-class FleetVehicleModelBrandModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.model.brand';
-    }
-}
-exports.FleetVehicleModelBrandModel = FleetVehicleModelBrandModel;
-class FleetVehicleModelCategoryModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.model.category';
-    }
-}
-exports.FleetVehicleModelCategoryModel = FleetVehicleModelCategoryModel;
-class FleetVehicleModelModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.model';
-    }
-}
-exports.FleetVehicleModelModel = FleetVehicleModelModel;
-class FleetVehicleOdometerModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.odometer';
-    }
-}
-exports.FleetVehicleOdometerModel = FleetVehicleOdometerModel;
-class FleetVehicleSendMailModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.send.mail';
-    }
-}
-exports.FleetVehicleSendMailModel = FleetVehicleSendMailModel;
-class FleetVehicleStateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.state';
-    }
-}
-exports.FleetVehicleStateModel = FleetVehicleStateModel;
-class FleetVehicleTagModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle.tag';
-    }
-}
-exports.FleetVehicleTagModel = FleetVehicleTagModel;
-class FleetVehicleModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'fleet.vehicle';
-    }
-}
-exports.FleetVehicleModel = FleetVehicleModel;
 class FormatAddressMixinModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -1361,209 +1649,6 @@ class GoogleGmailMixinModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.GoogleGmailMixinModel = GoogleGmailMixinModel;
-class HelpdeskSlaReportAnalysisModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.sla.report.analysis';
-    }
-}
-exports.HelpdeskSlaReportAnalysisModel = HelpdeskSlaReportAnalysisModel;
-class HelpdeskSlaStatusModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.sla.status';
-    }
-}
-exports.HelpdeskSlaStatusModel = HelpdeskSlaStatusModel;
-class HelpdeskSlaModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.sla';
-    }
-}
-exports.HelpdeskSlaModel = HelpdeskSlaModel;
-class HelpdeskStageDeleteWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.stage.delete.wizard';
-    }
-}
-exports.HelpdeskStageDeleteWizardModel = HelpdeskStageDeleteWizardModel;
-class HelpdeskStageModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.stage';
-    }
-}
-exports.HelpdeskStageModel = HelpdeskStageModel;
-class HelpdeskTagModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.tag';
-    }
-}
-exports.HelpdeskTagModel = HelpdeskTagModel;
-class HelpdeskTeamModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.team';
-    }
-}
-exports.HelpdeskTeamModel = HelpdeskTeamModel;
-class HelpdeskTicketConvertWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.ticket.convert.wizard';
-    }
-}
-exports.HelpdeskTicketConvertWizardModel = HelpdeskTicketConvertWizardModel;
-class HelpdeskTicketReportAnalysisModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.ticket.report.analysis';
-    }
-}
-exports.HelpdeskTicketReportAnalysisModel = HelpdeskTicketReportAnalysisModel;
-class HelpdeskTicketModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'helpdesk.ticket';
-    }
-}
-exports.HelpdeskTicketModel = HelpdeskTicketModel;
-class HrApplicantCategoryModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.applicant.category';
-    }
-}
-exports.HrApplicantCategoryModel = HrApplicantCategoryModel;
-class HrApplicantRefuseReasonModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.applicant.refuse.reason';
-    }
-}
-exports.HrApplicantRefuseReasonModel = HrApplicantRefuseReasonModel;
-class HrApplicantModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.applicant';
-    }
-}
-exports.HrApplicantModel = HrApplicantModel;
-class HrAppraisalGoalTagModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.appraisal.goal.tag';
-    }
-}
-exports.HrAppraisalGoalTagModel = HrAppraisalGoalTagModel;
-class HrAppraisalGoalModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.appraisal.goal';
-    }
-}
-exports.HrAppraisalGoalModel = HrAppraisalGoalModel;
-class HrAppraisalNoteModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.appraisal.note';
-    }
-}
-exports.HrAppraisalNoteModel = HrAppraisalNoteModel;
-class HrAppraisalReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.appraisal.report';
-    }
-}
-exports.HrAppraisalReportModel = HrAppraisalReportModel;
-class HrAppraisalSkillReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.appraisal.skill.report';
-    }
-}
-exports.HrAppraisalSkillReportModel = HrAppraisalSkillReportModel;
-class HrAppraisalSkillModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.appraisal.skill';
-    }
-}
-exports.HrAppraisalSkillModel = HrAppraisalSkillModel;
-class HrAppraisalTemplateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.appraisal.template';
-    }
-}
-exports.HrAppraisalTemplateModel = HrAppraisalTemplateModel;
-class HrAppraisalModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.appraisal';
-    }
-}
-exports.HrAppraisalModel = HrAppraisalModel;
-class HrAttendanceOvertimeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.attendance.overtime';
-    }
-}
-exports.HrAttendanceOvertimeModel = HrAttendanceOvertimeModel;
-class HrAttendanceModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.attendance';
-    }
-}
-exports.HrAttendanceModel = HrAttendanceModel;
-class HrCandidateSkillModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.candidate.skill';
-    }
-}
-exports.HrCandidateSkillModel = HrCandidateSkillModel;
-class HrCandidateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.candidate';
-    }
-}
-exports.HrCandidateModel = HrCandidateModel;
-class HrContractEmployeeReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.contract.employee.report';
-    }
-}
-exports.HrContractEmployeeReportModel = HrContractEmployeeReportModel;
-class HrContractHistoryModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.contract.history';
-    }
-}
-exports.HrContractHistoryModel = HrContractHistoryModel;
-class HrContractSignDocumentWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.contract.sign.document.wizard';
-    }
-}
-exports.HrContractSignDocumentWizardModel = HrContractSignDocumentWizardModel;
-class HrContractModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.contract';
-    }
-}
-exports.HrContractModel = HrContractModel;
 class HrContractTypeModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -1613,13 +1698,6 @@ class HrEmployeeCvWizardModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.HrEmployeeCvWizardModel = HrEmployeeCvWizardModel;
-class HrEmployeeDeleteWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.employee.delete.wizard';
-    }
-}
-exports.HrEmployeeDeleteWizardModel = HrEmployeeDeleteWizardModel;
 class HrEmployeePublicModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -1655,69 +1733,6 @@ class HrEmployeeModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.HrEmployeeModel = HrEmployeeModel;
-class HrExpenseApproveDuplicateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.expense.approve.duplicate';
-    }
-}
-exports.HrExpenseApproveDuplicateModel = HrExpenseApproveDuplicateModel;
-class HrExpenseRefuseWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.expense.refuse.wizard';
-    }
-}
-exports.HrExpenseRefuseWizardModel = HrExpenseRefuseWizardModel;
-class HrExpenseSheetModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.expense.sheet';
-    }
-}
-exports.HrExpenseSheetModel = HrExpenseSheetModel;
-class HrExpenseSplitModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.expense.split';
-    }
-}
-exports.HrExpenseSplitModel = HrExpenseSplitModel;
-class HrExpenseSplitWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.expense.split.wizard';
-    }
-}
-exports.HrExpenseSplitWizardModel = HrExpenseSplitWizardModel;
-class HrExpenseModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.expense';
-    }
-}
-exports.HrExpenseModel = HrExpenseModel;
-class HrHolidaysCancelLeaveModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.holidays.cancel.leave';
-    }
-}
-exports.HrHolidaysCancelLeaveModel = HrHolidaysCancelLeaveModel;
-class HrHolidaysSummaryEmployeeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.holidays.summary.employee';
-    }
-}
-exports.HrHolidaysSummaryEmployeeModel = HrHolidaysSummaryEmployeeModel;
-class HrJobPlatformModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.job.platform';
-    }
-}
-exports.HrJobPlatformModel = HrJobPlatformModel;
 class HrJobModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -1725,83 +1740,6 @@ class HrJobModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.HrJobModel = HrJobModel;
-class HrLeaveAccrualLevelModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.accrual.level';
-    }
-}
-exports.HrLeaveAccrualLevelModel = HrLeaveAccrualLevelModel;
-class HrLeaveAccrualPlanModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.accrual.plan';
-    }
-}
-exports.HrLeaveAccrualPlanModel = HrLeaveAccrualPlanModel;
-class HrLeaveAllocationGenerateMultiWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.allocation.generate.multi.wizard';
-    }
-}
-exports.HrLeaveAllocationGenerateMultiWizardModel = HrLeaveAllocationGenerateMultiWizardModel;
-class HrLeaveAllocationModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.allocation';
-    }
-}
-exports.HrLeaveAllocationModel = HrLeaveAllocationModel;
-class HrLeaveEmployeeTypeReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.employee.type.report';
-    }
-}
-exports.HrLeaveEmployeeTypeReportModel = HrLeaveEmployeeTypeReportModel;
-class HrLeaveGenerateMultiWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.generate.multi.wizard';
-    }
-}
-exports.HrLeaveGenerateMultiWizardModel = HrLeaveGenerateMultiWizardModel;
-class HrLeaveMandatoryDayModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.mandatory.day';
-    }
-}
-exports.HrLeaveMandatoryDayModel = HrLeaveMandatoryDayModel;
-class HrLeaveReportCalendarModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.report.calendar';
-    }
-}
-exports.HrLeaveReportCalendarModel = HrLeaveReportCalendarModel;
-class HrLeaveReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.report';
-    }
-}
-exports.HrLeaveReportModel = HrLeaveReportModel;
-class HrLeaveModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave';
-    }
-}
-exports.HrLeaveModel = HrLeaveModel;
-class HrLeaveTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.leave.type';
-    }
-}
-exports.HrLeaveTypeModel = HrLeaveTypeModel;
 class HrManagerDepartmentReportModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -1809,202 +1747,6 @@ class HrManagerDepartmentReportModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.HrManagerDepartmentReportModel = HrManagerDepartmentReportModel;
-class HrPayrollDashboardWarningModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.dashboard.warning';
-    }
-}
-exports.HrPayrollDashboardWarningModel = HrPayrollDashboardWarningModel;
-class HrPayrollDeclarationMixinModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.declaration.mixin';
-    }
-}
-exports.HrPayrollDeclarationMixinModel = HrPayrollDeclarationMixinModel;
-class HrPayrollEditPayslipLineModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.edit.payslip.line';
-    }
-}
-exports.HrPayrollEditPayslipLineModel = HrPayrollEditPayslipLineModel;
-class HrPayrollEditPayslipLinesWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.edit.payslip.lines.wizard';
-    }
-}
-exports.HrPayrollEditPayslipLinesWizardModel = HrPayrollEditPayslipLinesWizardModel;
-class HrPayrollEditPayslipWorkedDaysLineModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.edit.payslip.worked.days.line';
-    }
-}
-exports.HrPayrollEditPayslipWorkedDaysLineModel = HrPayrollEditPayslipWorkedDaysLineModel;
-class HrPayrollEmployeeDeclarationModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.employee.declaration';
-    }
-}
-exports.HrPayrollEmployeeDeclarationModel = HrPayrollEmployeeDeclarationModel;
-class HrPayrollHeadcountLineModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.headcount.line';
-    }
-}
-exports.HrPayrollHeadcountLineModel = HrPayrollHeadcountLineModel;
-class HrPayrollHeadcountModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.headcount';
-    }
-}
-exports.HrPayrollHeadcountModel = HrPayrollHeadcountModel;
-class HrPayrollHeadcountWorkingRateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.headcount.working.rate';
-    }
-}
-exports.HrPayrollHeadcountWorkingRateModel = HrPayrollHeadcountWorkingRateModel;
-class HrPayrollIndexModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.index';
-    }
-}
-exports.HrPayrollIndexModel = HrPayrollIndexModel;
-class HrPayrollNoteModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.note';
-    }
-}
-exports.HrPayrollNoteModel = HrPayrollNoteModel;
-class HrPayrollPaymentReportWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.payment.report.wizard';
-    }
-}
-exports.HrPayrollPaymentReportWizardModel = HrPayrollPaymentReportWizardModel;
-class HrPayrollReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.report';
-    }
-}
-exports.HrPayrollReportModel = HrPayrollReportModel;
-class HrPayrollStructureModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.structure';
-    }
-}
-exports.HrPayrollStructureModel = HrPayrollStructureModel;
-class HrPayrollStructureTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payroll.structure.type';
-    }
-}
-exports.HrPayrollStructureTypeModel = HrPayrollStructureTypeModel;
-class HrPayslipEmployeesModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payslip.employees';
-    }
-}
-exports.HrPayslipEmployeesModel = HrPayslipEmployeesModel;
-class HrPayslipInputModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payslip.input';
-    }
-}
-exports.HrPayslipInputModel = HrPayslipInputModel;
-class HrPayslipInputTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payslip.input.type';
-    }
-}
-exports.HrPayslipInputTypeModel = HrPayslipInputTypeModel;
-class HrPayslipLineModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payslip.line';
-    }
-}
-exports.HrPayslipLineModel = HrPayslipLineModel;
-class HrPayslipRunModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payslip.run';
-    }
-}
-exports.HrPayslipRunModel = HrPayslipRunModel;
-class HrPayslipModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payslip';
-    }
-}
-exports.HrPayslipModel = HrPayslipModel;
-class HrPayslipWorked_daysModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.payslip.worked_days';
-    }
-}
-exports.HrPayslipWorked_daysModel = HrPayslipWorked_daysModel;
-class HrRecruitmentDegreeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.recruitment.degree';
-    }
-}
-exports.HrRecruitmentDegreeModel = HrRecruitmentDegreeModel;
-class HrRecruitmentReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.recruitment.report';
-    }
-}
-exports.HrRecruitmentReportModel = HrRecruitmentReportModel;
-class HrRecruitmentSignDocumentWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.recruitment.sign.document.wizard';
-    }
-}
-exports.HrRecruitmentSignDocumentWizardModel = HrRecruitmentSignDocumentWizardModel;
-class HrRecruitmentSourceModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.recruitment.source';
-    }
-}
-exports.HrRecruitmentSourceModel = HrRecruitmentSourceModel;
-class HrRecruitmentStageReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.recruitment.stage.report';
-    }
-}
-exports.HrRecruitmentStageReportModel = HrRecruitmentStageReportModel;
-class HrRecruitmentStageModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.recruitment.stage';
-    }
-}
-exports.HrRecruitmentStageModel = HrRecruitmentStageModel;
 class HrResumeLineModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -2019,41 +1761,6 @@ class HrResumeLineTypeModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.HrResumeLineTypeModel = HrResumeLineTypeModel;
-class HrRuleParameterModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.rule.parameter';
-    }
-}
-exports.HrRuleParameterModel = HrRuleParameterModel;
-class HrRuleParameterValueModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.rule.parameter.value';
-    }
-}
-exports.HrRuleParameterValueModel = HrRuleParameterValueModel;
-class HrSalaryAttachmentModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.salary.attachment';
-    }
-}
-exports.HrSalaryAttachmentModel = HrSalaryAttachmentModel;
-class HrSalaryRuleCategoryModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.salary.rule.category';
-    }
-}
-exports.HrSalaryRuleCategoryModel = HrSalaryRuleCategoryModel;
-class HrSalaryRuleModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.salary.rule';
-    }
-}
-exports.HrSalaryRuleModel = HrSalaryRuleModel;
 class HrSkillLevelModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -2075,69 +1782,6 @@ class HrSkillTypeModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.HrSkillTypeModel = HrSkillTypeModel;
-class HrTimesheetAttendanceReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.timesheet.attendance.report';
-    }
-}
-exports.HrTimesheetAttendanceReportModel = HrTimesheetAttendanceReportModel;
-class HrTimesheetTipModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.timesheet.tip';
-    }
-}
-exports.HrTimesheetTipModel = HrTimesheetTipModel;
-class HrUserWorkEntryEmployeeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.user.work.entry.employee';
-    }
-}
-exports.HrUserWorkEntryEmployeeModel = HrUserWorkEntryEmployeeModel;
-class HrWorkEntryExportEmployeeMixinModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.work.entry.export.employee.mixin';
-    }
-}
-exports.HrWorkEntryExportEmployeeMixinModel = HrWorkEntryExportEmployeeMixinModel;
-class HrWorkEntryExportMixinModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.work.entry.export.mixin';
-    }
-}
-exports.HrWorkEntryExportMixinModel = HrWorkEntryExportMixinModel;
-class HrWorkEntryRegenerationWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.work.entry.regeneration.wizard';
-    }
-}
-exports.HrWorkEntryRegenerationWizardModel = HrWorkEntryRegenerationWizardModel;
-class HrWorkEntryReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.work.entry.report';
-    }
-}
-exports.HrWorkEntryReportModel = HrWorkEntryReportModel;
-class HrWorkEntryModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.work.entry';
-    }
-}
-exports.HrWorkEntryModel = HrWorkEntryModel;
-class HrWorkEntryTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr.work.entry.type';
-    }
-}
-exports.HrWorkEntryTypeModel = HrWorkEntryTypeModel;
 class HrWorkLocationModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -2145,13 +1789,6 @@ class HrWorkLocationModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.HrWorkLocationModel = HrWorkLocationModel;
-class Hr_timesheetMergeWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'hr_timesheet.merge.wizard';
-    }
-}
-exports.Hr_timesheetMergeWizardModel = Hr_timesheetMergeWizardModel;
 class HtmlFieldHistoryMixinModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -2264,13 +1901,6 @@ class IrAssetModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.IrAssetModel = IrAssetModel;
-class IrAttachmentReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'ir.attachment.report';
-    }
-}
-exports.IrAttachmentReportModel = IrAttachmentReportModel;
 class IrAttachmentModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -2593,6 +2223,13 @@ class IrQwebFieldMonetaryModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.IrQwebFieldMonetaryModel = IrQwebFieldMonetaryModel;
+class IrQwebFieldOne2manyModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'ir.qweb.field.one2many';
+    }
+}
+exports.IrQwebFieldOne2manyModel = IrQwebFieldOne2manyModel;
 class IrQwebFieldQwebModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -2691,62 +2328,6 @@ class IrWebsocketModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.IrWebsocketModel = IrWebsocketModel;
-class KnowledgeArticleFavoriteModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'knowledge.article.favorite';
-    }
-}
-exports.KnowledgeArticleFavoriteModel = KnowledgeArticleFavoriteModel;
-class KnowledgeArticleMemberModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'knowledge.article.member';
-    }
-}
-exports.KnowledgeArticleMemberModel = KnowledgeArticleMemberModel;
-class KnowledgeArticleStageModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'knowledge.article.stage';
-    }
-}
-exports.KnowledgeArticleStageModel = KnowledgeArticleStageModel;
-class KnowledgeArticleTemplateCategoryModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'knowledge.article.template.category';
-    }
-}
-exports.KnowledgeArticleTemplateCategoryModel = KnowledgeArticleTemplateCategoryModel;
-class KnowledgeArticleThreadModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'knowledge.article.thread';
-    }
-}
-exports.KnowledgeArticleThreadModel = KnowledgeArticleThreadModel;
-class KnowledgeArticleModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'knowledge.article';
-    }
-}
-exports.KnowledgeArticleModel = KnowledgeArticleModel;
-class KnowledgeCoverModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'knowledge.cover';
-    }
-}
-exports.KnowledgeCoverModel = KnowledgeCoverModel;
-class KnowledgeInviteModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'knowledge.invite';
-    }
-}
-exports.KnowledgeInviteModel = KnowledgeInviteModel;
 class KpiProviderModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -2754,20 +2335,6 @@ class KpiProviderModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.KpiProviderModel = KpiProviderModel;
-class L10n_itDdtModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'l10n_it.ddt';
-    }
-}
-exports.L10n_itDdtModel = L10n_itDdtModel;
-class L10n_itDocumentTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'l10n_it.document.type';
-    }
-}
-exports.L10n_itDocumentTypeModel = L10n_itDocumentTypeModel;
 class L10n_it_delivery_noteDelivery_mixinModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -2775,6 +2342,20 @@ class L10n_it_delivery_noteDelivery_mixinModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.L10n_it_delivery_noteDelivery_mixinModel = L10n_it_delivery_noteDelivery_mixinModel;
+class L10n_us1099_boxModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'l10n_us1099_box';
+    }
+}
+exports.L10n_us1099_boxModel = L10n_us1099_boxModel;
+class L10n_us_1099WizardModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'l10n_us_1099.wizard';
+    }
+}
+exports.L10n_us_1099WizardModel = L10n_us_1099WizardModel;
 class LotLabelLayoutModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -2810,13 +2391,6 @@ class MailActivityScheduleModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.MailActivityScheduleModel = MailActivityScheduleModel;
-class MailActivityTodoCreateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mail.activity.todo.create';
-    }
-}
-exports.MailActivityTodoCreateModel = MailActivityTodoCreateModel;
 class MailActivityModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3104,48 +2678,6 @@ class MailWizardInviteModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.MailWizardInviteModel = MailWizardInviteModel;
-class MaintenanceEquipmentCategoryModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'maintenance.equipment.category';
-    }
-}
-exports.MaintenanceEquipmentCategoryModel = MaintenanceEquipmentCategoryModel;
-class MaintenanceEquipmentModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'maintenance.equipment';
-    }
-}
-exports.MaintenanceEquipmentModel = MaintenanceEquipmentModel;
-class MaintenanceMixinModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'maintenance.mixin';
-    }
-}
-exports.MaintenanceMixinModel = MaintenanceMixinModel;
-class MaintenanceRequestModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'maintenance.request';
-    }
-}
-exports.MaintenanceRequestModel = MaintenanceRequestModel;
-class MaintenanceStageModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'maintenance.stage';
-    }
-}
-exports.MaintenanceStageModel = MaintenanceStageModel;
-class MaintenanceTeamModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'maintenance.team';
-    }
-}
-exports.MaintenanceTeamModel = MaintenanceTeamModel;
 class MrpAccountWipAccountingLineModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3202,76 +2734,6 @@ class MrpConsumptionWarningModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.MrpConsumptionWarningModel = MrpConsumptionWarningModel;
-class MrpEcoApprovalTemplateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.eco.approval.template';
-    }
-}
-exports.MrpEcoApprovalTemplateModel = MrpEcoApprovalTemplateModel;
-class MrpEcoApprovalModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.eco.approval';
-    }
-}
-exports.MrpEcoApprovalModel = MrpEcoApprovalModel;
-class MrpEcoBomChangeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.eco.bom.change';
-    }
-}
-exports.MrpEcoBomChangeModel = MrpEcoBomChangeModel;
-class MrpEcoRoutingChangeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.eco.routing.change';
-    }
-}
-exports.MrpEcoRoutingChangeModel = MrpEcoRoutingChangeModel;
-class MrpEcoStageModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.eco.stage';
-    }
-}
-exports.MrpEcoStageModel = MrpEcoStageModel;
-class MrpEcoTagModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.eco.tag';
-    }
-}
-exports.MrpEcoTagModel = MrpEcoTagModel;
-class MrpEcoModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.eco';
-    }
-}
-exports.MrpEcoModel = MrpEcoModel;
-class MrpEcoTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.eco.type';
-    }
-}
-exports.MrpEcoTypeModel = MrpEcoTypeModel;
-class MrpMpsForecastDetailsModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.mps.forecast.details';
-    }
-}
-exports.MrpMpsForecastDetailsModel = MrpMpsForecastDetailsModel;
-class MrpProductForecastModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.product.forecast';
-    }
-}
-exports.MrpProductForecastModel = MrpProductForecastModel;
 class MrpProductionBackorderLineModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3286,13 +2748,6 @@ class MrpProductionBackorderModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.MrpProductionBackorderModel = MrpProductionBackorderModel;
-class MrpProductionScheduleModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'mrp.production.schedule';
-    }
-}
-exports.MrpProductionScheduleModel = MrpProductionScheduleModel;
 class MrpProductionSplitLineModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3482,13 +2937,6 @@ class PaymentTransactionModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.PaymentTransactionModel = PaymentTransactionModel;
-class PeppolRegistrationModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'peppol.registration';
-    }
-}
-exports.PeppolRegistrationModel = PeppolRegistrationModel;
 class PhoneBlacklistRemoveModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3510,55 +2958,6 @@ class PickingLabelTypeModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.PickingLabelTypeModel = PickingLabelTypeModel;
-class PlanningAnalysisReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'planning.analysis.report';
-    }
-}
-exports.PlanningAnalysisReportModel = PlanningAnalysisReportModel;
-class PlanningPlanningModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'planning.planning';
-    }
-}
-exports.PlanningPlanningModel = PlanningPlanningModel;
-class PlanningRecurrencyModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'planning.recurrency';
-    }
-}
-exports.PlanningRecurrencyModel = PlanningRecurrencyModel;
-class PlanningRoleModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'planning.role';
-    }
-}
-exports.PlanningRoleModel = PlanningRoleModel;
-class PlanningSendModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'planning.send';
-    }
-}
-exports.PlanningSendModel = PlanningSendModel;
-class PlanningSlotTemplateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'planning.slot.template';
-    }
-}
-exports.PlanningSlotTemplateModel = PlanningSlotTemplateModel;
-class PlanningSlotModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'planning.slot';
-    }
-}
-exports.PlanningSlotModel = PlanningSlotModel;
 class PortalMixinModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3587,6 +2986,13 @@ class PortalWizardUserModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.PortalWizardUserModel = PortalWizardUserModel;
+class PrintPrenumberedChecksModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'print.prenumbered.checks';
+    }
+}
+exports.PrintPrenumberedChecksModel = PrintPrenumberedChecksModel;
 class PrivacyLogModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3636,6 +3042,13 @@ class ProductAttributeValueModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.ProductAttributeValueModel = ProductAttributeValueModel;
+class ProductAvataxCategoryModel extends odoo_1.BaseOdooModel {
+    constructor() {
+        super(...arguments);
+        this.model = 'product.avatax.category';
+    }
+}
+exports.ProductAvataxCategoryModel = ProductAvataxCategoryModel;
 class ProductCatalogMixinModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3762,139 +3175,6 @@ class ProductTemplateModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.ProductTemplateModel = ProductTemplateModel;
-class ProjectCollaboratorModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.collaborator';
-    }
-}
-exports.ProjectCollaboratorModel = ProjectCollaboratorModel;
-class ProjectCreateInvoiceModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.create.invoice';
-    }
-}
-exports.ProjectCreateInvoiceModel = ProjectCreateInvoiceModel;
-class ProjectMilestoneModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.milestone';
-    }
-}
-exports.ProjectMilestoneModel = ProjectMilestoneModel;
-class ProjectProjectStageDeleteWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.project.stage.delete.wizard';
-    }
-}
-exports.ProjectProjectStageDeleteWizardModel = ProjectProjectStageDeleteWizardModel;
-class ProjectProjectStageModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.project.stage';
-    }
-}
-exports.ProjectProjectStageModel = ProjectProjectStageModel;
-class ProjectProjectModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.project';
-    }
-}
-exports.ProjectProjectModel = ProjectProjectModel;
-class ProjectSaleLineEmployeeMapModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.sale.line.employee.map';
-    }
-}
-exports.ProjectSaleLineEmployeeMapModel = ProjectSaleLineEmployeeMapModel;
-class ProjectShareCollaboratorWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.share.collaborator.wizard';
-    }
-}
-exports.ProjectShareCollaboratorWizardModel = ProjectShareCollaboratorWizardModel;
-class ProjectShareWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.share.wizard';
-    }
-}
-exports.ProjectShareWizardModel = ProjectShareWizardModel;
-class ProjectTagsModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.tags';
-    }
-}
-exports.ProjectTagsModel = ProjectTagsModel;
-class ProjectTaskBurndownChartReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.task.burndown.chart.report';
-    }
-}
-exports.ProjectTaskBurndownChartReportModel = ProjectTaskBurndownChartReportModel;
-class ProjectTaskConvertWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.task.convert.wizard';
-    }
-}
-exports.ProjectTaskConvertWizardModel = ProjectTaskConvertWizardModel;
-class ProjectTaskCreateTimesheetModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.task.create.timesheet';
-    }
-}
-exports.ProjectTaskCreateTimesheetModel = ProjectTaskCreateTimesheetModel;
-class ProjectTaskRecurrenceModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.task.recurrence';
-    }
-}
-exports.ProjectTaskRecurrenceModel = ProjectTaskRecurrenceModel;
-class ProjectTaskStagePersonalModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.task.stage.personal';
-    }
-}
-exports.ProjectTaskStagePersonalModel = ProjectTaskStagePersonalModel;
-class ProjectTaskModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.task';
-    }
-}
-exports.ProjectTaskModel = ProjectTaskModel;
-class ProjectTaskTypeDeleteWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.task.type.delete.wizard';
-    }
-}
-exports.ProjectTaskTypeDeleteWizardModel = ProjectTaskTypeDeleteWizardModel;
-class ProjectTaskTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.task.type';
-    }
-}
-exports.ProjectTaskTypeModel = ProjectTaskTypeModel;
-class ProjectUpdateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'project.update';
-    }
-}
-exports.ProjectUpdateModel = ProjectUpdateModel;
 class ProposeChangeModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3930,13 +3210,6 @@ class PurchaseEdiXmlUbl_bis3Model extends odoo_1.BaseOdooModel {
     }
 }
 exports.PurchaseEdiXmlUbl_bis3Model = PurchaseEdiXmlUbl_bis3Model;
-class PurchaseInvoiceLinkWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'purchase.invoice.link.wizard';
-    }
-}
-exports.PurchaseInvoiceLinkWizardModel = PurchaseInvoiceLinkWizardModel;
 class PurchaseOrderLineModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -3979,20 +3252,6 @@ class QualityAlertModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.QualityAlertModel = QualityAlertModel;
-class QualityCheckOnDemandModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'quality.check.on.demand';
-    }
-}
-exports.QualityCheckOnDemandModel = QualityCheckOnDemandModel;
-class QualityCheckSpreadsheetModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'quality.check.spreadsheet';
-    }
-}
-exports.QualityCheckSpreadsheetModel = QualityCheckSpreadsheetModel;
 class QualityCheckModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4000,13 +3259,6 @@ class QualityCheckModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.QualityCheckModel = QualityCheckModel;
-class QualityCheckWizardModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'quality.check.wizard';
-    }
-}
-exports.QualityCheckWizardModel = QualityCheckWizardModel;
 class QualityPointTest_typeModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4028,13 +3280,6 @@ class QualityReasonModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.QualityReasonModel = QualityReasonModel;
-class QualitySpreadsheetTemplateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'quality.spreadsheet.template';
-    }
-}
-exports.QualitySpreadsheetTemplateModel = QualitySpreadsheetTemplateModel;
 class QualityTagModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4049,41 +3294,6 @@ class QuotationDocumentModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.QuotationDocumentModel = QuotationDocumentModel;
-class RatingMixinModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'rating.mixin';
-    }
-}
-exports.RatingMixinModel = RatingMixinModel;
-class RatingParentMixinModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'rating.parent.mixin';
-    }
-}
-exports.RatingParentMixinModel = RatingParentMixinModel;
-class RatingRatingModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'rating.rating';
-    }
-}
-exports.RatingRatingModel = RatingRatingModel;
-class RepairOrderModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'repair.order';
-    }
-}
-exports.RepairOrderModel = RepairOrderModel;
-class RepairTagsModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'repair.tags';
-    }
-}
-exports.RepairTagsModel = RepairTagsModel;
 class ReportAccountReport_hash_integrityModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4104,14 +3314,16 @@ class ReportAccountReport_invoice_with_paymentsModel extends odoo_1.BaseOdooMode
         this.model = 'report.account.report_invoice_with_payments';
     }
 }
-exports.ReportAccountReport_invoice_with_paymentsModel = ReportAccountReport_invoice_with_paymentsModel;
+exports.ReportAccountReport_invoice_with_paymentsModel =
+    ReportAccountReport_invoice_with_paymentsModel;
 class ReportAccount_batch_paymentPrint_batch_paymentModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
         this.model = 'report.account_batch_payment.print_batch_payment';
     }
 }
-exports.ReportAccount_batch_paymentPrint_batch_paymentModel = ReportAccount_batch_paymentPrint_batch_paymentModel;
+exports.ReportAccount_batch_paymentPrint_batch_paymentModel =
+    ReportAccount_batch_paymentPrint_batch_paymentModel;
 class ReportBaseReport_irmodulereferenceModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4119,20 +3331,6 @@ class ReportBaseReport_irmodulereferenceModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.ReportBaseReport_irmodulereferenceModel = ReportBaseReport_irmodulereferenceModel;
-class ReportHr_holidaysReport_holidayssummaryModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'report.hr_holidays.report_holidayssummary';
-    }
-}
-exports.ReportHr_holidaysReport_holidayssummaryModel = ReportHr_holidaysReport_holidayssummaryModel;
-class ReportHr_payrollContribution_registerModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'report.hr_payroll.contribution_register';
-    }
-}
-exports.ReportHr_payrollContribution_registerModel = ReportHr_payrollContribution_registerModel;
 class ReportHr_skillsReport_employee_cvModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4167,14 +3365,18 @@ class ReportMrp_account_enterpriseMrp_cost_structureModel extends odoo_1.BaseOdo
         this.model = 'report.mrp_account_enterprise.mrp_cost_structure';
     }
 }
-exports.ReportMrp_account_enterpriseMrp_cost_structureModel = ReportMrp_account_enterpriseMrp_cost_structureModel;
-class ReportMrp_account_enterpriseProduct_template_cost_structureModel extends odoo_1.BaseOdooModel {
+exports.ReportMrp_account_enterpriseMrp_cost_structureModel =
+    ReportMrp_account_enterpriseMrp_cost_structureModel;
+class ReportMrp_account_enterpriseProduct_template_cost_structureModel
+    extends odoo_1.BaseOdooModel
+{
     constructor() {
         super(...arguments);
         this.model = 'report.mrp_account_enterprise.product_template_cost_structure';
     }
 }
-exports.ReportMrp_account_enterpriseProduct_template_cost_structureModel = ReportMrp_account_enterpriseProduct_template_cost_structureModel;
+exports.ReportMrp_account_enterpriseProduct_template_cost_structureModel =
+    ReportMrp_account_enterpriseProduct_template_cost_structureModel;
 class ReportPaperformatModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4195,63 +3397,40 @@ class ReportProductReport_producttemplatelabel2x7Model extends odoo_1.BaseOdooMo
         this.model = 'report.product.report_producttemplatelabel2x7';
     }
 }
-exports.ReportProductReport_producttemplatelabel2x7Model = ReportProductReport_producttemplatelabel2x7Model;
+exports.ReportProductReport_producttemplatelabel2x7Model =
+    ReportProductReport_producttemplatelabel2x7Model;
 class ReportProductReport_producttemplatelabel4x12Model extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
         this.model = 'report.product.report_producttemplatelabel4x12';
     }
 }
-exports.ReportProductReport_producttemplatelabel4x12Model = ReportProductReport_producttemplatelabel4x12Model;
+exports.ReportProductReport_producttemplatelabel4x12Model =
+    ReportProductReport_producttemplatelabel4x12Model;
 class ReportProductReport_producttemplatelabel4x12nopriceModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
         this.model = 'report.product.report_producttemplatelabel4x12noprice';
     }
 }
-exports.ReportProductReport_producttemplatelabel4x12nopriceModel = ReportProductReport_producttemplatelabel4x12nopriceModel;
+exports.ReportProductReport_producttemplatelabel4x12nopriceModel =
+    ReportProductReport_producttemplatelabel4x12nopriceModel;
 class ReportProductReport_producttemplatelabel4x7Model extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
         this.model = 'report.product.report_producttemplatelabel4x7';
     }
 }
-exports.ReportProductReport_producttemplatelabel4x7Model = ReportProductReport_producttemplatelabel4x7Model;
+exports.ReportProductReport_producttemplatelabel4x7Model =
+    ReportProductReport_producttemplatelabel4x7Model;
 class ReportProductReport_producttemplatelabel_dymoModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
         this.model = 'report.product.report_producttemplatelabel_dymo';
     }
 }
-exports.ReportProductReport_producttemplatelabel_dymoModel = ReportProductReport_producttemplatelabel_dymoModel;
-class ReportProjectTaskUserModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'report.project.task.user';
-    }
-}
-exports.ReportProjectTaskUserModel = ReportProjectTaskUserModel;
-class ReportQuality_controlQuality_worksheetModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'report.quality_control.quality_worksheet';
-    }
-}
-exports.ReportQuality_controlQuality_worksheetModel = ReportQuality_controlQuality_worksheetModel;
-class ReportQuality_controlQuality_worksheet_internalModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'report.quality_control.quality_worksheet_internal';
-    }
-}
-exports.ReportQuality_controlQuality_worksheet_internalModel = ReportQuality_controlQuality_worksheet_internalModel;
-class ReportSignGreen_savings_reportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'report.sign.green_savings_report';
-    }
-}
-exports.ReportSignGreen_savings_reportModel = ReportSignGreen_savings_reportModel;
+exports.ReportProductReport_producttemplatelabel_dymoModel =
+    ReportProductReport_producttemplatelabel_dymoModel;
 class ReportStockLabel_lot_template_viewModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4287,13 +3466,6 @@ class ReportStockReport_stock_ruleModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.ReportStockReport_stock_ruleModel = ReportStockReport_stock_ruleModel;
-class RequestAppraisalModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'request.appraisal';
-    }
-}
-exports.RequestAppraisalModel = RequestAppraisalModel;
 class ResBankModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4532,27 +3704,6 @@ class ResourceResourceModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.ResourceResourceModel = ResourceResourceModel;
-class RoomBookingModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'room.booking';
-    }
-}
-exports.RoomBookingModel = RoomBookingModel;
-class RoomOfficeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'room.office';
-    }
-}
-exports.RoomOfficeModel = RoomOfficeModel;
-class RoomRoomModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'room.room';
-    }
-}
-exports.RoomRoomModel = RoomRoomModel;
 class SaleAdvancePaymentInvModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -4679,104 +3830,6 @@ class ShippingInformationUpdaterMixinModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.ShippingInformationUpdaterMixinModel = ShippingInformationUpdaterMixinModel;
-class SignDuplicateTemplatePdfModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.duplicate.template.pdf';
-    }
-}
-exports.SignDuplicateTemplatePdfModel = SignDuplicateTemplatePdfModel;
-class SignItemOptionModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.item.option';
-    }
-}
-exports.SignItemOptionModel = SignItemOptionModel;
-class SignItemRadioSetModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.item.radio.set';
-    }
-}
-exports.SignItemRadioSetModel = SignItemRadioSetModel;
-class SignItemRoleModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.item.role';
-    }
-}
-exports.SignItemRoleModel = SignItemRoleModel;
-class SignItemModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.item';
-    }
-}
-exports.SignItemModel = SignItemModel;
-class SignItemTypeModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.item.type';
-    }
-}
-exports.SignItemTypeModel = SignItemTypeModel;
-class SignLogModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.log';
-    }
-}
-exports.SignLogModel = SignLogModel;
-class SignRequestItemModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.request.item';
-    }
-}
-exports.SignRequestItemModel = SignRequestItemModel;
-class SignRequestItemValueModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.request.item.value';
-    }
-}
-exports.SignRequestItemValueModel = SignRequestItemValueModel;
-class SignRequestModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.request';
-    }
-}
-exports.SignRequestModel = SignRequestModel;
-class SignSendRequestSignerModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.send.request.signer';
-    }
-}
-exports.SignSendRequestSignerModel = SignSendRequestSignerModel;
-class SignSendRequestModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.send.request';
-    }
-}
-exports.SignSendRequestModel = SignSendRequestModel;
-class SignTemplateTagModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.template.tag';
-    }
-}
-exports.SignTemplateTagModel = SignTemplateTagModel;
-class SignTemplateModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'sign.template';
-    }
-}
-exports.SignTemplateModel = SignTemplateModel;
 class SmsAccountCodeModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -5323,13 +4376,6 @@ class StockWarehouseModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.StockWarehouseModel = StockWarehouseModel;
-class StockWarnInsufficientQtyRepairModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'stock.warn.insufficient.qty.repair';
-    }
-}
-exports.StockWarnInsufficientQtyRepairModel = StockWarnInsufficientQtyRepairModel;
 class StockWarnInsufficientQtyScrapModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -5428,34 +4474,6 @@ class TemplateResetMixinModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.TemplateResetMixinModel = TemplateResetMixinModel;
-class TimerMixinModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'timer.mixin';
-    }
-}
-exports.TimerMixinModel = TimerMixinModel;
-class TimerTimerModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'timer.timer';
-    }
-}
-exports.TimerTimerModel = TimerTimerModel;
-class TimesheetGridMixinModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'timesheet.grid.mixin';
-    }
-}
-exports.TimesheetGridMixinModel = TimesheetGridMixinModel;
-class TimesheetsAnalysisReportModel extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'timesheets.analysis.report';
-    }
-}
-exports.TimesheetsAnalysisReportModel = TimesheetsAnalysisReportModel;
 class UomCategoryModel extends odoo_1.BaseOdooModel {
     constructor() {
         super(...arguments);
@@ -5582,10 +4600,3 @@ class WizardIrModelMenuCreateModel extends odoo_1.BaseOdooModel {
     }
 }
 exports.WizardIrModelMenuCreateModel = WizardIrModelMenuCreateModel;
-class X_stock_picking_line_6a2c5Model extends odoo_1.BaseOdooModel {
-    constructor() {
-        super(...arguments);
-        this.model = 'x_stock_picking_line_6a2c5';
-    }
-}
-exports.X_stock_picking_line_6a2c5Model = X_stock_picking_line_6a2c5Model;

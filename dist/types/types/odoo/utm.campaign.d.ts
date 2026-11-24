@@ -11,10 +11,10 @@ export interface TUtmCampaign {
     is_auto_campaign?: boolean;
     name: string;
     quotation_count?: number;
-    stage_id: number | false;
+    stage_id?: number | false;
     tag_ids?: number[];
     title: string;
-    user_id: number | false;
+    user_id?: number | false;
     write_date?: string;
     write_uid?: number | false;
 }

@@ -8,7 +8,7 @@ export interface TPaymentProviderOnboardingWizard {
     journal_name?: string;
     manual_name?: string;
     manual_post_msg?: string;
-    payment_method?: string;
+    payment_method?: 'stripe' | 'paypal' | 'manual';
     paypal_email_account?: string;
     write_date?: string;
     write_uid?: number | false;

@@ -1,5 +1,5 @@
 export interface TResUsersIdentitycheck {
-    auth_method?: string;
+    auth_method?: 'password';
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;

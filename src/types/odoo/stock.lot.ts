@@ -1,9 +1,9 @@
 export interface TStockLot {
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -33,7 +33,7 @@ export interface TStockLot {
     message_needaction_counter?: number;
     message_partner_ids?: number[];
     my_activity_date_deadline?: string;
-    name: string;
+    name?: string;
     note?: string;
     product_id: number | false;
     product_qty?: number;

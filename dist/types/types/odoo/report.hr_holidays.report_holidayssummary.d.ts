@@ -1,2 +1,0 @@
-export interface TReportHr_holidaysReport_holidayssummary {
-}

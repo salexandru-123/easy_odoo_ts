@@ -7,7 +7,19 @@ export interface TIrActionsAct_windowView {
     multi?: boolean;
     sequence?: number;
     view_id?: number | false;
-    view_mode: string;
+    view_mode:
+        | 'list'
+        | 'form'
+        | 'graph'
+        | 'pivot'
+        | 'calendar'
+        | 'kanban'
+        | 'cohort'
+        | 'gantt'
+        | 'grid'
+        | 'hierarchy'
+        | 'map'
+        | 'activity';
     write_date?: string;
     write_uid?: number | false;
 }

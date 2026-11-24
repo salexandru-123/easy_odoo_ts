@@ -17,7 +17,16 @@ export interface TBankRecWidgetLine {
     display_stroked_amount_currency?: boolean;
     display_stroked_balance?: boolean;
     distribution_analytic_account_ids?: number[];
-    flag?: string;
+    flag?:
+        | 'liquidity'
+        | 'new_aml'
+        | 'aml'
+        | 'exchange_diff'
+        | 'tax_line'
+        | 'manual'
+        | 'early_payment'
+        | 'auto_balance'
+        | 'new_batch';
     force_price_included_taxes?: boolean;
     group_tax_id?: number | false;
     id?: number;

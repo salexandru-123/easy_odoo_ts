@@ -5,7 +5,7 @@ export interface TUpdateProductAttributeValue {
     display_name?: string;
     id?: number;
     message?: string;
-    mode?: string;
+    mode?: 'add' | 'update_extra_price';
     product_count?: number;
     write_date?: string;
     write_uid?: number | false;

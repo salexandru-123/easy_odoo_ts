@@ -1,16 +1,16 @@
 export interface TAccountAnalyticLine {
     account_id?: number | false;
-    amount: number;
+    amount?: number;
     analytic_distribution?: unknown;
     analytic_precision?: number;
     auto_account_id?: number | false;
-    category?: string;
+    category?: 'other' | 'invoice' | 'vendor_bill' | 'manufacturing_order';
     code?: string;
-    company_id: number | false;
+    company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     currency_id?: number | false;
-    date: string;
+    date?: string;
     display_name?: string;
     employee_id?: number | false;
     general_account_id?: number | false;

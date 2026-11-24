@@ -5,7 +5,7 @@ export interface TQualityPoint {
     bom_product_ids?: number[];
     check_count?: number;
     check_ids?: number[];
-    company_id: number | false;
+    company_id?: number | false;
     component_id?: number | false;
     component_ids?: number[];
     create_date?: string;
@@ -24,7 +24,7 @@ export interface TQualityPoint {
     message_needaction?: boolean;
     message_needaction_counter?: number;
     message_partner_ids?: number[];
-    name: string;
+    name?: string;
     note?: string;
     operation_id?: number | false;
     picking_type_ids: number[];
@@ -32,11 +32,11 @@ export interface TQualityPoint {
     product_ids?: number[];
     reason?: string;
     sequence?: number;
-    source_document?: string;
-    team_id: number | false;
-    test_report_type: string;
+    source_document?: 'operation' | 'step';
+    team_id?: number | false;
+    test_report_type?: 'pdf' | 'zpl';
     test_type?: string;
-    test_type_id: number | false;
+    test_type_id?: number | false;
     title?: string;
     user_id?: number | false;
     website_message_ids?: number[];

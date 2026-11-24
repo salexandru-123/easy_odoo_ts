@@ -14,7 +14,7 @@ export interface TResourceCalendar {
     name: string;
     two_weeks_calendar?: boolean;
     two_weeks_explanation?: string;
-    tz: string;
+    tz?: '';
     tz_offset?: string;
     write_date?: string;
     write_uid?: number | false;

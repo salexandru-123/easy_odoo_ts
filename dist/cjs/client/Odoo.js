@@ -56,6 +56,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 exports.Odoo = void 0;
 const odoo_xmlrpc_ts_1 = require('odoo-xmlrpc-ts');
 const Models = __importStar(require('../models'));
+const odoo_1 = require('../models/odoo');
 // type ModelName = (typeof Models)[keyof typeof Models];
 class Odoo {
     /**
@@ -68,7 +69,7 @@ class Odoo {
                 .filter(
                     ([_, model]) =>
                         typeof model === 'function' &&
-                        model.prototype instanceof Models.BaseOdooModel,
+                        model.prototype instanceof odoo_1.BaseOdooModel,
                 )
                 .map(([name, Model]) => [
                     name.replace(/Model$/, '').replace(/^./, (char) => char.toLowerCase()),

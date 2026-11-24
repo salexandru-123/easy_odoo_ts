@@ -2,8 +2,9 @@ export interface TAccountAnalyticApplicability {
     account_prefix?: string;
     account_prefix_placeholder?: string;
     analytic_plan_id?: number | false;
-    applicability: string;
-    business_domain: string;
+    applicability: 'optional' | 'mandatory' | 'unavailable';
+    business_domain:
+        'general' | 'invoice' | 'bill' | 'purchase_order' | 'manufacturing_order' | 'sale_order';
     company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;

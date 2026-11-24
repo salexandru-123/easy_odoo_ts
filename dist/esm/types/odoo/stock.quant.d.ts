@@ -2,7 +2,7 @@ export interface TStockQuant {
     accounting_date?: string;
     available_quantity?: number;
     company_id?: number | false;
-    cost_method?: string;
+    cost_method?: '';
     create_date?: string;
     create_uid?: number | false;
     currency_id?: number | false;
@@ -11,7 +11,7 @@ export interface TStockQuant {
     dummy_id?: string;
     id?: number;
     image_1920?: string | false;
-    in_date: string;
+    in_date?: string;
     inventory_date?: string;
     inventory_diff_quantity?: number;
     inventory_quantity?: number;
@@ -32,10 +32,10 @@ export interface TStockQuant {
     product_tmpl_id?: number | false;
     product_uom_id?: number | false;
     quantity?: number;
-    reserved_quantity: number;
+    reserved_quantity?: number;
     sn_duplicated?: boolean;
     storage_category_id?: number | false;
-    tracking?: string;
+    tracking?: '';
     user_id?: number | false;
     value?: number;
     warehouse_id?: number | false;

@@ -1,10 +1,10 @@
 export interface TMrpBom {
     active?: boolean;
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -14,7 +14,7 @@ export interface TMrpBom {
     byproduct_ids?: number[];
     code?: string;
     company_id?: number | false;
-    consumption: string;
+    consumption?: 'flexible' | 'warning' | 'strict';
     create_date?: string;
     create_uid?: number | false;
     days_to_prepare_mo?: number;
@@ -37,13 +37,13 @@ export interface TMrpBom {
     possible_product_template_attribute_value_ids?: number[];
     produce_delay?: number;
     product_id?: number | false;
-    product_qty: number;
+    product_qty?: number;
     product_tmpl_id: number | false;
     product_uom_category_id?: number | false;
-    product_uom_id: number | false;
-    ready_to_produce: string;
+    product_uom_id?: number | false;
+    ready_to_produce?: 'all_available' | 'asap';
     sequence?: number;
-    type: string;
+    type?: 'normal' | 'phantom';
     website_message_ids?: number[];
     write_date?: string;
     write_uid?: number | false;

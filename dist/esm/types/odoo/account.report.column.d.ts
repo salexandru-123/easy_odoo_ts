@@ -5,7 +5,15 @@ export interface TAccountReportColumn {
     custom_audit_action_id?: number | false;
     display_name?: string;
     expression_label: string;
-    figure_type: string;
+    figure_type?:
+        | 'monetary'
+        | 'percentage'
+        | 'integer'
+        | 'float'
+        | 'date'
+        | 'datetime'
+        | 'boolean'
+        | 'string';
     id?: number;
     name: string;
     report_id?: number | false;

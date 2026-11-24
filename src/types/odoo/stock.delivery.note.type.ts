@@ -1,6 +1,6 @@
 export interface TStockDeliveryNoteType {
     active?: boolean;
-    code: string;
+    code?: 'incoming' | 'outgoing' | 'internal';
     company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;

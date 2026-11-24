@@ -16,7 +16,7 @@ export interface TAccountBankStatementLineTransient {
     partner_name?: string;
     payment_ref?: string;
     sequence?: number;
-    state?: string;
+    state?: 'pending' | 'posted';
     transaction_details?: string;
     write_date?: string;
     write_uid?: number | false;

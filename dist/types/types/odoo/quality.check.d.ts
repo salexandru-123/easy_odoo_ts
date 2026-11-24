@@ -1,9 +1,9 @@
 export interface TQualityCheck {
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -12,13 +12,13 @@ export interface TQualityCheck {
     additional_note?: string;
     alert_count?: number;
     alert_ids?: number[];
-    company_id: number | false;
+    company_id?: number | false;
     component_id?: number | false;
     component_qty_to_do?: number;
     component_remaining_qty?: number;
-    component_tracking?: string;
+    component_tracking?: '';
     component_uom_id?: number | false;
-    consumption?: string;
+    consumption?: '';
     control_date?: string;
     create_date?: string;
     create_uid?: number | false;
@@ -53,12 +53,12 @@ export interface TQualityCheck {
     point_id?: number | false;
     previous_check_id?: number | false;
     product_id?: number | false;
-    product_tracking?: string;
+    product_tracking?: '';
     production_id?: number | false;
     qty_done?: number;
-    quality_state?: string;
+    quality_state?: 'none' | 'pass' | 'fail';
     result?: string;
-    source_document?: string;
+    source_document?: '';
     team_id: number | false;
     test_type?: string;
     test_type_id: number | false;
@@ -66,7 +66,7 @@ export interface TQualityCheck {
     user_id?: number | false;
     website_message_ids?: number[];
     workcenter_id?: number | false;
-    working_state?: string;
+    working_state?: '';
     workorder_id?: number | false;
     worksheet_document?: string | false;
     worksheet_page?: number;

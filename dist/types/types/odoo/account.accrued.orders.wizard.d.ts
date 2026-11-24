@@ -5,7 +5,7 @@ export interface TAccountAccruedOrdersWizard {
     create_date?: string;
     create_uid?: number | false;
     currency_id?: number | false;
-    date: string;
+    date?: string;
     display_amount?: boolean;
     display_name?: string;
     id?: number;

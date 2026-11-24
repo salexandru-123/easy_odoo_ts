@@ -11,7 +11,7 @@ export interface TStudioApprovalEntry {
     reference?: string;
     res_id: unknown;
     rule_id: number | false;
-    user_id: number | false;
+    user_id?: number | false;
     write_date?: string;
     write_uid?: number | false;
 }

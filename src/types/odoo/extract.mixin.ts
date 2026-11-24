@@ -2,7 +2,15 @@ export interface TExtractMixin {
     extract_can_show_send_button?: boolean;
     extract_document_uuid?: string;
     extract_error_message?: string;
-    extract_state?: string;
+    extract_state?:
+        | 'no_extract_requested'
+        | 'not_enough_credit'
+        | 'error_status'
+        | 'waiting_extraction'
+        | 'extract_not_ready'
+        | 'waiting_validation'
+        | 'to_validate'
+        | 'done';
     extract_state_processed?: boolean;
     extract_status?: string;
     has_message?: boolean;

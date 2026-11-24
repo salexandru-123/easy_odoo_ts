@@ -5,7 +5,7 @@ export interface TBaseModuleInstallRequest {
     display_name?: string;
     id?: number;
     module_id: number | false;
-    user_id: number | false;
+    user_id?: number | false;
     user_ids?: number[];
     write_date?: string;
     write_uid?: number | false;

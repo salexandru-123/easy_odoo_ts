@@ -4,15 +4,15 @@ export interface TBaseLanguageExport {
     data?: string | false;
     display_name?: string;
     domain?: string;
-    export_type: string;
-    format: string;
+    export_type?: 'module' | 'model';
+    format?: 'csv' | 'po' | 'tgz';
     id?: number;
-    lang: string;
+    lang?: '';
     model_id?: number | false;
     model_name?: string;
     modules?: number[];
     name?: string;
-    state?: string;
+    state?: 'choose' | 'get';
     write_date?: string;
     write_uid?: number | false;
 }

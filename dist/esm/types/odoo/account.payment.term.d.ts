@@ -9,7 +9,7 @@ export interface TAccountPaymentTerm {
     display_name?: string;
     display_on_invoice?: boolean;
     early_discount?: boolean;
-    early_pay_discount_computation?: string;
+    early_pay_discount_computation?: 'included' | 'excluded' | 'mixed';
     example_amount?: number;
     example_date?: string;
     example_invalid?: boolean;
@@ -20,7 +20,7 @@ export interface TAccountPaymentTerm {
     line_ids?: number[];
     name: string;
     note?: string;
-    sequence: number;
+    sequence?: number;
     write_date?: string;
     write_uid?: number | false;
 }

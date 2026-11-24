@@ -3,12 +3,12 @@ export interface TStockWarehouse {
     buy_pull_id?: number | false;
     buy_to_resupply?: boolean;
     code: string;
-    company_id: number | false;
+    company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     crossdock_route_id?: number | false;
     delivery_route_id?: number | false;
-    delivery_steps: string;
+    delivery_steps?: 'ship_only' | 'pick_ship' | 'pick_pack_ship';
     display_name?: string;
     id?: number;
     in_type_id?: number | false;
@@ -17,10 +17,10 @@ export interface TStockWarehouse {
     manu_type_id?: number | false;
     manufacture_mto_pull_id?: number | false;
     manufacture_pull_id?: number | false;
-    manufacture_steps: string;
+    manufacture_steps?: 'mrp_one_step' | 'pbm' | 'pbm_sam';
     manufacture_to_resupply?: boolean;
     mto_pull_id?: number | false;
-    name: string;
+    name?: string;
     out_type_id?: number | false;
     pack_type_id?: number | false;
     partner_id?: number | false;
@@ -31,7 +31,7 @@ export interface TStockWarehouse {
     pick_type_id?: number | false;
     qc_type_id?: number | false;
     reception_route_id?: number | false;
-    reception_steps: string;
+    reception_steps?: 'one_step' | 'two_steps' | 'three_steps';
     resupply_route_ids?: number[];
     resupply_wh_ids?: number[];
     route_ids?: number[];

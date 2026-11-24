@@ -6,14 +6,14 @@ export interface TStockMove {
     availability?: number;
     bom_line_id?: number | false;
     byproduct_id?: number | false;
-    company_id: number | false;
+    company_id?: number | false;
     consume_unbuild_id?: number | false;
     cost_share?: number;
     create_date?: string;
     create_uid?: number | false;
     created_production_id?: number | false;
     created_purchase_line_ids?: number[];
-    date: string;
+    date?: string;
     date_deadline?: string;
     delay_alert_date?: string;
     description_bom_line?: string;
@@ -24,7 +24,7 @@ export interface TStockMove {
     forecast_availability?: number;
     forecast_expected_date?: string;
     group_id?: number | false;
-    has_tracking?: string;
+    has_tracking?: '';
     id?: number;
     is_done?: boolean;
     is_initial_demand_editable?: boolean;
@@ -33,10 +33,10 @@ export interface TStockMove {
     is_quantity_done_editable?: boolean;
     is_storable?: boolean;
     location_dest_id: number | false;
-    location_dest_usage?: string;
+    location_dest_usage?: '';
     location_final_id?: number | false;
     location_id: number | false;
-    location_usage?: string;
+    location_usage?: '';
     lot_ids?: number[];
     manual_consumption?: boolean;
     move_dest_ids?: number[];
@@ -55,13 +55,13 @@ export interface TStockMove {
     package_level_id?: number | false;
     partner_id?: number | false;
     picked?: boolean;
-    picking_code?: string;
+    picking_code?: '';
     picking_id?: number | false;
     picking_type_entire_packs?: boolean;
     picking_type_id?: number | false;
     price_unit?: number;
-    priority?: string;
-    procure_method: string;
+    priority?: '0' | '1';
+    procure_method?: 'make_to_stock' | 'make_to_order';
     product_id: number | false;
     product_packaging_id?: number | false;
     product_packaging_qty?: number;
@@ -71,7 +71,7 @@ export interface TStockMove {
     product_tmpl_id?: number | false;
     product_uom: number | false;
     product_uom_category_id?: number | false;
-    product_uom_qty: number;
+    product_uom_qty?: number;
     product_virtual_available?: number;
     production_id?: number | false;
     propagate_cancel?: boolean;
@@ -94,7 +94,8 @@ export interface TStockMove {
     show_lots_text?: boolean;
     show_operations?: boolean;
     show_quant?: boolean;
-    state?: string;
+    state?:
+        'draft' | 'waiting' | 'confirmed' | 'partially_available' | 'assigned' | 'done' | 'cancel';
     stock_valuation_layer_ids?: number[];
     to_refund?: boolean;
     unbuild_id?: number | false;

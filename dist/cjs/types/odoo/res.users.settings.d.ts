@@ -1,5 +1,5 @@
 export interface TResUsersSettings {
-    channel_notifications?: string;
+    channel_notifications?: 'all' | 'no_notif';
     create_date?: string;
     create_uid?: number | false;
     display_name?: string;

@@ -4,7 +4,7 @@ export interface TAccountFinancialYearOp {
     create_uid?: number | false;
     display_name?: string;
     fiscalyear_last_day: number;
-    fiscalyear_last_month: string;
+    fiscalyear_last_month: '';
     id?: number;
     opening_date: string;
     opening_move_posted?: boolean;

@@ -14,9 +14,16 @@ export interface TAccountInvoiceReport {
     invoice_user_id?: number | false;
     journal_id?: number | false;
     move_id?: number | false;
-    move_type?: string;
+    move_type?: 'out_invoice' | 'in_invoice' | 'out_refund' | 'in_refund';
     partner_id?: number | false;
-    payment_state?: string;
+    payment_state?:
+        | 'not_paid'
+        | 'in_payment'
+        | 'paid'
+        | 'partial'
+        | 'reversed'
+        | 'blocked'
+        | 'invoicing_legacy';
     price_average?: number;
     price_margin?: number;
     price_subtotal?: number;
@@ -26,6 +33,6 @@ export interface TAccountInvoiceReport {
     product_id?: number | false;
     product_uom_id?: number | false;
     quantity?: number;
-    state?: string;
+    state?: 'draft' | 'posted' | 'cancel';
     team_id?: number | false;
 }

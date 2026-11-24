@@ -30,7 +30,7 @@ export interface TStockLocation {
     replenish_location?: boolean;
     scrap_location?: boolean;
     storage_category_id?: number | false;
-    usage: string;
+    usage?: 'supplier' | 'view' | 'internal' | 'customer' | 'inventory' | 'production' | 'transit';
     valuation_in_account_id?: number | false;
     valuation_out_account_id?: number | false;
     warehouse_id?: number | false;

@@ -11,7 +11,7 @@ export interface TMrpBomByproduct {
     operation_id?: number | false;
     possible_bom_product_template_attribute_value_ids?: number[];
     product_id: number | false;
-    product_qty: number;
+    product_qty?: number;
     product_uom_category_id?: number | false;
     product_uom_id: number | false;
     sequence?: number;

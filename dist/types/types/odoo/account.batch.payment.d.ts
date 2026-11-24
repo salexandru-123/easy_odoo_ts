@@ -1,9 +1,9 @@
 export interface TAccountBatchPayment {
     activity_date_deadline?: string;
-    activity_exception_decoration?: string;
+    activity_exception_decoration?: 'warning' | 'danger';
     activity_exception_icon?: string;
     activity_ids?: number[];
-    activity_state?: string;
+    activity_state?: 'overdue' | 'today' | 'planned';
     activity_summary?: string;
     activity_type_icon?: string;
     activity_type_id?: number | false;
@@ -12,13 +12,13 @@ export interface TAccountBatchPayment {
     amount_residual?: number;
     amount_residual_currency?: number;
     available_payment_method_ids?: number[];
-    batch_type: string;
+    batch_type?: 'inbound' | 'outbound';
     company_currency_id?: number | false;
     company_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
     currency_id?: number | false;
-    date: string;
+    date?: string;
     display_name?: string;
     export_file?: string | false;
     export_file_create_date?: string;
@@ -44,7 +44,7 @@ export interface TAccountBatchPayment {
     payment_ids_domain?: string;
     payment_method_code?: string;
     payment_method_id?: number | false;
-    state?: string;
+    state?: 'draft' | 'sent' | 'reconciled';
     website_message_ids?: number[];
     write_date?: string;
     write_uid?: number | false;

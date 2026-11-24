@@ -16,12 +16,12 @@ export interface TMrpBomLine {
     parent_product_tmpl_id?: number | false;
     possible_bom_product_template_attribute_value_ids?: number[];
     product_id: number | false;
-    product_qty: number;
+    product_qty?: number;
     product_tmpl_id?: number | false;
     product_uom_category_id?: number | false;
-    product_uom_id: number | false;
+    product_uom_id?: number | false;
     sequence?: number;
-    tracking?: string;
+    tracking?: '';
     write_date?: string;
     write_uid?: number | false;
 }

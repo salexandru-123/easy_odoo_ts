@@ -1,5 +1,5 @@
 export interface TStockStorageCategory {
-    allow_new_product: string;
+    allow_new_product?: 'empty' | 'same' | 'mixed';
     capacity_ids?: number[];
     company_id?: number | false;
     create_date?: string;

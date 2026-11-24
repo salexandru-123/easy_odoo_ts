@@ -32,7 +32,7 @@ export interface TStudioApprovalRule {
     model_id: number | false;
     model_name?: string;
     name?: string;
-    notification_order?: string;
+    notification_order?: '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9';
     users_to_notify?: number[];
     website_message_ids?: number[];
     write_date?: string;

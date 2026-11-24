@@ -6,7 +6,7 @@ export interface TProductTemplateAttributeValue {
     create_uid?: number | false;
     currency_id?: number | false;
     display_name?: string;
-    display_type?: string;
+    display_type?: '';
     exclude_for?: number[];
     html_color?: string;
     id?: number;

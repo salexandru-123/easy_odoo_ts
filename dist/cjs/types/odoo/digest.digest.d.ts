@@ -19,8 +19,8 @@ export interface TDigestDigest {
     kpi_res_users_connected_value?: number;
     name: string;
     next_run_date?: string;
-    periodicity: string;
-    state?: string;
+    periodicity?: 'daily' | 'weekly' | 'monthly' | 'quarterly';
+    state?: 'activated' | 'deactivated';
     user_ids?: number[];
     write_date?: string;
     write_uid?: number | false;

@@ -7,7 +7,7 @@ export interface TBarcodeNomenclature {
     is_gs1_nomenclature?: boolean;
     name: string;
     rule_ids?: number[];
-    upc_ean_conv: string;
+    upc_ean_conv?: 'none' | 'ean2upc' | 'upc2ean' | 'always';
     write_date?: string;
     write_uid?: number | false;
 }

@@ -1,7 +1,14 @@
 export interface TResCompany {
     account_cash_basis_base_account_id?: number | false;
     account_check_printing_date_label?: boolean;
-    account_check_printing_layout?: string;
+    account_check_printing_layout?:
+        | 'disabled'
+        | 'l10n_us_check_printing.action_print_check_top'
+        | 'l10n_us_check_printing.action_print_check_middle'
+        | 'l10n_us_check_printing.action_print_check_bottom'
+        | 'l10n_us_check_printing.action_print_blank_check_top'
+        | 'l10n_us_check_printing.action_print_blank_check_middle'
+        | 'l10n_us_check_printing.action_print_blank_check_bottom';
     account_check_printing_margin_left?: number;
     account_check_printing_margin_right?: number;
     account_check_printing_margin_top?: number;
@@ -14,10 +21,10 @@ export interface TResCompany {
     account_journal_early_pay_discount_gain_account_id?: number | false;
     account_journal_early_pay_discount_loss_account_id?: number | false;
     account_journal_suspense_account_id?: number | false;
-    account_opening_date: string;
+    account_opening_date?: string;
     account_opening_journal_id?: number | false;
     account_opening_move_id?: number | false;
-    account_price_include: string;
+    account_price_include?: 'tax_included' | 'tax_excluded';
     account_production_wip_account_id?: number | false;
     account_production_wip_overhead_account_id?: number | false;
     account_purchase_tax_id?: number | false;
@@ -30,14 +37,15 @@ export interface TResCompany {
     all_child_ids?: number[];
     anglo_saxon_accounting?: boolean;
     annual_inventory_day?: number;
-    annual_inventory_month?: string;
+    annual_inventory_month?:
+        '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | '11' | '12';
     automatic_entry_default_journal_id?: number | false;
     autopost_bills?: boolean;
     avalara_address_validation?: boolean;
     avalara_api_id?: string;
     avalara_api_key?: string;
     avalara_commit?: boolean;
-    avalara_environment: string;
+    avalara_environment?: 'sandbox' | 'production';
     avalara_use_upc?: boolean;
     background_image?: string | false;
     bank_account_code_prefix?: string;
@@ -49,7 +57,7 @@ export interface TResCompany {
     cash_account_code_prefix?: string;
     catchall_email?: string;
     catchall_formatted?: string;
-    chart_template?: string;
+    chart_template?: '';
     check_account_audit_trail?: boolean;
     child_ids?: number[];
     city?: string;
@@ -63,23 +71,53 @@ export interface TResCompany {
     create_date?: string;
     create_uid?: number | false;
     currency_exchange_journal_id?: number | false;
-    currency_id: number | false;
-    currency_interval_unit: string;
+    currency_id?: number | false;
+    currency_interval_unit?: 'manually' | 'daily' | 'weekly' | 'monthly';
     currency_next_execution_date?: string;
-    currency_provider?: string;
+    currency_provider?:
+        | 'ecb'
+        | 'xe_com'
+        | 'cbuae'
+        | 'bnb'
+        | 'bbr'
+        | 'boc'
+        | 'fta'
+        | 'mindicador'
+        | 'banrepco'
+        | 'cnb'
+        | 'cbegy'
+        | 'banguat'
+        | 'mnb'
+        | 'bi'
+        | 'boi'
+        | 'banxico'
+        | 'bnm'
+        | 'bcrp'
+        | 'nbp'
+        | 'bnr'
+        | 'srb'
+        | 'bsi'
+        | 'bot'
+        | 'tcmb'
+        | 'hmrc'
+        | 'bcu';
     days_to_purchase?: number;
     default_cash_difference_expense_account_id?: number | false;
     default_cash_difference_income_account_id?: number | false;
     default_from_email?: string;
     deferred_expense_account_id?: number | false;
-    deferred_expense_amount_computation_method: string;
+    deferred_expense_amount_computation_method?: 'day' | 'month' | 'full_months';
     deferred_expense_journal_id?: number | false;
     deferred_revenue_account_id?: number | false;
-    deferred_revenue_amount_computation_method: string;
+    deferred_revenue_amount_computation_method?: 'day' | 'month' | 'full_months';
     deferred_revenue_journal_id?: number | false;
+    display_carrier_dn_report?: boolean;
+    display_delivery_method_dn_report?: boolean;
     display_invoice_amount_total_words?: boolean;
     display_invoice_tax_company_currency?: boolean;
     display_name?: string;
+    display_ref_customer_dn_report?: boolean;
+    display_ref_order_dn_report?: boolean;
     email?: string;
     email_formatted?: string;
     email_primary_color?: string;
@@ -89,16 +127,25 @@ export interface TResCompany {
     expense_accrual_account_id?: number | false;
     expense_currency_exchange_account_id?: number | false;
     external_report_layout_id?: number | false;
-    extract_in_invoice_digitalization_mode?: string;
-    extract_out_invoice_digitalization_mode?: string;
+    extract_in_invoice_digitalization_mode?: 'no_send' | 'manual_send' | 'auto_send';
+    extract_out_invoice_digitalization_mode?: 'no_send' | 'manual_send' | 'auto_send';
     extract_single_line_per_tax?: boolean;
     fiscal_position_ids?: number[];
-    fiscalyear_last_day: number;
-    fiscalyear_last_month: string;
+    fiscalyear_last_day?: number;
+    fiscalyear_last_month?:
+        '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | '11' | '12';
     fiscalyear_lock_date?: string;
-    font?: string;
-    generate_deferred_expense_entries_method: string;
-    generate_deferred_revenue_entries_method: string;
+    font?:
+        | 'Lato'
+        | 'Roboto'
+        | 'Open_Sans'
+        | 'Montserrat'
+        | 'Oswald'
+        | 'Raleway'
+        | 'Tajawal'
+        | 'Fira_Mono';
+    generate_deferred_expense_entries_method?: 'on_validation' | 'manual';
+    generate_deferred_revenue_entries_method?: 'on_validation' | 'manual';
     hard_lock_date?: string;
     has_message?: boolean;
     has_received_warning_stock_sms?: boolean;
@@ -117,11 +164,11 @@ export interface TResCompany {
     invoice_terms_html?: string;
     invoicing_switch_threshold?: string;
     is_company_details_empty?: boolean;
-    layout_background: string;
+    layout_background?: 'Blank' | 'Demo logo' | 'Custom';
     layout_background_image?: string | false;
     logo?: string | false;
     logo_web?: string | false;
-    manufacturing_lead: number;
+    manufacturing_lead?: number;
     message_attachment_count?: number;
     message_follower_ids?: number[];
     message_has_error?: boolean;
@@ -142,12 +189,12 @@ export interface TResCompany {
     parent_path?: string;
     partner_gid?: number;
     partner_id: number | false;
-    payment_onboarding_payment_method?: string;
+    payment_onboarding_payment_method?: 'paypal' | 'stripe' | 'manual' | 'other';
     phone?: string;
-    po_double_validation?: string;
+    po_double_validation?: 'one_step' | 'two_step';
     po_double_validation_amount?: number;
-    po_lead: number;
-    po_lock?: string;
+    po_lead?: number;
+    po_lock?: 'edit' | 'lock';
     portal_confirmation_pay?: boolean;
     portal_confirmation_sign?: boolean;
     predict_bill_product?: boolean;
@@ -155,7 +202,7 @@ export interface TResCompany {
     primary_color?: string;
     purchase_lock_date?: string;
     qr_code?: boolean;
-    quick_edit_mode?: string;
+    quick_edit_mode?: 'out_invoices' | 'in_invoices' | 'out_and_in_invoices';
     quotation_validity_days?: number;
     report_footer?: string;
     report_header?: string;
@@ -165,10 +212,10 @@ export interface TResCompany {
     root_id?: number | false;
     sale_discount_product_id?: number | false;
     sale_lock_date?: string;
-    sale_onboarding_payment_method?: string;
+    sale_onboarding_payment_method?: 'digital_signature' | 'paypal' | 'stripe' | 'other' | 'manual';
     sale_order_template_id?: number | false;
     secondary_color?: string;
-    security_lead: number;
+    security_lead?: number;
     sequence?: number;
     setting_account_avatax?: boolean;
     sign_invoice?: boolean;
@@ -183,11 +230,11 @@ export interface TResCompany {
     stock_sms_confirmation_template_id?: number | false;
     street?: string;
     street2?: string;
-    tax_calculation_rounding_method?: string;
+    tax_calculation_rounding_method?: 'round_per_line' | 'round_globally';
     tax_cash_basis_journal_id?: number | false;
     tax_exigibility?: boolean;
     tax_lock_date?: string;
-    terms_type?: string;
+    terms_type?: 'plain' | 'html';
     transfer_account_code_prefix?: string;
     transfer_account_id?: number | false;
     uninstalled_l10n_module_ids?: number[];

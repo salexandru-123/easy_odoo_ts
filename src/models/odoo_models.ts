@@ -11,6 +11,7 @@ import { TAccountAnalyticPlan } from '../types/odoo/account.analytic.plan';
 import { TAccountAutoReconcileWizard } from '../types/odoo/account.auto.reconcile.wizard';
 import { TAccountAutomaticEntryWizard } from '../types/odoo/account.automatic.entry.wizard';
 import { TAccountAutopostBillsWizard } from '../types/odoo/account.autopost.bills.wizard';
+import { TAccountAvataxUniqueCode } from '../types/odoo/account.avatax.unique.code';
 import { TAccountBankSelection } from '../types/odoo/account.bank.selection';
 import { TAccountBankStatementLineTransient } from '../types/odoo/account.bank.statement.line.transient';
 import { TAccountBankStatementLine } from '../types/odoo/account.bank.statement.line';
@@ -23,7 +24,6 @@ import { TAccountCashRounding } from '../types/odoo/account.cash.rounding';
 import { TAccountChangeLockDate } from '../types/odoo/account.change.lock.date';
 import { TAccountChartTemplate } from '../types/odoo/account.chart.template';
 import { TAccountCodeMapping } from '../types/odoo/account.code.mapping';
-import { TAccountDebitNote } from '../types/odoo/account.debit.note';
 import { TAccountDuplicateTransactionWizard } from '../types/odoo/account.duplicate.transaction.wizard';
 import { TAccountEdiCommon } from '../types/odoo/account.edi.common';
 import { TAccountEdiXmlCii } from '../types/odoo/account.edi.xml.cii';
@@ -35,6 +35,7 @@ import { TAccountEdiXmlUbl_de } from '../types/odoo/account.edi.xml.ubl_de';
 import { TAccountEdiXmlUbl_efff } from '../types/odoo/account.edi.xml.ubl_efff';
 import { TAccountEdiXmlUbl_nl } from '../types/odoo/account.edi.xml.ubl_nl';
 import { TAccountEdiXmlUbl_sg } from '../types/odoo/account.edi.xml.ubl_sg';
+import { TAccountExternalTaxMixin } from '../types/odoo/account.external.tax.mixin';
 import { TAccountFinancialYearOp } from '../types/odoo/account.financial.year.op';
 import { TAccountFiscalPositionAccount } from '../types/odoo/account.fiscal.position.account';
 import { TAccountFiscalPositionTax } from '../types/odoo/account.fiscal.position.tax';
@@ -85,22 +86,19 @@ import { TAccountTaxRepartitionLine } from '../types/odoo/account.tax.repartitio
 import { TAccountTax } from '../types/odoo/account.tax';
 import { TAccountTransferModelLine } from '../types/odoo/account.transfer.model.line';
 import { TAccountTransferModel } from '../types/odoo/account.transfer.model';
-import { TAccount_edi_proxy_clientUser } from '../types/odoo/account_edi_proxy_client.user';
-import { TAccount_peppolService } from '../types/odoo/account_peppol.service';
-import { TAccount_peppolServiceWizard } from '../types/odoo/account_peppol.service.wizard';
 import { TAnalyticMixin } from '../types/odoo/analytic.mixin';
 import { TAnalyticPlanFieldsMixin } from '../types/odoo/analytic.plan.fields.mixin';
-import { TApplicantGetRefuseReason } from '../types/odoo/applicant.get.refuse.reason';
-import { TApplicantSendMail } from '../types/odoo/applicant.send.mail';
 import { TApprovalApprover } from '../types/odoo/approval.approver';
 import { TApprovalCategoryApprover } from '../types/odoo/approval.category.approver';
 import { TApprovalCategory } from '../types/odoo/approval.category';
 import { TApprovalProductLine } from '../types/odoo/approval.product.line';
 import { TApprovalRequest } from '../types/odoo/approval.request';
-import { TApprovalRequestWizard } from '../types/odoo/approval.request.wizard';
 import { TAuth_totpDevice } from '../types/odoo/auth_totp.device';
 import { TAuth_totpWizard } from '../types/odoo/auth_totp.wizard';
 import { TAvatarMixin } from '../types/odoo/avatar.mixin';
+import { TAvataxConnectionTestResult } from '../types/odoo/avatax.connection.test.result';
+import { TAvataxExemption } from '../types/odoo/avatax.exemption';
+import { TAvataxValidateAddress } from '../types/odoo/avatax.validate.address';
 import { TBankRecWidgetLine } from '../types/odoo/bank.rec.widget.line';
 import { TBankRecWidget } from '../types/odoo/bank.rec.widget';
 import { TBarcodeNomenclature } from '../types/odoo/barcode.nomenclature';
@@ -127,18 +125,6 @@ import { TBillToPoWizard } from '../types/odoo/bill.to.po.wizard';
 import { TBusBus } from '../types/odoo/bus.bus';
 import { TBusListenerMixin } from '../types/odoo/bus.listener.mixin';
 import { TBusPresence } from '../types/odoo/bus.presence';
-import { TCalendarAlarm } from '../types/odoo/calendar.alarm';
-import { TCalendarAlarm_manager } from '../types/odoo/calendar.alarm_manager';
-import { TCalendarAttendee } from '../types/odoo/calendar.attendee';
-import { TCalendarEvent } from '../types/odoo/calendar.event';
-import { TCalendarEventType } from '../types/odoo/calendar.event.type';
-import { TCalendarFilters } from '../types/odoo/calendar.filters';
-import { TCalendarPopoverDeleteWizard } from '../types/odoo/calendar.popover.delete.wizard';
-import { TCalendarProviderConfig } from '../types/odoo/calendar.provider.config';
-import { TCalendarRecurrence } from '../types/odoo/calendar.recurrence';
-import { TCandidateSendMail } from '../types/odoo/candidate.send.mail';
-import { TCertificateCertificate } from '../types/odoo/certificate.certificate';
-import { TCertificateKey } from '../types/odoo/certificate.key';
 import { TChangePasswordOwn } from '../types/odoo/change.password.own';
 import { TChangePasswordUser } from '../types/odoo/change.password.user';
 import { TChangePasswordWizard } from '../types/odoo/change.password.wizard';
@@ -149,15 +135,6 @@ import { TConfirmStockSms } from '../types/odoo/confirm.stock.sms';
 import { TCrmTag } from '../types/odoo/crm.tag';
 import { TCrmTeamMember } from '../types/odoo/crm.team.member';
 import { TCrmTeam } from '../types/odoo/crm.team';
-import { TData_cleaningModel } from '../types/odoo/data_cleaning.model';
-import { TData_cleaningRecord } from '../types/odoo/data_cleaning.record';
-import { TData_cleaningRule } from '../types/odoo/data_cleaning.rule';
-import { TData_mergeGroup } from '../types/odoo/data_merge.group';
-import { TData_mergeModel } from '../types/odoo/data_merge.model';
-import { TData_mergeRecord } from '../types/odoo/data_merge.record';
-import { TData_mergeRule } from '../types/odoo/data_merge.rule';
-import { TData_recycleModel } from '../types/odoo/data_recycle.model';
-import { TData_recycleRecord } from '../types/odoo/data_recycle.record';
 import { TDecimalPrecision } from '../types/odoo/decimal.precision';
 import { TDeliveryCarrier } from '../types/odoo/delivery.carrier';
 import { TDeliveryPriceRule } from '../types/odoo/delivery.price.rule';
@@ -169,57 +146,11 @@ import { TDiscussChannelRtcSession } from '../types/odoo/discuss.channel.rtc.ses
 import { TDiscussChannel } from '../types/odoo/discuss.channel';
 import { TDiscussGifFavorite } from '../types/odoo/discuss.gif.favorite';
 import { TDiscussVoiceMetadata } from '../types/odoo/discuss.voice.metadata';
-import { TExpenseSampleReceipt } from '../types/odoo/expense.sample.receipt';
-import { TExpenseSampleRegister } from '../types/odoo/expense.sample.register';
-import { TExportHrConfig } from '../types/odoo/export.hr.config';
-import { TExportHrOutput } from '../types/odoo/export.hr.output';
 import { TExtractMixin } from '../types/odoo/extract.mixin';
 import { TFetchmailServer } from '../types/odoo/fetchmail.server';
-import { TFleetServiceType } from '../types/odoo/fleet.service.type';
-import { TFleetVehicleAssignationLog } from '../types/odoo/fleet.vehicle.assignation.log';
-import { TFleetVehicleCostReport } from '../types/odoo/fleet.vehicle.cost.report';
-import { TFleetVehicleLogContract } from '../types/odoo/fleet.vehicle.log.contract';
-import { TFleetVehicleLogServices } from '../types/odoo/fleet.vehicle.log.services';
-import { TFleetVehicleModelBrand } from '../types/odoo/fleet.vehicle.model.brand';
-import { TFleetVehicleModelCategory } from '../types/odoo/fleet.vehicle.model.category';
-import { TFleetVehicleModel } from '../types/odoo/fleet.vehicle.model';
-import { TFleetVehicleOdometer } from '../types/odoo/fleet.vehicle.odometer';
-import { TFleetVehicleSendMail } from '../types/odoo/fleet.vehicle.send.mail';
-import { TFleetVehicleState } from '../types/odoo/fleet.vehicle.state';
-import { TFleetVehicleTag } from '../types/odoo/fleet.vehicle.tag';
-import { TFleetVehicle } from '../types/odoo/fleet.vehicle';
 import { TFormatAddressMixin } from '../types/odoo/format.address.mixin';
 import { TFormatVatLabelMixin } from '../types/odoo/format.vat.label.mixin';
 import { TGoogleGmailMixin } from '../types/odoo/google.gmail.mixin';
-import { THelpdeskSlaReportAnalysis } from '../types/odoo/helpdesk.sla.report.analysis';
-import { THelpdeskSlaStatus } from '../types/odoo/helpdesk.sla.status';
-import { THelpdeskSla } from '../types/odoo/helpdesk.sla';
-import { THelpdeskStageDeleteWizard } from '../types/odoo/helpdesk.stage.delete.wizard';
-import { THelpdeskStage } from '../types/odoo/helpdesk.stage';
-import { THelpdeskTag } from '../types/odoo/helpdesk.tag';
-import { THelpdeskTeam } from '../types/odoo/helpdesk.team';
-import { THelpdeskTicketConvertWizard } from '../types/odoo/helpdesk.ticket.convert.wizard';
-import { THelpdeskTicketReportAnalysis } from '../types/odoo/helpdesk.ticket.report.analysis';
-import { THelpdeskTicket } from '../types/odoo/helpdesk.ticket';
-import { THrApplicantCategory } from '../types/odoo/hr.applicant.category';
-import { THrApplicantRefuseReason } from '../types/odoo/hr.applicant.refuse.reason';
-import { THrApplicant } from '../types/odoo/hr.applicant';
-import { THrAppraisalGoalTag } from '../types/odoo/hr.appraisal.goal.tag';
-import { THrAppraisalGoal } from '../types/odoo/hr.appraisal.goal';
-import { THrAppraisalNote } from '../types/odoo/hr.appraisal.note';
-import { THrAppraisalReport } from '../types/odoo/hr.appraisal.report';
-import { THrAppraisalSkillReport } from '../types/odoo/hr.appraisal.skill.report';
-import { THrAppraisalSkill } from '../types/odoo/hr.appraisal.skill';
-import { THrAppraisalTemplate } from '../types/odoo/hr.appraisal.template';
-import { THrAppraisal } from '../types/odoo/hr.appraisal';
-import { THrAttendanceOvertime } from '../types/odoo/hr.attendance.overtime';
-import { THrAttendance } from '../types/odoo/hr.attendance';
-import { THrCandidateSkill } from '../types/odoo/hr.candidate.skill';
-import { THrCandidate } from '../types/odoo/hr.candidate';
-import { THrContractEmployeeReport } from '../types/odoo/hr.contract.employee.report';
-import { THrContractHistory } from '../types/odoo/hr.contract.history';
-import { THrContractSignDocumentWizard } from '../types/odoo/hr.contract.sign.document.wizard';
-import { THrContract } from '../types/odoo/hr.contract';
 import { THrContractType } from '../types/odoo/hr.contract.type';
 import { THrDepartment } from '../types/odoo/hr.department';
 import { THrDepartureReason } from '../types/odoo/hr.departure.reason';
@@ -227,83 +158,19 @@ import { THrDepartureWizard } from '../types/odoo/hr.departure.wizard';
 import { THrEmployeeBase } from '../types/odoo/hr.employee.base';
 import { THrEmployeeCategory } from '../types/odoo/hr.employee.category';
 import { THrEmployeeCvWizard } from '../types/odoo/hr.employee.cv.wizard';
-import { THrEmployeeDeleteWizard } from '../types/odoo/hr.employee.delete.wizard';
 import { THrEmployeePublic } from '../types/odoo/hr.employee.public';
 import { THrEmployeeSkillLog } from '../types/odoo/hr.employee.skill.log';
 import { THrEmployeeSkillReport } from '../types/odoo/hr.employee.skill.report';
 import { THrEmployeeSkill } from '../types/odoo/hr.employee.skill';
 import { THrEmployee } from '../types/odoo/hr.employee';
-import { THrExpenseApproveDuplicate } from '../types/odoo/hr.expense.approve.duplicate';
-import { THrExpenseRefuseWizard } from '../types/odoo/hr.expense.refuse.wizard';
-import { THrExpenseSheet } from '../types/odoo/hr.expense.sheet';
-import { THrExpenseSplit } from '../types/odoo/hr.expense.split';
-import { THrExpenseSplitWizard } from '../types/odoo/hr.expense.split.wizard';
-import { THrExpense } from '../types/odoo/hr.expense';
-import { THrHolidaysCancelLeave } from '../types/odoo/hr.holidays.cancel.leave';
-import { THrHolidaysSummaryEmployee } from '../types/odoo/hr.holidays.summary.employee';
-import { THrJobPlatform } from '../types/odoo/hr.job.platform';
 import { THrJob } from '../types/odoo/hr.job';
-import { THrLeaveAccrualLevel } from '../types/odoo/hr.leave.accrual.level';
-import { THrLeaveAccrualPlan } from '../types/odoo/hr.leave.accrual.plan';
-import { THrLeaveAllocationGenerateMultiWizard } from '../types/odoo/hr.leave.allocation.generate.multi.wizard';
-import { THrLeaveAllocation } from '../types/odoo/hr.leave.allocation';
-import { THrLeaveEmployeeTypeReport } from '../types/odoo/hr.leave.employee.type.report';
-import { THrLeaveGenerateMultiWizard } from '../types/odoo/hr.leave.generate.multi.wizard';
-import { THrLeaveMandatoryDay } from '../types/odoo/hr.leave.mandatory.day';
-import { THrLeaveReportCalendar } from '../types/odoo/hr.leave.report.calendar';
-import { THrLeaveReport } from '../types/odoo/hr.leave.report';
-import { THrLeave } from '../types/odoo/hr.leave';
-import { THrLeaveType } from '../types/odoo/hr.leave.type';
 import { THrManagerDepartmentReport } from '../types/odoo/hr.manager.department.report';
-import { THrPayrollDashboardWarning } from '../types/odoo/hr.payroll.dashboard.warning';
-import { THrPayrollDeclarationMixin } from '../types/odoo/hr.payroll.declaration.mixin';
-import { THrPayrollEditPayslipLine } from '../types/odoo/hr.payroll.edit.payslip.line';
-import { THrPayrollEditPayslipLinesWizard } from '../types/odoo/hr.payroll.edit.payslip.lines.wizard';
-import { THrPayrollEditPayslipWorkedDaysLine } from '../types/odoo/hr.payroll.edit.payslip.worked.days.line';
-import { THrPayrollEmployeeDeclaration } from '../types/odoo/hr.payroll.employee.declaration';
-import { THrPayrollHeadcountLine } from '../types/odoo/hr.payroll.headcount.line';
-import { THrPayrollHeadcount } from '../types/odoo/hr.payroll.headcount';
-import { THrPayrollHeadcountWorkingRate } from '../types/odoo/hr.payroll.headcount.working.rate';
-import { THrPayrollIndex } from '../types/odoo/hr.payroll.index';
-import { THrPayrollNote } from '../types/odoo/hr.payroll.note';
-import { THrPayrollPaymentReportWizard } from '../types/odoo/hr.payroll.payment.report.wizard';
-import { THrPayrollReport } from '../types/odoo/hr.payroll.report';
-import { THrPayrollStructure } from '../types/odoo/hr.payroll.structure';
-import { THrPayrollStructureType } from '../types/odoo/hr.payroll.structure.type';
-import { THrPayslipEmployees } from '../types/odoo/hr.payslip.employees';
-import { THrPayslipInput } from '../types/odoo/hr.payslip.input';
-import { THrPayslipInputType } from '../types/odoo/hr.payslip.input.type';
-import { THrPayslipLine } from '../types/odoo/hr.payslip.line';
-import { THrPayslipRun } from '../types/odoo/hr.payslip.run';
-import { THrPayslip } from '../types/odoo/hr.payslip';
-import { THrPayslipWorked_days } from '../types/odoo/hr.payslip.worked_days';
-import { THrRecruitmentDegree } from '../types/odoo/hr.recruitment.degree';
-import { THrRecruitmentReport } from '../types/odoo/hr.recruitment.report';
-import { THrRecruitmentSignDocumentWizard } from '../types/odoo/hr.recruitment.sign.document.wizard';
-import { THrRecruitmentSource } from '../types/odoo/hr.recruitment.source';
-import { THrRecruitmentStageReport } from '../types/odoo/hr.recruitment.stage.report';
-import { THrRecruitmentStage } from '../types/odoo/hr.recruitment.stage';
 import { THrResumeLine } from '../types/odoo/hr.resume.line';
 import { THrResumeLineType } from '../types/odoo/hr.resume.line.type';
-import { THrRuleParameter } from '../types/odoo/hr.rule.parameter';
-import { THrRuleParameterValue } from '../types/odoo/hr.rule.parameter.value';
-import { THrSalaryAttachment } from '../types/odoo/hr.salary.attachment';
-import { THrSalaryRuleCategory } from '../types/odoo/hr.salary.rule.category';
-import { THrSalaryRule } from '../types/odoo/hr.salary.rule';
 import { THrSkillLevel } from '../types/odoo/hr.skill.level';
 import { THrSkill } from '../types/odoo/hr.skill';
 import { THrSkillType } from '../types/odoo/hr.skill.type';
-import { THrTimesheetAttendanceReport } from '../types/odoo/hr.timesheet.attendance.report';
-import { THrTimesheetTip } from '../types/odoo/hr.timesheet.tip';
-import { THrUserWorkEntryEmployee } from '../types/odoo/hr.user.work.entry.employee';
-import { THrWorkEntryExportEmployeeMixin } from '../types/odoo/hr.work.entry.export.employee.mixin';
-import { THrWorkEntryExportMixin } from '../types/odoo/hr.work.entry.export.mixin';
-import { THrWorkEntryRegenerationWizard } from '../types/odoo/hr.work.entry.regeneration.wizard';
-import { THrWorkEntryReport } from '../types/odoo/hr.work.entry.report';
-import { THrWorkEntry } from '../types/odoo/hr.work.entry';
-import { THrWorkEntryType } from '../types/odoo/hr.work.entry.type';
 import { THrWorkLocation } from '../types/odoo/hr.work.location';
-import { THr_timesheetMergeWizard } from '../types/odoo/hr_timesheet.merge.wizard';
 import { THtmlFieldHistoryMixin } from '../types/odoo/html.field.history.mixin';
 import { TIapAccount } from '../types/odoo/iap.account';
 import { TIapAutocompleteApi } from '../types/odoo/iap.autocomplete.api';
@@ -320,7 +187,6 @@ import { TIrActionsReport } from '../types/odoo/ir.actions.report';
 import { TIrActionsServer } from '../types/odoo/ir.actions.server';
 import { TIrActionsTodo } from '../types/odoo/ir.actions.todo';
 import { TIrAsset } from '../types/odoo/ir.asset';
-import { TIrAttachmentReport } from '../types/odoo/ir.attachment.report';
 import { TIrAttachment } from '../types/odoo/ir.attachment';
 import { TIrAutovacuum } from '../types/odoo/ir.autovacuum';
 import { TIrBinary } from '../types/odoo/ir.binary';
@@ -367,6 +233,7 @@ import { TIrQwebFieldInteger } from '../types/odoo/ir.qweb.field.integer';
 import { TIrQwebFieldMany2many } from '../types/odoo/ir.qweb.field.many2many';
 import { TIrQwebFieldMany2one } from '../types/odoo/ir.qweb.field.many2one';
 import { TIrQwebFieldMonetary } from '../types/odoo/ir.qweb.field.monetary';
+import { TIrQwebFieldOne2many } from '../types/odoo/ir.qweb.field.one2many';
 import { TIrQwebFieldQweb } from '../types/odoo/ir.qweb.field.qweb';
 import { TIrQwebFieldRelative } from '../types/odoo/ir.qweb.field.relative';
 import { TIrQwebFieldSelection } from '../types/odoo/ir.qweb.field.selection';
@@ -381,24 +248,15 @@ import { TIrUiMenu } from '../types/odoo/ir.ui.menu';
 import { TIrUiViewCustom } from '../types/odoo/ir.ui.view.custom';
 import { TIrUiView } from '../types/odoo/ir.ui.view';
 import { TIrWebsocket } from '../types/odoo/ir.websocket';
-import { TKnowledgeArticleFavorite } from '../types/odoo/knowledge.article.favorite';
-import { TKnowledgeArticleMember } from '../types/odoo/knowledge.article.member';
-import { TKnowledgeArticleStage } from '../types/odoo/knowledge.article.stage';
-import { TKnowledgeArticleTemplateCategory } from '../types/odoo/knowledge.article.template.category';
-import { TKnowledgeArticleThread } from '../types/odoo/knowledge.article.thread';
-import { TKnowledgeArticle } from '../types/odoo/knowledge.article';
-import { TKnowledgeCover } from '../types/odoo/knowledge.cover';
-import { TKnowledgeInvite } from '../types/odoo/knowledge.invite';
 import { TKpiProvider } from '../types/odoo/kpi.provider';
-import { TL10n_itDdt } from '../types/odoo/l10n_it.ddt';
-import { TL10n_itDocumentType } from '../types/odoo/l10n_it.document.type';
 import { TL10n_it_delivery_noteDelivery_mixin } from '../types/odoo/l10n_it_delivery_note.delivery_mixin';
+import { TL10n_us1099_box } from '../types/odoo/l10n_us.1099_box';
+import { TL10n_us_1099Wizard } from '../types/odoo/l10n_us_1099.wizard';
 import { TLotLabelLayout } from '../types/odoo/lot.label.layout';
 import { TMailActivityMixin } from '../types/odoo/mail.activity.mixin';
 import { TMailActivityPlanTemplate } from '../types/odoo/mail.activity.plan.template';
 import { TMailActivityPlan } from '../types/odoo/mail.activity.plan';
 import { TMailActivitySchedule } from '../types/odoo/mail.activity.schedule';
-import { TMailActivityTodoCreate } from '../types/odoo/mail.activity.todo.create';
 import { TMailActivity } from '../types/odoo/mail.activity';
 import { TMailActivityType } from '../types/odoo/mail.activity.type';
 import { TMailAliasDomain } from '../types/odoo/mail.alias.domain';
@@ -440,12 +298,6 @@ import { TMailThread } from '../types/odoo/mail.thread';
 import { TMailTrackingDurationMixin } from '../types/odoo/mail.tracking.duration.mixin';
 import { TMailTrackingValue } from '../types/odoo/mail.tracking.value';
 import { TMailWizardInvite } from '../types/odoo/mail.wizard.invite';
-import { TMaintenanceEquipmentCategory } from '../types/odoo/maintenance.equipment.category';
-import { TMaintenanceEquipment } from '../types/odoo/maintenance.equipment';
-import { TMaintenanceMixin } from '../types/odoo/maintenance.mixin';
-import { TMaintenanceRequest } from '../types/odoo/maintenance.request';
-import { TMaintenanceStage } from '../types/odoo/maintenance.stage';
-import { TMaintenanceTeam } from '../types/odoo/maintenance.team';
 import { TMrpAccountWipAccountingLine } from '../types/odoo/mrp.account.wip.accounting.line';
 import { TMrpAccountWipAccounting } from '../types/odoo/mrp.account.wip.accounting';
 import { TMrpBatchProduce } from '../types/odoo/mrp.batch.produce';
@@ -454,19 +306,8 @@ import { TMrpBomLine } from '../types/odoo/mrp.bom.line';
 import { TMrpBom } from '../types/odoo/mrp.bom';
 import { TMrpConsumptionWarningLine } from '../types/odoo/mrp.consumption.warning.line';
 import { TMrpConsumptionWarning } from '../types/odoo/mrp.consumption.warning';
-import { TMrpEcoApprovalTemplate } from '../types/odoo/mrp.eco.approval.template';
-import { TMrpEcoApproval } from '../types/odoo/mrp.eco.approval';
-import { TMrpEcoBomChange } from '../types/odoo/mrp.eco.bom.change';
-import { TMrpEcoRoutingChange } from '../types/odoo/mrp.eco.routing.change';
-import { TMrpEcoStage } from '../types/odoo/mrp.eco.stage';
-import { TMrpEcoTag } from '../types/odoo/mrp.eco.tag';
-import { TMrpEco } from '../types/odoo/mrp.eco';
-import { TMrpEcoType } from '../types/odoo/mrp.eco.type';
-import { TMrpMpsForecastDetails } from '../types/odoo/mrp.mps.forecast.details';
-import { TMrpProductForecast } from '../types/odoo/mrp.product.forecast';
 import { TMrpProductionBackorderLine } from '../types/odoo/mrp.production.backorder.line';
 import { TMrpProductionBackorder } from '../types/odoo/mrp.production.backorder';
-import { TMrpProductionSchedule } from '../types/odoo/mrp.production.schedule';
 import { TMrpProductionSplitLine } from '../types/odoo/mrp.production.split.line';
 import { TMrpProductionSplitMulti } from '../types/odoo/mrp.production.split.multi';
 import { TMrpProductionSplit } from '../types/odoo/mrp.production.split';
@@ -494,21 +335,14 @@ import { TPaymentProvider } from '../types/odoo/payment.provider';
 import { TPaymentRefundWizard } from '../types/odoo/payment.refund.wizard';
 import { TPaymentToken } from '../types/odoo/payment.token';
 import { TPaymentTransaction } from '../types/odoo/payment.transaction';
-import { TPeppolRegistration } from '../types/odoo/peppol.registration';
 import { TPhoneBlacklistRemove } from '../types/odoo/phone.blacklist.remove';
 import { TPhoneBlacklist } from '../types/odoo/phone.blacklist';
 import { TPickingLabelType } from '../types/odoo/picking.label.type';
-import { TPlanningAnalysisReport } from '../types/odoo/planning.analysis.report';
-import { TPlanningPlanning } from '../types/odoo/planning.planning';
-import { TPlanningRecurrency } from '../types/odoo/planning.recurrency';
-import { TPlanningRole } from '../types/odoo/planning.role';
-import { TPlanningSend } from '../types/odoo/planning.send';
-import { TPlanningSlotTemplate } from '../types/odoo/planning.slot.template';
-import { TPlanningSlot } from '../types/odoo/planning.slot';
 import { TPortalMixin } from '../types/odoo/portal.mixin';
 import { TPortalShare } from '../types/odoo/portal.share';
 import { TPortalWizard } from '../types/odoo/portal.wizard';
 import { TPortalWizardUser } from '../types/odoo/portal.wizard.user';
+import { TPrintPrenumberedChecks } from '../types/odoo/print.prenumbered.checks';
 import { TPrivacyLog } from '../types/odoo/privacy.log';
 import { TPrivacyLookupWizardLine } from '../types/odoo/privacy.lookup.wizard.line';
 import { TPrivacyLookupWizard } from '../types/odoo/privacy.lookup.wizard';
@@ -516,6 +350,7 @@ import { TProcurementGroup } from '../types/odoo/procurement.group';
 import { TProductAttributeCustomValue } from '../types/odoo/product.attribute.custom.value';
 import { TProductAttribute } from '../types/odoo/product.attribute';
 import { TProductAttributeValue } from '../types/odoo/product.attribute.value';
+import { TProductAvataxCategory } from '../types/odoo/product.avatax.category';
 import { TProductCatalogMixin } from '../types/odoo/product.catalog.mixin';
 import { TProductCategory } from '../types/odoo/product.category';
 import { TProductComboItem } from '../types/odoo/product.combo.item';
@@ -534,59 +369,28 @@ import { TProductTemplateAttributeExclusion } from '../types/odoo/product.templa
 import { TProductTemplateAttributeLine } from '../types/odoo/product.template.attribute.line';
 import { TProductTemplateAttributeValue } from '../types/odoo/product.template.attribute.value';
 import { TProductTemplate } from '../types/odoo/product.template';
-import { TProjectCollaborator } from '../types/odoo/project.collaborator';
-import { TProjectCreateInvoice } from '../types/odoo/project.create.invoice';
-import { TProjectMilestone } from '../types/odoo/project.milestone';
-import { TProjectProjectStageDeleteWizard } from '../types/odoo/project.project.stage.delete.wizard';
-import { TProjectProjectStage } from '../types/odoo/project.project.stage';
-import { TProjectProject } from '../types/odoo/project.project';
-import { TProjectSaleLineEmployeeMap } from '../types/odoo/project.sale.line.employee.map';
-import { TProjectShareCollaboratorWizard } from '../types/odoo/project.share.collaborator.wizard';
-import { TProjectShareWizard } from '../types/odoo/project.share.wizard';
-import { TProjectTags } from '../types/odoo/project.tags';
-import { TProjectTaskBurndownChartReport } from '../types/odoo/project.task.burndown.chart.report';
-import { TProjectTaskConvertWizard } from '../types/odoo/project.task.convert.wizard';
-import { TProjectTaskCreateTimesheet } from '../types/odoo/project.task.create.timesheet';
-import { TProjectTaskRecurrence } from '../types/odoo/project.task.recurrence';
-import { TProjectTaskStagePersonal } from '../types/odoo/project.task.stage.personal';
-import { TProjectTask } from '../types/odoo/project.task';
-import { TProjectTaskTypeDeleteWizard } from '../types/odoo/project.task.type.delete.wizard';
-import { TProjectTaskType } from '../types/odoo/project.task.type';
-import { TProjectUpdate } from '../types/odoo/project.update';
 import { TProposeChange } from '../types/odoo/propose.change';
 import { TPublisher_warrantyContract } from '../types/odoo/publisher_warranty.contract';
 import { TPurchaseBillLineMatch } from '../types/odoo/purchase.bill.line.match';
 import { TPurchaseBillUnion } from '../types/odoo/purchase.bill.union';
 import { TPurchaseEdiXmlUbl_bis3 } from '../types/odoo/purchase.edi.xml.ubl_bis3';
-import { TPurchaseInvoiceLinkWizard } from '../types/odoo/purchase.invoice.link.wizard';
 import { TPurchaseOrderLine } from '../types/odoo/purchase.order.line';
 import { TPurchaseOrder } from '../types/odoo/purchase.order';
 import { TPurchaseReport } from '../types/odoo/purchase.report';
 import { TQualityAlertStage } from '../types/odoo/quality.alert.stage';
 import { TQualityAlertTeam } from '../types/odoo/quality.alert.team';
 import { TQualityAlert } from '../types/odoo/quality.alert';
-import { TQualityCheckOnDemand } from '../types/odoo/quality.check.on.demand';
-import { TQualityCheckSpreadsheet } from '../types/odoo/quality.check.spreadsheet';
 import { TQualityCheck } from '../types/odoo/quality.check';
-import { TQualityCheckWizard } from '../types/odoo/quality.check.wizard';
 import { TQualityPointTest_type } from '../types/odoo/quality.point.test_type';
 import { TQualityPoint } from '../types/odoo/quality.point';
 import { TQualityReason } from '../types/odoo/quality.reason';
-import { TQualitySpreadsheetTemplate } from '../types/odoo/quality.spreadsheet.template';
 import { TQualityTag } from '../types/odoo/quality.tag';
 import { TQuotationDocument } from '../types/odoo/quotation.document';
-import { TRatingMixin } from '../types/odoo/rating.mixin';
-import { TRatingParentMixin } from '../types/odoo/rating.parent.mixin';
-import { TRatingRating } from '../types/odoo/rating.rating';
-import { TRepairOrder } from '../types/odoo/repair.order';
-import { TRepairTags } from '../types/odoo/repair.tags';
 import { TReportAccountReport_hash_integrity } from '../types/odoo/report.account.report_hash_integrity';
 import { TReportAccountReport_invoice } from '../types/odoo/report.account.report_invoice';
 import { TReportAccountReport_invoice_with_payments } from '../types/odoo/report.account.report_invoice_with_payments';
 import { TReportAccount_batch_paymentPrint_batch_payment } from '../types/odoo/report.account_batch_payment.print_batch_payment';
 import { TReportBaseReport_irmodulereference } from '../types/odoo/report.base.report_irmodulereference';
-import { TReportHr_holidaysReport_holidayssummary } from '../types/odoo/report.hr_holidays.report_holidayssummary';
-import { TReportHr_payrollContribution_register } from '../types/odoo/report.hr_payroll.contribution_register';
 import { TReportHr_skillsReport_employee_cv } from '../types/odoo/report.hr_skills.report_employee_cv';
 import { TReportLayout } from '../types/odoo/report.layout';
 import { TReportMrpReport_bom_structure } from '../types/odoo/report.mrp.report_bom_structure';
@@ -600,16 +404,11 @@ import { TReportProductReport_producttemplatelabel4x12 } from '../types/odoo/rep
 import { TReportProductReport_producttemplatelabel4x12noprice } from '../types/odoo/report.product.report_producttemplatelabel4x12noprice';
 import { TReportProductReport_producttemplatelabel4x7 } from '../types/odoo/report.product.report_producttemplatelabel4x7';
 import { TReportProductReport_producttemplatelabel_dymo } from '../types/odoo/report.product.report_producttemplatelabel_dymo';
-import { TReportProjectTaskUser } from '../types/odoo/report.project.task.user';
-import { TReportQuality_controlQuality_worksheet } from '../types/odoo/report.quality_control.quality_worksheet';
-import { TReportQuality_controlQuality_worksheet_internal } from '../types/odoo/report.quality_control.quality_worksheet_internal';
-import { TReportSignGreen_savings_report } from '../types/odoo/report.sign.green_savings_report';
 import { TReportStockLabel_lot_template_view } from '../types/odoo/report.stock.label_lot_template_view';
 import { TReportStockLabel_product_product_view } from '../types/odoo/report.stock.label_product_product_view';
 import { TReportStockQuantity } from '../types/odoo/report.stock.quantity';
 import { TReportStockReport_reception } from '../types/odoo/report.stock.report_reception';
 import { TReportStockReport_stock_rule } from '../types/odoo/report.stock.report_stock_rule';
-import { TRequestAppraisal } from '../types/odoo/request.appraisal';
 import { TResBank } from '../types/odoo/res.bank';
 import { TResCompany } from '../types/odoo/res.company';
 import { TResConfigSettings } from '../types/odoo/res.config.settings';
@@ -644,9 +443,6 @@ import { TResourceCalendarLeaves } from '../types/odoo/resource.calendar.leaves'
 import { TResourceCalendar } from '../types/odoo/resource.calendar';
 import { TResourceMixin } from '../types/odoo/resource.mixin';
 import { TResourceResource } from '../types/odoo/resource.resource';
-import { TRoomBooking } from '../types/odoo/room.booking';
-import { TRoomOffice } from '../types/odoo/room.office';
-import { TRoomRoom } from '../types/odoo/room.room';
 import { TSaleAdvancePaymentInv } from '../types/odoo/sale.advance.payment.inv';
 import { TSaleEdiCommon } from '../types/odoo/sale.edi.common';
 import { TSaleEdiXmlUbl_bis3 } from '../types/odoo/sale.edi.xml.ubl_bis3';
@@ -665,20 +461,6 @@ import { TSalePdfFormField } from '../types/odoo/sale.pdf.form.field';
 import { TSaleReport } from '../types/odoo/sale.report';
 import { TSequenceMixin } from '../types/odoo/sequence.mixin';
 import { TShippingInformationUpdaterMixin } from '../types/odoo/shipping.information.updater.mixin';
-import { TSignDuplicateTemplatePdf } from '../types/odoo/sign.duplicate.template.pdf';
-import { TSignItemOption } from '../types/odoo/sign.item.option';
-import { TSignItemRadioSet } from '../types/odoo/sign.item.radio.set';
-import { TSignItemRole } from '../types/odoo/sign.item.role';
-import { TSignItem } from '../types/odoo/sign.item';
-import { TSignItemType } from '../types/odoo/sign.item.type';
-import { TSignLog } from '../types/odoo/sign.log';
-import { TSignRequestItem } from '../types/odoo/sign.request.item';
-import { TSignRequestItemValue } from '../types/odoo/sign.request.item.value';
-import { TSignRequest } from '../types/odoo/sign.request';
-import { TSignSendRequestSigner } from '../types/odoo/sign.send.request.signer';
-import { TSignSendRequest } from '../types/odoo/sign.send.request';
-import { TSignTemplateTag } from '../types/odoo/sign.template.tag';
-import { TSignTemplate } from '../types/odoo/sign.template';
 import { TSmsAccountCode } from '../types/odoo/sms.account.code';
 import { TSmsAccountPhone } from '../types/odoo/sms.account.phone';
 import { TSmsAccountSender } from '../types/odoo/sms.account.sender';
@@ -757,7 +539,6 @@ import { TStockValuationLayerRevaluation } from '../types/odoo/stock.valuation.l
 import { TStockValuationLayer } from '../types/odoo/stock.valuation.layer';
 import { TStockWarehouseOrderpoint } from '../types/odoo/stock.warehouse.orderpoint';
 import { TStockWarehouse } from '../types/odoo/stock.warehouse';
-import { TStockWarnInsufficientQtyRepair } from '../types/odoo/stock.warn.insufficient.qty.repair';
 import { TStockWarnInsufficientQtyScrap } from '../types/odoo/stock.warn.insufficient.qty.scrap';
 import { TStockWarnInsufficientQty } from '../types/odoo/stock.warn.insufficient.qty';
 import { TStockWarnInsufficientQtyUnbuild } from '../types/odoo/stock.warn.insufficient.qty.unbuild';
@@ -772,10 +553,6 @@ import { TStudioExportWizardData } from '../types/odoo/studio.export.wizard.data
 import { TStudioExportWizard } from '../types/odoo/studio.export.wizard';
 import { TStudioMixin } from '../types/odoo/studio.mixin';
 import { TTemplateResetMixin } from '../types/odoo/template.reset.mixin';
-import { TTimerMixin } from '../types/odoo/timer.mixin';
-import { TTimerTimer } from '../types/odoo/timer.timer';
-import { TTimesheetGridMixin } from '../types/odoo/timesheet.grid.mixin';
-import { TTimesheetsAnalysisReport } from '../types/odoo/timesheets.analysis.report';
 import { TUomCategory } from '../types/odoo/uom.category';
 import { TUomUom } from '../types/odoo/uom.uom';
 import { TUpdateProductAttributeValue } from '../types/odoo/update.product.attribute.value';
@@ -794,7 +571,6 @@ import { TWeb_editorConverterTest } from '../types/odoo/web_editor.converter.tes
 import { TWeb_tourTourStep } from '../types/odoo/web_tour.tour.step';
 import { TWeb_tourTour } from '../types/odoo/web_tour.tour';
 import { TWizardIrModelMenuCreate } from '../types/odoo/wizard.ir.model.menu.create';
-import { TX_stock_picking_line_6a2c5 } from '../types/odoo/x_stock_picking_line_6a2c5';
 
 export class _unknownModel extends BaseOdooModel<T_unknown> {
     protected readonly model = '_unknown';
@@ -842,6 +618,10 @@ export class AccountAutomaticEntryWizardModel extends BaseOdooModel<TAccountAuto
 
 export class AccountAutopostBillsWizardModel extends BaseOdooModel<TAccountAutopostBillsWizard> {
     protected readonly model = 'account.autopost.bills.wizard';
+}
+
+export class AccountAvataxUniqueCodeModel extends BaseOdooModel<TAccountAvataxUniqueCode> {
+    protected readonly model = 'account.avatax.unique.code';
 }
 
 export class AccountBankSelectionModel extends BaseOdooModel<TAccountBankSelection> {
@@ -892,10 +672,6 @@ export class AccountCodeMappingModel extends BaseOdooModel<TAccountCodeMapping> 
     protected readonly model = 'account.code.mapping';
 }
 
-export class AccountDebitNoteModel extends BaseOdooModel<TAccountDebitNote> {
-    protected readonly model = 'account.debit.note';
-}
-
 export class AccountDuplicateTransactionWizardModel extends BaseOdooModel<TAccountDuplicateTransactionWizard> {
     protected readonly model = 'account.duplicate.transaction.wizard';
 }
@@ -938,6 +714,10 @@ export class AccountEdiXmlUbl_nlModel extends BaseOdooModel<TAccountEdiXmlUbl_nl
 
 export class AccountEdiXmlUbl_sgModel extends BaseOdooModel<TAccountEdiXmlUbl_sg> {
     protected readonly model = 'account.edi.xml.ubl_sg';
+}
+
+export class AccountExternalTaxMixinModel extends BaseOdooModel<TAccountExternalTaxMixin> {
+    protected readonly model = 'account.external.tax.mixin';
 }
 
 export class AccountFinancialYearOpModel extends BaseOdooModel<TAccountFinancialYearOp> {
@@ -1140,32 +920,12 @@ export class AccountTransferModelModel extends BaseOdooModel<TAccountTransferMod
     protected readonly model = 'account.transfer.model';
 }
 
-export class Account_edi_proxy_clientUserModel extends BaseOdooModel<TAccount_edi_proxy_clientUser> {
-    protected readonly model = 'account_edi_proxy_client.user';
-}
-
-export class Account_peppolServiceModel extends BaseOdooModel<TAccount_peppolService> {
-    protected readonly model = 'account_peppol.service';
-}
-
-export class Account_peppolServiceWizardModel extends BaseOdooModel<TAccount_peppolServiceWizard> {
-    protected readonly model = 'account_peppol.service.wizard';
-}
-
 export class AnalyticMixinModel extends BaseOdooModel<TAnalyticMixin> {
     protected readonly model = 'analytic.mixin';
 }
 
 export class AnalyticPlanFieldsMixinModel extends BaseOdooModel<TAnalyticPlanFieldsMixin> {
     protected readonly model = 'analytic.plan.fields.mixin';
-}
-
-export class ApplicantGetRefuseReasonModel extends BaseOdooModel<TApplicantGetRefuseReason> {
-    protected readonly model = 'applicant.get.refuse.reason';
-}
-
-export class ApplicantSendMailModel extends BaseOdooModel<TApplicantSendMail> {
-    protected readonly model = 'applicant.send.mail';
 }
 
 export class ApprovalApproverModel extends BaseOdooModel<TApprovalApprover> {
@@ -1188,10 +948,6 @@ export class ApprovalRequestModel extends BaseOdooModel<TApprovalRequest> {
     protected readonly model = 'approval.request';
 }
 
-export class ApprovalRequestWizardModel extends BaseOdooModel<TApprovalRequestWizard> {
-    protected readonly model = 'approval.request.wizard';
-}
-
 export class Auth_totpDeviceModel extends BaseOdooModel<TAuth_totpDevice> {
     protected readonly model = 'auth_totp.device';
 }
@@ -1202,6 +958,18 @@ export class Auth_totpWizardModel extends BaseOdooModel<TAuth_totpWizard> {
 
 export class AvatarMixinModel extends BaseOdooModel<TAvatarMixin> {
     protected readonly model = 'avatar.mixin';
+}
+
+export class AvataxConnectionTestResultModel extends BaseOdooModel<TAvataxConnectionTestResult> {
+    protected readonly model = 'avatax.connection.test.result';
+}
+
+export class AvataxExemptionModel extends BaseOdooModel<TAvataxExemption> {
+    protected readonly model = 'avatax.exemption';
+}
+
+export class AvataxValidateAddressModel extends BaseOdooModel<TAvataxValidateAddress> {
+    protected readonly model = 'avatax.validate.address';
 }
 
 export class BankRecWidgetLineModel extends BaseOdooModel<TBankRecWidgetLine> {
@@ -1308,54 +1076,6 @@ export class BusPresenceModel extends BaseOdooModel<TBusPresence> {
     protected readonly model = 'bus.presence';
 }
 
-export class CalendarAlarmModel extends BaseOdooModel<TCalendarAlarm> {
-    protected readonly model = 'calendar.alarm';
-}
-
-export class CalendarAlarm_managerModel extends BaseOdooModel<TCalendarAlarm_manager> {
-    protected readonly model = 'calendar.alarm_manager';
-}
-
-export class CalendarAttendeeModel extends BaseOdooModel<TCalendarAttendee> {
-    protected readonly model = 'calendar.attendee';
-}
-
-export class CalendarEventModel extends BaseOdooModel<TCalendarEvent> {
-    protected readonly model = 'calendar.event';
-}
-
-export class CalendarEventTypeModel extends BaseOdooModel<TCalendarEventType> {
-    protected readonly model = 'calendar.event.type';
-}
-
-export class CalendarFiltersModel extends BaseOdooModel<TCalendarFilters> {
-    protected readonly model = 'calendar.filters';
-}
-
-export class CalendarPopoverDeleteWizardModel extends BaseOdooModel<TCalendarPopoverDeleteWizard> {
-    protected readonly model = 'calendar.popover.delete.wizard';
-}
-
-export class CalendarProviderConfigModel extends BaseOdooModel<TCalendarProviderConfig> {
-    protected readonly model = 'calendar.provider.config';
-}
-
-export class CalendarRecurrenceModel extends BaseOdooModel<TCalendarRecurrence> {
-    protected readonly model = 'calendar.recurrence';
-}
-
-export class CandidateSendMailModel extends BaseOdooModel<TCandidateSendMail> {
-    protected readonly model = 'candidate.send.mail';
-}
-
-export class CertificateCertificateModel extends BaseOdooModel<TCertificateCertificate> {
-    protected readonly model = 'certificate.certificate';
-}
-
-export class CertificateKeyModel extends BaseOdooModel<TCertificateKey> {
-    protected readonly model = 'certificate.key';
-}
-
 export class ChangePasswordOwnModel extends BaseOdooModel<TChangePasswordOwn> {
     protected readonly model = 'change.password.own';
 }
@@ -1394,42 +1114,6 @@ export class CrmTeamMemberModel extends BaseOdooModel<TCrmTeamMember> {
 
 export class CrmTeamModel extends BaseOdooModel<TCrmTeam> {
     protected readonly model = 'crm.team';
-}
-
-export class Data_cleaningModelModel extends BaseOdooModel<TData_cleaningModel> {
-    protected readonly model = 'data_cleaning.model';
-}
-
-export class Data_cleaningRecordModel extends BaseOdooModel<TData_cleaningRecord> {
-    protected readonly model = 'data_cleaning.record';
-}
-
-export class Data_cleaningRuleModel extends BaseOdooModel<TData_cleaningRule> {
-    protected readonly model = 'data_cleaning.rule';
-}
-
-export class Data_mergeGroupModel extends BaseOdooModel<TData_mergeGroup> {
-    protected readonly model = 'data_merge.group';
-}
-
-export class Data_mergeModelModel extends BaseOdooModel<TData_mergeModel> {
-    protected readonly model = 'data_merge.model';
-}
-
-export class Data_mergeRecordModel extends BaseOdooModel<TData_mergeRecord> {
-    protected readonly model = 'data_merge.record';
-}
-
-export class Data_mergeRuleModel extends BaseOdooModel<TData_mergeRule> {
-    protected readonly model = 'data_merge.rule';
-}
-
-export class Data_recycleModelModel extends BaseOdooModel<TData_recycleModel> {
-    protected readonly model = 'data_recycle.model';
-}
-
-export class Data_recycleRecordModel extends BaseOdooModel<TData_recycleRecord> {
-    protected readonly model = 'data_recycle.record';
 }
 
 export class DecimalPrecisionModel extends BaseOdooModel<TDecimalPrecision> {
@@ -1476,80 +1160,12 @@ export class DiscussVoiceMetadataModel extends BaseOdooModel<TDiscussVoiceMetada
     protected readonly model = 'discuss.voice.metadata';
 }
 
-export class ExpenseSampleReceiptModel extends BaseOdooModel<TExpenseSampleReceipt> {
-    protected readonly model = 'expense.sample.receipt';
-}
-
-export class ExpenseSampleRegisterModel extends BaseOdooModel<TExpenseSampleRegister> {
-    protected readonly model = 'expense.sample.register';
-}
-
-export class ExportHrConfigModel extends BaseOdooModel<TExportHrConfig> {
-    protected readonly model = 'export.hr.config';
-}
-
-export class ExportHrOutputModel extends BaseOdooModel<TExportHrOutput> {
-    protected readonly model = 'export.hr.output';
-}
-
 export class ExtractMixinModel extends BaseOdooModel<TExtractMixin> {
     protected readonly model = 'extract.mixin';
 }
 
 export class FetchmailServerModel extends BaseOdooModel<TFetchmailServer> {
     protected readonly model = 'fetchmail.server';
-}
-
-export class FleetServiceTypeModel extends BaseOdooModel<TFleetServiceType> {
-    protected readonly model = 'fleet.service.type';
-}
-
-export class FleetVehicleAssignationLogModel extends BaseOdooModel<TFleetVehicleAssignationLog> {
-    protected readonly model = 'fleet.vehicle.assignation.log';
-}
-
-export class FleetVehicleCostReportModel extends BaseOdooModel<TFleetVehicleCostReport> {
-    protected readonly model = 'fleet.vehicle.cost.report';
-}
-
-export class FleetVehicleLogContractModel extends BaseOdooModel<TFleetVehicleLogContract> {
-    protected readonly model = 'fleet.vehicle.log.contract';
-}
-
-export class FleetVehicleLogServicesModel extends BaseOdooModel<TFleetVehicleLogServices> {
-    protected readonly model = 'fleet.vehicle.log.services';
-}
-
-export class FleetVehicleModelBrandModel extends BaseOdooModel<TFleetVehicleModelBrand> {
-    protected readonly model = 'fleet.vehicle.model.brand';
-}
-
-export class FleetVehicleModelCategoryModel extends BaseOdooModel<TFleetVehicleModelCategory> {
-    protected readonly model = 'fleet.vehicle.model.category';
-}
-
-export class FleetVehicleModelModel extends BaseOdooModel<TFleetVehicleModel> {
-    protected readonly model = 'fleet.vehicle.model';
-}
-
-export class FleetVehicleOdometerModel extends BaseOdooModel<TFleetVehicleOdometer> {
-    protected readonly model = 'fleet.vehicle.odometer';
-}
-
-export class FleetVehicleSendMailModel extends BaseOdooModel<TFleetVehicleSendMail> {
-    protected readonly model = 'fleet.vehicle.send.mail';
-}
-
-export class FleetVehicleStateModel extends BaseOdooModel<TFleetVehicleState> {
-    protected readonly model = 'fleet.vehicle.state';
-}
-
-export class FleetVehicleTagModel extends BaseOdooModel<TFleetVehicleTag> {
-    protected readonly model = 'fleet.vehicle.tag';
-}
-
-export class FleetVehicleModel extends BaseOdooModel<TFleetVehicle> {
-    protected readonly model = 'fleet.vehicle';
 }
 
 export class FormatAddressMixinModel extends BaseOdooModel<TFormatAddressMixin> {
@@ -1562,122 +1178,6 @@ export class FormatVatLabelMixinModel extends BaseOdooModel<TFormatVatLabelMixin
 
 export class GoogleGmailMixinModel extends BaseOdooModel<TGoogleGmailMixin> {
     protected readonly model = 'google.gmail.mixin';
-}
-
-export class HelpdeskSlaReportAnalysisModel extends BaseOdooModel<THelpdeskSlaReportAnalysis> {
-    protected readonly model = 'helpdesk.sla.report.analysis';
-}
-
-export class HelpdeskSlaStatusModel extends BaseOdooModel<THelpdeskSlaStatus> {
-    protected readonly model = 'helpdesk.sla.status';
-}
-
-export class HelpdeskSlaModel extends BaseOdooModel<THelpdeskSla> {
-    protected readonly model = 'helpdesk.sla';
-}
-
-export class HelpdeskStageDeleteWizardModel extends BaseOdooModel<THelpdeskStageDeleteWizard> {
-    protected readonly model = 'helpdesk.stage.delete.wizard';
-}
-
-export class HelpdeskStageModel extends BaseOdooModel<THelpdeskStage> {
-    protected readonly model = 'helpdesk.stage';
-}
-
-export class HelpdeskTagModel extends BaseOdooModel<THelpdeskTag> {
-    protected readonly model = 'helpdesk.tag';
-}
-
-export class HelpdeskTeamModel extends BaseOdooModel<THelpdeskTeam> {
-    protected readonly model = 'helpdesk.team';
-}
-
-export class HelpdeskTicketConvertWizardModel extends BaseOdooModel<THelpdeskTicketConvertWizard> {
-    protected readonly model = 'helpdesk.ticket.convert.wizard';
-}
-
-export class HelpdeskTicketReportAnalysisModel extends BaseOdooModel<THelpdeskTicketReportAnalysis> {
-    protected readonly model = 'helpdesk.ticket.report.analysis';
-}
-
-export class HelpdeskTicketModel extends BaseOdooModel<THelpdeskTicket> {
-    protected readonly model = 'helpdesk.ticket';
-}
-
-export class HrApplicantCategoryModel extends BaseOdooModel<THrApplicantCategory> {
-    protected readonly model = 'hr.applicant.category';
-}
-
-export class HrApplicantRefuseReasonModel extends BaseOdooModel<THrApplicantRefuseReason> {
-    protected readonly model = 'hr.applicant.refuse.reason';
-}
-
-export class HrApplicantModel extends BaseOdooModel<THrApplicant> {
-    protected readonly model = 'hr.applicant';
-}
-
-export class HrAppraisalGoalTagModel extends BaseOdooModel<THrAppraisalGoalTag> {
-    protected readonly model = 'hr.appraisal.goal.tag';
-}
-
-export class HrAppraisalGoalModel extends BaseOdooModel<THrAppraisalGoal> {
-    protected readonly model = 'hr.appraisal.goal';
-}
-
-export class HrAppraisalNoteModel extends BaseOdooModel<THrAppraisalNote> {
-    protected readonly model = 'hr.appraisal.note';
-}
-
-export class HrAppraisalReportModel extends BaseOdooModel<THrAppraisalReport> {
-    protected readonly model = 'hr.appraisal.report';
-}
-
-export class HrAppraisalSkillReportModel extends BaseOdooModel<THrAppraisalSkillReport> {
-    protected readonly model = 'hr.appraisal.skill.report';
-}
-
-export class HrAppraisalSkillModel extends BaseOdooModel<THrAppraisalSkill> {
-    protected readonly model = 'hr.appraisal.skill';
-}
-
-export class HrAppraisalTemplateModel extends BaseOdooModel<THrAppraisalTemplate> {
-    protected readonly model = 'hr.appraisal.template';
-}
-
-export class HrAppraisalModel extends BaseOdooModel<THrAppraisal> {
-    protected readonly model = 'hr.appraisal';
-}
-
-export class HrAttendanceOvertimeModel extends BaseOdooModel<THrAttendanceOvertime> {
-    protected readonly model = 'hr.attendance.overtime';
-}
-
-export class HrAttendanceModel extends BaseOdooModel<THrAttendance> {
-    protected readonly model = 'hr.attendance';
-}
-
-export class HrCandidateSkillModel extends BaseOdooModel<THrCandidateSkill> {
-    protected readonly model = 'hr.candidate.skill';
-}
-
-export class HrCandidateModel extends BaseOdooModel<THrCandidate> {
-    protected readonly model = 'hr.candidate';
-}
-
-export class HrContractEmployeeReportModel extends BaseOdooModel<THrContractEmployeeReport> {
-    protected readonly model = 'hr.contract.employee.report';
-}
-
-export class HrContractHistoryModel extends BaseOdooModel<THrContractHistory> {
-    protected readonly model = 'hr.contract.history';
-}
-
-export class HrContractSignDocumentWizardModel extends BaseOdooModel<THrContractSignDocumentWizard> {
-    protected readonly model = 'hr.contract.sign.document.wizard';
-}
-
-export class HrContractModel extends BaseOdooModel<THrContract> {
-    protected readonly model = 'hr.contract';
 }
 
 export class HrContractTypeModel extends BaseOdooModel<THrContractType> {
@@ -1708,10 +1208,6 @@ export class HrEmployeeCvWizardModel extends BaseOdooModel<THrEmployeeCvWizard> 
     protected readonly model = 'hr.employee.cv.wizard';
 }
 
-export class HrEmployeeDeleteWizardModel extends BaseOdooModel<THrEmployeeDeleteWizard> {
-    protected readonly model = 'hr.employee.delete.wizard';
-}
-
 export class HrEmployeePublicModel extends BaseOdooModel<THrEmployeePublic> {
     protected readonly model = 'hr.employee.public';
 }
@@ -1732,204 +1228,12 @@ export class HrEmployeeModel extends BaseOdooModel<THrEmployee> {
     protected readonly model = 'hr.employee';
 }
 
-export class HrExpenseApproveDuplicateModel extends BaseOdooModel<THrExpenseApproveDuplicate> {
-    protected readonly model = 'hr.expense.approve.duplicate';
-}
-
-export class HrExpenseRefuseWizardModel extends BaseOdooModel<THrExpenseRefuseWizard> {
-    protected readonly model = 'hr.expense.refuse.wizard';
-}
-
-export class HrExpenseSheetModel extends BaseOdooModel<THrExpenseSheet> {
-    protected readonly model = 'hr.expense.sheet';
-}
-
-export class HrExpenseSplitModel extends BaseOdooModel<THrExpenseSplit> {
-    protected readonly model = 'hr.expense.split';
-}
-
-export class HrExpenseSplitWizardModel extends BaseOdooModel<THrExpenseSplitWizard> {
-    protected readonly model = 'hr.expense.split.wizard';
-}
-
-export class HrExpenseModel extends BaseOdooModel<THrExpense> {
-    protected readonly model = 'hr.expense';
-}
-
-export class HrHolidaysCancelLeaveModel extends BaseOdooModel<THrHolidaysCancelLeave> {
-    protected readonly model = 'hr.holidays.cancel.leave';
-}
-
-export class HrHolidaysSummaryEmployeeModel extends BaseOdooModel<THrHolidaysSummaryEmployee> {
-    protected readonly model = 'hr.holidays.summary.employee';
-}
-
-export class HrJobPlatformModel extends BaseOdooModel<THrJobPlatform> {
-    protected readonly model = 'hr.job.platform';
-}
-
 export class HrJobModel extends BaseOdooModel<THrJob> {
     protected readonly model = 'hr.job';
 }
 
-export class HrLeaveAccrualLevelModel extends BaseOdooModel<THrLeaveAccrualLevel> {
-    protected readonly model = 'hr.leave.accrual.level';
-}
-
-export class HrLeaveAccrualPlanModel extends BaseOdooModel<THrLeaveAccrualPlan> {
-    protected readonly model = 'hr.leave.accrual.plan';
-}
-
-export class HrLeaveAllocationGenerateMultiWizardModel extends BaseOdooModel<THrLeaveAllocationGenerateMultiWizard> {
-    protected readonly model = 'hr.leave.allocation.generate.multi.wizard';
-}
-
-export class HrLeaveAllocationModel extends BaseOdooModel<THrLeaveAllocation> {
-    protected readonly model = 'hr.leave.allocation';
-}
-
-export class HrLeaveEmployeeTypeReportModel extends BaseOdooModel<THrLeaveEmployeeTypeReport> {
-    protected readonly model = 'hr.leave.employee.type.report';
-}
-
-export class HrLeaveGenerateMultiWizardModel extends BaseOdooModel<THrLeaveGenerateMultiWizard> {
-    protected readonly model = 'hr.leave.generate.multi.wizard';
-}
-
-export class HrLeaveMandatoryDayModel extends BaseOdooModel<THrLeaveMandatoryDay> {
-    protected readonly model = 'hr.leave.mandatory.day';
-}
-
-export class HrLeaveReportCalendarModel extends BaseOdooModel<THrLeaveReportCalendar> {
-    protected readonly model = 'hr.leave.report.calendar';
-}
-
-export class HrLeaveReportModel extends BaseOdooModel<THrLeaveReport> {
-    protected readonly model = 'hr.leave.report';
-}
-
-export class HrLeaveModel extends BaseOdooModel<THrLeave> {
-    protected readonly model = 'hr.leave';
-}
-
-export class HrLeaveTypeModel extends BaseOdooModel<THrLeaveType> {
-    protected readonly model = 'hr.leave.type';
-}
-
 export class HrManagerDepartmentReportModel extends BaseOdooModel<THrManagerDepartmentReport> {
     protected readonly model = 'hr.manager.department.report';
-}
-
-export class HrPayrollDashboardWarningModel extends BaseOdooModel<THrPayrollDashboardWarning> {
-    protected readonly model = 'hr.payroll.dashboard.warning';
-}
-
-export class HrPayrollDeclarationMixinModel extends BaseOdooModel<THrPayrollDeclarationMixin> {
-    protected readonly model = 'hr.payroll.declaration.mixin';
-}
-
-export class HrPayrollEditPayslipLineModel extends BaseOdooModel<THrPayrollEditPayslipLine> {
-    protected readonly model = 'hr.payroll.edit.payslip.line';
-}
-
-export class HrPayrollEditPayslipLinesWizardModel extends BaseOdooModel<THrPayrollEditPayslipLinesWizard> {
-    protected readonly model = 'hr.payroll.edit.payslip.lines.wizard';
-}
-
-export class HrPayrollEditPayslipWorkedDaysLineModel extends BaseOdooModel<THrPayrollEditPayslipWorkedDaysLine> {
-    protected readonly model = 'hr.payroll.edit.payslip.worked.days.line';
-}
-
-export class HrPayrollEmployeeDeclarationModel extends BaseOdooModel<THrPayrollEmployeeDeclaration> {
-    protected readonly model = 'hr.payroll.employee.declaration';
-}
-
-export class HrPayrollHeadcountLineModel extends BaseOdooModel<THrPayrollHeadcountLine> {
-    protected readonly model = 'hr.payroll.headcount.line';
-}
-
-export class HrPayrollHeadcountModel extends BaseOdooModel<THrPayrollHeadcount> {
-    protected readonly model = 'hr.payroll.headcount';
-}
-
-export class HrPayrollHeadcountWorkingRateModel extends BaseOdooModel<THrPayrollHeadcountWorkingRate> {
-    protected readonly model = 'hr.payroll.headcount.working.rate';
-}
-
-export class HrPayrollIndexModel extends BaseOdooModel<THrPayrollIndex> {
-    protected readonly model = 'hr.payroll.index';
-}
-
-export class HrPayrollNoteModel extends BaseOdooModel<THrPayrollNote> {
-    protected readonly model = 'hr.payroll.note';
-}
-
-export class HrPayrollPaymentReportWizardModel extends BaseOdooModel<THrPayrollPaymentReportWizard> {
-    protected readonly model = 'hr.payroll.payment.report.wizard';
-}
-
-export class HrPayrollReportModel extends BaseOdooModel<THrPayrollReport> {
-    protected readonly model = 'hr.payroll.report';
-}
-
-export class HrPayrollStructureModel extends BaseOdooModel<THrPayrollStructure> {
-    protected readonly model = 'hr.payroll.structure';
-}
-
-export class HrPayrollStructureTypeModel extends BaseOdooModel<THrPayrollStructureType> {
-    protected readonly model = 'hr.payroll.structure.type';
-}
-
-export class HrPayslipEmployeesModel extends BaseOdooModel<THrPayslipEmployees> {
-    protected readonly model = 'hr.payslip.employees';
-}
-
-export class HrPayslipInputModel extends BaseOdooModel<THrPayslipInput> {
-    protected readonly model = 'hr.payslip.input';
-}
-
-export class HrPayslipInputTypeModel extends BaseOdooModel<THrPayslipInputType> {
-    protected readonly model = 'hr.payslip.input.type';
-}
-
-export class HrPayslipLineModel extends BaseOdooModel<THrPayslipLine> {
-    protected readonly model = 'hr.payslip.line';
-}
-
-export class HrPayslipRunModel extends BaseOdooModel<THrPayslipRun> {
-    protected readonly model = 'hr.payslip.run';
-}
-
-export class HrPayslipModel extends BaseOdooModel<THrPayslip> {
-    protected readonly model = 'hr.payslip';
-}
-
-export class HrPayslipWorked_daysModel extends BaseOdooModel<THrPayslipWorked_days> {
-    protected readonly model = 'hr.payslip.worked_days';
-}
-
-export class HrRecruitmentDegreeModel extends BaseOdooModel<THrRecruitmentDegree> {
-    protected readonly model = 'hr.recruitment.degree';
-}
-
-export class HrRecruitmentReportModel extends BaseOdooModel<THrRecruitmentReport> {
-    protected readonly model = 'hr.recruitment.report';
-}
-
-export class HrRecruitmentSignDocumentWizardModel extends BaseOdooModel<THrRecruitmentSignDocumentWizard> {
-    protected readonly model = 'hr.recruitment.sign.document.wizard';
-}
-
-export class HrRecruitmentSourceModel extends BaseOdooModel<THrRecruitmentSource> {
-    protected readonly model = 'hr.recruitment.source';
-}
-
-export class HrRecruitmentStageReportModel extends BaseOdooModel<THrRecruitmentStageReport> {
-    protected readonly model = 'hr.recruitment.stage.report';
-}
-
-export class HrRecruitmentStageModel extends BaseOdooModel<THrRecruitmentStage> {
-    protected readonly model = 'hr.recruitment.stage';
 }
 
 export class HrResumeLineModel extends BaseOdooModel<THrResumeLine> {
@@ -1938,26 +1242,6 @@ export class HrResumeLineModel extends BaseOdooModel<THrResumeLine> {
 
 export class HrResumeLineTypeModel extends BaseOdooModel<THrResumeLineType> {
     protected readonly model = 'hr.resume.line.type';
-}
-
-export class HrRuleParameterModel extends BaseOdooModel<THrRuleParameter> {
-    protected readonly model = 'hr.rule.parameter';
-}
-
-export class HrRuleParameterValueModel extends BaseOdooModel<THrRuleParameterValue> {
-    protected readonly model = 'hr.rule.parameter.value';
-}
-
-export class HrSalaryAttachmentModel extends BaseOdooModel<THrSalaryAttachment> {
-    protected readonly model = 'hr.salary.attachment';
-}
-
-export class HrSalaryRuleCategoryModel extends BaseOdooModel<THrSalaryRuleCategory> {
-    protected readonly model = 'hr.salary.rule.category';
-}
-
-export class HrSalaryRuleModel extends BaseOdooModel<THrSalaryRule> {
-    protected readonly model = 'hr.salary.rule';
 }
 
 export class HrSkillLevelModel extends BaseOdooModel<THrSkillLevel> {
@@ -1972,48 +1256,8 @@ export class HrSkillTypeModel extends BaseOdooModel<THrSkillType> {
     protected readonly model = 'hr.skill.type';
 }
 
-export class HrTimesheetAttendanceReportModel extends BaseOdooModel<THrTimesheetAttendanceReport> {
-    protected readonly model = 'hr.timesheet.attendance.report';
-}
-
-export class HrTimesheetTipModel extends BaseOdooModel<THrTimesheetTip> {
-    protected readonly model = 'hr.timesheet.tip';
-}
-
-export class HrUserWorkEntryEmployeeModel extends BaseOdooModel<THrUserWorkEntryEmployee> {
-    protected readonly model = 'hr.user.work.entry.employee';
-}
-
-export class HrWorkEntryExportEmployeeMixinModel extends BaseOdooModel<THrWorkEntryExportEmployeeMixin> {
-    protected readonly model = 'hr.work.entry.export.employee.mixin';
-}
-
-export class HrWorkEntryExportMixinModel extends BaseOdooModel<THrWorkEntryExportMixin> {
-    protected readonly model = 'hr.work.entry.export.mixin';
-}
-
-export class HrWorkEntryRegenerationWizardModel extends BaseOdooModel<THrWorkEntryRegenerationWizard> {
-    protected readonly model = 'hr.work.entry.regeneration.wizard';
-}
-
-export class HrWorkEntryReportModel extends BaseOdooModel<THrWorkEntryReport> {
-    protected readonly model = 'hr.work.entry.report';
-}
-
-export class HrWorkEntryModel extends BaseOdooModel<THrWorkEntry> {
-    protected readonly model = 'hr.work.entry';
-}
-
-export class HrWorkEntryTypeModel extends BaseOdooModel<THrWorkEntryType> {
-    protected readonly model = 'hr.work.entry.type';
-}
-
 export class HrWorkLocationModel extends BaseOdooModel<THrWorkLocation> {
     protected readonly model = 'hr.work.location';
-}
-
-export class Hr_timesheetMergeWizardModel extends BaseOdooModel<THr_timesheetMergeWizard> {
-    protected readonly model = 'hr_timesheet.merge.wizard';
 }
 
 export class HtmlFieldHistoryMixinModel extends BaseOdooModel<THtmlFieldHistoryMixin> {
@@ -2078,10 +1322,6 @@ export class IrActionsTodoModel extends BaseOdooModel<TIrActionsTodo> {
 
 export class IrAssetModel extends BaseOdooModel<TIrAsset> {
     protected readonly model = 'ir.asset';
-}
-
-export class IrAttachmentReportModel extends BaseOdooModel<TIrAttachmentReport> {
-    protected readonly model = 'ir.attachment.report';
 }
 
 export class IrAttachmentModel extends BaseOdooModel<TIrAttachment> {
@@ -2268,6 +1508,10 @@ export class IrQwebFieldMonetaryModel extends BaseOdooModel<TIrQwebFieldMonetary
     protected readonly model = 'ir.qweb.field.monetary';
 }
 
+export class IrQwebFieldOne2manyModel extends BaseOdooModel<TIrQwebFieldOne2many> {
+    protected readonly model = 'ir.qweb.field.one2many';
+}
+
 export class IrQwebFieldQwebModel extends BaseOdooModel<TIrQwebFieldQweb> {
     protected readonly model = 'ir.qweb.field.qweb';
 }
@@ -2324,52 +1568,20 @@ export class IrWebsocketModel extends BaseOdooModel<TIrWebsocket> {
     protected readonly model = 'ir.websocket';
 }
 
-export class KnowledgeArticleFavoriteModel extends BaseOdooModel<TKnowledgeArticleFavorite> {
-    protected readonly model = 'knowledge.article.favorite';
-}
-
-export class KnowledgeArticleMemberModel extends BaseOdooModel<TKnowledgeArticleMember> {
-    protected readonly model = 'knowledge.article.member';
-}
-
-export class KnowledgeArticleStageModel extends BaseOdooModel<TKnowledgeArticleStage> {
-    protected readonly model = 'knowledge.article.stage';
-}
-
-export class KnowledgeArticleTemplateCategoryModel extends BaseOdooModel<TKnowledgeArticleTemplateCategory> {
-    protected readonly model = 'knowledge.article.template.category';
-}
-
-export class KnowledgeArticleThreadModel extends BaseOdooModel<TKnowledgeArticleThread> {
-    protected readonly model = 'knowledge.article.thread';
-}
-
-export class KnowledgeArticleModel extends BaseOdooModel<TKnowledgeArticle> {
-    protected readonly model = 'knowledge.article';
-}
-
-export class KnowledgeCoverModel extends BaseOdooModel<TKnowledgeCover> {
-    protected readonly model = 'knowledge.cover';
-}
-
-export class KnowledgeInviteModel extends BaseOdooModel<TKnowledgeInvite> {
-    protected readonly model = 'knowledge.invite';
-}
-
 export class KpiProviderModel extends BaseOdooModel<TKpiProvider> {
     protected readonly model = 'kpi.provider';
 }
 
-export class L10n_itDdtModel extends BaseOdooModel<TL10n_itDdt> {
-    protected readonly model = 'l10n_it.ddt';
-}
-
-export class L10n_itDocumentTypeModel extends BaseOdooModel<TL10n_itDocumentType> {
-    protected readonly model = 'l10n_it.document.type';
-}
-
 export class L10n_it_delivery_noteDelivery_mixinModel extends BaseOdooModel<TL10n_it_delivery_noteDelivery_mixin> {
     protected readonly model = 'l10n_it_delivery_note.delivery_mixin';
+}
+
+export class L10n_us1099_boxModel extends BaseOdooModel<TL10n_us1099_box> {
+    protected readonly model = 'l10n_us1099_box';
+}
+
+export class L10n_us_1099WizardModel extends BaseOdooModel<TL10n_us_1099Wizard> {
+    protected readonly model = 'l10n_us_1099.wizard';
 }
 
 export class LotLabelLayoutModel extends BaseOdooModel<TLotLabelLayout> {
@@ -2390,10 +1602,6 @@ export class MailActivityPlanModel extends BaseOdooModel<TMailActivityPlan> {
 
 export class MailActivityScheduleModel extends BaseOdooModel<TMailActivitySchedule> {
     protected readonly model = 'mail.activity.schedule';
-}
-
-export class MailActivityTodoCreateModel extends BaseOdooModel<TMailActivityTodoCreate> {
-    protected readonly model = 'mail.activity.todo.create';
 }
 
 export class MailActivityModel extends BaseOdooModel<TMailActivity> {
@@ -2560,30 +1768,6 @@ export class MailWizardInviteModel extends BaseOdooModel<TMailWizardInvite> {
     protected readonly model = 'mail.wizard.invite';
 }
 
-export class MaintenanceEquipmentCategoryModel extends BaseOdooModel<TMaintenanceEquipmentCategory> {
-    protected readonly model = 'maintenance.equipment.category';
-}
-
-export class MaintenanceEquipmentModel extends BaseOdooModel<TMaintenanceEquipment> {
-    protected readonly model = 'maintenance.equipment';
-}
-
-export class MaintenanceMixinModel extends BaseOdooModel<TMaintenanceMixin> {
-    protected readonly model = 'maintenance.mixin';
-}
-
-export class MaintenanceRequestModel extends BaseOdooModel<TMaintenanceRequest> {
-    protected readonly model = 'maintenance.request';
-}
-
-export class MaintenanceStageModel extends BaseOdooModel<TMaintenanceStage> {
-    protected readonly model = 'maintenance.stage';
-}
-
-export class MaintenanceTeamModel extends BaseOdooModel<TMaintenanceTeam> {
-    protected readonly model = 'maintenance.team';
-}
-
 export class MrpAccountWipAccountingLineModel extends BaseOdooModel<TMrpAccountWipAccountingLine> {
     protected readonly model = 'mrp.account.wip.accounting.line';
 }
@@ -2616,56 +1800,12 @@ export class MrpConsumptionWarningModel extends BaseOdooModel<TMrpConsumptionWar
     protected readonly model = 'mrp.consumption.warning';
 }
 
-export class MrpEcoApprovalTemplateModel extends BaseOdooModel<TMrpEcoApprovalTemplate> {
-    protected readonly model = 'mrp.eco.approval.template';
-}
-
-export class MrpEcoApprovalModel extends BaseOdooModel<TMrpEcoApproval> {
-    protected readonly model = 'mrp.eco.approval';
-}
-
-export class MrpEcoBomChangeModel extends BaseOdooModel<TMrpEcoBomChange> {
-    protected readonly model = 'mrp.eco.bom.change';
-}
-
-export class MrpEcoRoutingChangeModel extends BaseOdooModel<TMrpEcoRoutingChange> {
-    protected readonly model = 'mrp.eco.routing.change';
-}
-
-export class MrpEcoStageModel extends BaseOdooModel<TMrpEcoStage> {
-    protected readonly model = 'mrp.eco.stage';
-}
-
-export class MrpEcoTagModel extends BaseOdooModel<TMrpEcoTag> {
-    protected readonly model = 'mrp.eco.tag';
-}
-
-export class MrpEcoModel extends BaseOdooModel<TMrpEco> {
-    protected readonly model = 'mrp.eco';
-}
-
-export class MrpEcoTypeModel extends BaseOdooModel<TMrpEcoType> {
-    protected readonly model = 'mrp.eco.type';
-}
-
-export class MrpMpsForecastDetailsModel extends BaseOdooModel<TMrpMpsForecastDetails> {
-    protected readonly model = 'mrp.mps.forecast.details';
-}
-
-export class MrpProductForecastModel extends BaseOdooModel<TMrpProductForecast> {
-    protected readonly model = 'mrp.product.forecast';
-}
-
 export class MrpProductionBackorderLineModel extends BaseOdooModel<TMrpProductionBackorderLine> {
     protected readonly model = 'mrp.production.backorder.line';
 }
 
 export class MrpProductionBackorderModel extends BaseOdooModel<TMrpProductionBackorder> {
     protected readonly model = 'mrp.production.backorder';
-}
-
-export class MrpProductionScheduleModel extends BaseOdooModel<TMrpProductionSchedule> {
-    protected readonly model = 'mrp.production.schedule';
 }
 
 export class MrpProductionSplitLineModel extends BaseOdooModel<TMrpProductionSplitLine> {
@@ -2776,10 +1916,6 @@ export class PaymentTransactionModel extends BaseOdooModel<TPaymentTransaction> 
     protected readonly model = 'payment.transaction';
 }
 
-export class PeppolRegistrationModel extends BaseOdooModel<TPeppolRegistration> {
-    protected readonly model = 'peppol.registration';
-}
-
 export class PhoneBlacklistRemoveModel extends BaseOdooModel<TPhoneBlacklistRemove> {
     protected readonly model = 'phone.blacklist.remove';
 }
@@ -2790,34 +1926,6 @@ export class PhoneBlacklistModel extends BaseOdooModel<TPhoneBlacklist> {
 
 export class PickingLabelTypeModel extends BaseOdooModel<TPickingLabelType> {
     protected readonly model = 'picking.label.type';
-}
-
-export class PlanningAnalysisReportModel extends BaseOdooModel<TPlanningAnalysisReport> {
-    protected readonly model = 'planning.analysis.report';
-}
-
-export class PlanningPlanningModel extends BaseOdooModel<TPlanningPlanning> {
-    protected readonly model = 'planning.planning';
-}
-
-export class PlanningRecurrencyModel extends BaseOdooModel<TPlanningRecurrency> {
-    protected readonly model = 'planning.recurrency';
-}
-
-export class PlanningRoleModel extends BaseOdooModel<TPlanningRole> {
-    protected readonly model = 'planning.role';
-}
-
-export class PlanningSendModel extends BaseOdooModel<TPlanningSend> {
-    protected readonly model = 'planning.send';
-}
-
-export class PlanningSlotTemplateModel extends BaseOdooModel<TPlanningSlotTemplate> {
-    protected readonly model = 'planning.slot.template';
-}
-
-export class PlanningSlotModel extends BaseOdooModel<TPlanningSlot> {
-    protected readonly model = 'planning.slot';
 }
 
 export class PortalMixinModel extends BaseOdooModel<TPortalMixin> {
@@ -2834,6 +1942,10 @@ export class PortalWizardModel extends BaseOdooModel<TPortalWizard> {
 
 export class PortalWizardUserModel extends BaseOdooModel<TPortalWizardUser> {
     protected readonly model = 'portal.wizard.user';
+}
+
+export class PrintPrenumberedChecksModel extends BaseOdooModel<TPrintPrenumberedChecks> {
+    protected readonly model = 'print.prenumbered.checks';
 }
 
 export class PrivacyLogModel extends BaseOdooModel<TPrivacyLog> {
@@ -2862,6 +1974,10 @@ export class ProductAttributeModel extends BaseOdooModel<TProductAttribute> {
 
 export class ProductAttributeValueModel extends BaseOdooModel<TProductAttributeValue> {
     protected readonly model = 'product.attribute.value';
+}
+
+export class ProductAvataxCategoryModel extends BaseOdooModel<TProductAvataxCategory> {
+    protected readonly model = 'product.avatax.category';
 }
 
 export class ProductCatalogMixinModel extends BaseOdooModel<TProductCatalogMixin> {
@@ -2936,82 +2052,6 @@ export class ProductTemplateModel extends BaseOdooModel<TProductTemplate> {
     protected readonly model = 'product.template';
 }
 
-export class ProjectCollaboratorModel extends BaseOdooModel<TProjectCollaborator> {
-    protected readonly model = 'project.collaborator';
-}
-
-export class ProjectCreateInvoiceModel extends BaseOdooModel<TProjectCreateInvoice> {
-    protected readonly model = 'project.create.invoice';
-}
-
-export class ProjectMilestoneModel extends BaseOdooModel<TProjectMilestone> {
-    protected readonly model = 'project.milestone';
-}
-
-export class ProjectProjectStageDeleteWizardModel extends BaseOdooModel<TProjectProjectStageDeleteWizard> {
-    protected readonly model = 'project.project.stage.delete.wizard';
-}
-
-export class ProjectProjectStageModel extends BaseOdooModel<TProjectProjectStage> {
-    protected readonly model = 'project.project.stage';
-}
-
-export class ProjectProjectModel extends BaseOdooModel<TProjectProject> {
-    protected readonly model = 'project.project';
-}
-
-export class ProjectSaleLineEmployeeMapModel extends BaseOdooModel<TProjectSaleLineEmployeeMap> {
-    protected readonly model = 'project.sale.line.employee.map';
-}
-
-export class ProjectShareCollaboratorWizardModel extends BaseOdooModel<TProjectShareCollaboratorWizard> {
-    protected readonly model = 'project.share.collaborator.wizard';
-}
-
-export class ProjectShareWizardModel extends BaseOdooModel<TProjectShareWizard> {
-    protected readonly model = 'project.share.wizard';
-}
-
-export class ProjectTagsModel extends BaseOdooModel<TProjectTags> {
-    protected readonly model = 'project.tags';
-}
-
-export class ProjectTaskBurndownChartReportModel extends BaseOdooModel<TProjectTaskBurndownChartReport> {
-    protected readonly model = 'project.task.burndown.chart.report';
-}
-
-export class ProjectTaskConvertWizardModel extends BaseOdooModel<TProjectTaskConvertWizard> {
-    protected readonly model = 'project.task.convert.wizard';
-}
-
-export class ProjectTaskCreateTimesheetModel extends BaseOdooModel<TProjectTaskCreateTimesheet> {
-    protected readonly model = 'project.task.create.timesheet';
-}
-
-export class ProjectTaskRecurrenceModel extends BaseOdooModel<TProjectTaskRecurrence> {
-    protected readonly model = 'project.task.recurrence';
-}
-
-export class ProjectTaskStagePersonalModel extends BaseOdooModel<TProjectTaskStagePersonal> {
-    protected readonly model = 'project.task.stage.personal';
-}
-
-export class ProjectTaskModel extends BaseOdooModel<TProjectTask> {
-    protected readonly model = 'project.task';
-}
-
-export class ProjectTaskTypeDeleteWizardModel extends BaseOdooModel<TProjectTaskTypeDeleteWizard> {
-    protected readonly model = 'project.task.type.delete.wizard';
-}
-
-export class ProjectTaskTypeModel extends BaseOdooModel<TProjectTaskType> {
-    protected readonly model = 'project.task.type';
-}
-
-export class ProjectUpdateModel extends BaseOdooModel<TProjectUpdate> {
-    protected readonly model = 'project.update';
-}
-
 export class ProposeChangeModel extends BaseOdooModel<TProposeChange> {
     protected readonly model = 'propose.change';
 }
@@ -3030,10 +2070,6 @@ export class PurchaseBillUnionModel extends BaseOdooModel<TPurchaseBillUnion> {
 
 export class PurchaseEdiXmlUbl_bis3Model extends BaseOdooModel<TPurchaseEdiXmlUbl_bis3> {
     protected readonly model = 'purchase.edi.xml.ubl_bis3';
-}
-
-export class PurchaseInvoiceLinkWizardModel extends BaseOdooModel<TPurchaseInvoiceLinkWizard> {
-    protected readonly model = 'purchase.invoice.link.wizard';
 }
 
 export class PurchaseOrderLineModel extends BaseOdooModel<TPurchaseOrderLine> {
@@ -3060,20 +2096,8 @@ export class QualityAlertModel extends BaseOdooModel<TQualityAlert> {
     protected readonly model = 'quality.alert';
 }
 
-export class QualityCheckOnDemandModel extends BaseOdooModel<TQualityCheckOnDemand> {
-    protected readonly model = 'quality.check.on.demand';
-}
-
-export class QualityCheckSpreadsheetModel extends BaseOdooModel<TQualityCheckSpreadsheet> {
-    protected readonly model = 'quality.check.spreadsheet';
-}
-
 export class QualityCheckModel extends BaseOdooModel<TQualityCheck> {
     protected readonly model = 'quality.check';
-}
-
-export class QualityCheckWizardModel extends BaseOdooModel<TQualityCheckWizard> {
-    protected readonly model = 'quality.check.wizard';
 }
 
 export class QualityPointTest_typeModel extends BaseOdooModel<TQualityPointTest_type> {
@@ -3088,36 +2112,12 @@ export class QualityReasonModel extends BaseOdooModel<TQualityReason> {
     protected readonly model = 'quality.reason';
 }
 
-export class QualitySpreadsheetTemplateModel extends BaseOdooModel<TQualitySpreadsheetTemplate> {
-    protected readonly model = 'quality.spreadsheet.template';
-}
-
 export class QualityTagModel extends BaseOdooModel<TQualityTag> {
     protected readonly model = 'quality.tag';
 }
 
 export class QuotationDocumentModel extends BaseOdooModel<TQuotationDocument> {
     protected readonly model = 'quotation.document';
-}
-
-export class RatingMixinModel extends BaseOdooModel<TRatingMixin> {
-    protected readonly model = 'rating.mixin';
-}
-
-export class RatingParentMixinModel extends BaseOdooModel<TRatingParentMixin> {
-    protected readonly model = 'rating.parent.mixin';
-}
-
-export class RatingRatingModel extends BaseOdooModel<TRatingRating> {
-    protected readonly model = 'rating.rating';
-}
-
-export class RepairOrderModel extends BaseOdooModel<TRepairOrder> {
-    protected readonly model = 'repair.order';
-}
-
-export class RepairTagsModel extends BaseOdooModel<TRepairTags> {
-    protected readonly model = 'repair.tags';
 }
 
 export class ReportAccountReport_hash_integrityModel extends BaseOdooModel<TReportAccountReport_hash_integrity> {
@@ -3138,14 +2138,6 @@ export class ReportAccount_batch_paymentPrint_batch_paymentModel extends BaseOdo
 
 export class ReportBaseReport_irmodulereferenceModel extends BaseOdooModel<TReportBaseReport_irmodulereference> {
     protected readonly model = 'report.base.report_irmodulereference';
-}
-
-export class ReportHr_holidaysReport_holidayssummaryModel extends BaseOdooModel<TReportHr_holidaysReport_holidayssummary> {
-    protected readonly model = 'report.hr_holidays.report_holidayssummary';
-}
-
-export class ReportHr_payrollContribution_registerModel extends BaseOdooModel<TReportHr_payrollContribution_register> {
-    protected readonly model = 'report.hr_payroll.contribution_register';
 }
 
 export class ReportHr_skillsReport_employee_cvModel extends BaseOdooModel<TReportHr_skillsReport_employee_cv> {
@@ -3200,22 +2192,6 @@ export class ReportProductReport_producttemplatelabel_dymoModel extends BaseOdoo
     protected readonly model = 'report.product.report_producttemplatelabel_dymo';
 }
 
-export class ReportProjectTaskUserModel extends BaseOdooModel<TReportProjectTaskUser> {
-    protected readonly model = 'report.project.task.user';
-}
-
-export class ReportQuality_controlQuality_worksheetModel extends BaseOdooModel<TReportQuality_controlQuality_worksheet> {
-    protected readonly model = 'report.quality_control.quality_worksheet';
-}
-
-export class ReportQuality_controlQuality_worksheet_internalModel extends BaseOdooModel<TReportQuality_controlQuality_worksheet_internal> {
-    protected readonly model = 'report.quality_control.quality_worksheet_internal';
-}
-
-export class ReportSignGreen_savings_reportModel extends BaseOdooModel<TReportSignGreen_savings_report> {
-    protected readonly model = 'report.sign.green_savings_report';
-}
-
 export class ReportStockLabel_lot_template_viewModel extends BaseOdooModel<TReportStockLabel_lot_template_view> {
     protected readonly model = 'report.stock.label_lot_template_view';
 }
@@ -3234,10 +2210,6 @@ export class ReportStockReport_receptionModel extends BaseOdooModel<TReportStock
 
 export class ReportStockReport_stock_ruleModel extends BaseOdooModel<TReportStockReport_stock_rule> {
     protected readonly model = 'report.stock.report_stock_rule';
-}
-
-export class RequestAppraisalModel extends BaseOdooModel<TRequestAppraisal> {
-    protected readonly model = 'request.appraisal';
 }
 
 export class ResBankModel extends BaseOdooModel<TResBank> {
@@ -3376,18 +2348,6 @@ export class ResourceResourceModel extends BaseOdooModel<TResourceResource> {
     protected readonly model = 'resource.resource';
 }
 
-export class RoomBookingModel extends BaseOdooModel<TRoomBooking> {
-    protected readonly model = 'room.booking';
-}
-
-export class RoomOfficeModel extends BaseOdooModel<TRoomOffice> {
-    protected readonly model = 'room.office';
-}
-
-export class RoomRoomModel extends BaseOdooModel<TRoomRoom> {
-    protected readonly model = 'room.room';
-}
-
 export class SaleAdvancePaymentInvModel extends BaseOdooModel<TSaleAdvancePaymentInv> {
     protected readonly model = 'sale.advance.payment.inv';
 }
@@ -3458,62 +2418,6 @@ export class SequenceMixinModel extends BaseOdooModel<TSequenceMixin> {
 
 export class ShippingInformationUpdaterMixinModel extends BaseOdooModel<TShippingInformationUpdaterMixin> {
     protected readonly model = 'shipping.information.updater.mixin';
-}
-
-export class SignDuplicateTemplatePdfModel extends BaseOdooModel<TSignDuplicateTemplatePdf> {
-    protected readonly model = 'sign.duplicate.template.pdf';
-}
-
-export class SignItemOptionModel extends BaseOdooModel<TSignItemOption> {
-    protected readonly model = 'sign.item.option';
-}
-
-export class SignItemRadioSetModel extends BaseOdooModel<TSignItemRadioSet> {
-    protected readonly model = 'sign.item.radio.set';
-}
-
-export class SignItemRoleModel extends BaseOdooModel<TSignItemRole> {
-    protected readonly model = 'sign.item.role';
-}
-
-export class SignItemModel extends BaseOdooModel<TSignItem> {
-    protected readonly model = 'sign.item';
-}
-
-export class SignItemTypeModel extends BaseOdooModel<TSignItemType> {
-    protected readonly model = 'sign.item.type';
-}
-
-export class SignLogModel extends BaseOdooModel<TSignLog> {
-    protected readonly model = 'sign.log';
-}
-
-export class SignRequestItemModel extends BaseOdooModel<TSignRequestItem> {
-    protected readonly model = 'sign.request.item';
-}
-
-export class SignRequestItemValueModel extends BaseOdooModel<TSignRequestItemValue> {
-    protected readonly model = 'sign.request.item.value';
-}
-
-export class SignRequestModel extends BaseOdooModel<TSignRequest> {
-    protected readonly model = 'sign.request';
-}
-
-export class SignSendRequestSignerModel extends BaseOdooModel<TSignSendRequestSigner> {
-    protected readonly model = 'sign.send.request.signer';
-}
-
-export class SignSendRequestModel extends BaseOdooModel<TSignSendRequest> {
-    protected readonly model = 'sign.send.request';
-}
-
-export class SignTemplateTagModel extends BaseOdooModel<TSignTemplateTag> {
-    protected readonly model = 'sign.template.tag';
-}
-
-export class SignTemplateModel extends BaseOdooModel<TSignTemplate> {
-    protected readonly model = 'sign.template';
 }
 
 export class SmsAccountCodeModel extends BaseOdooModel<TSmsAccountCode> {
@@ -3828,10 +2732,6 @@ export class StockWarehouseModel extends BaseOdooModel<TStockWarehouse> {
     protected readonly model = 'stock.warehouse';
 }
 
-export class StockWarnInsufficientQtyRepairModel extends BaseOdooModel<TStockWarnInsufficientQtyRepair> {
-    protected readonly model = 'stock.warn.insufficient.qty.repair';
-}
-
 export class StockWarnInsufficientQtyScrapModel extends BaseOdooModel<TStockWarnInsufficientQtyScrap> {
     protected readonly model = 'stock.warn.insufficient.qty.scrap';
 }
@@ -3886,22 +2786,6 @@ export class StudioMixinModel extends BaseOdooModel<TStudioMixin> {
 
 export class TemplateResetMixinModel extends BaseOdooModel<TTemplateResetMixin> {
     protected readonly model = 'template.reset.mixin';
-}
-
-export class TimerMixinModel extends BaseOdooModel<TTimerMixin> {
-    protected readonly model = 'timer.mixin';
-}
-
-export class TimerTimerModel extends BaseOdooModel<TTimerTimer> {
-    protected readonly model = 'timer.timer';
-}
-
-export class TimesheetGridMixinModel extends BaseOdooModel<TTimesheetGridMixin> {
-    protected readonly model = 'timesheet.grid.mixin';
-}
-
-export class TimesheetsAnalysisReportModel extends BaseOdooModel<TTimesheetsAnalysisReport> {
-    protected readonly model = 'timesheets.analysis.report';
 }
 
 export class UomCategoryModel extends BaseOdooModel<TUomCategory> {
@@ -3974,8 +2858,4 @@ export class Web_tourTourModel extends BaseOdooModel<TWeb_tourTour> {
 
 export class WizardIrModelMenuCreateModel extends BaseOdooModel<TWizardIrModelMenuCreate> {
     protected readonly model = 'wizard.ir.model.menu.create';
-}
-
-export class X_stock_picking_line_6a2c5Model extends BaseOdooModel<TX_stock_picking_line_6a2c5> {
-    protected readonly model = 'x_stock_picking_line_6a2c5';
 }

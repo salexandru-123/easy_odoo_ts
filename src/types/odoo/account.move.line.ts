@@ -1,10 +1,10 @@
 export interface TAccountMoveLine {
     account_code?: string;
     account_id?: number | false;
-    account_internal_group?: string;
+    account_internal_group?: '';
     account_name?: string;
     account_root_id?: number | false;
-    account_type?: string;
+    account_type?: '';
     amount_currency?: number;
     amount_residual?: number;
     amount_residual_currency?: number;
@@ -28,6 +28,7 @@ export interface TAccountMoveLine {
     debit?: number;
     deferred_end_date?: string;
     deferred_start_date?: string;
+    delivery_note_id?: number | false;
     discount?: number;
     discount_allocation_dirty?: boolean;
     discount_allocation_key?: string | false;
@@ -36,7 +37,16 @@ export interface TAccountMoveLine {
     discount_balance?: number;
     discount_date?: string;
     display_name?: string;
-    display_type: string;
+    display_type:
+        | 'product'
+        | 'cogs'
+        | 'tax'
+        | 'discount'
+        | 'rounding'
+        | 'payment_term'
+        | 'line_section'
+        | 'line_note'
+        | 'epd';
     distribution_analytic_account_ids?: number[];
     epd_dirty?: boolean;
     epd_key?: string | false;
@@ -61,9 +71,10 @@ export interface TAccountMoveLine {
     move_attachment_ids?: number[];
     move_id: number | false;
     move_name?: string;
-    move_type?: string;
+    move_type?: '';
     name?: string;
-    parent_state?: string;
+    note_dn?: boolean;
+    parent_state?: '';
     partner_id?: number | false;
     payment_date?: string;
     payment_id?: number | false;
@@ -86,7 +97,7 @@ export interface TAccountMoveLine {
     statement_line_id?: number | false;
     stock_valuation_layer_ids?: number[];
     tax_base_amount?: number;
-    tax_calculation_rounding_method?: string;
+    tax_calculation_rounding_method?: '';
     tax_group_id?: number | false;
     tax_ids?: number[];
     tax_line_id?: number | false;

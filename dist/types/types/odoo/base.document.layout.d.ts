@@ -1,7 +1,7 @@
 export interface TBaseDocumentLayout {
     account_number?: string;
     company_details?: string;
-    company_id: number | false;
+    company_id?: number | false;
     country_id?: number | false;
     create_date?: string;
     create_uid?: number | false;
@@ -9,11 +9,11 @@ export interface TBaseDocumentLayout {
     display_name?: string;
     email?: string;
     external_report_layout_id?: number | false;
-    font?: string;
+    font?: '';
     from_invoice?: boolean;
     id?: number;
     is_company_details_empty?: boolean;
-    layout_background?: string;
+    layout_background?: '';
     layout_background_image?: string | false;
     logo?: string | false;
     logo_primary_color?: string;

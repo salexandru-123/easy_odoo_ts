@@ -9,7 +9,7 @@ export interface TAccountAnalyticPlan {
     complete_name?: string;
     create_date?: string;
     create_uid?: number | false;
-    default_applicability?: string;
+    default_applicability?: 'optional' | 'mandatory' | 'unavailable';
     description?: string;
     display_name?: string;
     id?: number;

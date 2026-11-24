@@ -8,7 +8,7 @@ export interface TAccountOnlineAccount {
     create_uid?: number | false;
     currency_id?: number | false;
     display_name?: string;
-    fetching_status?: string;
+    fetching_status?: 'planned' | 'waiting' | 'processing' | 'done';
     id?: number;
     inverse_balance_sign?: boolean;
     inverse_transaction_sign?: boolean;

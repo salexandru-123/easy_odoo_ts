@@ -3,7 +3,7 @@ export interface TPortalWizardUser {
     create_uid?: number | false;
     display_name?: string;
     email?: string;
-    email_state?: string;
+    email_state?: 'ok' | 'ko' | 'exist';
     id?: number;
     is_internal?: boolean;
     is_portal?: boolean;

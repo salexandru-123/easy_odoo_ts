@@ -4,7 +4,7 @@ export interface TStockOrderpointSnooze {
     display_name?: string;
     id?: number;
     orderpoint_ids?: number[];
-    predefined_date?: string;
+    predefined_date?: 'day' | 'week' | 'month' | 'custom';
     snoozed_until?: string;
     write_date?: string;
     write_uid?: number | false;

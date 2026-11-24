@@ -3,7 +3,7 @@ export interface TPickingLabelType {
     create_uid?: number | false;
     display_name?: string;
     id?: number;
-    label_type: string;
+    label_type?: 'products' | 'lots';
     picking_ids?: number[];
     production_ids?: number[];
     write_date?: string;
